@@ -9,9 +9,13 @@ import (
 	"unicode"
 )
 
-const ticker = "SPY"
-
 func main() {
+	ticker := os.Getenv("TICKER")
+	if ticker == "" {
+		fmt.Fprintln(os.Stderr, "TICKER environment variable is required")
+		os.Exit(1)
+	}
+
 	var (
 		holdings []holding
 		meta     *metadata
@@ -52,7 +56,7 @@ func main() {
 		fatal(metaErr)
 	}
 
-	out := make(map[string]interface{})
+	out := make(map[string]any)
 	out["date"] = meta.Date.Format("2006-01-02")
 	out["holdings"] = holdings
 	for k, v := range meta.FundCharacteristics {

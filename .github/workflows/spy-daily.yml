@@ -1,4 +1,4 @@
-name: SPY update daily
+name: ETFs update daily
 
 on:
   schedule:
@@ -10,13 +10,15 @@ permissions:
   contents: write
 
 jobs:
-  update-spy:
+  fetch:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ticker: [SPY, XSD]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download latest spy release
         run: |
@@ -31,23 +33,48 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set ticker output
+        id: ticker
+        run: echo "lower=$(echo ${{ matrix.ticker }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
+
       - name: Run spy and save dated snapshot
-        id: spy
         env:
+          TICKER: ${{ matrix.ticker }}
           SOURCE_URL: ${{ secrets.SOURCE_URL }}
           PAGE_URL: ${{ secrets.PAGE_URL }}
         run: |
-          mkdir -p datasets/etfs/spy
+          TICKER_LOWER=${{ steps.ticker.outputs.lower }}
+          mkdir -p datasets/etfs/${TICKER_LOWER}
           OUTPUT=$(./spy)
           DATE=$(echo "$OUTPUT" | jq -r '.date')
-          echo "date=$DATE" >> $GITHUB_OUTPUT
-          echo "$OUTPUT" > datasets/etfs/spy/${DATE}.json
-          ln -sf ${DATE}.json datasets/etfs/spy/latest.json
+          echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/${DATE}.json
+          ln -sf ${DATE}.json datasets/etfs/${TICKER_LOWER}/latest.json
+
+      - name: Upload dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.ticker.outputs.lower }}
+          path: datasets/etfs/${{ steps.ticker.outputs.lower }}/
+
+  commit:
+    runs-on: ubuntu-latest
+    needs: fetch
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download all datasets
+        uses: actions/download-artifact@v4
+        with:
+          path: datasets/etfs
 
       - name: Commit and push
         run: |
-          DATE=${{ steps.spy.outputs.date }}
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/etfs/spy/${DATE}.json datasets/etfs/spy/latest.json
-          git diff --staged --quiet || (git commit -m "chore: SPY update ${DATE}" && git push)
+          git add datasets/
+          git diff --staged --quiet || (git commit -m "chore: etfs update $(date +%Y-%m-%d)" && git push)
