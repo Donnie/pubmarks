@@ -1,9 +1,10 @@
 package main
 
 import (
-	"regexp"
 	"strings"
 	"time"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 type metadata struct {
@@ -13,98 +14,50 @@ type metadata struct {
 	FundMarketPrice      map[string]string `json:"fund_market_price"`
 }
 
-var (
-	reSectionHeader = regexp.MustCompile(`(?s)<h2 class="comp-title">(.*?)</h2>`)
-	reDateSpan      = regexp.MustCompile(`<span class="date">(.*?)</span>`)
-	reTable         = regexp.MustCompile(`(?s)<table class="tb-keyvalue">(.*?)</table>`)
-	reRow           = regexp.MustCompile(`(?s)<td class="label">(.*?)</td>\s*<td class="data">(.*?)</td>`)
-	reTags          = regexp.MustCompile(`<[^>]+>`)
-	reInfoDiv       = regexp.MustCompile(`(?s)<div class="info-data">.*?</div>`)
-	reEntities      = strings.NewReplacer(
-		"&#xfeff;", "",
-		"&#34;", `"`,
-		"&#39;", "'",
-		"&amp;", "&",
-		"&lt;", "<",
-		"&gt;", ">",
-	)
-)
-
-func parsePage(body []byte) (*metadata, error) {
-	sections, rawDate := extractSections(string(body))
-
-	m := &metadata{}
-	m.FundCharacteristics, _ = sections["Fund Characteristics"]
-	m.IndexCharacteristics, _ = sections["Index Characteristics"]
-	m.FundMarketPrice, _ = sections["Fund Market Price"]
-
-	if rawDate != "" {
-		t, _ := time.Parse("Jan 2 2006", strings.TrimPrefix(rawDate, "as of "))
-		if t.IsZero() {
-			t = time.Now()
-		}
-		m.Date = t
-	}
-
-	return m, nil
-}
-
 var dateSections = map[string]bool{
 	"Fund Characteristics":  true,
 	"Index Characteristics": true,
 	"Fund Market Price":     true,
 }
 
-func extractSections(html string) (map[string]map[string]string, string) {
-	out := make(map[string]map[string]string)
+func parsePage(doc *goquery.Document) (*metadata, error) {
+	sections := make(map[string]map[string]string)
 	rawDate := ""
-	headers := reSectionHeader.FindAllStringIndex(html, -1)
-	for i, loc := range headers {
-		headerHTML := html[loc[0]:loc[1]]
 
-		titleHTML := reDateSpan.ReplaceAllString(headerHTML, "")
-		title := stripTags(titleHTML)
+	doc.Find("h2.comp-title").Each(func(_ int, h2 *goquery.Selection) {
+		dateText := strings.TrimSpace(h2.Find("span.date").Text())
+		title := strings.TrimSpace(h2.Clone().Find("span.date, svg").Remove().End().Text())
 
-		if rawDate == "" && dateSections[title] {
-			if ds := reDateSpan.FindStringSubmatch(headerHTML); ds != nil {
-				rawDate = strings.TrimSpace(ds[1])
+		if rawDate == "" && dateSections[title] && dateText != "" {
+			rawDate = dateText
+		}
+
+		kv := make(map[string]string)
+		h2.Parent().Find("table.tb-keyvalue tr").Each(func(_ int, tr *goquery.Selection) {
+			label := strings.TrimSpace(tr.Find("td.label").Clone().Find(".info-data, .info").Remove().End().Text())
+			label = strings.Join(strings.Fields(label), " ")
+			value := strings.TrimSpace(tr.Find("td.data").Text())
+			if label != "" {
+				kv[label] = value
 			}
+		})
+
+		if len(kv) > 0 {
+			sections[title] = kv
 		}
+	})
 
-		searchFrom := loc[1]
-		searchTo := len(html)
-		if i+1 < len(headers) {
-			searchTo = headers[i+1][0]
-		}
+	m := &metadata{}
+	m.FundCharacteristics, _ = sections["Fund Characteristics"]
+	m.IndexCharacteristics, _ = sections["Index Characteristics"]
+	m.FundMarketPrice, _ = sections["Fund Market Price"]
 
-		tableSub := reTable.FindStringSubmatch(html[searchFrom:searchTo])
-		if tableSub == nil {
-			continue
-		}
-
-		out[title] = parseTable(tableSub[1])
-	}
-	return out, rawDate
-}
-
-func parseTable(tableBody string) map[string]string {
-	fields := make(map[string]string)
-	for _, row := range reRow.FindAllStringSubmatch(tableBody, -1) {
-		label := cleanLabel(row[1])
-		value := reEntities.Replace(stripTags(row[2]))
-		if label != "" {
-			fields[label] = value
+	m.Date = time.Now()
+	if rawDate != "" {
+		if t, err := time.Parse("Jan 2 2006", strings.TrimPrefix(rawDate, "as of ")); err == nil {
+			m.Date = t
 		}
 	}
-	return fields
-}
 
-func cleanLabel(s string) string {
-	s = reInfoDiv.ReplaceAllString(s, "")
-	return reEntities.Replace(stripTags(s))
-}
-
-func stripTags(s string) string {
-	s = reTags.ReplaceAllString(s, "")
-	return strings.TrimSpace(strings.Join(strings.Fields(s), " "))
+	return m, nil
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"slices"
 	"sort"
 	"strconv"
 	"strings"
@@ -65,18 +66,24 @@ func findHeaderRow(rows [][]string, want []string) (int, []int) {
 }
 
 func matchColumns(row []string, want []string) []int {
-	idx := make([]int, len(want))
-	next := 0
+	index := make(map[string]int, len(want))
+	for i, w := range want {
+		index[strings.ToLower(w)] = i
+	}
+	found := make([]int, len(want))
+	for i := range found {
+		found[i] = -1
+	}
 	for col, s := range row {
-		if next < len(want) && strings.EqualFold(strings.TrimSpace(s), want[next]) {
-			idx[next] = col
-			next++
+		key := strings.ToLower(strings.TrimSpace(s))
+		if i, ok := index[key]; ok {
+			found[i] = col
 		}
 	}
-	if next != len(want) {
+	if slices.Contains(found, -1) {
 		return nil
 	}
-	return idx
+	return found
 }
 
 func isEmptyRow(row []string) bool {

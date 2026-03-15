@@ -5,54 +5,47 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"sync"
 	"unicode"
 )
 
-const ticker = "SPY"
+var keyRenames = map[string]string{
+	"price_earnings_ratio_fy1": "price_earnings_fw",
+}
 
 func main() {
-	var (
-		holdings []holding
-		meta     *metadata
-		holdErr  error
-		metaErr  error
-		wg       sync.WaitGroup
-	)
-
-	wg.Add(2)
-
-	go func() {
-		defer wg.Done()
-		xlsxPath, cleanup, err := downloadXLSX(ticker)
-		if err != nil {
-			holdErr = err
-			return
-		}
-		defer cleanup()
-		holdings, holdErr = parseHoldings(xlsxPath)
-	}()
-
-	go func() {
-		defer wg.Done()
-		body, err := fetchPage(ticker)
-		if err != nil {
-			metaErr = err
-			return
-		}
-		meta, metaErr = parsePage(body)
-	}()
-
-	wg.Wait()
-
-	if holdErr != nil {
-		fatal(holdErr)
-	}
-	if metaErr != nil {
-		fatal(metaErr)
+	pageURL := os.Getenv("PAGE_URL")
+	if pageURL == "" {
+		fmt.Fprintln(os.Stderr, "PAGE_URL is not set")
+		os.Exit(1)
 	}
 
-	out := make(map[string]interface{})
+	doc, err := fetchPage(pageURL)
+	if err != nil {
+		fatal(err)
+	}
+
+	xlsxURL, err := holdingsXLSXURL(doc, pageURL)
+	if err != nil {
+		fatal(err)
+	}
+
+	xlsxPath, cleanup, err := downloadXLSX(xlsxURL)
+	if err != nil {
+		fatal(err)
+	}
+	defer cleanup()
+
+	holdings, err := parseHoldings(xlsxPath)
+	if err != nil {
+		fatal(err)
+	}
+
+	meta, err := parsePage(doc)
+	if err != nil {
+		fatal(err)
+	}
+
+	out := make(map[string]any)
 	out["date"] = meta.Date.Format("2006-01-02")
 	out["holdings"] = holdings
 	for k, v := range meta.FundCharacteristics {
@@ -84,8 +77,8 @@ func normalizeKey(s string) string {
 		}
 	}
 	out := strings.Trim(b.String(), "_")
-	if out == "price_earnings_ratio_fy1" {
-		return "price_earnings_fw"
+	if renamed, ok := keyRenames[out]; ok {
+		return renamed
 	}
 	return out
 }

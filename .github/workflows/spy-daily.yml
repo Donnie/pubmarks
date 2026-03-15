@@ -1,4 +1,4 @@
-name: SPY update daily
+name: ETFs update daily
 
 on:
   schedule:
@@ -10,13 +10,18 @@ permissions:
   contents: write
 
 jobs:
-  update-spy:
+  fetch:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        page_url: [
+          "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy",
+          "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-semiconductor-etf-xsd"
+        ]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download latest spy release
         run: |
@@ -31,23 +36,49 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run spy and save dated snapshot
-        id: spy
-        env:
-          SOURCE_URL: ${{ secrets.SOURCE_URL }}
-          PAGE_URL: ${{ secrets.PAGE_URL }}
+      - name: Set ticker output
+        id: ticker
         run: |
-          mkdir -p datasets/etfs/spy
-          OUTPUT=$(./spy)
+          url="${{ matrix.page_url }}"
+          ticker="${url##*-}"
+          echo "upper=$(echo "$ticker" | tr '[:lower:]' '[:upper:]')" >> $GITHUB_OUTPUT
+          echo "lower=$ticker" >> $GITHUB_OUTPUT
+
+      - name: Run spy and save dated snapshot
+        env:
+          PAGE_URL: ${{ matrix.page_url }}
+        run: |
+          TICKER=${{ steps.ticker.outputs.upper }}
+          TICKER_LOWER=${{ steps.ticker.outputs.lower }}
+          mkdir -p datasets/etfs/${TICKER_LOWER}
+          OUTPUT=$(./spy | jq .)
           DATE=$(echo "$OUTPUT" | jq -r '.date')
-          echo "date=$DATE" >> $GITHUB_OUTPUT
-          echo "$OUTPUT" > datasets/etfs/spy/${DATE}.json
-          ln -sf ${DATE}.json datasets/etfs/spy/latest.json
+          echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/${DATE}.json
+          ln -sf ${DATE}.json datasets/etfs/${TICKER_LOWER}/latest.json
+
+      - name: Upload dataset
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.ticker.outputs.lower }}
+          path: datasets/etfs/${{ steps.ticker.outputs.lower }}/
+
+  commit:
+    runs-on: ubuntu-latest
+    needs: fetch
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download all datasets
+        uses: actions/download-artifact@v4
+        with:
+          path: datasets/etfs
 
       - name: Commit and push
         run: |
-          DATE=${{ steps.spy.outputs.date }}
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/etfs/spy/${DATE}.json datasets/etfs/spy/latest.json
-          git diff --staged --quiet || (git commit -m "chore: SPY update ${DATE}" && git push)
+          git add datasets/
+          git diff --staged --quiet || (git commit -m "chore: etfs update $(date +%Y-%m-%d)" && git push)
