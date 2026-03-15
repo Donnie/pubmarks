@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 	"time"
 )
 
 type metadata struct {
-	Date                 string            `json:"date"`
+	Date                 time.Time         `json:"date"`
 	FundCharacteristics  map[string]string `json:"fund_characteristics"`
 	IndexCharacteristics map[string]string `json:"index_characteristics"`
 	FundMarketPrice      map[string]string `json:"fund_market_price"`
@@ -35,26 +34,16 @@ func parsePage(body []byte) (*metadata, error) {
 	sections, rawDate := extractSections(string(body))
 
 	m := &metadata{}
-	var ok bool
-
-	if m.FundCharacteristics, ok = sections["Fund Characteristics"]; !ok {
-		return nil, fmt.Errorf("Fund Characteristics section not found")
-	}
-	if m.IndexCharacteristics, ok = sections["Index Characteristics"]; !ok {
-		return nil, fmt.Errorf("Index Characteristics section not found")
-	}
-	if m.FundMarketPrice, ok = sections["Fund Market Price"]; !ok {
-		return nil, fmt.Errorf("Fund Market Price section not found")
-	}
+	m.FundCharacteristics, _ = sections["Fund Characteristics"]
+	m.IndexCharacteristics, _ = sections["Index Characteristics"]
+	m.FundMarketPrice, _ = sections["Fund Market Price"]
 
 	if rawDate != "" {
-		// "as of Mar 12 2026" → "2026-03-12"
-		trimmed := strings.TrimPrefix(rawDate, "as of ")
-		if t, err := time.Parse("Jan 2 2006", trimmed); err == nil {
-			m.Date = t.Format("2006-01-02")
-		} else {
-			m.Date = rawDate
+		t, _ := time.Parse("Jan 2 2006", strings.TrimPrefix(rawDate, "as of "))
+		if t.IsZero() {
+			t = time.Now()
 		}
+		m.Date = t
 	}
 
 	return m, nil

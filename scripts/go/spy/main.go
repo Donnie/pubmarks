@@ -53,7 +53,7 @@ func main() {
 	}
 
 	out := make(map[string]interface{})
-	out["date"] = meta.Date
+	out["date"] = meta.Date.Format("2006-01-02")
 	out["holdings"] = holdings
 	for k, v := range meta.FundCharacteristics {
 		out[normalizeKey(k)] = v
