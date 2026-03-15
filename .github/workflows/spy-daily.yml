@@ -51,7 +51,7 @@ jobs:
           TICKER=${{ steps.ticker.outputs.upper }}
           TICKER_LOWER=${{ steps.ticker.outputs.lower }}
           mkdir -p datasets/etfs/${TICKER_LOWER}
-          OUTPUT=$(./spy)
+          OUTPUT=$(./spy | jq .)
           DATE=$(echo "$OUTPUT" | jq -r '.date')
           echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/${DATE}.json
           ln -sf ${DATE}.json datasets/etfs/${TICKER_LOWER}/latest.json

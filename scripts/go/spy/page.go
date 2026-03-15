@@ -20,12 +20,7 @@ var dateSections = map[string]bool{
 	"Fund Market Price":     true,
 }
 
-func parsePage(body []byte) (*metadata, error) {
-	doc, err := goquery.NewDocumentFromReader(strings.NewReader(string(body)))
-	if err != nil {
-		return nil, err
-	}
-
+func parsePage(doc *goquery.Document) (*metadata, error) {
 	sections := make(map[string]map[string]string)
 	rawDate := ""
 
@@ -57,12 +52,11 @@ func parsePage(body []byte) (*metadata, error) {
 	m.IndexCharacteristics, _ = sections["Index Characteristics"]
 	m.FundMarketPrice, _ = sections["Fund Market Price"]
 
+	m.Date = time.Now()
 	if rawDate != "" {
-		t, _ := time.Parse("Jan 2 2006", strings.TrimPrefix(rawDate, "as of "))
-		if t.IsZero() {
-			t = time.Now()
+		if t, err := time.Parse("Jan 2 2006", strings.TrimPrefix(rawDate, "as of ")); err == nil {
+			m.Date = t
 		}
-		m.Date = t
 	}
 
 	return m, nil

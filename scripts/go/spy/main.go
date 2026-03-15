@@ -8,6 +8,10 @@ import (
 	"unicode"
 )
 
+var keyRenames = map[string]string{
+	"price_earnings_ratio_fy1": "price_earnings_fw",
+}
+
 func main() {
 	pageURL := os.Getenv("PAGE_URL")
 	if pageURL == "" {
@@ -15,12 +19,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	body, err := fetchPage(pageURL)
+	doc, err := fetchPage(pageURL)
 	if err != nil {
 		fatal(err)
 	}
 
-	xlsxURL, err := holdingsXLSXURL(body, pageURL)
+	xlsxURL, err := holdingsXLSXURL(doc, pageURL)
 	if err != nil {
 		fatal(err)
 	}
@@ -36,7 +40,7 @@ func main() {
 		fatal(err)
 	}
 
-	meta, err := parsePage(body)
+	meta, err := parsePage(doc)
 	if err != nil {
 		fatal(err)
 	}
@@ -73,8 +77,8 @@ func normalizeKey(s string) string {
 		}
 	}
 	out := strings.Trim(b.String(), "_")
-	if out == "price_earnings_ratio_fy1" {
-		return "price_earnings_fw"
+	if renamed, ok := keyRenames[out]; ok {
+		return renamed
 	}
 	return out
 }
