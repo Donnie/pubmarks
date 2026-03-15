@@ -4,23 +4,58 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sync"
 )
 
 const ticker = "SPY"
 
 func main() {
-	xlsxPath, cleanup, err := downloadXLSX(ticker)
-	if err != nil {
-		fatal(err)
-	}
-	defer cleanup()
+	var (
+		holdings []holding
+		meta     *metadata
+		holdErr  error
+		metaErr  error
+		wg       sync.WaitGroup
+	)
 
-	holdings, err := parseHoldings(xlsxPath)
-	if err != nil {
-		fatal(err)
+	wg.Add(2)
+
+	go func() {
+		defer wg.Done()
+		xlsxPath, cleanup, err := downloadXLSX(ticker)
+		if err != nil {
+			holdErr = err
+			return
+		}
+		defer cleanup()
+		holdings, holdErr = parseHoldings(xlsxPath)
+	}()
+
+	go func() {
+		defer wg.Done()
+		body, err := fetchPage(ticker)
+		if err != nil {
+			metaErr = err
+			return
+		}
+		meta, metaErr = parsePage(body)
+	}()
+
+	wg.Wait()
+
+	if holdErr != nil {
+		fatal(holdErr)
+	}
+	if metaErr != nil {
+		fatal(metaErr)
 	}
 
-	if err := json.NewEncoder(os.Stdout).Encode(holdings); err != nil {
+	out := struct {
+		*metadata
+		Holdings []holding `json:"holdings"`
+	}{meta, holdings}
+
+	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {
 		fatal(err)
 	}
 }
