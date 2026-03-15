@@ -6,48 +6,44 @@ import (
 	"net/http"
 	"net/url"
 	"os"
-	"regexp"
 	"strings"
 	"time"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 var httpClient = &http.Client{Timeout: 30 * time.Second}
 
 // holdingsXLSXURL finds the holdings-daily .xlsx link in the page body and returns its absolute URL.
 func holdingsXLSXURL(body []byte, pageURLStr string) (string, error) {
-	for _, href := range findXLSXLinks(body) {
-		if strings.Contains(strings.ToLower(href), "holdings-daily") {
-			base, err := url.Parse(pageURLStr)
-			if err != nil {
-				return "", fmt.Errorf("parse page URL: %w", err)
-			}
-			ref, err := url.Parse(strings.TrimSpace(href))
-			if err != nil {
-				return "", fmt.Errorf("parse xlsx href: %w", err)
-			}
-			return base.ResolveReference(ref).String(), nil
-		}
+	doc, err := goquery.NewDocumentFromReader(strings.NewReader(string(body)))
+	if err != nil {
+		return "", fmt.Errorf("parsing page HTML: %w", err)
 	}
-	return "", fmt.Errorf("no holdings-daily .xlsx link found in page")
-}
 
-var reHrefXLSX = regexp.MustCompile(`(?i)href\s*=\s*["']([^"']*\.xlsx[^"']*)["']`)
-
-func findXLSXLinks(html []byte) []string {
-	seen := make(map[string]bool)
-	var out []string
-	for _, m := range reHrefXLSX.FindAllSubmatch(html, -1) {
-		if len(m) < 2 {
-			continue
-		}
-		s := strings.TrimSpace(string(m[1]))
-		s = strings.ReplaceAll(s, "&amp;", "&")
-		if s != "" && !seen[s] {
-			seen[s] = true
-			out = append(out, s)
-		}
+	base, err := url.Parse(pageURLStr)
+	if err != nil {
+		return "", fmt.Errorf("parse page URL: %w", err)
 	}
-	return out
+
+	var xlsxURL string
+	doc.Find("a[href]").EachWithBreak(func(_ int, a *goquery.Selection) bool {
+		href, _ := a.Attr("href")
+		href = strings.TrimSpace(href)
+		lower := strings.ToLower(href)
+		if strings.HasSuffix(lower, ".xlsx") && strings.Contains(lower, "holdings-daily") {
+			if ref, err := url.Parse(href); err == nil {
+				xlsxURL = base.ResolveReference(ref).String()
+			}
+			return false
+		}
+		return true
+	})
+
+	if xlsxURL == "" {
+		return "", fmt.Errorf("no holdings-daily .xlsx link found in page")
+	}
+	return xlsxURL, nil
 }
 
 func downloadXLSX(xlsxURL string) (path string, cleanup func(), err error) {
