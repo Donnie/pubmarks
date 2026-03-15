@@ -7,15 +7,11 @@ import (
 	"time"
 )
 
-type section struct {
-	Fields map[string]string `json:"fields"`
-}
-
 type metadata struct {
-	Date                 string  `json:"date"`
-	FundCharacteristics  section `json:"fund_characteristics"`
-	IndexCharacteristics section `json:"index_characteristics"`
-	FundMarketPrice      section `json:"fund_market_price"`
+	Date                 string            `json:"date"`
+	FundCharacteristics  map[string]string `json:"fund_characteristics"`
+	IndexCharacteristics map[string]string `json:"index_characteristics"`
+	FundMarketPrice      map[string]string `json:"fund_market_price"`
 }
 
 var (
@@ -70,8 +66,8 @@ var dateSections = map[string]bool{
 	"Fund Market Price":     true,
 }
 
-func extractSections(html string) (map[string]section, string) {
-	out := make(map[string]section)
+func extractSections(html string) (map[string]map[string]string, string) {
+	out := make(map[string]map[string]string)
 	rawDate := ""
 	headers := reSectionHeader.FindAllStringIndex(html, -1)
 	for i, loc := range headers {
@@ -97,7 +93,7 @@ func extractSections(html string) (map[string]section, string) {
 			continue
 		}
 
-		out[title] = section{Fields: parseTable(tableSub[1])}
+		out[title] = parseTable(tableSub[1])
 	}
 	return out, rawDate
 }

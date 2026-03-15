@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"strings"
 	"sync"
+	"unicode"
 )
 
 const ticker = "SPY"
@@ -50,14 +52,42 @@ func main() {
 		fatal(metaErr)
 	}
 
-	out := struct {
-		*metadata
-		Holdings []holding `json:"holdings"`
-	}{meta, holdings}
+	out := make(map[string]interface{})
+	out["date"] = meta.Date
+	out["holdings"] = holdings
+	for k, v := range meta.FundCharacteristics {
+		out[normalizeKey(k)] = v
+	}
+	for k, v := range meta.IndexCharacteristics {
+		out[normalizeKey(k)] = v
+	}
+	for k, v := range meta.FundMarketPrice {
+		out[normalizeKey(k)] = v
+	}
 
 	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {
 		fatal(err)
 	}
+}
+
+// normalizeKey lowercases and replaces any non-alphanumeric rune (including space) with _.
+func normalizeKey(s string) string {
+	var b strings.Builder
+	lastUnderscore := false
+	for _, r := range strings.ToLower(s) {
+		if unicode.IsLetter(r) || unicode.IsNumber(r) {
+			b.WriteRune(r)
+			lastUnderscore = false
+		} else if !lastUnderscore {
+			b.WriteRune('_')
+			lastUnderscore = true
+		}
+	}
+	out := strings.Trim(b.String(), "_")
+	if out == "price_earnings_ratio_fy1" {
+		return "price_earnings_fw"
+	}
+	return out
 }
 
 func fatal(err error) {
