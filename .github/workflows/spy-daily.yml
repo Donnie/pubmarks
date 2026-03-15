@@ -31,15 +31,19 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run spy and update spy.json
+      - name: Run spy and save dated snapshot
         env:
           SOURCE_URL: ${{ secrets.SOURCE_URL }}
         run: |
-          ./spy > datasets/etfs/spy.json
+          DATE=$(date -u +%Y-%m-%d)
+          mkdir -p datasets/etfs/spy
+          ./spy > datasets/etfs/spy/${DATE}.json
+          ln -sf ${DATE}.json datasets/etfs/spy/latest.json
 
       - name: Commit and push
         run: |
+          DATE=$(date -u +%Y-%m-%d)
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/etfs/spy.json
-          git diff --staged --quiet || (git commit -m "chore: update SPY holdings" && git push)
+          git add datasets/etfs/spy/${DATE}.json datasets/etfs/spy/latest.json
+          git diff --staged --quiet || (git commit -m "chore: SPY holdings ${DATE}" && git push)
