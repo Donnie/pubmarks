@@ -1,8 +1,8 @@
-name: Spy build and release
+name: pubmarks/spy build and release
 
 on:
   push:
-    # branches: [main]
+    branches: [main]
     paths:
       - 'scripts/go/spy/**'
 
@@ -40,9 +40,9 @@ jobs:
       - name: Build
         working-directory: scripts/go/spy
         run: |
-          CGO_ENABLED=0 go build -o spy-linux-amd64 .
+          CGO_ENABLED=0 go build -o spy .
           mkdir -p ../../../out
-          mv spy-linux-amd64 ../../../out/spy-linux-amd64
+          mv spy ../../../out/spy
 
       - name: Create release
         id: create-release
@@ -50,7 +50,7 @@ jobs:
         with:
           draft: false
           fail_on_unmatched_files: true
-          files: out/spy-linux-amd64
+          files: out/spy
           generate_release_notes: true
           prerelease: false
           tag_name: ${{ steps.semvers.outputs.patch }}

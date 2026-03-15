@@ -1,4 +1,4 @@
-module donnie.in/pubmarks/spy
+module pubmarks/spy
 
 go 1.25
 
