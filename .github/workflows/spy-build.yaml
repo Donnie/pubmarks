@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/go/spy/**'
+      - "scripts/go/spy/**"
 
 permissions:
   contents: write
@@ -26,8 +26,11 @@ jobs:
       - name: Get previous tag
         id: previoustag
         run: |
-          tag=$(gh api "repos/${{ github.repository }}/tags" --jq '.[0].name // "0.0.0"' 2>/dev/null || echo "0.0.0")
-          echo "tag=$tag" >> $GITHUB_OUTPUT
+          tag=$(gh api "repos/${{ github.repository }}/tags" --jq \
+            '[.[] | select(.name | startswith("spy-"))] | .[0].name // "spy-0.0.0"' \
+            2>/dev/null || echo "spy-0.0.0")
+          version="${tag#spy-}"
+          echo "tag=$version" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -53,6 +56,6 @@ jobs:
           files: out/spy
           generate_release_notes: true
           prerelease: false
-          tag_name: ${{ steps.semvers.outputs.patch }}
+          tag_name: "spy-${{ steps.semvers.outputs.patch }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
