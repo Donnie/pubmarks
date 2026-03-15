@@ -1,0 +1,45 @@
+name: SPY holdings daily
+
+on:
+  schedule:
+    # 00:00 UTC every day
+    - cron: "0 0 * * *"
+  workflow_dispatch: # allow manual run
+
+permissions:
+  contents: write
+
+jobs:
+  update-spy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download latest spy release
+        run: |
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("spy-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'spy' \
+            --output ./spy
+          chmod +x ./spy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run spy and update spy.json
+        env:
+          SOURCE_URL: ${{ secrets.SOURCE_URL }}
+        run: |
+          ./spy > datasets/etfs/spy.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datasets/etfs/spy.json
+          git diff --staged --quiet || (git commit -m "chore: update SPY holdings" && git push)
