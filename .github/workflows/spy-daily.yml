@@ -1,4 +1,4 @@
-name: SPY holdings daily
+name: SPY update daily
 
 on:
   schedule:
@@ -32,18 +32,22 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run spy and save dated snapshot
+        id: spy
         env:
           SOURCE_URL: ${{ secrets.SOURCE_URL }}
+          PAGE_URL: ${{ secrets.PAGE_URL }}
         run: |
-          DATE=$(date -u +%Y-%m-%d)
           mkdir -p datasets/etfs/spy
-          ./spy > datasets/etfs/spy/${DATE}.json
+          OUTPUT=$(./spy)
+          DATE=$(echo "$OUTPUT" | jq -r '.date')
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" > datasets/etfs/spy/${DATE}.json
           ln -sf ${DATE}.json datasets/etfs/spy/latest.json
 
       - name: Commit and push
         run: |
-          DATE=$(date -u +%Y-%m-%d)
+          DATE=${{ steps.spy.outputs.date }}
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datasets/etfs/spy/${DATE}.json datasets/etfs/spy/latest.json
-          git diff --staged --quiet || (git commit -m "chore: SPY holdings ${DATE}" && git push)
+          git diff --staged --quiet || (git commit -m "chore: SPY update ${DATE}" && git push)
