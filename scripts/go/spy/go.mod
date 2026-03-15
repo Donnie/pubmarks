@@ -1,4 +1,4 @@
-module donnie.in/sniper360/apps/sasga
+module donnie.in/pubmarks/spy
 
 go 1.25
 
