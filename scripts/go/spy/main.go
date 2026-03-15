@@ -5,55 +5,40 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"sync"
 	"unicode"
 )
 
 func main() {
-	ticker := os.Getenv("TICKER")
-	if ticker == "" {
-		fmt.Fprintln(os.Stderr, "TICKER environment variable is required")
+	pageURL := os.Getenv("PAGE_URL")
+	if pageURL == "" {
+		fmt.Fprintln(os.Stderr, "PAGE_URL is not set")
 		os.Exit(1)
 	}
 
-	var (
-		holdings []holding
-		meta     *metadata
-		holdErr  error
-		metaErr  error
-		wg       sync.WaitGroup
-	)
-
-	wg.Add(2)
-
-	go func() {
-		defer wg.Done()
-		xlsxPath, cleanup, err := downloadXLSX(ticker)
-		if err != nil {
-			holdErr = err
-			return
-		}
-		defer cleanup()
-		holdings, holdErr = parseHoldings(xlsxPath)
-	}()
-
-	go func() {
-		defer wg.Done()
-		body, err := fetchPage(ticker)
-		if err != nil {
-			metaErr = err
-			return
-		}
-		meta, metaErr = parsePage(body)
-	}()
-
-	wg.Wait()
-
-	if holdErr != nil {
-		fatal(holdErr)
+	body, err := fetchPage(pageURL)
+	if err != nil {
+		fatal(err)
 	}
-	if metaErr != nil {
-		fatal(metaErr)
+
+	xlsxURL, err := holdingsXLSXURL(body, pageURL)
+	if err != nil {
+		fatal(err)
+	}
+
+	xlsxPath, cleanup, err := downloadXLSX(xlsxURL)
+	if err != nil {
+		fatal(err)
+	}
+	defer cleanup()
+
+	holdings, err := parseHoldings(xlsxPath)
+	if err != nil {
+		fatal(err)
+	}
+
+	meta, err := parsePage(body)
+	if err != nil {
+		fatal(err)
 	}
 
 	out := make(map[string]any)

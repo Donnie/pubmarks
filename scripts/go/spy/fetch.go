@@ -4,20 +4,62 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"os"
+	"regexp"
 	"strings"
+	"time"
 )
 
-func downloadXLSX(ticker string) (path string, cleanup func(), err error) {
-	urlFmt := os.Getenv("SOURCE_URL")
-	if urlFmt == "" {
-		return "", nil, fmt.Errorf("SOURCE_URL is not set")
-	}
-	url := fmt.Sprintf(urlFmt, strings.ToLower(ticker))
+var httpClient = &http.Client{Timeout: 30 * time.Second}
 
-	resp, err := http.Get(url)
+// holdingsXLSXURL finds the holdings-daily .xlsx link in the page body and returns its absolute URL.
+func holdingsXLSXURL(body []byte, pageURLStr string) (string, error) {
+	for _, href := range findXLSXLinks(body) {
+		if strings.Contains(strings.ToLower(href), "holdings-daily") {
+			base, err := url.Parse(pageURLStr)
+			if err != nil {
+				return "", fmt.Errorf("parse page URL: %w", err)
+			}
+			ref, err := url.Parse(strings.TrimSpace(href))
+			if err != nil {
+				return "", fmt.Errorf("parse xlsx href: %w", err)
+			}
+			return base.ResolveReference(ref).String(), nil
+		}
+	}
+	return "", fmt.Errorf("no holdings-daily .xlsx link found in page")
+}
+
+var reHrefXLSX = regexp.MustCompile(`(?i)href\s*=\s*["']([^"']*\.xlsx[^"']*)["']`)
+
+func findXLSXLinks(html []byte) []string {
+	seen := make(map[string]bool)
+	var out []string
+	for _, m := range reHrefXLSX.FindAllSubmatch(html, -1) {
+		if len(m) < 2 {
+			continue
+		}
+		s := strings.TrimSpace(string(m[1]))
+		s = strings.ReplaceAll(s, "&amp;", "&")
+		if s != "" && !seen[s] {
+			seen[s] = true
+			out = append(out, s)
+		}
+	}
+	return out
+}
+
+func downloadXLSX(xlsxURL string) (path string, cleanup func(), err error) {
+	req, err := http.NewRequest("GET", xlsxURL, nil)
 	if err != nil {
-		return "", nil, fmt.Errorf("http.Get: %w", err)
+		return "", nil, fmt.Errorf("creating request: %w", err)
+	}
+	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; pubmarks/1.0)")
+
+	resp, err := httpClient.Do(req)
+	if err != nil {
+		return "", nil, fmt.Errorf("http get: %w", err)
 	}
 	defer resp.Body.Close()
 
@@ -50,23 +92,18 @@ func downloadXLSX(ticker string) (path string, cleanup func(), err error) {
 	return tmp.Name(), remove, nil
 }
 
-func fetchPage(ticker string) ([]byte, error) {
-	pageURL := os.Getenv("PAGE_URL")
-	if pageURL == "" {
-		return nil, fmt.Errorf("PAGE_URL is not set")
-	}
-	url := fmt.Sprintf(pageURL, strings.ToLower(ticker))
-
-	req, err := http.NewRequest("GET", url, nil)
+// fetchPage returns the page body and the URL it was fetched from (for resolving relative links).
+func fetchPage(pageURL string) (body []byte, err error) {
+	req, err := http.NewRequest("GET", pageURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("creating request: %w", err)
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0 (compatible; pubmarks/1.0)")
 	req.Header.Set("Accept", "text/html,application/xhtml+xml")
 
-	resp, err := http.DefaultClient.Do(req)
+	resp, err := httpClient.Do(req)
 	if err != nil {
-		return nil, fmt.Errorf("http.Get: %w", err)
+		return nil, fmt.Errorf("http get: %w", err)
 	}
 	defer resp.Body.Close()
 
@@ -74,9 +111,9 @@ func fetchPage(ticker string) ([]byte, error) {
 		return nil, fmt.Errorf("unexpected status: %s", resp.Status)
 	}
 
-	data, err := io.ReadAll(resp.Body)
+	body, err = io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, fmt.Errorf("reading body: %w", err)
 	}
-	return data, nil
+	return body, nil
 }
