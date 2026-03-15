@@ -1,0 +1,295 @@
+{
+  "30_day_median_bid_ask_spread": "0.15%",
+  "bid_ask": "$325.46",
+  "closing_price": "$325.61",
+  "date": "2026-03-12",
+  "day_high": "$332.00",
+  "day_low": "$324.85",
+  "est_3_5_year_eps_growth": "28.30%",
+  "exchange_volume_shares": "7,784",
+  "holdings": [
+    {
+      "name": "MICRON TECHNOLOGY INC",
+      "ticker": "MU",
+      "weight": 4.479335,
+      "shares_held": 177996
+    },
+    {
+      "name": "SILICON LABORATORIES INC",
+      "ticker": "SLAB",
+      "weight": 4.036783,
+      "shares_held": 321781
+    },
+    {
+      "name": "POWER INTEGRATIONS INC",
+      "ticker": "POWI",
+      "weight": 3.596201,
+      "shares_held": 1249744
+    },
+    {
+      "name": "MACOM TECHNOLOGY SOLUTIONS H",
+      "ticker": "MTSI",
+      "weight": 3.378393,
+      "shares_held": 252002
+    },
+    {
+      "name": "INTEL CORP",
+      "ticker": "INTC",
+      "weight": 3.232768,
+      "shares_held": 1150755
+    },
+    {
+      "name": "LATTICE SEMICONDUCTOR CORP",
+      "ticker": "LSCC",
+      "weight": 3.21042,
+      "shares_held": 598515
+    },
+    {
+      "name": "ANALOG DEVICES INC",
+      "ticker": "ADI",
+      "weight": 3.179651,
+      "shares_held": 166681
+    },
+    {
+      "name": "ALLEGRO MICROSYSTEMS INC",
+      "ticker": "ALGM",
+      "weight": 3.101655,
+      "shares_held": 1603330
+    },
+    {
+      "name": "MONOLITHIC POWER SYSTEMS INC",
+      "ticker": "MPWR",
+      "weight": 3.077226,
+      "shares_held": 47942
+    },
+    {
+      "name": "SEMTECH CORP",
+      "ticker": "SMTC",
+      "weight": 3.059187,
+      "shares_held": 590765
+    },
+    {
+      "name": "CIRRUS LOGIC INC",
+      "ticker": "CRUS",
+      "weight": 3.05695,
+      "shares_held": 371368
+    },
+    {
+      "name": "ON SEMICONDUCTOR",
+      "ticker": "ON",
+      "weight": 3.05036,
+      "shares_held": 851682
+    },
+    {
+      "name": "TEXAS INSTRUMENTS INC",
+      "ticker": "TXN",
+      "weight": 3.048018,
+      "shares_held": 258331
+    },
+    {
+      "name": "NAVITAS SEMICONDUCTOR CORP",
+      "ticker": "NVTS",
+      "weight": 3.008881,
+      "shares_held": 4856253
+    },
+    {
+      "name": "NVIDIA CORP",
+      "ticker": "NVDA",
+      "weight": 2.903598,
+      "shares_held": 255376
+    },
+    {
+      "name": "MARVELL TECHNOLOGY INC",
+      "ticker": "MRVL",
+      "weight": 2.762183,
+      "shares_held": 507491
+    },
+    {
+      "name": "MICROCHIP TECHNOLOGY INC",
+      "ticker": "MCHP",
+      "weight": 2.691729,
+      "shares_held": 691167
+    },
+    {
+      "name": "ADVANCED MICRO DEVICES",
+      "ticker": "AMD",
+      "weight": 2.601828,
+      "shares_held": 211939
+    },
+    {
+      "name": "QORVO INC",
+      "ticker": "QRVO",
+      "weight": 2.560166,
+      "shares_held": 523521
+    },
+    {
+      "name": "SITIME CORP",
+      "ticker": "SITM",
+      "weight": 2.499839,
+      "shares_held": 124709
+    },
+    {
+      "name": "RAMBUS INC",
+      "ticker": "RMBS",
+      "weight": 2.448355,
+      "shares_held": 439260
+    },
+    {
+      "name": "NXP SEMICONDUCTORS NV",
+      "ticker": "NXPI",
+      "weight": 2.414157,
+      "shares_held": 203357
+    },
+    {
+      "name": "SYNAPTICS INC",
+      "ticker": "SYNA",
+      "weight": 2.395694,
+      "shares_held": 518942
+    },
+    {
+      "name": "BROADCOM INC",
+      "ticker": "AVGO",
+      "weight": 2.3706,
+      "shares_held": 113654
+    },
+    {
+      "name": "SKYWORKS SOLUTIONS INC",
+      "ticker": "SWKS",
+      "weight": 2.337296,
+      "shares_held": 682027
+    },
+    {
+      "name": "UNIVERSAL DISPLAY CORP",
+      "ticker": "OLED",
+      "weight": 2.259194,
+      "shares_held": 384224
+    },
+    {
+      "name": "FIRST SOLAR INC",
+      "ticker": "FSLR",
+      "weight": 2.194563,
+      "shares_held": 178927
+    },
+    {
+      "name": "DIODES INC",
+      "ticker": "DIOD",
+      "weight": 2.18858,
+      "shares_held": 571816
+    },
+    {
+      "name": "ASTERA LABS INC",
+      "ticker": "ALAB",
+      "weight": 2.125632,
+      "shares_held": 285559
+    },
+    {
+      "name": "QUALCOMM INC",
+      "ticker": "QCOM",
+      "weight": 2.096843,
+      "shares_held": 257528
+    },
+    {
+      "name": "CREDO TECHNOLOGY GROUP HOLDI",
+      "ticker": "CRDO",
+      "weight": 2.057486,
+      "shares_held": 297041
+    },
+    {
+      "name": "AMBARELLA INC",
+      "ticker": "AMBA",
+      "weight": 1.932817,
+      "shares_held": 593910
+    },
+    {
+      "name": "RIGETTI COMPUTING INC",
+      "ticker": "RGTI",
+      "weight": 1.792534,
+      "shares_held": 1796712
+    },
+    {
+      "name": "IMPINJ INC",
+      "ticker": "PI",
+      "weight": 1.716239,
+      "shares_held": 302652
+    },
+    {
+      "name": "MAXLINEAR INC",
+      "ticker": "MXL",
+      "weight": 1.555498,
+      "shares_held": 1518492
+    },
+    {
+      "name": "PENGUIN SOLUTIONS INC",
+      "ticker": "PENG",
+      "weight": 1.228599,
+      "shares_held": 1113652
+    },
+    {
+      "name": "SKYWATER TECHNOLOGY INC",
+      "ticker": "SKYT",
+      "weight": 0.973796,
+      "shares_held": 573296
+    },
+    {
+      "name": "ALPHA + OMEGA SEMICONDUCTOR",
+      "ticker": "AOSL",
+      "weight": 0.722334,
+      "shares_held": 548819
+    },
+    {
+      "name": "CEVA INC",
+      "ticker": "CEVA",
+      "weight": 0.651669,
+      "shares_held": 570474
+    },
+    {
+      "name": "INDIE SEMICONDUCTOR INC A",
+      "ticker": "INDI",
+      "weight": 0.635428,
+      "shares_held": 4194722
+    },
+    {
+      "name": "KOPIN CORP",
+      "ticker": "KOPN",
+      "weight": 0.570447,
+      "shares_held": 4293666
+    },
+    {
+      "name": "DATAVAULT AI INC",
+      "ticker": "DVLT",
+      "weight": 0.381212,
+      "shares_held": 8909405
+    },
+    {
+      "name": "NVE CORP",
+      "ticker": "NVEC",
+      "weight": 0.242453,
+      "shares_held": 57120
+    },
+    {
+      "name": "SSI US GOV MONEY MARKET CLASS",
+      "ticker": "-",
+      "weight": 0.141087,
+      "shares_held": 2272559.55
+    },
+    {
+      "name": "CONTRA DATAVAULT AI IN",
+      "ticker": "-",
+      "weight": 0,
+      "shares_held": 147739
+    },
+    {
+      "name": "US DOLLAR",
+      "ticker": "-",
+      "weight": -0.000013,
+      "shares_held": -213.01
+    }
+  ],
+  "number_of_holdings": "43",
+  "premium_discount": "0.02%",
+  "price_book_ratio": "4.17",
+  "price_cash_flow": "22.89",
+  "price_earnings": "38.41",
+  "price_earnings_fw": "24.12",
+  "weighted_average_market_cap": "$227,493.66 M"
+}
