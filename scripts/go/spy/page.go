@@ -4,14 +4,15 @@ import (
 	"fmt"
 	"regexp"
 	"strings"
+	"time"
 )
 
 type section struct {
-	AsOf   string            `json:"as_of"`
 	Fields map[string]string `json:"fields"`
 }
 
 type metadata struct {
+	Date                 string  `json:"date"`
 	FundCharacteristics  section `json:"fund_characteristics"`
 	IndexCharacteristics section `json:"index_characteristics"`
 	FundMarketPrice      section `json:"fund_market_price"`
@@ -35,7 +36,7 @@ var (
 )
 
 func parsePage(body []byte) (*metadata, error) {
-	sections := extractSections(string(body))
+	sections, rawDate := extractSections(string(body))
 
 	m := &metadata{}
 	var ok bool
@@ -50,21 +51,40 @@ func parsePage(body []byte) (*metadata, error) {
 		return nil, fmt.Errorf("Fund Market Price section not found")
 	}
 
+	if rawDate != "" {
+		// "as of Mar 12 2026" → "2026-03-12"
+		trimmed := strings.TrimPrefix(rawDate, "as of ")
+		if t, err := time.Parse("Jan 2 2006", trimmed); err == nil {
+			m.Date = t.Format("2006-01-02")
+		} else {
+			m.Date = rawDate
+		}
+	}
+
 	return m, nil
 }
 
-func extractSections(html string) map[string]section {
+var dateSections = map[string]bool{
+	"Fund Characteristics":  true,
+	"Index Characteristics": true,
+	"Fund Market Price":     true,
+}
+
+func extractSections(html string) (map[string]section, string) {
 	out := make(map[string]section)
+	rawDate := ""
 	headers := reSectionHeader.FindAllStringIndex(html, -1)
 	for i, loc := range headers {
 		headerHTML := html[loc[0]:loc[1]]
 
-		date := ""
-		if ds := reDateSpan.FindStringSubmatch(headerHTML); ds != nil {
-			date = strings.TrimSpace(ds[1])
-		}
 		titleHTML := reDateSpan.ReplaceAllString(headerHTML, "")
 		title := stripTags(titleHTML)
+
+		if rawDate == "" && dateSections[title] {
+			if ds := reDateSpan.FindStringSubmatch(headerHTML); ds != nil {
+				rawDate = strings.TrimSpace(ds[1])
+			}
+		}
 
 		searchFrom := loc[1]
 		searchTo := len(html)
@@ -77,9 +97,9 @@ func extractSections(html string) map[string]section {
 			continue
 		}
 
-		out[title] = section{AsOf: date, Fields: parseTable(tableSub[1])}
+		out[title] = section{Fields: parseTable(tableSub[1])}
 	}
-	return out
+	return out, rawDate
 }
 
 func parseTable(tableBody string) map[string]string {
