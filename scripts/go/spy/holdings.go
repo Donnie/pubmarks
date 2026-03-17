@@ -51,7 +51,7 @@ func parseHoldings(xlsxPath string) ([]holding, error) {
 		})
 	}
 	sort.Slice(holdings, func(i, j int) bool {
-		return holdings[i].Weight > holdings[j].Weight
+		return holdings[i].Name < holdings[j].Name
 	})
 	return holdings, nil
 }
