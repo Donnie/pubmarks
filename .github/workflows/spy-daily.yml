@@ -54,7 +54,7 @@ jobs:
           OUTPUT=$(./spy | jq .)
           DATE=$(echo "$OUTPUT" | jq -r '.date')
           echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/${DATE}.json
-          ln -sf ${DATE}.json datasets/etfs/${TICKER_LOWER}/latest.json
+          echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/latest.json
 
       - name: Upload dataset
         uses: actions/upload-artifact@v4
