@@ -6,8 +6,9 @@ A repository of daily updated datasets.
 
 | Data | Source |
 |------|--------|
-| [S&P 500® with weights](./datasets/etfs/spy/latest.json) | [State Street® SPDR® S&P 500® ETF Trust](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy) |
-| [S&P® Semiconductor with weights](./datasets/etfs/xsd/latest.json) | [State Street® SPDR® S&P® Semiconductor ETF](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-semiconductor-etf-xsd) |
+| [S&P 500 Index](./datasets/etfs/spy/latest.json) | [State Street® SPDR® S&P 500® ETF Trust](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy) |
+| [S&P Semiconductor Select Industry Index](./datasets/etfs/xsd/latest.json) | [State Street® SPDR® S&P® Semiconductor ETF](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-semiconductor-etf-xsd) |
+| [MSCI Global Semiconductors](./datasets/etfs/semi/latest.json) | [iShares MSCI Global Semiconductors UCITS ETF](https://www.blackrock.com/lu/intermediaries/products/319084/ishares-msci-global-semiconductors-ucits-etf) |
 
 ## Expected schema
 
