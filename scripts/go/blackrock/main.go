@@ -55,6 +55,11 @@ func main() {
 		out[k] = v
 	}
 
+	if meta.Has52Week {
+		out["52w_low"] = meta.Week52Low
+		out["52w_high"] = meta.Week52High
+	}
+
 	applyNAVPriceExtras(out)
 
 	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {

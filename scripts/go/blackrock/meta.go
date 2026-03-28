@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
+	"regexp"
+	"strconv"
 	"strings"
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
+
+var weekRangePair = regexp.MustCompile(`([\d.,]+)\s*-\s*([\d.,]+)`)
 
 // Metadata keys use the same normalizeKey + keyRenames as statestreet (see keys.go).
 //
@@ -31,8 +35,11 @@ var colClassStatestreetKey = map[string]string{
 }
 
 type parsedMeta struct {
-	Date time.Time
-	Meta map[string]string
+	Date       time.Time
+	Meta       map[string]string
+	Week52Low  float64
+	Week52High float64
+	Has52Week  bool
 }
 
 func parseProductPage(doc *goquery.Document) (*parsedMeta, error) {
@@ -77,7 +84,9 @@ func parseFundHeader(doc *goquery.Document, pm *parsedMeta) {
 		pm.Meta[normalizeKey("NAV")] = nav
 	}
 	if r := strings.TrimSpace(navLi.Find(".fiftyTwoWeekData").First().Text()); r != "" {
-		pm.Meta[normalizeKey("52 Week Range")] = strings.Join(strings.Fields(r), " ")
+		if lo, hi, ok := parse52WeekRange(r); ok {
+			pm.Week52Low, pm.Week52High, pm.Has52Week = lo, hi, true
+		}
 	}
 	if ch := strings.TrimSpace(doc.Find("li.navAmountChange .header-nav-data").First().Text()); ch != "" {
 		pm.Meta[normalizeKey("1 Day NAV Change")] = strings.Join(strings.Fields(ch), " ")
@@ -122,6 +131,27 @@ func holdingsAsOfFromCSV(csv []byte) (time.Time, error) {
 	rest = strings.Trim(rest, `"`)
 	rest = strings.TrimSpace(rest)
 	return time.Parse("02-Jan-06", rest)
+}
+
+// parse52WeekRange reads strings like "52 WK: 5.48 - 14.01" and returns low, high.
+func parse52WeekRange(s string) (low, high float64, ok bool) {
+	s = strings.TrimSpace(s)
+	if i := strings.Index(s, ":"); i >= 0 {
+		s = strings.TrimSpace(s[i+1:])
+	}
+	m := weekRangePair.FindStringSubmatch(s)
+	if len(m) != 3 {
+		return 0, 0, false
+	}
+	a, err1 := strconv.ParseFloat(strings.ReplaceAll(strings.TrimSpace(m[1]), ",", ""), 64)
+	b, err2 := strconv.ParseFloat(strings.ReplaceAll(strings.TrimSpace(m[2]), ",", ""), 64)
+	if err1 != nil || err2 != nil {
+		return 0, 0, false
+	}
+	if a <= b {
+		return a, b, true
+	}
+	return b, a, true
 }
 
 func extractColClass(s *goquery.Selection) string {
