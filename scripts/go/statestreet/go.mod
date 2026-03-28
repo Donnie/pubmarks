@@ -1,4 +1,4 @@
-module pubmarks/spy
+module pubmarks/statestreet
 
 go 1.25.0
 

@@ -1,10 +1,10 @@
-name: pubmarks/spy build and release
+name: pubmarks/statestreet build and release
 
 on:
   push:
     branches: [main]
     paths:
-      - "scripts/go/spy/**"
+      - "scripts/go/statestreet/**"
   workflow_dispatch:
 
 permissions:
@@ -28,9 +28,9 @@ jobs:
         id: previoustag
         run: |
           tag=$(gh api "repos/${{ github.repository }}/tags" --jq \
-            '[.[] | select(.name | startswith("spy-"))] | .[0].name // "spy-0.0.0"' \
-            2>/dev/null || echo "spy-0.0.0")
-          version="${tag#spy-}"
+            '[.[] | select(.name | startswith("statestreet-"))] | .[0].name // "statestreet-0.0.0"' \
+            2>/dev/null || echo "statestreet-0.0.0")
+          version="${tag#statestreet-}"
           echo "tag=$version" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,11 +42,11 @@ jobs:
           version: ${{ steps.previoustag.outputs.tag }}
 
       - name: Build
-        working-directory: scripts/go/spy
+        working-directory: scripts/go/statestreet
         run: |
-          CGO_ENABLED=0 go build -o spy .
+          CGO_ENABLED=0 go build -o statestreet .
           mkdir -p ../../../out
-          mv spy ../../../out/spy
+          mv statestreet ../../../out/statestreet
 
       - name: Create release
         id: create-release
@@ -54,9 +54,9 @@ jobs:
         with:
           draft: false
           fail_on_unmatched_files: true
-          files: out/spy
+          files: out/statestreet
           generate_release_notes: true
           prerelease: false
-          tag_name: "spy-${{ steps.semvers.outputs.patch }}"
+          tag_name: "statestreet-${{ steps.semvers.outputs.patch }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -23,16 +23,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download latest spy release
+      - name: Download latest statestreet release
         run: |
           gh release download \
             $(gh release list --repo ${{ github.repository }} \
               --json tagName \
-              --jq '[.[] | select(.tagName | startswith("spy-"))] | .[0].tagName') \
+              --jq '[.[] | select(.tagName | startswith("statestreet-"))] | .[0].tagName') \
             --repo ${{ github.repository }} \
-            --pattern 'spy' \
-            --output ./spy
-          chmod +x ./spy
+            --pattern 'statestreet' \
+            --output ./statestreet
+          chmod +x ./statestreet
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -44,14 +44,14 @@ jobs:
           echo "upper=$(echo "$ticker" | tr '[:lower:]' '[:upper:]')" >> $GITHUB_OUTPUT
           echo "lower=$ticker" >> $GITHUB_OUTPUT
 
-      - name: Run spy and save dated snapshot
+      - name: Run statestreet and save dated snapshot
         env:
           PAGE_URL: ${{ matrix.page_url }}
         run: |
           TICKER=${{ steps.ticker.outputs.upper }}
           TICKER_LOWER=${{ steps.ticker.outputs.lower }}
           mkdir -p datasets/etfs/${TICKER_LOWER}
-          OUTPUT=$(./spy | jq .)
+          OUTPUT=$(./statestreet | jq .)
           DATE=$(echo "$OUTPUT" | jq -r '.date')
           echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/${DATE}.json
           echo "$OUTPUT" > datasets/etfs/${TICKER_LOWER}/latest.json
