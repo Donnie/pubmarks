@@ -20,12 +20,12 @@ Both tools print a single JSON object to stdout with:
 | Key | Type | Notes |
 |-----|------|--------|
 | `date` | string | `YYYY-MM-DD` (holdings or fund-characteristics as-of, depending on the scraper). |
-| `holdings` | array | Sorted by `name`. Each element is an object with the same fields in both implementations. |
-| `holdings[].name` | string | |
-| `holdings[].ticker` | string | |
-| `holdings[].weight` | number | Fund weight as a percentage of the portfolio (same convention as the provider file, not necessarily 0–1). |
-| `holdings[].shares_held` | number | Share count (or provider equivalent). |
+| `holdings` | array | Sorted by `name`. See per-tool rows below for line-item fields. |
+| `holdings[].name` | string | Both tools. |
+| `holdings[].ticker` | string | Both tools. |
+| `holdings[].weight` | number | Both tools. Fund weight as a percentage of the portfolio (provider convention, not necessarily 0–1). |
+| `holdings[].shares_held` | number | Both tools. Share count (or provider equivalent). |
 | `base_currency` | string | Present when a primary price string can be parsed (ISO 4217 code, e.g. `USD`). |
-| `price` | number | Parsed numeric level from that price string (`float64` in JSON). |
+| `price` (top-level) | number | Fund-level quote: parsed from `closing_price` (`statestreet`) or `nav` (`blackrock`). |
 
 Additional top-level keys are merged in as strings unless noted. Key order in JSON is not guaranteed.

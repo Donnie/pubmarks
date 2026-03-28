@@ -11,6 +11,9 @@ type holding struct {
 	Ticker     string  `json:"ticker"`
 	Weight     float64 `json:"weight"`
 	SharesHeld float64 `json:"shares_held"`
+	Exchange   string  `json:"exchange"`
+	Currency   string  `json:"currency"`
+	Price      float64 `json:"price"`
 }
 
 type holdingsPayload struct {
@@ -37,6 +40,9 @@ func parseHoldingsJSON(raw []byte) ([]holding, error) {
 	return out, nil
 }
 
+// aaData column order matches BlackRock allHoldingsColumnsConfig: ticker, name, sector,
+// asset class, market value, weight %, notional, shares, ISIN, unit price, country,
+// exchange, market currency.
 func rowToHolding(row []json.RawMessage) (holding, error) {
 	if len(row) < 8 {
 		return holding{}, fmt.Errorf("holdings row too short: %d cols", len(row))
@@ -53,12 +59,25 @@ func rowToHolding(row []json.RawMessage) (holding, error) {
 		return holding{}, fmt.Errorf("shares: %w", err)
 	}
 
-	return holding{
+	h := holding{
 		Name:       name,
 		Ticker:     ticker,
 		Weight:     weight,
 		SharesHeld: shares,
-	}, nil
+	}
+	if len(row) > 9 {
+		if p, err := rawNumber(row[9]); err == nil {
+			h.Price = p
+		}
+	}
+	if len(row) > 11 {
+		h.Exchange = jsonString(row[11])
+	}
+	if len(row) > 12 {
+		h.Currency = jsonString(row[12])
+	}
+
+	return h, nil
 }
 
 func jsonString(raw json.RawMessage) string {
