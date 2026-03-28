@@ -51,10 +51,7 @@ func main() {
 	out["date"] = meta.Date.Format("2006-01-02")
 	out["holdings"] = holdings
 
-	for k, v := range meta.Statestreet {
-		out[k] = v
-	}
-	for k, v := range meta.Blackrock {
+	for k, v := range meta.Meta {
 		out[k] = v
 	}
 
