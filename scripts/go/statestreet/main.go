@@ -58,6 +58,8 @@ func main() {
 		out[normalizeKey(k)] = v
 	}
 
+	applyClosingPriceExtras(out)
+
 	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {
 		fatal(err)
 	}

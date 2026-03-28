@@ -55,6 +55,8 @@ func main() {
 		out[k] = v
 	}
 
+	applyNAVPriceExtras(out)
+
 	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {
 		fatal(err)
 	}

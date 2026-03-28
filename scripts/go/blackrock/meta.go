@@ -19,6 +19,7 @@ import (
 //   30_day_median_bid_ask_spread, bid_ask, closing_price, day_high, day_low,
 //   est_3_5_year_eps_growth, exchange_volume_shares, premium_discount,
 //   price_cash_flow, price_earnings_fw, weighted_average_market_cap
+// base_currency and price (float64) are derived from the header NAV string in main.
 //
 // Other BlackRock fields use normalizeKey(clean caption text), same as statestreet would
 // if that label appeared in its key/value tables.
