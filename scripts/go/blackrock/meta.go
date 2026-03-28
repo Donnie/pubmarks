@@ -76,6 +76,10 @@ func parseProductPage(doc *goquery.Document) (*parsedMeta, error) {
 }
 
 func parseFundHeader(doc *goquery.Document, pm *parsedMeta) {
+	if t := strings.TrimSpace(doc.Find("#fundHeader .identifier abbr").First().Text()); t != "" {
+		pm.Meta["ticker"] = t
+	}
+
 	navLi := doc.Find("li.navAmount").First()
 	if navLi.Length() == 0 {
 		return

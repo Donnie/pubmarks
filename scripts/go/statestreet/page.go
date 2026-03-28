@@ -61,3 +61,36 @@ func parsePage(doc *goquery.Document) (*metadata, error) {
 
 	return m, nil
 }
+
+// fundTickerFromListing reads the primary listing ticker from the Listing Information table.
+func fundTickerFromListing(doc *goquery.Document) string {
+	var ticker string
+	doc.Find("h2.comp-title").Each(func(_ int, h2 *goquery.Selection) {
+		if ticker != "" {
+			return
+		}
+		title := strings.TrimSpace(h2.Clone().Find("span.date, svg").Remove().End().Text())
+		if title != "Listing Information" {
+			return
+		}
+		// Columns: Exchange, Listing Date, Trading Currency, Ticker
+		t := strings.TrimSpace(h2.Parent().Find("table.data-table tbody tr").First().Find("td").Eq(3).Text())
+		if t != "" {
+			ticker = strings.ToUpper(t)
+		}
+	})
+	return ticker
+}
+
+// fundTickerFromPageURL uses the last path segment after the final hyphen (e.g. ...-spy → SPY).
+func fundTickerFromPageURL(pageURL string) string {
+	u := strings.TrimSpace(strings.TrimSuffix(pageURL, "/"))
+	if i := strings.LastIndex(u, "/"); i >= 0 {
+		u = u[i+1:]
+	}
+	if i := strings.LastIndex(u, "-"); i >= 0 {
+		return strings.ToUpper(u[i+1:])
+	}
+	return ""
+}
+
