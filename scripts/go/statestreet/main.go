@@ -58,6 +58,16 @@ func main() {
 		out[normalizeKey(k)] = v
 	}
 
+	applyClosingPriceExtras(out)
+
+	if v, ok := out["ticker"].(string); !ok || strings.TrimSpace(v) == "" {
+		if t := fundTickerFromListing(doc); t != "" {
+			out["ticker"] = t
+		} else if t := fundTickerFromPageURL(pageURL); t != "" {
+			out["ticker"] = t
+		}
+	}
+
 	if err := json.NewEncoder(os.Stdout).Encode(out); err != nil {
 		fatal(err)
 	}
