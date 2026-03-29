@@ -1,0 +1,6331 @@
+{
+  "1_day_nav_change": "USD -0.05 (-0.73%)",
+  "3y_beta": "-",
+  "52w_high": 7.03,
+  "52w_low": 4.63,
+  "administrator": "State Street Fund Services (Ireland) Limited",
+  "asset_class": "Equity",
+  "base_currency": "USD",
+  "benchmark_index": "MSCI World Ex US Net Index",
+  "benchmark_level": "USD 10,721.78",
+  "benchmark_ticker": "-",
+  "bloomberg_ticker": "XUSE NA",
+  "custodian": "State Street Custodial Services (Ireland) Limited",
+  "date": "2026-03-26",
+  "domicile": "Ireland",
+  "fiscal_year_end": "30 June",
+  "fund_launch_date": "24-Jan-25",
+  "fund_manager": "BlackRock Asset Management Ireland Limited",
+  "holdings": [
+    {
+      "name": "3I GROUP PLC",
+      "ticker": "III",
+      "weight": 0.13413,
+      "shares_held": 123619,
+      "exchange": "London Stock Exchange",
+      "price": 30.7
+    },
+    {
+      "name": "A P MOLLER MAERSK",
+      "ticker": "MAERSK A",
+      "weight": 0.03553,
+      "shares_held": 403,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 2494.32
+    },
+    {
+      "name": "A P MOLLER MAERSK B",
+      "ticker": "MAERSK B",
+      "weight": 0.04147,
+      "shares_held": 463,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 2533.71
+    },
+    {
+      "name": "ABB LTD",
+      "ticker": "ABBN",
+      "weight": 0.55355,
+      "shares_held": 192250,
+      "exchange": "SIX Swiss Exchange",
+      "price": 81.46
+    },
+    {
+      "name": "ABN AMRO BANK NV",
+      "ticker": "ABN",
+      "weight": 0.07732,
+      "shares_held": 70458,
+      "exchange": "Euronext Amsterdam",
+      "price": 31.05
+    },
+    {
+      "name": "ACCIONA SA",
+      "ticker": "ANA",
+      "weight": 0.02563,
+      "shares_held": 2909,
+      "exchange": "Bolsa De Madrid",
+      "price": 249.28
+    },
+    {
+      "name": "ACCOR SA",
+      "ticker": "AC",
+      "weight": 0.03975,
+      "shares_held": 23875,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 47.1
+    },
+    {
+      "name": "ACS ACTIVIDADES DE CONSTRUCCION Y",
+      "ticker": "ACS",
+      "weight": 0.09544,
+      "shares_held": 22365,
+      "exchange": "Bolsa De Madrid",
+      "price": 120.72
+    },
+    {
+      "name": "ADDTECH CLASS B",
+      "ticker": "ADDT B",
+      "weight": 0.03909,
+      "shares_held": 33811,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 32.71
+    },
+    {
+      "name": "ADIDAS N AG",
+      "ticker": "ADS",
+      "weight": 0.11393,
+      "shares_held": 20825,
+      "exchange": "Xetra",
+      "price": 154.76
+    },
+    {
+      "name": "ADMIRAL GROUP PLC",
+      "ticker": "ADM",
+      "weight": 0.04337,
+      "shares_held": 29936,
+      "exchange": "London Stock Exchange",
+      "price": 40.99
+    },
+    {
+      "name": "ADVANTEST CORP",
+      "ticker": "6857",
+      "weight": 0.47486,
+      "shares_held": 93400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 143.83
+    },
+    {
+      "name": "ADYEN NV",
+      "ticker": "ADYEN",
+      "weight": 0.10987,
+      "shares_held": 3068,
+      "exchange": "Euronext Amsterdam",
+      "price": 1013.06
+    },
+    {
+      "name": "AEGON LTD",
+      "ticker": "AGN",
+      "weight": 0.03988,
+      "shares_held": 159729,
+      "exchange": "Euronext Amsterdam",
+      "price": 7.06
+    },
+    {
+      "name": "AENA SME SA",
+      "ticker": "AENA",
+      "weight": 0.09924,
+      "shares_held": 95324,
+      "exchange": "Bolsa De Madrid",
+      "price": 29.45
+    },
+    {
+      "name": "AEON LTD",
+      "ticker": "8267",
+      "weight": 0.11385,
+      "shares_held": 270300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.92
+    },
+    {
+      "name": "AERCAP HOLDINGS NV",
+      "ticker": "AER",
+      "weight": 0.10159,
+      "shares_held": 21423,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 134.15
+    },
+    {
+      "name": "AEROPORTS DE PARIS SA",
+      "ticker": "ADP",
+      "weight": 0.0205,
+      "shares_held": 4803,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 120.72
+    },
+    {
+      "name": "AGC INC",
+      "ticker": "5201",
+      "weight": 0.02766,
+      "shares_held": 22200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 35.24
+    },
+    {
+      "name": "AGEAS SA",
+      "ticker": "AGS",
+      "weight": 0.04633,
+      "shares_held": 18513,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 70.8
+    },
+    {
+      "name": "AGNICO EAGLE MINES LTD",
+      "ticker": "AEM",
+      "weight": 0.40519,
+      "shares_held": 61064,
+      "exchange": "Toronto Stock Exchange",
+      "price": 187.72
+    },
+    {
+      "name": "AIA GROUP LTD",
+      "ticker": "1299",
+      "weight": 0.51035,
+      "shares_held": 1298600,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 11.12
+    },
+    {
+      "name": "AIB GROUP PLC",
+      "ticker": "A5G",
+      "weight": 0.08381,
+      "shares_held": 238745,
+      "exchange": "Irish Stock Exchange - All Market",
+      "price": 9.93
+    },
+    {
+      "name": "AIRBUS GROUP",
+      "ticker": "AIR",
+      "weight": 0.48171,
+      "shares_held": 72265,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 188.58
+    },
+    {
+      "name": "AISIN CORP",
+      "ticker": "7259",
+      "weight": 0.03347,
+      "shares_held": 66600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 14.22
+    },
+    {
+      "name": "AJINOMOTO INC",
+      "ticker": "2802",
+      "weight": 0.11103,
+      "shares_held": 111100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.27
+    },
+    {
+      "name": "AKER BP",
+      "ticker": "AKRBP",
+      "weight": 0.05158,
+      "shares_held": 40601,
+      "exchange": "Oslo Bors Asa",
+      "price": 35.94
+    },
+    {
+      "name": "AKZO NOBEL NV",
+      "ticker": "AKZA",
+      "weight": 0.04405,
+      "shares_held": 21764,
+      "exchange": "Euronext Amsterdam",
+      "price": 57.25
+    },
+    {
+      "name": "ALAMOS GOLD INC CLASS A",
+      "ticker": "AGI",
+      "weight": 0.07506,
+      "shares_held": 52667,
+      "exchange": "Toronto Stock Exchange",
+      "price": 40.32
+    },
+    {
+      "name": "ALCON AG",
+      "ticker": "ALC",
+      "weight": 0.16145,
+      "shares_held": 60531,
+      "exchange": "SIX Swiss Exchange",
+      "price": 75.46
+    },
+    {
+      "name": "ALFA LAVAL",
+      "ticker": "ALFA",
+      "weight": 0.0672,
+      "shares_held": 34676,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 54.83
+    },
+    {
+      "name": "ALIMENTATION COUCHE TARD INC",
+      "ticker": "ATD",
+      "weight": 0.18237,
+      "shares_held": 91387,
+      "exchange": "Toronto Stock Exchange",
+      "price": 56.46
+    },
+    {
+      "name": "ALLIANZ",
+      "ticker": "ALV",
+      "weight": 0.66668,
+      "shares_held": 46572,
+      "exchange": "Xetra",
+      "price": 404.97
+    },
+    {
+      "name": "ALSTOM SA",
+      "ticker": "ALO",
+      "weight": 0.04025,
+      "shares_held": 41596,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 27.38
+    },
+    {
+      "name": "ALTAGAS LTD",
+      "ticker": "ALA",
+      "weight": 0.04199,
+      "shares_held": 34224,
+      "exchange": "Toronto Stock Exchange",
+      "price": 34.71
+    },
+    {
+      "name": "AMADEUS IT GROUP SA",
+      "ticker": "AMS",
+      "weight": 0.11461,
+      "shares_held": 56165,
+      "exchange": "Bolsa De Madrid",
+      "price": 57.73
+    },
+    {
+      "name": "AMUNDI SA",
+      "ticker": "AMUN",
+      "weight": 0.02778,
+      "shares_held": 9381,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 83.79
+    },
+    {
+      "name": "ANA HOLDINGS INC",
+      "ticker": "9202",
+      "weight": 0.01363,
+      "shares_held": 20600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.71
+    },
+    {
+      "name": "ANGLO AMERICAN PLC",
+      "ticker": "AAL",
+      "weight": 0.19447,
+      "shares_held": 135104,
+      "exchange": "London Stock Exchange",
+      "price": 40.72
+    },
+    {
+      "name": "ANHEUSER-BUSCH INBEV SA",
+      "ticker": "ABI",
+      "weight": 0.29618,
+      "shares_held": 122185,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 68.58
+    },
+    {
+      "name": "ANTOFAGASTA PLC",
+      "ticker": "ANTO",
+      "weight": 0.07267,
+      "shares_held": 47434,
+      "exchange": "London Stock Exchange",
+      "price": 43.34
+    },
+    {
+      "name": "ANZ GROUP HOLDINGS LTD",
+      "ticker": "ANZ",
+      "weight": 0.32408,
+      "shares_held": 361921,
+      "exchange": "Asx - All Markets",
+      "price": 25.33
+    },
+    {
+      "name": "APA GROUP UNITS",
+      "ticker": "APA",
+      "weight": 0.04024,
+      "shares_held": 170671,
+      "exchange": "Asx - All Markets",
+      "price": 6.67
+    },
+    {
+      "name": "ARC RESOURCES LTD",
+      "ticker": "ARX",
+      "weight": 0.05129,
+      "shares_held": 69399,
+      "exchange": "Toronto Stock Exchange",
+      "price": 20.91
+    },
+    {
+      "name": "ARCELORMITTAL SA",
+      "ticker": "MT",
+      "weight": 0.09957,
+      "shares_held": 54861,
+      "exchange": "Euronext Amsterdam",
+      "price": 51.35
+    },
+    {
+      "name": "ARGENX",
+      "ticker": "ARGX",
+      "weight": 0.18504,
+      "shares_held": 7537,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 694.53
+    },
+    {
+      "name": "ARISTOCRAT LEISURE LTD",
+      "ticker": "ALL",
+      "weight": 0.07898,
+      "shares_held": 69251,
+      "exchange": "Asx - All Markets",
+      "price": 32.27
+    },
+    {
+      "name": "ASAHI GROUP HOLDINGS LTD",
+      "ticker": "2502",
+      "weight": 0.06139,
+      "shares_held": 178500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.73
+    },
+    {
+      "name": "ASAHI KASEI CORP",
+      "ticker": "3407",
+      "weight": 0.05453,
+      "shares_held": 157900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.77
+    },
+    {
+      "name": "ASICS CORP",
+      "ticker": "7936",
+      "weight": 0.08133,
+      "shares_held": 84200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 27.33
+    },
+    {
+      "name": "ASM INTERNATIONAL NV",
+      "ticker": "ASM",
+      "weight": 0.16046,
+      "shares_held": 5786,
+      "exchange": "Euronext Amsterdam",
+      "price": 784.55
+    },
+    {
+      "name": "ASML HOLDING NV",
+      "ticker": "ASML",
+      "weight": 2.26248,
+      "shares_held": 47572,
+      "exchange": "Euronext Amsterdam",
+      "price": 1345.44
+    },
+    {
+      "name": "ASR NEDERLAND NV",
+      "ticker": "ASRNL",
+      "weight": 0.04367,
+      "shares_held": 18373,
+      "exchange": "Euronext Amsterdam",
+      "price": 67.24
+    },
+    {
+      "name": "ASSA ABLOY B",
+      "ticker": "ASSA B",
+      "weight": 0.15237,
+      "shares_held": 121934,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 35.35
+    },
+    {
+      "name": "ASSICURAZIONI GENERALI",
+      "ticker": "G",
+      "weight": 0.14217,
+      "shares_held": 103257,
+      "exchange": "Borsa Italiana",
+      "price": 38.95
+    },
+    {
+      "name": "ASSOCIATED BRITISH FOODS PLC",
+      "ticker": "ABF",
+      "weight": 0.0332,
+      "shares_held": 38415,
+      "exchange": "London Stock Exchange",
+      "price": 24.45
+    },
+    {
+      "name": "ASTELLAS PHARMA INC",
+      "ticker": "4503",
+      "weight": 0.12768,
+      "shares_held": 227500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.88
+    },
+    {
+      "name": "ASTRAZENECA PLC",
+      "ticker": "AZN",
+      "weight": 1.23418,
+      "shares_held": 189086,
+      "exchange": "London Stock Exchange",
+      "price": 184.65
+    },
+    {
+      "name": "ASX LTD",
+      "ticker": "ASX",
+      "weight": 0.03389,
+      "shares_held": 27194,
+      "exchange": "Asx - All Markets",
+      "price": 35.25
+    },
+    {
+      "name": "ATKINSREALIS GROUP INC",
+      "ticker": "ATRL",
+      "weight": 0.04553,
+      "shares_held": 20060,
+      "exchange": "Toronto Stock Exchange",
+      "price": 64.22
+    },
+    {
+      "name": "ATLAS COPCO CLASS A",
+      "ticker": "ATCO A",
+      "weight": 0.19883,
+      "shares_held": 326581,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 17.22
+    },
+    {
+      "name": "ATLAS COPCO CLASS B",
+      "ticker": "ATCO B",
+      "weight": 0.10162,
+      "shares_held": 187952,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 15.3
+    },
+    {
+      "name": "AUCKLAND INTERNATIONAL AIRPORT LTD",
+      "ticker": "AIA",
+      "weight": 0.03177,
+      "shares_held": 193462,
+      "exchange": "New Zealand Exchange Ltd",
+      "price": 4.65
+    },
+    {
+      "name": "AUD CASH",
+      "ticker": "AUD",
+      "weight": 0.06714,
+      "shares_held": 2747808,
+      "exchange": "-",
+      "price": 69.12
+    },
+    {
+      "name": "AUTOTRADER GROUP PLC",
+      "ticker": "AUTO",
+      "weight": 0.02259,
+      "shares_held": 102973,
+      "exchange": "London Stock Exchange",
+      "price": 6.21
+    },
+    {
+      "name": "AVIVA PLC",
+      "ticker": "AV.",
+      "weight": 0.10235,
+      "shares_held": 366712,
+      "exchange": "London Stock Exchange",
+      "price": 7.9
+    },
+    {
+      "name": "AVOLTA AG",
+      "ticker": "AVOL",
+      "weight": 0.02034,
+      "shares_held": 9618,
+      "exchange": "SIX Swiss Exchange",
+      "price": 59.83
+    },
+    {
+      "name": "AXA SA",
+      "ticker": "CS",
+      "weight": 0.31677,
+      "shares_held": 204881,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 43.74
+    },
+    {
+      "name": "AZRIELI GROUP LTD",
+      "ticker": "AZRG",
+      "weight": 0.02098,
+      "shares_held": 4310,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 137.69
+    },
+    {
+      "name": "BAE SYSTEMS PLC",
+      "ticker": "BA.",
+      "weight": 0.36348,
+      "shares_held": 367969,
+      "exchange": "London Stock Exchange",
+      "price": 27.94
+    },
+    {
+      "name": "BANCA MEDIOLANUM",
+      "ticker": "BMED",
+      "weight": 0.02034,
+      "shares_held": 29557,
+      "exchange": "Borsa Italiana",
+      "price": 19.47
+    },
+    {
+      "name": "BANCA MONTE DEI PASCHI DI SIENA SP",
+      "ticker": "BMPS",
+      "weight": 0.07296,
+      "shares_held": 238731,
+      "exchange": "Borsa Italiana",
+      "price": 8.65
+    },
+    {
+      "name": "BANCO BILBAO VIZCAYA ARGENTARIA SA",
+      "ticker": "BBVA",
+      "weight": 0.52623,
+      "shares_held": 705077,
+      "exchange": "Bolsa De Madrid",
+      "price": 21.11
+    },
+    {
+      "name": "BANCO BPM",
+      "ticker": "BAMI",
+      "weight": 0.06664,
+      "shares_held": 137164,
+      "exchange": "Borsa Italiana",
+      "price": 13.75
+    },
+    {
+      "name": "BANCO COMERCIAL PORTUGUES SA",
+      "ticker": "BCP",
+      "weight": 0.03299,
+      "shares_held": 990057,
+      "exchange": "Nyse Euronext - Euronext Lisbon",
+      "price": 0.94
+    },
+    {
+      "name": "BANCO DE SABADELL SA",
+      "ticker": "SAB",
+      "weight": 0.07539,
+      "shares_held": 605697,
+      "exchange": "Bolsa De Madrid",
+      "price": 3.52
+    },
+    {
+      "name": "BANCO SANTANDER SA",
+      "ticker": "SAN",
+      "weight": 0.70263,
+      "shares_held": 1818531,
+      "exchange": "Bolsa De Madrid",
+      "price": 10.93
+    },
+    {
+      "name": "BANDAI NAMCO HOLDINGS INC",
+      "ticker": "7832",
+      "weight": 0.06179,
+      "shares_held": 69600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 25.12
+    },
+    {
+      "name": "BANK HAPOALIM BM",
+      "ticker": "POLI",
+      "weight": 0.13185,
+      "shares_held": 152826,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 24.41
+    },
+    {
+      "name": "BANK LEUMI LE ISRAEL",
+      "ticker": "LUMI",
+      "weight": 0.14668,
+      "shares_held": 179814,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 23.08
+    },
+    {
+      "name": "BANK OF IRELAND GROUP PLC",
+      "ticker": "BIRG",
+      "weight": 0.07367,
+      "shares_held": 115387,
+      "exchange": "Irish Stock Exchange - All Market",
+      "price": 18.06
+    },
+    {
+      "name": "BANK OF MONTREAL",
+      "ticker": "BMO",
+      "weight": 0.40438,
+      "shares_held": 86326,
+      "exchange": "Toronto Stock Exchange",
+      "price": 132.52
+    },
+    {
+      "name": "BANK OF NOVA SCOTIA",
+      "ticker": "BNS",
+      "weight": 0.36562,
+      "shares_held": 150780,
+      "exchange": "Toronto Stock Exchange",
+      "price": 68.6
+    },
+    {
+      "name": "BANKINTER SA",
+      "ticker": "BKT",
+      "weight": 0.04681,
+      "shares_held": 85217,
+      "exchange": "Bolsa De Madrid",
+      "price": 15.54
+    },
+    {
+      "name": "BARCLAYS PLC",
+      "ticker": "BARC",
+      "weight": 0.30816,
+      "shares_held": 1693982,
+      "exchange": "London Stock Exchange",
+      "price": 5.15
+    },
+    {
+      "name": "BARRATT REDROW PLC",
+      "ticker": "BTRW",
+      "weight": 0.02072,
+      "shares_held": 163605,
+      "exchange": "London Stock Exchange",
+      "price": 3.58
+    },
+    {
+      "name": "BARRICK MINING CORP",
+      "ticker": "ABX",
+      "weight": 0.27354,
+      "shares_held": 206493,
+      "exchange": "Toronto Stock Exchange",
+      "price": 37.48
+    },
+    {
+      "name": "BARRY CALLEBAUT AG",
+      "ticker": "BARN",
+      "weight": 0.02739,
+      "shares_held": 444,
+      "exchange": "SIX Swiss Exchange",
+      "price": 1745.32
+    },
+    {
+      "name": "BASF N",
+      "ticker": "BAS",
+      "weight": 0.22718,
+      "shares_held": 109754,
+      "exchange": "Xetra",
+      "price": 58.56
+    },
+    {
+      "name": "BAWAG GROUP AG",
+      "ticker": "BG",
+      "weight": 0.04216,
+      "shares_held": 8074,
+      "exchange": "Wiener Boerse Ag",
+      "price": 147.72
+    },
+    {
+      "name": "BAYER AG",
+      "ticker": "BAYN",
+      "weight": 0.18938,
+      "shares_held": 121283,
+      "exchange": "Xetra",
+      "price": 44.17
+    },
+    {
+      "name": "BC VAUD N",
+      "ticker": "BCVN",
+      "weight": 0.02351,
+      "shares_held": 4198,
+      "exchange": "SIX Swiss Exchange",
+      "price": 158.4
+    },
+    {
+      "name": "BCE INC",
+      "ticker": "BCE",
+      "weight": 0.01046,
+      "shares_held": 11627,
+      "exchange": "Toronto Stock Exchange",
+      "price": 25.45
+    },
+    {
+      "name": "BE SEMICONDUCTOR INDUSTRIES NV",
+      "ticker": "BESI",
+      "weight": 0.07105,
+      "shares_held": 9394,
+      "exchange": "Euronext Amsterdam",
+      "price": 213.97
+    },
+    {
+      "name": "BEIERSDORF AG",
+      "ticker": "BEI",
+      "weight": 0.03839,
+      "shares_held": 12510,
+      "exchange": "Xetra",
+      "price": 86.81
+    },
+    {
+      "name": "BEIJER REF CLASS B",
+      "ticker": "BEIJ B",
+      "weight": 0.02085,
+      "shares_held": 43153,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 13.67
+    },
+    {
+      "name": "BELIMO N AG",
+      "ticker": "BEAN",
+      "weight": 0.03307,
+      "shares_held": 1151,
+      "exchange": "SIX Swiss Exchange",
+      "price": 812.8
+    },
+    {
+      "name": "BHP GROUP LTD",
+      "ticker": "BHP",
+      "weight": 0.76032,
+      "shares_held": 619534,
+      "exchange": "Asx - All Markets",
+      "price": 34.72
+    },
+    {
+      "name": "BIOMERIEUX SA",
+      "ticker": "BIM",
+      "weight": 0.01974,
+      "shares_held": 5397,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 103.46
+    },
+    {
+      "name": "BKW N AG",
+      "ticker": "BKW",
+      "weight": 0.01961,
+      "shares_held": 2913,
+      "exchange": "SIX Swiss Exchange",
+      "price": 190.41
+    },
+    {
+      "name": "BMW AG",
+      "ticker": "BMW",
+      "weight": 0.10748,
+      "shares_held": 33698,
+      "exchange": "Xetra",
+      "price": 90.23
+    },
+    {
+      "name": "BMW PREF AG",
+      "ticker": "BMW3",
+      "weight": 0.02068,
+      "shares_held": 6492,
+      "exchange": "Xetra",
+      "price": 90.13
+    },
+    {
+      "name": "BNP PARIBAS SA",
+      "ticker": "BNP",
+      "weight": 0.40862,
+      "shares_held": 122345,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 94.49
+    },
+    {
+      "name": "BOC HONG KONG HOLDINGS LTD",
+      "ticker": "2388",
+      "weight": 0.0907,
+      "shares_held": 485000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 5.29
+    },
+    {
+      "name": "BOLIDEN",
+      "ticker": "BOL",
+      "weight": 0.06162,
+      "shares_held": 34894,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 49.96
+    },
+    {
+      "name": "BOLLORE",
+      "ticker": "BOL",
+      "weight": 0.01584,
+      "shares_held": 80912,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 5.54
+    },
+    {
+      "name": "BOMBARDIER INC CLASS B",
+      "ticker": "BBD.B",
+      "weight": 0.06631,
+      "shares_held": 10858,
+      "exchange": "Toronto Stock Exchange",
+      "price": 172.77
+    },
+    {
+      "name": "BOUYGUES SA",
+      "ticker": "EN",
+      "weight": 0.05155,
+      "shares_held": 25616,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 56.93
+    },
+    {
+      "name": "BP PLC",
+      "ticker": "BP.",
+      "weight": 0.52805,
+      "shares_held": 1918815,
+      "exchange": "London Stock Exchange",
+      "price": 7.79
+    },
+    {
+      "name": "BPER BANCA",
+      "ticker": "BPE",
+      "weight": 0.08962,
+      "shares_held": 198901,
+      "exchange": "Borsa Italiana",
+      "price": 12.75
+    },
+    {
+      "name": "BRAMBLES LTD",
+      "ticker": "BXB",
+      "weight": 0.08929,
+      "shares_held": 164479,
+      "exchange": "Asx - All Markets",
+      "price": 15.36
+    },
+    {
+      "name": "BRENNTAG",
+      "ticker": "BNR",
+      "weight": 0.03459,
+      "shares_held": 15007,
+      "exchange": "Xetra",
+      "price": 65.21
+    },
+    {
+      "name": "BRIDGESTONE CORP",
+      "ticker": "5108",
+      "weight": 0.10064,
+      "shares_held": 136800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.81
+    },
+    {
+      "name": "BRITISH AMERICAN TOBACCO",
+      "ticker": "BATS",
+      "weight": 0.54319,
+      "shares_held": 265872,
+      "exchange": "London Stock Exchange",
+      "price": 57.8
+    },
+    {
+      "name": "BROOKFIELD ASSET MANAGEMENT VOTING",
+      "ticker": "BAM",
+      "weight": 0.08018,
+      "shares_held": 51960,
+      "exchange": "Toronto Stock Exchange",
+      "price": 43.66
+    },
+    {
+      "name": "BROOKFIELD CORP CLASS A",
+      "ticker": "BN",
+      "weight": 0.35639,
+      "shares_held": 254151,
+      "exchange": "Toronto Stock Exchange",
+      "price": 39.67
+    },
+    {
+      "name": "BROOKFIELD RENEWABLE SUBORDINATE V",
+      "ticker": "BEPC",
+      "weight": 0.02321,
+      "shares_held": 16661,
+      "exchange": "Toronto Stock Exchange",
+      "price": 39.41
+    },
+    {
+      "name": "BT GROUP PLC",
+      "ticker": "BT.A",
+      "weight": 0.06794,
+      "shares_held": 703241,
+      "exchange": "London Stock Exchange",
+      "price": 2.73
+    },
+    {
+      "name": "BUNZL",
+      "ticker": "BNZL",
+      "weight": 0.04031,
+      "shares_held": 39291,
+      "exchange": "London Stock Exchange",
+      "price": 29.03
+    },
+    {
+      "name": "BUREAU VERITAS SA",
+      "ticker": "BVI",
+      "weight": 0.04487,
+      "shares_held": 41508,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 30.58
+    },
+    {
+      "name": "BUZZI",
+      "ticker": "BZU",
+      "weight": 0.01653,
+      "shares_held": 9133,
+      "exchange": "Borsa Italiana",
+      "price": 51.2
+    },
+    {
+      "name": "CAD CASH",
+      "ticker": "CAD",
+      "weight": 0.01755,
+      "shares_held": 687573,
+      "exchange": "-",
+      "price": 72.19
+    },
+    {
+      "name": "CAE INC",
+      "ticker": "CAE",
+      "weight": 0.03594,
+      "shares_held": 38697,
+      "exchange": "Toronto Stock Exchange",
+      "price": 26.27
+    },
+    {
+      "name": "CAIXABANK SA",
+      "ticker": "CABK",
+      "weight": 0.20024,
+      "shares_held": 483115,
+      "exchange": "Bolsa De Madrid",
+      "price": 11.73
+    },
+    {
+      "name": "CAMECO CORP",
+      "ticker": "CCO",
+      "weight": 0.19943,
+      "shares_held": 53899,
+      "exchange": "Toronto Stock Exchange",
+      "price": 104.67
+    },
+    {
+      "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
+      "ticker": "CM",
+      "weight": 0.377,
+      "shares_held": 113021,
+      "exchange": "Toronto Stock Exchange",
+      "price": 94.37
+    },
+    {
+      "name": "CANADIAN NATIONAL RAILWAY",
+      "ticker": "CNR",
+      "weight": 0.23226,
+      "shares_held": 64713,
+      "exchange": "Toronto Stock Exchange",
+      "price": 101.53
+    },
+    {
+      "name": "CANADIAN NATURAL RESOURCES LTD",
+      "ticker": "CNQ",
+      "weight": 0.43054,
+      "shares_held": 249868,
+      "exchange": "Toronto Stock Exchange",
+      "price": 48.75
+    },
+    {
+      "name": "CANADIAN PACIFIC KANSAS CITY LTD",
+      "ticker": "CP",
+      "weight": 0.31221,
+      "shares_held": 111800,
+      "exchange": "Toronto Stock Exchange",
+      "price": 79
+    },
+    {
+      "name": "CANADIAN TIRE LTD CLASS A",
+      "ticker": "CTC.A",
+      "weight": 0.02821,
+      "shares_held": 5994,
+      "exchange": "Toronto Stock Exchange",
+      "price": 133.16
+    },
+    {
+      "name": "CANADIAN UTILITIES LTD CLASS A",
+      "ticker": "CU",
+      "weight": 0.01758,
+      "shares_held": 14254,
+      "exchange": "Toronto Stock Exchange",
+      "price": 34.88
+    },
+    {
+      "name": "CANON INC",
+      "ticker": "7751",
+      "weight": 0.10428,
+      "shares_held": 107100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 27.55
+    },
+    {
+      "name": "CAPCOM LTD",
+      "ticker": "9697",
+      "weight": 0.03249,
+      "shares_held": 44400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.7
+    },
+    {
+      "name": "CAPGEMINI",
+      "ticker": "CAP",
+      "weight": 0.0728,
+      "shares_held": 18549,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 111.02
+    },
+    {
+      "name": "CAPITALAND ASCENDAS REIT",
+      "ticker": "CLAR",
+      "weight": 0.03722,
+      "shares_held": 545300,
+      "exchange": "Singapore Exchange",
+      "price": 1.93
+    },
+    {
+      "name": "CAPITALAND INTEGRATED COMMERCIAL T",
+      "ticker": "CICT",
+      "weight": 0.0464,
+      "shares_held": 736280,
+      "exchange": "Singapore Exchange",
+      "price": 1.78
+    },
+    {
+      "name": "CAPITALAND INVESTMENT LTD",
+      "ticker": "9CI",
+      "weight": 0.02115,
+      "shares_held": 286800,
+      "exchange": "Singapore Exchange",
+      "price": 2.09
+    },
+    {
+      "name": "CAR GROUP LTD",
+      "ticker": "CAR",
+      "weight": 0.02417,
+      "shares_held": 43107,
+      "exchange": "Asx - All Markets",
+      "price": 15.86
+    },
+    {
+      "name": "CARLSBERG AS  CL B",
+      "ticker": "CARL B",
+      "weight": 0.05298,
+      "shares_held": 12090,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 123.96
+    },
+    {
+      "name": "CARREFOUR SA",
+      "ticker": "CA",
+      "weight": 0.04666,
+      "shares_held": 73560,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 17.95
+    },
+    {
+      "name": "CASH COLLATERAL USD GSIFT",
+      "ticker": "GSIFT",
+      "weight": 0.01128,
+      "shares_held": 319000,
+      "exchange": "-",
+      "price": 100
+    },
+    {
+      "name": "CCL INDUSTRIES INC CLASS B",
+      "ticker": "CCL.B",
+      "weight": 0.03737,
+      "shares_held": 16883,
+      "exchange": "Toronto Stock Exchange",
+      "price": 62.61
+    },
+    {
+      "name": "CELESTICA INC",
+      "ticker": "CLS",
+      "weight": 0.13548,
+      "shares_held": 14023,
+      "exchange": "Toronto Stock Exchange",
+      "price": 273.31
+    },
+    {
+      "name": "CELLNEX TELECOM",
+      "ticker": "CLNX",
+      "weight": 0.06436,
+      "shares_held": 60077,
+      "exchange": "Bolsa De Madrid",
+      "price": 30.31
+    },
+    {
+      "name": "CENOVUS ENERGY",
+      "ticker": "CVE",
+      "weight": 0.15747,
+      "shares_held": 171361,
+      "exchange": "Toronto Stock Exchange",
+      "price": 26
+    },
+    {
+      "name": "CENTRAL JAPAN RAILWAY",
+      "ticker": "9022",
+      "weight": 0.0864,
+      "shares_held": 92200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 26.51
+    },
+    {
+      "name": "CENTRICA PLC",
+      "ticker": "CNA",
+      "weight": 0.0502,
+      "shares_held": 526061,
+      "exchange": "London Stock Exchange",
+      "price": 2.7
+    },
+    {
+      "name": "CGI INC CLASS A",
+      "ticker": "GIB.A",
+      "weight": 0.06365,
+      "shares_held": 24758,
+      "exchange": "Toronto Stock Exchange",
+      "price": 72.73
+    },
+    {
+      "name": "CHECK POINT SOFTWARE TECHNOLOGIES",
+      "ticker": "CHKP",
+      "weight": 0.05971,
+      "shares_held": 11828,
+      "exchange": "NASDAQ",
+      "price": 142.82
+    },
+    {
+      "name": "CHEUNG KONG INFRASTRUCTURE HOLDING",
+      "ticker": "1038",
+      "weight": 0.02622,
+      "shares_held": 95000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 7.81
+    },
+    {
+      "name": "CHF CASH",
+      "ticker": "CHF",
+      "weight": 0.01759,
+      "shares_held": 394782,
+      "exchange": "-",
+      "price": 126.02
+    },
+    {
+      "name": "CHIBA BANK LTD",
+      "ticker": "8331",
+      "weight": 0.03119,
+      "shares_held": 68700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 12.84
+    },
+    {
+      "name": "CHOCOLADEFABRIKEN LINDT & SPRUENGL",
+      "ticker": "LISP",
+      "weight": 0.07159,
+      "shares_held": 148,
+      "exchange": "SIX Swiss Exchange",
+      "price": 13685.34
+    },
+    {
+      "name": "CHOCOLADEFABRIKEN LINDT & SPRUENGL",
+      "ticker": "LISN",
+      "weight": 0.0445,
+      "shares_held": 9,
+      "exchange": "SIX Swiss Exchange",
+      "price": 139877.76
+    },
+    {
+      "name": "CHUBU ELECTRIC POWER INC",
+      "ticker": "9502",
+      "weight": 0.04868,
+      "shares_held": 84700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.26
+    },
+    {
+      "name": "CHUGAI PHARMACEUTICAL LTD",
+      "ticker": "4519",
+      "weight": 0.15641,
+      "shares_held": 83600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 52.93
+    },
+    {
+      "name": "CK ASSET HOLDINGS LTD",
+      "ticker": "1113",
+      "weight": 0.04997,
+      "shares_held": 249500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 5.67
+    },
+    {
+      "name": "CK HUTCHISON HOLDINGS LTD",
+      "ticker": "1",
+      "weight": 0.09079,
+      "shares_held": 339500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 7.57
+    },
+    {
+      "name": "CLP HOLDINGS LTD",
+      "ticker": "2",
+      "weight": 0.06965,
+      "shares_held": 211500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 9.32
+    },
+    {
+      "name": "COCA COLA EUROPACIFIC PARTNERS PLC",
+      "ticker": "CCEP",
+      "weight": 0.08223,
+      "shares_held": 25070,
+      "exchange": "NASDAQ",
+      "price": 92.79
+    },
+    {
+      "name": "COCA COLA HBC AG",
+      "ticker": "CCH",
+      "weight": 0.05455,
+      "shares_held": 27258,
+      "exchange": "London Stock Exchange",
+      "price": 56.61
+    },
+    {
+      "name": "COCHLEAR LTD",
+      "ticker": "COH",
+      "weight": 0.03334,
+      "shares_held": 8227,
+      "exchange": "Asx - All Markets",
+      "price": 114.66
+    },
+    {
+      "name": "COLES GROUP LTD",
+      "ticker": "COL",
+      "weight": 0.08912,
+      "shares_held": 166703,
+      "exchange": "Asx - All Markets",
+      "price": 15.12
+    },
+    {
+      "name": "COLOPLAST B",
+      "ticker": "COLO B",
+      "weight": 0.03646,
+      "shares_held": 15333,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 67.28
+    },
+    {
+      "name": "COMMERZBANK AG",
+      "ticker": "CBK",
+      "weight": 0.11413,
+      "shares_held": 88842,
+      "exchange": "Xetra",
+      "price": 36.34
+    },
+    {
+      "name": "COMMONWEALTH BANK OF AUSTRALIA",
+      "ticker": "CBA",
+      "weight": 0.86172,
+      "shares_held": 203657,
+      "exchange": "Asx - All Markets",
+      "price": 119.7
+    },
+    {
+      "name": "COMPAGNIE DE SAINT GOBAIN SA",
+      "ticker": "SGO",
+      "weight": 0.15954,
+      "shares_held": 55742,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 80.97
+    },
+    {
+      "name": "COMPAGNIE FINANCIERE RICHEMONT SA",
+      "ticker": "CFR",
+      "weight": 0.40582,
+      "shares_held": 65308,
+      "exchange": "SIX Swiss Exchange",
+      "price": 175.79
+    },
+    {
+      "name": "COMPASS GROUP PLC",
+      "ticker": "CPG",
+      "weight": 0.20339,
+      "shares_held": 206693,
+      "exchange": "London Stock Exchange",
+      "price": 27.84
+    },
+    {
+      "name": "COMPUTERSHARE LTD",
+      "ticker": "CPU",
+      "weight": 0.04189,
+      "shares_held": 61165,
+      "exchange": "Asx - All Markets",
+      "price": 19.37
+    },
+    {
+      "name": "CONSTELLATION SOFTWARE INC",
+      "ticker": "CSU",
+      "weight": 0.15124,
+      "shares_held": 2483,
+      "exchange": "Toronto Stock Exchange",
+      "price": 1723.11
+    },
+    {
+      "name": "CONTACT ENERGY LTD",
+      "ticker": "CEN",
+      "weight": 0.02134,
+      "shares_held": 113232,
+      "exchange": "New Zealand Exchange Ltd",
+      "price": 5.33
+    },
+    {
+      "name": "CONTINENTAL AG",
+      "ticker": "CON",
+      "weight": 0.03218,
+      "shares_held": 13109,
+      "exchange": "Xetra",
+      "price": 69.45
+    },
+    {
+      "name": "COVIVIO SA",
+      "ticker": "COV",
+      "weight": 0.01566,
+      "shares_held": 7544,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 58.74
+    },
+    {
+      "name": "CREDIT AGRICOLE SA",
+      "ticker": "ACA",
+      "weight": 0.08419,
+      "shares_held": 129425,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 18.4
+    },
+    {
+      "name": "CSG CLASS A NV",
+      "ticker": "CSG",
+      "weight": 0.02561,
+      "shares_held": 24412,
+      "exchange": "Euronext Amsterdam",
+      "price": 29.68
+    },
+    {
+      "name": "CSL LTD",
+      "ticker": "CSL",
+      "weight": 0.2093,
+      "shares_held": 59345,
+      "exchange": "Asx - All Markets",
+      "price": 99.77
+    },
+    {
+      "name": "CTS EVENTIM AG",
+      "ticker": "EVD",
+      "weight": 0.02097,
+      "shares_held": 8071,
+      "exchange": "Xetra",
+      "price": 73.52
+    },
+    {
+      "name": "CVC CAPITAL PARTNERS PLC",
+      "ticker": "CVC",
+      "weight": 0.01218,
+      "shares_held": 27094,
+      "exchange": "Euronext Amsterdam",
+      "price": 12.72
+    },
+    {
+      "name": "CYBERARK SOFTWARE CONTRA",
+      "ticker": "-",
+      "weight": 0.00826,
+      "shares_held": 5190,
+      "exchange": "NO MARKET (E.G. UNLISTED)",
+      "price": 45
+    },
+    {
+      "name": "DAI NIPPON PRINTING LTD",
+      "ticker": "7912",
+      "weight": 0.02978,
+      "shares_held": 46600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.08
+    },
+    {
+      "name": "DAI-ICHI LIFE HOLDINGS INC",
+      "ticker": "8750",
+      "weight": 0.13747,
+      "shares_held": 431800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.01
+    },
+    {
+      "name": "DAIFUKU LTD",
+      "ticker": "6383",
+      "weight": 0.05099,
+      "shares_held": 39300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 36.71
+    },
+    {
+      "name": "DAIICHI SANKYO LTD",
+      "ticker": "4568",
+      "weight": 0.14427,
+      "shares_held": 226700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18
+    },
+    {
+      "name": "DAIKIN INDUSTRIES LTD",
+      "ticker": "6367",
+      "weight": 0.13985,
+      "shares_held": 30800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 128.46
+    },
+    {
+      "name": "DAIMLER TRUCK HOLDING E AG",
+      "ticker": "DTG",
+      "weight": 0.09544,
+      "shares_held": 56786,
+      "exchange": "Xetra",
+      "price": 47.55
+    },
+    {
+      "name": "DAITO TRUST CONSTRUCTION LTD",
+      "ticker": "1878",
+      "weight": 0.03076,
+      "shares_held": 38400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 22.66
+    },
+    {
+      "name": "DAIWA HOUSE INDUSTRY LTD",
+      "ticker": "1925",
+      "weight": 0.07644,
+      "shares_held": 68300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 31.66
+    },
+    {
+      "name": "DAIWA SECURITIES GROUP INC",
+      "ticker": "8601",
+      "weight": 0.06155,
+      "shares_held": 177600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.8
+    },
+    {
+      "name": "DANONE SA",
+      "ticker": "BN",
+      "weight": 0.21965,
+      "shares_held": 79414,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 78.25
+    },
+    {
+      "name": "DANSKE BANK",
+      "ticker": "DANSKE",
+      "weight": 0.14098,
+      "shares_held": 81178,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 49.13
+    },
+    {
+      "name": "DASSAULT AVIATION SA",
+      "ticker": "AM",
+      "weight": 0.03263,
+      "shares_held": 2536,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 364
+    },
+    {
+      "name": "DASSAULT SYSTEMES",
+      "ticker": "DSY",
+      "weight": 0.05702,
+      "shares_held": 82479,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 19.56
+    },
+    {
+      "name": "DAVIDE CAMPARI MILANO NV",
+      "ticker": "CPR",
+      "weight": 0.01722,
+      "shares_held": 68986,
+      "exchange": "Borsa Italiana",
+      "price": 7.06
+    },
+    {
+      "name": "DBS GROUP HOLDINGS LTD",
+      "ticker": "D05",
+      "weight": 0.39503,
+      "shares_held": 251300,
+      "exchange": "Singapore Exchange",
+      "price": 44.47
+    },
+    {
+      "name": "DELIVERY HERO",
+      "ticker": "DHER",
+      "weight": 0.01377,
+      "shares_held": 21452,
+      "exchange": "Xetra",
+      "price": 18.15
+    },
+    {
+      "name": "DEMANT",
+      "ticker": "DEMANT",
+      "weight": 0.0093,
+      "shares_held": 9001,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 29.22
+    },
+    {
+      "name": "DENSO CORP",
+      "ticker": "6902",
+      "weight": 0.0957,
+      "shares_held": 222300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 12.18
+    },
+    {
+      "name": "DESCARTES SYSTEMS GROUP INC",
+      "ticker": "DSG",
+      "weight": 0.02792,
+      "shares_held": 11019,
+      "exchange": "Toronto Stock Exchange",
+      "price": 71.68
+    },
+    {
+      "name": "DEUTSCHE BANK AG",
+      "ticker": "DBK",
+      "weight": 0.23518,
+      "shares_held": 228269,
+      "exchange": "Xetra",
+      "price": 29.15
+    },
+    {
+      "name": "DEUTSCHE BOERSE AG",
+      "ticker": "DB1",
+      "weight": 0.22793,
+      "shares_held": 23485,
+      "exchange": "Xetra",
+      "price": 274.56
+    },
+    {
+      "name": "DEUTSCHE LUFTHANSA AG",
+      "ticker": "LHA",
+      "weight": 0.0214,
+      "shares_held": 69648,
+      "exchange": "Xetra",
+      "price": 8.69
+    },
+    {
+      "name": "DEUTSCHE POST AG",
+      "ticker": "DHL",
+      "weight": 0.21306,
+      "shares_held": 116788,
+      "exchange": "Xetra",
+      "price": 51.61
+    },
+    {
+      "name": "DEUTSCHE TELEKOM N AG",
+      "ticker": "DTE",
+      "weight": 0.58744,
+      "shares_held": 450693,
+      "exchange": "Xetra",
+      "price": 36.87
+    },
+    {
+      "name": "DIAGEO PLC",
+      "ticker": "DGE",
+      "weight": 0.18253,
+      "shares_held": 277638,
+      "exchange": "London Stock Exchange",
+      "price": 18.6
+    },
+    {
+      "name": "DIETEREN (D) SA",
+      "ticker": "DIE",
+      "weight": 0.0145,
+      "shares_held": 2267,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 180.96
+    },
+    {
+      "name": "DISCO CORP",
+      "ticker": "6146",
+      "weight": 0.18527,
+      "shares_held": 12400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 422.7
+    },
+    {
+      "name": "DKK CASH",
+      "ticker": "DKK",
+      "weight": 0.00996,
+      "shares_held": 1824702,
+      "exchange": "-",
+      "price": 15.44
+    },
+    {
+      "name": "DNB BANK",
+      "ticker": "DNB",
+      "weight": 0.11336,
+      "shares_held": 107067,
+      "exchange": "Oslo Bors Asa",
+      "price": 29.95
+    },
+    {
+      "name": "DOLLARAMA INC",
+      "ticker": "DOL",
+      "weight": 0.1429,
+      "shares_held": 33165,
+      "exchange": "Toronto Stock Exchange",
+      "price": 121.89
+    },
+    {
+      "name": "DR ING HC F PORSCHE PRF AG",
+      "ticker": "P911",
+      "weight": 0.02335,
+      "shares_held": 15197,
+      "exchange": "Xetra",
+      "price": 43.46
+    },
+    {
+      "name": "DSM FIRMENICH AG",
+      "ticker": "DSFIR",
+      "weight": 0.05293,
+      "shares_held": 21374,
+      "exchange": "Euronext Amsterdam",
+      "price": 70.05
+    },
+    {
+      "name": "DSV",
+      "ticker": "DSV",
+      "weight": 0.2088,
+      "shares_held": 25079,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 235.53
+    },
+    {
+      "name": "E.ON N",
+      "ticker": "EOAN",
+      "weight": 0.2096,
+      "shares_held": 274750,
+      "exchange": "Xetra",
+      "price": 21.58
+    },
+    {
+      "name": "EAST JAPAN RAILWAY",
+      "ticker": "9020",
+      "weight": 0.09293,
+      "shares_held": 115100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 22.84
+    },
+    {
+      "name": "EBARA CORP",
+      "ticker": "6361",
+      "weight": 0.06351,
+      "shares_held": 61800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 29.07
+    },
+    {
+      "name": "EDP ENERGIAS DE PORTUGAL SA",
+      "ticker": "EDP",
+      "weight": 0.0711,
+      "shares_held": 394941,
+      "exchange": "Nyse Euronext - Euronext Lisbon",
+      "price": 5.09
+    },
+    {
+      "name": "EDP RENOVAVEIS SA",
+      "ticker": "EDPR",
+      "weight": 0.02521,
+      "shares_held": 46005,
+      "exchange": "Nyse Euronext - Euronext Lisbon",
+      "price": 15.5
+    },
+    {
+      "name": "EIFFAGE SA",
+      "ticker": "FGR",
+      "weight": 0.04849,
+      "shares_held": 9043,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 151.71
+    },
+    {
+      "name": "EISAI LTD",
+      "ticker": "4523",
+      "weight": 0.03138,
+      "shares_held": 28800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 30.83
+    },
+    {
+      "name": "ELBIT SYSTEMS LTD",
+      "ticker": "ESLT",
+      "weight": 0.1134,
+      "shares_held": 3534,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 907.8
+    },
+    {
+      "name": "ELEMENT FLEET MANAGEMENT CORP",
+      "ticker": "EFN",
+      "weight": 0.03726,
+      "shares_held": 47595,
+      "exchange": "Toronto Stock Exchange",
+      "price": 22.15
+    },
+    {
+      "name": "ELIA GROUP SA",
+      "ticker": "ELI",
+      "weight": 0.02654,
+      "shares_held": 5023,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 149.46
+    },
+    {
+      "name": "ELISA",
+      "ticker": "ELISA",
+      "weight": 0.03255,
+      "shares_held": 18345,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 50.2
+    },
+    {
+      "name": "EMERA INC",
+      "ticker": "EMA",
+      "weight": 0.06615,
+      "shares_held": 36304,
+      "exchange": "Toronto Stock Exchange",
+      "price": 51.55
+    },
+    {
+      "name": "EMPIRE LTD CLASS A",
+      "ticker": "EMP.A",
+      "weight": 0.01854,
+      "shares_held": 14806,
+      "exchange": "Toronto Stock Exchange",
+      "price": 35.43
+    },
+    {
+      "name": "EMS-CHEMIE HOLDING AG",
+      "ticker": "EMSN",
+      "weight": 0.02466,
+      "shares_held": 888,
+      "exchange": "SIX Swiss Exchange",
+      "price": 785.71
+    },
+    {
+      "name": "ENBRIDGE INC",
+      "ticker": "ENB",
+      "weight": 0.51057,
+      "shares_held": 265031,
+      "exchange": "Toronto Stock Exchange",
+      "price": 54.5
+    },
+    {
+      "name": "ENDEAVOUR MINING",
+      "ticker": "EDV",
+      "weight": 0.04578,
+      "shares_held": 23194,
+      "exchange": "London Stock Exchange",
+      "price": 55.84
+    },
+    {
+      "name": "ENDESA SA",
+      "ticker": "ELE",
+      "weight": 0.05967,
+      "shares_held": 42010,
+      "exchange": "Bolsa De Madrid",
+      "price": 40.19
+    },
+    {
+      "name": "ENEL",
+      "ticker": "ENEL",
+      "weight": 0.37526,
+      "shares_held": 998869,
+      "exchange": "Borsa Italiana",
+      "price": 10.63
+    },
+    {
+      "name": "ENEOS HOLDINGS INC",
+      "ticker": "5020",
+      "weight": 0.1046,
+      "shares_held": 337000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.78
+    },
+    {
+      "name": "ENGIE SA",
+      "ticker": "ENGI",
+      "weight": 0.24917,
+      "shares_held": 226297,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 31.15
+    },
+    {
+      "name": "ENI",
+      "ticker": "ENI",
+      "weight": 0.23897,
+      "shares_held": 247797,
+      "exchange": "Borsa Italiana",
+      "price": 27.28
+    },
+    {
+      "name": "ENTAIN PLC",
+      "ticker": "ENT",
+      "weight": 0.01961,
+      "shares_held": 74924,
+      "exchange": "London Stock Exchange",
+      "price": 7.4
+    },
+    {
+      "name": "EPIROC CLASS A",
+      "ticker": "EPI A",
+      "weight": 0.07052,
+      "shares_held": 82823,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 24.09
+    },
+    {
+      "name": "EPIROC CLASS B",
+      "ticker": "EPI B",
+      "weight": 0.0378,
+      "shares_held": 50809,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 21.05
+    },
+    {
+      "name": "EQT",
+      "ticker": "EQT",
+      "weight": 0.06865,
+      "shares_held": 63249,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 30.71
+    },
+    {
+      "name": "EQUINOR",
+      "ticker": "EQNR",
+      "weight": 0.1426,
+      "shares_held": 98221,
+      "exchange": "Oslo Bors Asa",
+      "price": 41.07
+    },
+    {
+      "name": "ERICSSON B",
+      "ticker": "ERIC B",
+      "weight": 0.13883,
+      "shares_held": 337865,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 11.62
+    },
+    {
+      "name": "ERSTE GROUP BANK AG",
+      "ticker": "EBS",
+      "weight": 0.14292,
+      "shares_held": 37449,
+      "exchange": "Wiener Boerse Ag",
+      "price": 107.97
+    },
+    {
+      "name": "ESSILORLUXOTTICA SA",
+      "ticker": "EL",
+      "weight": 0.28944,
+      "shares_held": 36516,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 224.24
+    },
+    {
+      "name": "ESSITY CLASS B",
+      "ticker": "ESSITY B",
+      "weight": 0.07111,
+      "shares_held": 75731,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 26.56
+    },
+    {
+      "name": "EUR CASH",
+      "ticker": "EUR",
+      "weight": 0.03136,
+      "shares_held": 768824,
+      "exchange": "-",
+      "price": 115.41
+    },
+    {
+      "name": "EUROFINS SCIENTIFIC",
+      "ticker": "ERF",
+      "weight": 0.03734,
+      "shares_held": 14810,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 71.32
+    },
+    {
+      "name": "EURONEXT NV",
+      "ticker": "ENX",
+      "weight": 0.05592,
+      "shares_held": 10260,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 154.19
+    },
+    {
+      "name": "EVOLUTION",
+      "ticker": "EVO",
+      "weight": 0.03674,
+      "shares_held": 17522,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 59.31
+    },
+    {
+      "name": "EVOLUTION MINING LTD",
+      "ticker": "EVN",
+      "weight": 0.07825,
+      "shares_held": 253369,
+      "exchange": "Asx - All Markets",
+      "price": 8.74
+    },
+    {
+      "name": "EVONIK INDUSTRIES AG",
+      "ticker": "EVK",
+      "weight": 0.01858,
+      "shares_held": 29213,
+      "exchange": "Xetra",
+      "price": 17.99
+    },
+    {
+      "name": "EXOR NV",
+      "ticker": "EXO",
+      "weight": 0.03078,
+      "shares_held": 11644,
+      "exchange": "Euronext Amsterdam",
+      "price": 74.79
+    },
+    {
+      "name": "EXPERIAN PLC",
+      "ticker": "EXPN",
+      "weight": 0.13752,
+      "shares_held": 114497,
+      "exchange": "London Stock Exchange",
+      "price": 33.98
+    },
+    {
+      "name": "FAIRFAX FINANCIAL HOLDINGS SUB VOT",
+      "ticker": "FFH",
+      "weight": 0.1491,
+      "shares_held": 2502,
+      "exchange": "Toronto Stock Exchange",
+      "price": 1685.89
+    },
+    {
+      "name": "FANUC CORP",
+      "ticker": "6954",
+      "weight": 0.147,
+      "shares_held": 113700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 36.58
+    },
+    {
+      "name": "FAST RETAILING LTD",
+      "ticker": "9983",
+      "weight": 0.31367,
+      "shares_held": 22900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 387.5
+    },
+    {
+      "name": "FASTIGHETS BALDER CLASS B",
+      "ticker": "BALD B",
+      "weight": 0.01923,
+      "shares_held": 94654,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 5.75
+    },
+    {
+      "name": "FERRARI NV",
+      "ticker": "RACE",
+      "weight": 0.17708,
+      "shares_held": 15519,
+      "exchange": "Borsa Italiana",
+      "price": 322.8
+    },
+    {
+      "name": "FERROVIAL",
+      "ticker": "FER",
+      "weight": 0.14307,
+      "shares_held": 63787,
+      "exchange": "Bolsa De Madrid",
+      "price": 63.45
+    },
+    {
+      "name": "FINANCIERE DE TUBIZE SA",
+      "ticker": "TUB",
+      "weight": 0.02129,
+      "shares_held": 2503,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 240.63
+    },
+    {
+      "name": "FINECOBANK BANCA FINECO",
+      "ticker": "FBK",
+      "weight": 0.05948,
+      "shares_held": 77518,
+      "exchange": "Borsa Italiana",
+      "price": 21.71
+    },
+    {
+      "name": "FIRST QUANTUM MINERALS LTD",
+      "ticker": "FM",
+      "weight": 0.06623,
+      "shares_held": 84095,
+      "exchange": "Toronto Stock Exchange",
+      "price": 22.28
+    },
+    {
+      "name": "FIRSTSERVICE SUBORDINATE VOTING CO",
+      "ticker": "FSV",
+      "weight": 0.0245,
+      "shares_held": 5021,
+      "exchange": "Toronto Stock Exchange",
+      "price": 138.02
+    },
+    {
+      "name": "FISHER AND PAYKEL HEALTHCARE CORPO",
+      "ticker": "FPH",
+      "weight": 0.05607,
+      "shares_held": 73602,
+      "exchange": "New Zealand Exchange Ltd",
+      "price": 21.55
+    },
+    {
+      "name": "FORTESCUE LTD",
+      "ticker": "FMG",
+      "weight": 0.10231,
+      "shares_held": 210949,
+      "exchange": "Asx - All Markets",
+      "price": 13.72
+    },
+    {
+      "name": "FORTIS INC",
+      "ticker": "FTS",
+      "weight": 0.1237,
+      "shares_held": 62871,
+      "exchange": "Toronto Stock Exchange",
+      "price": 55.66
+    },
+    {
+      "name": "FORTUM",
+      "ticker": "FORTUM",
+      "weight": 0.05148,
+      "shares_held": 59611,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 24.43
+    },
+    {
+      "name": "FRANCO NEVADA CORP",
+      "ticker": "FNV",
+      "weight": 0.19148,
+      "shares_held": 23790,
+      "exchange": "Toronto Stock Exchange",
+      "price": 227.7
+    },
+    {
+      "name": "FRESENIUS MEDICAL CARE AG",
+      "ticker": "FME",
+      "weight": 0.04149,
+      "shares_held": 26121,
+      "exchange": "Xetra",
+      "price": 44.94
+    },
+    {
+      "name": "FRESENIUS SE AND CO KGAA",
+      "ticker": "FRE",
+      "weight": 0.09207,
+      "shares_held": 51222,
+      "exchange": "Xetra",
+      "price": 50.85
+    },
+    {
+      "name": "FRESNILLO PLC",
+      "ticker": "FRES",
+      "weight": 0.03923,
+      "shares_held": 26319,
+      "exchange": "London Stock Exchange",
+      "price": 42.16
+    },
+    {
+      "name": "FUJI ELECTRIC LTD",
+      "ticker": "6504",
+      "weight": 0.04685,
+      "shares_held": 18500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 71.65
+    },
+    {
+      "name": "FUJIFILM HOLDINGS CORP",
+      "ticker": "4901",
+      "weight": 0.08949,
+      "shares_held": 134700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.8
+    },
+    {
+      "name": "FUJIKURA LTD",
+      "ticker": "5803",
+      "weight": 0.18673,
+      "shares_held": 30000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 176.09
+    },
+    {
+      "name": "FUJITSU LTD",
+      "ticker": "6702",
+      "weight": 0.16063,
+      "shares_held": 222500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.42
+    },
+    {
+      "name": "FUTU HOLDINGS ADR LTD",
+      "ticker": "FUTU",
+      "weight": 0.03637,
+      "shares_held": 7546,
+      "exchange": "NASDAQ",
+      "price": 136.34
+    },
+    {
+      "name": "GALAXY ENTERTAINMENT GROUP LTD",
+      "ticker": "27",
+      "weight": 0.03799,
+      "shares_held": 241000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 4.46
+    },
+    {
+      "name": "GALDERMA GROUP N AG",
+      "ticker": "GALD",
+      "weight": 0.15196,
+      "shares_held": 22562,
+      "exchange": "SIX Swiss Exchange",
+      "price": 190.54
+    },
+    {
+      "name": "GALP ENERGIA SGPS SA CLASS B",
+      "ticker": "GALP",
+      "weight": 0.04429,
+      "shares_held": 51942,
+      "exchange": "Nyse Euronext - Euronext Lisbon",
+      "price": 24.12
+    },
+    {
+      "name": "GBP CASH",
+      "ticker": "GBP",
+      "weight": 0.075,
+      "shares_held": 1589234,
+      "exchange": "-",
+      "price": 133.51
+    },
+    {
+      "name": "GEA GROUP AG",
+      "ticker": "G1A",
+      "weight": 0.04392,
+      "shares_held": 17720,
+      "exchange": "Xetra",
+      "price": 70.11
+    },
+    {
+      "name": "GEBERIT AG",
+      "ticker": "GEBN",
+      "weight": 0.10086,
+      "shares_held": 4212,
+      "exchange": "SIX Swiss Exchange",
+      "price": 677.46
+    },
+    {
+      "name": "GECINA SA",
+      "ticker": "GFC",
+      "weight": 0.01699,
+      "shares_held": 6321,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 76.05
+    },
+    {
+      "name": "GENMAB",
+      "ticker": "GMAB",
+      "weight": 0.07064,
+      "shares_held": 7640,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 261.56
+    },
+    {
+      "name": "GEORGE WESTON LTD",
+      "ticker": "WN",
+      "weight": 0.05262,
+      "shares_held": 21397,
+      "exchange": "Toronto Stock Exchange",
+      "price": 69.57
+    },
+    {
+      "name": "GETLINK",
+      "ticker": "GET",
+      "weight": 0.02551,
+      "shares_held": 35403,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 20.38
+    },
+    {
+      "name": "GFL ENVIRONMENTAL SUBORDINATE VOTI",
+      "ticker": "GFL",
+      "weight": 0.04169,
+      "shares_held": 29662,
+      "exchange": "Toronto Stock Exchange",
+      "price": 39.76
+    },
+    {
+      "name": "GILDAN ACTIVEWEAR INC",
+      "ticker": "GIL",
+      "weight": 0.0428,
+      "shares_held": 21792,
+      "exchange": "Toronto Stock Exchange",
+      "price": 55.56
+    },
+    {
+      "name": "GIVAUDAN SA",
+      "ticker": "GIVN",
+      "weight": 0.13083,
+      "shares_held": 1110,
+      "exchange": "SIX Swiss Exchange",
+      "price": 3334.38
+    },
+    {
+      "name": "GJENSIDIGE FORSIKRING",
+      "ticker": "GJF",
+      "weight": 0.02582,
+      "shares_held": 27481,
+      "exchange": "Oslo Bors Asa",
+      "price": 26.58
+    },
+    {
+      "name": "GLAXOSMITHKLINE",
+      "ticker": "GSK",
+      "weight": 0.48134,
+      "shares_held": 498244,
+      "exchange": "London Stock Exchange",
+      "price": 27.33
+    },
+    {
+      "name": "GLENCORE PLC",
+      "ticker": "GLEN",
+      "weight": 0.30637,
+      "shares_held": 1220209,
+      "exchange": "London Stock Exchange",
+      "price": 7.1
+    },
+    {
+      "name": "GOODMAN GROUP UNITS",
+      "ticker": "GMG",
+      "weight": 0.15924,
+      "shares_held": 253101,
+      "exchange": "Asx - All Markets",
+      "price": 17.8
+    },
+    {
+      "name": "GRAB HOLDINGS LTD CLASS A",
+      "ticker": "GRAB",
+      "weight": 0.0382,
+      "shares_held": 291320,
+      "exchange": "NASDAQ",
+      "price": 3.71
+    },
+    {
+      "name": "GREAT WEST LIFECO INC",
+      "ticker": "GWO",
+      "weight": 0.05493,
+      "shares_held": 33492,
+      "exchange": "Toronto Stock Exchange",
+      "price": 46.4
+    },
+    {
+      "name": "GRIFOLS SA CLASS A",
+      "ticker": "GRF",
+      "weight": 0.01381,
+      "shares_held": 39052,
+      "exchange": "Bolsa De Madrid",
+      "price": 10
+    },
+    {
+      "name": "GROUPE BRUXELLES LAMBERT NV",
+      "ticker": "GBLB",
+      "weight": 0.03007,
+      "shares_held": 9623,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 88.4
+    },
+    {
+      "name": "HALEON PLC",
+      "ticker": "HLN",
+      "weight": 0.18743,
+      "shares_held": 1088066,
+      "exchange": "London Stock Exchange",
+      "price": 4.87
+    },
+    {
+      "name": "HALMA PLC",
+      "ticker": "HLMA",
+      "weight": 0.08454,
+      "shares_held": 47537,
+      "exchange": "London Stock Exchange",
+      "price": 50.31
+    },
+    {
+      "name": "HANKYU HANSHIN HOLDINGS INC",
+      "ticker": "9042",
+      "weight": 0.02673,
+      "shares_held": 26900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.12
+    },
+    {
+      "name": "HANNOVER RUECK",
+      "ticker": "HNR1",
+      "weight": 0.07763,
+      "shares_held": 7422,
+      "exchange": "Xetra",
+      "price": 295.91
+    },
+    {
+      "name": "HEIDELBERG MATERIALS AG",
+      "ticker": "HEI",
+      "weight": 0.11828,
+      "shares_held": 16130,
+      "exchange": "Xetra",
+      "price": 207.45
+    },
+    {
+      "name": "HEINEKEN HOLDING NV",
+      "ticker": "HEIO",
+      "weight": 0.04267,
+      "shares_held": 17050,
+      "exchange": "Euronext Amsterdam",
+      "price": 70.8
+    },
+    {
+      "name": "HEINEKEN NV",
+      "ticker": "HEIA",
+      "weight": 0.09483,
+      "shares_held": 35187,
+      "exchange": "Euronext Amsterdam",
+      "price": 76.24
+    },
+    {
+      "name": "HELVETIA BALOISE HOLDING N AG",
+      "ticker": "HBAN",
+      "weight": 0.08496,
+      "shares_held": 9489,
+      "exchange": "SIX Swiss Exchange",
+      "price": 253.29
+    },
+    {
+      "name": "HENDERSON LAND DEVELOPMENT LTD",
+      "ticker": "12",
+      "weight": 0.02737,
+      "shares_held": 201000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 3.85
+    },
+    {
+      "name": "HENKEL & KGAA PREF AG",
+      "ticker": "HEN3",
+      "weight": 0.05533,
+      "shares_held": 19993,
+      "exchange": "Xetra",
+      "price": 78.29
+    },
+    {
+      "name": "HENKEL AG",
+      "ticker": "HEN",
+      "weight": 0.03131,
+      "shares_held": 12174,
+      "exchange": "Xetra",
+      "price": 72.77
+    },
+    {
+      "name": "HENNES & MAURITZ",
+      "ticker": "HM B",
+      "weight": 0.04126,
+      "shares_held": 64341,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 18.14
+    },
+    {
+      "name": "HENSOLDT AG",
+      "ticker": "HAG",
+      "weight": 0.02182,
+      "shares_held": 7697,
+      "exchange": "Xetra",
+      "price": 80.21
+    },
+    {
+      "name": "HERMES INTERNATIONAL",
+      "ticker": "RMS",
+      "weight": 0.25727,
+      "shares_held": 3843,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 1893.87
+    },
+    {
+      "name": "HEXAGON CLASS B",
+      "ticker": "HEXA B",
+      "weight": 0.08814,
+      "shares_held": 254299,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 9.81
+    },
+    {
+      "name": "HIKARI TSUSHIN INC",
+      "ticker": "9435",
+      "weight": 0.01361,
+      "shares_held": 1500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 256.66
+    },
+    {
+      "name": "HITACHI LTD",
+      "ticker": "6501",
+      "weight": 0.59439,
+      "shares_held": 561800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 29.93
+    },
+    {
+      "name": "HKD CASH",
+      "ticker": "HKD",
+      "weight": 0.00644,
+      "shares_held": 1424996,
+      "exchange": "-",
+      "price": 12.78
+    },
+    {
+      "name": "HKT TRUST AND HKT UNITS LTD",
+      "ticker": "6823",
+      "weight": 0.02566,
+      "shares_held": 468000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 1.55
+    },
+    {
+      "name": "HOCHTIEF AG",
+      "ticker": "HOT",
+      "weight": 0.02812,
+      "shares_held": 1754,
+      "exchange": "Xetra",
+      "price": 453.56
+    },
+    {
+      "name": "HOLCIM LTD AG",
+      "ticker": "HOLN",
+      "weight": 0.1878,
+      "shares_held": 63610,
+      "exchange": "SIX Swiss Exchange",
+      "price": 83.52
+    },
+    {
+      "name": "HOLMEN CLASS B",
+      "ticker": "HOLM B",
+      "weight": 0.01424,
+      "shares_held": 11326,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 35.57
+    },
+    {
+      "name": "HONDA MOTOR LTD",
+      "ticker": "7267",
+      "weight": 0.13536,
+      "shares_held": 463200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.27
+    },
+    {
+      "name": "HONG KONG AND CHINA GAS LTD",
+      "ticker": "3",
+      "weight": 0.04375,
+      "shares_held": 1364000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 0.91
+    },
+    {
+      "name": "HONG KONG EXCHANGES AND CLEARING L",
+      "ticker": "388",
+      "weight": 0.11698,
+      "shares_held": 66300,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 49.92
+    },
+    {
+      "name": "HONGKONG LAND HOLDINGS LTD",
+      "ticker": "H78",
+      "weight": 0.04237,
+      "shares_held": 152500,
+      "exchange": "Singapore Exchange",
+      "price": 7.86
+    },
+    {
+      "name": "HOYA CORP",
+      "ticker": "7741",
+      "weight": 0.26803,
+      "shares_held": 43100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 175.93
+    },
+    {
+      "name": "HSBC HOLDINGS PLC",
+      "ticker": "HSBA",
+      "weight": 1.18642,
+      "shares_held": 2099090,
+      "exchange": "London Stock Exchange",
+      "price": 15.99
+    },
+    {
+      "name": "HULIC LTD",
+      "ticker": "3003",
+      "weight": 0.01838,
+      "shares_held": 44600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.66
+    },
+    {
+      "name": "HYDRO ONE LTD",
+      "ticker": "H",
+      "weight": 0.05807,
+      "shares_held": 39806,
+      "exchange": "Toronto Stock Exchange",
+      "price": 41.27
+    },
+    {
+      "name": "IA FINANCIAL INC",
+      "ticker": "IAG",
+      "weight": 0.04211,
+      "shares_held": 10807,
+      "exchange": "Toronto Stock Exchange",
+      "price": 110.24
+    },
+    {
+      "name": "IBERDROLA SA",
+      "ticker": "IBE",
+      "weight": 0.61758,
+      "shares_held": 788061,
+      "exchange": "Bolsa De Madrid",
+      "price": 22.17
+    },
+    {
+      "name": "IBIDEN LTD",
+      "ticker": "4062",
+      "weight": 0.04701,
+      "shares_held": 25100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 52.99
+    },
+    {
+      "name": "ICL GROUP LTD",
+      "ticker": "ICL",
+      "weight": 0.01626,
+      "shares_held": 87953,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 5.23
+    },
+    {
+      "name": "IDEMITSU KOSAN LTD",
+      "ticker": "5019",
+      "weight": 0.03609,
+      "shares_held": 106700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.57
+    },
+    {
+      "name": "IGM FINANCIAL INC",
+      "ticker": "IGM",
+      "weight": 0.02141,
+      "shares_held": 12886,
+      "exchange": "Toronto Stock Exchange",
+      "price": 47
+    },
+    {
+      "name": "IHI CORP",
+      "ticker": "7013",
+      "weight": 0.09928,
+      "shares_held": 128600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 21.84
+    },
+    {
+      "name": "ILS CASH",
+      "ticker": "ILS",
+      "weight": 0.00459,
+      "shares_held": 405198,
+      "exchange": "-",
+      "price": 32.02
+    },
+    {
+      "name": "IMPERIAL BRANDS PLC",
+      "ticker": "IMB",
+      "weight": 0.13297,
+      "shares_held": 92470,
+      "exchange": "London Stock Exchange",
+      "price": 40.68
+    },
+    {
+      "name": "IMPERIAL OIL LTD",
+      "ticker": "IMO",
+      "weight": 0.09534,
+      "shares_held": 21139,
+      "exchange": "Toronto Stock Exchange",
+      "price": 127.59
+    },
+    {
+      "name": "INDRA SISTEMAS SA",
+      "ticker": "IDR",
+      "weight": 0.00498,
+      "shares_held": 2594,
+      "exchange": "Bolsa De Madrid",
+      "price": 54.33
+    },
+    {
+      "name": "INDUSTRIA DE DISENO TEXTIL SA",
+      "ticker": "ITX",
+      "weight": 0.27369,
+      "shares_held": 132904,
+      "exchange": "Bolsa De Madrid",
+      "price": 58.26
+    },
+    {
+      "name": "INDUSTRIVARDEN A",
+      "ticker": "INDU A",
+      "weight": 0.02854,
+      "shares_held": 16592,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 48.67
+    },
+    {
+      "name": "INDUSTRIVARDEN SERIES",
+      "ticker": "INDU C",
+      "weight": 0.03186,
+      "shares_held": 18614,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 48.42
+    },
+    {
+      "name": "INDUTRADE",
+      "ticker": "INDT",
+      "weight": 0.02823,
+      "shares_held": 36173,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 22.08
+    },
+    {
+      "name": "INFINEON TECHNOLOGIES AG",
+      "ticker": "IFX",
+      "weight": 0.25649,
+      "shares_held": 161691,
+      "exchange": "Xetra",
+      "price": 44.88
+    },
+    {
+      "name": "INFORMA PLC",
+      "ticker": "INF",
+      "weight": 0.05645,
+      "shares_held": 156514,
+      "exchange": "London Stock Exchange",
+      "price": 10.2
+    },
+    {
+      "name": "INFRATIL LTD",
+      "ticker": "IFT",
+      "weight": 0.02572,
+      "shares_held": 109884,
+      "exchange": "New Zealand Exchange Ltd",
+      "price": 6.62
+    },
+    {
+      "name": "ING GROEP NV",
+      "ticker": "INGA",
+      "weight": 0.32009,
+      "shares_held": 357785,
+      "exchange": "Euronext Amsterdam",
+      "price": 25.31
+    },
+    {
+      "name": "INPEX CORP",
+      "ticker": "1605",
+      "weight": 0.11061,
+      "shares_held": 106600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 29.36
+    },
+    {
+      "name": "INPOST SA",
+      "ticker": "INPST",
+      "weight": 0.02082,
+      "shares_held": 33909,
+      "exchange": "Euronext Amsterdam",
+      "price": 17.37
+    },
+    {
+      "name": "INSURANCE AUSTRALIA GROUP LTD",
+      "ticker": "IAG",
+      "weight": 0.05452,
+      "shares_held": 299912,
+      "exchange": "Asx - All Markets",
+      "price": 5.14
+    },
+    {
+      "name": "INTACT FINANCIAL CORP",
+      "ticker": "IFC",
+      "weight": 0.13652,
+      "shares_held": 21456,
+      "exchange": "Toronto Stock Exchange",
+      "price": 180
+    },
+    {
+      "name": "INTERCONTINENTAL HOTELS GROUP PLC",
+      "ticker": "IHG",
+      "weight": 0.08321,
+      "shares_held": 17833,
+      "exchange": "London Stock Exchange",
+      "price": 132
+    },
+    {
+      "name": "INTERNATIONAL AIRLINES GROUP SA",
+      "ticker": "IAG",
+      "weight": 0.02251,
+      "shares_held": 132847,
+      "exchange": "Bolsa De Madrid",
+      "price": 4.79
+    },
+    {
+      "name": "INTERTEK GROUP PLC",
+      "ticker": "ITRK",
+      "weight": 0.0319,
+      "shares_held": 18418,
+      "exchange": "London Stock Exchange",
+      "price": 49
+    },
+    {
+      "name": "INTESA SANPAOLO",
+      "ticker": "ISP",
+      "weight": 0.36169,
+      "shares_held": 1747329,
+      "exchange": "Borsa Italiana",
+      "price": 5.86
+    },
+    {
+      "name": "INVESTOR CLASS B",
+      "ticker": "INVE B",
+      "weight": 0.29258,
+      "shares_held": 224753,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 36.83
+    },
+    {
+      "name": "IPSEN SA",
+      "ticker": "IPN",
+      "weight": 0.0281,
+      "shares_held": 4508,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 176.35
+    },
+    {
+      "name": "ISRAEL DISCOUNT BANK LTD",
+      "ticker": "DSCT",
+      "weight": 0.05398,
+      "shares_held": 146648,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 10.41
+    },
+    {
+      "name": "ISUZU MOTORS LTD",
+      "ticker": "7202",
+      "weight": 0.03306,
+      "shares_held": 64800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 14.43
+    },
+    {
+      "name": "ITALGAS",
+      "ticker": "IG",
+      "weight": 0.00476,
+      "shares_held": 11854,
+      "exchange": "Borsa Italiana",
+      "price": 11.35
+    },
+    {
+      "name": "ITOCHU CORP",
+      "ticker": "8001",
+      "weight": 0.33544,
+      "shares_held": 734800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 12.91
+    },
+    {
+      "name": "IVANHOE MINES LTD CLASS A",
+      "ticker": "IVN",
+      "weight": 0.02879,
+      "shares_held": 102660,
+      "exchange": "Toronto Stock Exchange",
+      "price": 7.93
+    },
+    {
+      "name": "JAPAN AIRLINES LTD",
+      "ticker": "9201",
+      "weight": 0.01315,
+      "shares_held": 22200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.76
+    },
+    {
+      "name": "JAPAN EXCHANGE GROUP INC",
+      "ticker": "8697",
+      "weight": 0.05332,
+      "shares_held": 127000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.88
+    },
+    {
+      "name": "JAPAN POST BANK LTD",
+      "ticker": "7182",
+      "weight": 0.13156,
+      "shares_held": 225700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.49
+    },
+    {
+      "name": "JAPAN POST HOLDINGS LTD",
+      "ticker": "6178",
+      "weight": 0.08839,
+      "shares_held": 216800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.53
+    },
+    {
+      "name": "JAPAN POST INSURANCE LTD",
+      "ticker": "7181",
+      "weight": 0.02458,
+      "shares_held": 23100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 30.11
+    },
+    {
+      "name": "JAPAN TOBACCO INC",
+      "ticker": "2914",
+      "weight": 0.1971,
+      "shares_held": 148800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 37.47
+    },
+    {
+      "name": "JARDINE MATHESON HOLDINGS LTD",
+      "ticker": "J36",
+      "weight": 0.05509,
+      "shares_held": 21000,
+      "exchange": "Singapore Exchange",
+      "price": 74.22
+    },
+    {
+      "name": "JD SPORTS FASHION PLC",
+      "ticker": "JD.",
+      "weight": 0.00842,
+      "shares_held": 255213,
+      "exchange": "London Stock Exchange",
+      "price": 0.93
+    },
+    {
+      "name": "JDE PEETS NV",
+      "ticker": "JDEP",
+      "weight": 0.02643,
+      "shares_held": 20476,
+      "exchange": "Euronext Amsterdam",
+      "price": 36.52
+    },
+    {
+      "name": "JERONIMO MARTINS SA",
+      "ticker": "JMT",
+      "weight": 0.02869,
+      "shares_held": 33651,
+      "exchange": "Nyse Euronext - Euronext Lisbon",
+      "price": 24.12
+    },
+    {
+      "name": "JFE HOLDINGS INC",
+      "ticker": "5411",
+      "weight": 0.02931,
+      "shares_held": 70300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.79
+    },
+    {
+      "name": "JPY CASH",
+      "ticker": "JPY",
+      "weight": 0.11182,
+      "shares_held": 505102510,
+      "exchange": "-",
+      "price": 0.63
+    },
+    {
+      "name": "JULIUS BAER GRUPPE AG",
+      "ticker": "BAER",
+      "weight": 0.0697,
+      "shares_held": 26940,
+      "exchange": "SIX Swiss Exchange",
+      "price": 73.19
+    },
+    {
+      "name": "JX ADVANCED METALS CORP",
+      "ticker": "5016",
+      "weight": 0.05599,
+      "shares_held": 67800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 23.36
+    },
+    {
+      "name": "KAJIMA CORP",
+      "ticker": "1812",
+      "weight": 0.06605,
+      "shares_held": 49100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 38.05
+    },
+    {
+      "name": "KANSAI ELECTRIC POWER INC",
+      "ticker": "9503",
+      "weight": 0.06463,
+      "shares_held": 111000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.47
+    },
+    {
+      "name": "KAO CORP",
+      "ticker": "4452",
+      "weight": 0.07956,
+      "shares_held": 59600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 37.77
+    },
+    {
+      "name": "KAWASAKI HEAVY INDUSTRIES LTD",
+      "ticker": "7012",
+      "weight": 0.06472,
+      "shares_held": 19100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 95.86
+    },
+    {
+      "name": "KAWASAKI KISEN LTD",
+      "ticker": "9107",
+      "weight": 0.02648,
+      "shares_held": 44400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.87
+    },
+    {
+      "name": "KBC GROEP",
+      "ticker": "KBC",
+      "weight": 0.12003,
+      "shares_held": 28291,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 120.03
+    },
+    {
+      "name": "KDDI CORP",
+      "ticker": "9433",
+      "weight": 0.22121,
+      "shares_held": 368700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.97
+    },
+    {
+      "name": "KEPPEL LTD",
+      "ticker": "BN4",
+      "weight": 0.06632,
+      "shares_held": 196400,
+      "exchange": "Singapore Exchange",
+      "price": 9.55
+    },
+    {
+      "name": "KERING SA",
+      "ticker": "KER",
+      "weight": 0.09251,
+      "shares_held": 8992,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 291.06
+    },
+    {
+      "name": "KERRY GROUP PLC",
+      "ticker": "KRZ",
+      "weight": 0.05483,
+      "shares_held": 20210,
+      "exchange": "Irish Stock Exchange - All Market",
+      "price": 76.75
+    },
+    {
+      "name": "KESKO CLASS B",
+      "ticker": "KESKOB",
+      "weight": 0.02928,
+      "shares_held": 37148,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 22.3
+    },
+    {
+      "name": "KEYENCE CORP",
+      "ticker": "6861",
+      "weight": 0.30163,
+      "shares_held": 23600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 361.57
+    },
+    {
+      "name": "KEYERA CORP",
+      "ticker": "KEY",
+      "weight": 0.03629,
+      "shares_held": 26212,
+      "exchange": "Toronto Stock Exchange",
+      "price": 39.17
+    },
+    {
+      "name": "KIKKOMAN CORP",
+      "ticker": "2801",
+      "weight": 0.0278,
+      "shares_held": 88800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.86
+    },
+    {
+      "name": "KINGFISHER PLC",
+      "ticker": "KGF",
+      "weight": 0.0286,
+      "shares_held": 217335,
+      "exchange": "London Stock Exchange",
+      "price": 3.72
+    },
+    {
+      "name": "KINGSPAN GROUP PLC",
+      "ticker": "KRX",
+      "weight": 0.05436,
+      "shares_held": 18914,
+      "exchange": "Irish Stock Exchange - All Market",
+      "price": 81.31
+    },
+    {
+      "name": "KINROSS GOLD CORP",
+      "ticker": "K",
+      "weight": 0.14407,
+      "shares_held": 146034,
+      "exchange": "Toronto Stock Exchange",
+      "price": 27.91
+    },
+    {
+      "name": "KIOXIA HOLDINGS CORP",
+      "ticker": "285A",
+      "weight": 0.11011,
+      "shares_held": 23500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 132.56
+    },
+    {
+      "name": "KIRIN HOLDINGS LTD",
+      "ticker": "2503",
+      "weight": 0.04864,
+      "shares_held": 88900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.48
+    },
+    {
+      "name": "KLEPIERRE REIT SA",
+      "ticker": "LI",
+      "weight": 0.03189,
+      "shares_held": 24978,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 36.12
+    },
+    {
+      "name": "KNORR BREMSE AG",
+      "ticker": "KBX",
+      "weight": 0.0345,
+      "shares_held": 8603,
+      "exchange": "Xetra",
+      "price": 113.45
+    },
+    {
+      "name": "KOMATSU LTD",
+      "ticker": "6301",
+      "weight": 0.16238,
+      "shares_held": 114000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 40.3
+    },
+    {
+      "name": "KONAMI GROUP CORP",
+      "ticker": "9766",
+      "weight": 0.05389,
+      "shares_held": 12600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 121
+    },
+    {
+      "name": "KONE",
+      "ticker": "KNEBV",
+      "weight": 0.09449,
+      "shares_held": 41855,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 63.87
+    },
+    {
+      "name": "KONGSBERG GRUPPEN",
+      "ticker": "KOG",
+      "weight": 0.07604,
+      "shares_held": 53386,
+      "exchange": "Oslo Bors Asa",
+      "price": 40.3
+    },
+    {
+      "name": "KONINKLIJKE AHOLD DELHAIZE NV",
+      "ticker": "AD",
+      "weight": 0.17908,
+      "shares_held": 109363,
+      "exchange": "Euronext Amsterdam",
+      "price": 46.33
+    },
+    {
+      "name": "KONINKLIJKE KPN NV",
+      "ticker": "KPN",
+      "weight": 0.09423,
+      "shares_held": 489159,
+      "exchange": "Euronext Amsterdam",
+      "price": 5.45
+    },
+    {
+      "name": "KONINKLIJKE PHILIPS NV",
+      "ticker": "PHIA",
+      "weight": 0.09047,
+      "shares_held": 93491,
+      "exchange": "Euronext Amsterdam",
+      "price": 27.38
+    },
+    {
+      "name": "KUBOTA CORP",
+      "ticker": "6326",
+      "weight": 0.06759,
+      "shares_held": 118400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.15
+    },
+    {
+      "name": "KUEHNE UND NAGEL INTERNATIONAL AG",
+      "ticker": "KNIN",
+      "weight": 0.0489,
+      "shares_held": 6238,
+      "exchange": "SIX Swiss Exchange",
+      "price": 221.79
+    },
+    {
+      "name": "KYOCERA CORP",
+      "ticker": "6971",
+      "weight": 0.08384,
+      "shares_held": 155400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.26
+    },
+    {
+      "name": "KYOWA KIRIN LTD",
+      "ticker": "4151",
+      "weight": 0.01314,
+      "shares_held": 24100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.43
+    },
+    {
+      "name": "LAIR LIQUIDE SOCIETE ANONYME POUR",
+      "ticker": "AI",
+      "weight": 0.49076,
+      "shares_held": 70219,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 197.72
+    },
+    {
+      "name": "LAND SECURITIES GROUP REIT PLC",
+      "ticker": "LAND",
+      "weight": 0.02173,
+      "shares_held": 84958,
+      "exchange": "London Stock Exchange",
+      "price": 7.24
+    },
+    {
+      "name": "LASERTEC CORP",
+      "ticker": "6920",
+      "weight": 0.06735,
+      "shares_held": 8800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 216.52
+    },
+    {
+      "name": "LATOUR INVESTMENT CLASS B",
+      "ticker": "LATO B",
+      "weight": 0.01142,
+      "shares_held": 15771,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 20.49
+    },
+    {
+      "name": "LEG IMMOBILIEN N",
+      "ticker": "LEG",
+      "weight": 0.01953,
+      "shares_held": 8718,
+      "exchange": "Xetra",
+      "price": 63.36
+    },
+    {
+      "name": "LEGAL AND GENERAL GROUP PLC",
+      "ticker": "LGEN",
+      "weight": 0.07725,
+      "shares_held": 677738,
+      "exchange": "London Stock Exchange",
+      "price": 3.22
+    },
+    {
+      "name": "LEGRAND SA",
+      "ticker": "LR",
+      "weight": 0.17252,
+      "shares_held": 31892,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 153.03
+    },
+    {
+      "name": "LEONARDO FINMECCANICA SPA",
+      "ticker": "LDO",
+      "weight": 0.11847,
+      "shares_held": 49575,
+      "exchange": "Borsa Italiana",
+      "price": 67.61
+    },
+    {
+      "name": "LIFCO CLASS B",
+      "ticker": "LIFCO B",
+      "weight": 0.02968,
+      "shares_held": 27825,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 30.18
+    },
+    {
+      "name": "LINK REAL ESTATE INVESTMENT TRUST",
+      "ticker": "823",
+      "weight": 0.05823,
+      "shares_held": 358300,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 4.6
+    },
+    {
+      "name": "LLOYDS BANKING GROUP PLC",
+      "ticker": "LLOY",
+      "weight": 0.31488,
+      "shares_held": 7227007,
+      "exchange": "London Stock Exchange",
+      "price": 1.23
+    },
+    {
+      "name": "LOBLAW COMPANIES LTD",
+      "ticker": "L",
+      "weight": 0.11675,
+      "shares_held": 73519,
+      "exchange": "Toronto Stock Exchange",
+      "price": 44.93
+    },
+    {
+      "name": "LOGITECH INTERNATIONAL SA",
+      "ticker": "LOGN",
+      "weight": 0.06168,
+      "shares_held": 18556,
+      "exchange": "SIX Swiss Exchange",
+      "price": 94.03
+    },
+    {
+      "name": "LONDON STOCK EXCHANGE GROUP PLC",
+      "ticker": "LSEG",
+      "weight": 0.22698,
+      "shares_held": 57570,
+      "exchange": "London Stock Exchange",
+      "price": 111.54
+    },
+    {
+      "name": "LONZA GROUP AG",
+      "ticker": "LONN",
+      "weight": 0.19084,
+      "shares_held": 8669,
+      "exchange": "SIX Swiss Exchange",
+      "price": 622.77
+    },
+    {
+      "name": "LOREAL SA",
+      "ticker": "OR",
+      "weight": 0.41611,
+      "shares_held": 29072,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 404.91
+    },
+    {
+      "name": "LOTUS BAKERIES NV",
+      "ticker": "LOTB",
+      "weight": 0.01341,
+      "shares_held": 34,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 11160.1
+    },
+    {
+      "name": "LUNDBERGFORETAGEN CLASS B",
+      "ticker": "LUND B",
+      "weight": 0.01746,
+      "shares_held": 8981,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 54.99
+    },
+    {
+      "name": "LUNDIN GOLD INC",
+      "ticker": "LUG",
+      "weight": 0.03436,
+      "shares_held": 14210,
+      "exchange": "Toronto Stock Exchange",
+      "price": 68.4
+    },
+    {
+      "name": "LUNDIN MINING CORP",
+      "ticker": "LUN",
+      "weight": 0.06895,
+      "shares_held": 86544,
+      "exchange": "Toronto Stock Exchange",
+      "price": 22.54
+    },
+    {
+      "name": "LVMH",
+      "ticker": "MC",
+      "weight": 0.57161,
+      "shares_held": 30573,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 528.92
+    },
+    {
+      "name": "LY CORP",
+      "ticker": "4689",
+      "weight": 0.02909,
+      "shares_held": 340800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 2.42
+    },
+    {
+      "name": "LYNAS RARE EARTHS LTD",
+      "ticker": "LYC",
+      "weight": 0.05968,
+      "shares_held": 122123,
+      "exchange": "Asx - All Markets",
+      "price": 13.82
+    },
+    {
+      "name": "M&G PLC",
+      "ticker": "MNG",
+      "weight": 0.03499,
+      "shares_held": 268321,
+      "exchange": "London Stock Exchange",
+      "price": 3.69
+    },
+    {
+      "name": "M3 INC",
+      "ticker": "2413",
+      "weight": 0.01638,
+      "shares_held": 46600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.95
+    },
+    {
+      "name": "MACQUARIE GROUP LTD DEF",
+      "ticker": "MQG",
+      "weight": 0.22561,
+      "shares_held": 44860,
+      "exchange": "Asx - All Markets",
+      "price": 142.28
+    },
+    {
+      "name": "MAGNA INTERNATIONAL INC",
+      "ticker": "MG",
+      "weight": 0.06137,
+      "shares_held": 31321,
+      "exchange": "Toronto Stock Exchange",
+      "price": 55.43
+    },
+    {
+      "name": "MAGNUM ICE CREAM NV",
+      "ticker": "MICC",
+      "weight": 0.03073,
+      "shares_held": 58767,
+      "exchange": "Euronext Amsterdam",
+      "price": 14.8
+    },
+    {
+      "name": "MAKITA CORP",
+      "ticker": "6586",
+      "weight": 0.02762,
+      "shares_held": 23800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 32.82
+    },
+    {
+      "name": "MANULIFE FINANCIAL CORP",
+      "ticker": "MFC",
+      "weight": 0.249,
+      "shares_held": 204425,
+      "exchange": "Toronto Stock Exchange",
+      "price": 34.46
+    },
+    {
+      "name": "MAPFRE SA",
+      "ticker": "MAP",
+      "weight": 0.01647,
+      "shares_held": 107924,
+      "exchange": "Bolsa De Madrid",
+      "price": 4.32
+    },
+    {
+      "name": "MARKS AND SPENCER GROUP PLC",
+      "ticker": "MKS",
+      "weight": 0.03847,
+      "shares_held": 246264,
+      "exchange": "London Stock Exchange",
+      "price": 4.42
+    },
+    {
+      "name": "MARUBENI CORP",
+      "ticker": "8002",
+      "weight": 0.2182,
+      "shares_held": 174100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 35.46
+    },
+    {
+      "name": "MATSUKIYOKARA",
+      "ticker": "3088",
+      "weight": 0.02395,
+      "shares_held": 44400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.26
+    },
+    {
+      "name": "MEDIBANK PRIVATE LTD",
+      "ticker": "MPL",
+      "weight": 0.03947,
+      "shares_held": 364649,
+      "exchange": "Asx - All Markets",
+      "price": 3.06
+    },
+    {
+      "name": "MELROSE INDUSTRIES PLC",
+      "ticker": "MRO",
+      "weight": 0.0356,
+      "shares_held": 152152,
+      "exchange": "London Stock Exchange",
+      "price": 6.62
+    },
+    {
+      "name": "MERCEDES-BENZ GROUP N AG",
+      "ticker": "MBG",
+      "weight": 0.18967,
+      "shares_held": 89446,
+      "exchange": "Xetra",
+      "price": 59.99
+    },
+    {
+      "name": "MERCK",
+      "ticker": "MRK",
+      "weight": 0.06882,
+      "shares_held": 15781,
+      "exchange": "Xetra",
+      "price": 123.37
+    },
+    {
+      "name": "MERIDIAN ENERGY LTD",
+      "ticker": "MEL",
+      "weight": 0.0205,
+      "shares_held": 182545,
+      "exchange": "New Zealand Exchange Ltd",
+      "price": 3.18
+    },
+    {
+      "name": "METRO INC",
+      "ticker": "MRU",
+      "weight": 0.06009,
+      "shares_held": 25175,
+      "exchange": "Toronto Stock Exchange",
+      "price": 67.53
+    },
+    {
+      "name": "METSO CORPORATION",
+      "ticker": "METSO",
+      "weight": 0.04742,
+      "shares_held": 79270,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 16.92
+    },
+    {
+      "name": "MICHELIN",
+      "ticker": "ML",
+      "weight": 0.09788,
+      "shares_held": 82113,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 33.72
+    },
+    {
+      "name": "MINEBEA MITSUMI INC",
+      "ticker": "6479",
+      "weight": 0.027,
+      "shares_held": 44400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 17.2
+    },
+    {
+      "name": "MINI S&P/TSE 60 INDEX JUN 26",
+      "ticker": "MPTM6",
+      "weight": 0,
+      "shares_held": 23,
+      "exchange": "The Montreal Exchange / Bourse De Montreal",
+      "price": 1345.2
+    },
+    {
+      "name": "MITSUBISHI CHEMICAL GROUP CORP",
+      "ticker": "4188",
+      "weight": 0.03179,
+      "shares_held": 154000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 5.84
+    },
+    {
+      "name": "MITSUBISHI CORP",
+      "ticker": "8058",
+      "weight": 0.50053,
+      "shares_held": 399800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 35.42
+    },
+    {
+      "name": "MITSUBISHI ELECTRIC CORP",
+      "ticker": "6503",
+      "weight": 0.28386,
+      "shares_held": 235000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 34.17
+    },
+    {
+      "name": "MITSUBISHI ESTATE CO LTD",
+      "ticker": "8802",
+      "weight": 0.12891,
+      "shares_held": 128600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.36
+    },
+    {
+      "name": "MITSUBISHI HC CAPITAL INC",
+      "ticker": "8593",
+      "weight": 0.03411,
+      "shares_held": 106700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 9.04
+    },
+    {
+      "name": "MITSUBISHI HEAVY INDUSTRIES LTD",
+      "ticker": "7011",
+      "weight": 0.39378,
+      "shares_held": 394300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.25
+    },
+    {
+      "name": "MITSUBISHI UFJ FINANCIAL GROUP INC",
+      "ticker": "8306",
+      "weight": 0.82624,
+      "shares_held": 1382000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.91
+    },
+    {
+      "name": "MITSUI FUDOSAN LTD",
+      "ticker": "8801",
+      "weight": 0.12258,
+      "shares_held": 319500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 10.85
+    },
+    {
+      "name": "MITSUI LTD",
+      "ticker": "8031",
+      "weight": 0.42907,
+      "shares_held": 303300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 40.02
+    },
+    {
+      "name": "MITSUI OSK LINES LTD",
+      "ticker": "9104",
+      "weight": 0.06654,
+      "shares_held": 43800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 42.98
+    },
+    {
+      "name": "MIZRAHI TEFAHOT BANK LTD",
+      "ticker": "MZTF",
+      "weight": 0.051,
+      "shares_held": 19504,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 73.97
+    },
+    {
+      "name": "MIZUHO FINANCIAL GROUP INC",
+      "ticker": "8411",
+      "weight": 0.42999,
+      "shares_held": 305000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 39.88
+    },
+    {
+      "name": "MONCLER",
+      "ticker": "MONC",
+      "weight": 0.05996,
+      "shares_held": 28564,
+      "exchange": "Borsa Italiana",
+      "price": 59.39
+    },
+    {
+      "name": "MONDAYCOM LTD",
+      "ticker": "MNDY",
+      "weight": 0.01229,
+      "shares_held": 5013,
+      "exchange": "NASDAQ",
+      "price": 69.38
+    },
+    {
+      "name": "MONOTARO LTD",
+      "ticker": "3064",
+      "weight": 0.01453,
+      "shares_held": 36800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.17
+    },
+    {
+      "name": "MOWI",
+      "ticker": "MOWI",
+      "weight": 0.04389,
+      "shares_held": 55382,
+      "exchange": "Oslo Bors Asa",
+      "price": 22.42
+    },
+    {
+      "name": "MS&AD INSURANCE GROUP HOLDINGS INC",
+      "ticker": "8725",
+      "weight": 0.1441,
+      "shares_held": 156800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 26
+    },
+    {
+      "name": "MSCI EAFE INDEX JUN 26",
+      "ticker": "MFSM6",
+      "weight": 0,
+      "shares_held": 91,
+      "exchange": "Ice Futures U.S.",
+      "price": 2828.9
+    },
+    {
+      "name": "MTR CORPORATION CORP LTD",
+      "ticker": "66",
+      "weight": 0.02893,
+      "shares_held": 199500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 4.1
+    },
+    {
+      "name": "MTU AERO ENGINES HOLDING AG",
+      "ticker": "MTX",
+      "weight": 0.0823,
+      "shares_held": 6516,
+      "exchange": "Xetra",
+      "price": 357.31
+    },
+    {
+      "name": "MUENCHENER RUECKVERSICHERUNGS-GESE",
+      "ticker": "MUV2",
+      "weight": 0.3392,
+      "shares_held": 15959,
+      "exchange": "Xetra",
+      "price": 601.28
+    },
+    {
+      "name": "MURATA MANUFACTURING LTD",
+      "ticker": "6981",
+      "weight": 0.1716,
+      "shares_held": 208200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 23.32
+    },
+    {
+      "name": "NATIONAL AUSTRALIA BANK LTD",
+      "ticker": "NAB",
+      "weight": 0.39078,
+      "shares_held": 375803,
+      "exchange": "Asx - All Markets",
+      "price": 29.42
+    },
+    {
+      "name": "NATIONAL BANK OF CANADA",
+      "ticker": "NA",
+      "weight": 0.21803,
+      "shares_held": 47715,
+      "exchange": "Toronto Stock Exchange",
+      "price": 129.27
+    },
+    {
+      "name": "NATIONAL GRID PLC",
+      "ticker": "NG.",
+      "weight": 0.35114,
+      "shares_held": 601480,
+      "exchange": "London Stock Exchange",
+      "price": 16.52
+    },
+    {
+      "name": "NATURGY ENERGY GROUP SA",
+      "ticker": "NTGY",
+      "weight": 0.03139,
+      "shares_held": 29986,
+      "exchange": "Bolsa De Madrid",
+      "price": 29.61
+    },
+    {
+      "name": "NATWEST GROUP PLC",
+      "ticker": "NWG",
+      "weight": 0.24824,
+      "shares_held": 983158,
+      "exchange": "London Stock Exchange",
+      "price": 7.14
+    },
+    {
+      "name": "NEBIUS NV CLASS A",
+      "ticker": "NBIS",
+      "weight": 0.09508,
+      "shares_held": 25382,
+      "exchange": "NASDAQ",
+      "price": 105.97
+    },
+    {
+      "name": "NEC CORP",
+      "ticker": "6701",
+      "weight": 0.1386,
+      "shares_held": 158900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 24.68
+    },
+    {
+      "name": "NEMETSCHEK",
+      "ticker": "NEM",
+      "weight": 0.0195,
+      "shares_held": 7558,
+      "exchange": "Xetra",
+      "price": 73
+    },
+    {
+      "name": "NESTE",
+      "ticker": "NESTE",
+      "weight": 0.05963,
+      "shares_held": 51540,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 32.73
+    },
+    {
+      "name": "NESTLE SA",
+      "ticker": "NESN",
+      "weight": 1.06716,
+      "shares_held": 314401,
+      "exchange": "SIX Swiss Exchange",
+      "price": 96.02
+    },
+    {
+      "name": "NEXON LTD",
+      "ticker": "3659",
+      "weight": 0.02921,
+      "shares_held": 45200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.28
+    },
+    {
+      "name": "NEXT PLC",
+      "ticker": "NXT",
+      "weight": 0.08551,
+      "shares_held": 14448,
+      "exchange": "London Stock Exchange",
+      "price": 167.43
+    },
+    {
+      "name": "NIBE INDUSTRIER CLASS B",
+      "ticker": "NIBE B",
+      "weight": 0.0235,
+      "shares_held": 167808,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 3.96
+    },
+    {
+      "name": "NICE LTD",
+      "ticker": "NICE",
+      "weight": 0.02991,
+      "shares_held": 7618,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 111.08
+    },
+    {
+      "name": "NIDEC CORP",
+      "ticker": "6594",
+      "weight": 0.05204,
+      "shares_held": 110300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 13.35
+    },
+    {
+      "name": "NINTENDO LTD",
+      "ticker": "7974",
+      "weight": 0.27327,
+      "shares_held": 137300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 56.31
+    },
+    {
+      "name": "NIPPON BUILDING FUND REIT INC",
+      "ticker": "8951",
+      "weight": 0.03216,
+      "shares_held": 1068,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 851.78
+    },
+    {
+      "name": "NIPPON PAINT HOLDINGS LTD",
+      "ticker": "4612",
+      "weight": 0.02438,
+      "shares_held": 111400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 6.19
+    },
+    {
+      "name": "NIPPON SANSO HOLDINGS CORP",
+      "ticker": "4091",
+      "weight": 0.02934,
+      "shares_held": 22200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 37.38
+    },
+    {
+      "name": "NIPPON STEEL CORP",
+      "ticker": "5401",
+      "weight": 0.08077,
+      "shares_held": 612100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 3.73
+    },
+    {
+      "name": "NIPPON YUSEN",
+      "ticker": "9101",
+      "weight": 0.06173,
+      "shares_held": 48200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 36.23
+    },
+    {
+      "name": "NISSAN MOTOR LTD",
+      "ticker": "7201",
+      "weight": 0.02079,
+      "shares_held": 266800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 2.2
+    },
+    {
+      "name": "NITORI HOLDINGS LTD",
+      "ticker": "9843",
+      "weight": 0.02862,
+      "shares_held": 49200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.46
+    },
+    {
+      "name": "NITTO DENKO CORP",
+      "ticker": "6988",
+      "weight": 0.05946,
+      "shares_held": 84400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 19.93
+    },
+    {
+      "name": "NN GROUP NV",
+      "ticker": "NN",
+      "weight": 0.08868,
+      "shares_held": 32928,
+      "exchange": "Euronext Amsterdam",
+      "price": 76.19
+    },
+    {
+      "name": "NOK CASH",
+      "ticker": "NOK",
+      "weight": 0.00354,
+      "shares_held": 970472,
+      "exchange": "-",
+      "price": 10.33
+    },
+    {
+      "name": "NOKIA",
+      "ticker": "NOKIA",
+      "weight": 0.19029,
+      "shares_held": 644974,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 8.35
+    },
+    {
+      "name": "NOMURA HOLDINGS INC",
+      "ticker": "8604",
+      "weight": 0.10877,
+      "shares_held": 390700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 7.88
+    },
+    {
+      "name": "NOMURA RESEARCH INSTITUTE LTD",
+      "ticker": "4307",
+      "weight": 0.04308,
+      "shares_held": 46100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 26.44
+    },
+    {
+      "name": "NORDEA BANK",
+      "ticker": "NDA FI",
+      "weight": 0.22081,
+      "shares_held": 378778,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 16.49
+    },
+    {
+      "name": "NORSK HYDRO",
+      "ticker": "NHY",
+      "weight": 0.05534,
+      "shares_held": 166307,
+      "exchange": "Oslo Bors Asa",
+      "price": 9.41
+    },
+    {
+      "name": "NORTHERN STAR RESOURCES LTD",
+      "ticker": "NST",
+      "weight": 0.07473,
+      "shares_held": 163031,
+      "exchange": "Asx - All Markets",
+      "price": 12.97
+    },
+    {
+      "name": "NOVA LTD",
+      "ticker": "NVMI",
+      "weight": 0.05849,
+      "shares_held": 3554,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 465.59
+    },
+    {
+      "name": "NOVARTIS AG",
+      "ticker": "NOVN",
+      "weight": 1.23642,
+      "shares_held": 232238,
+      "exchange": "SIX Swiss Exchange",
+      "price": 150.61
+    },
+    {
+      "name": "NOVO NORDISK CLASS B",
+      "ticker": "NOVO B",
+      "weight": 0.51023,
+      "shares_held": 391944,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 36.83
+    },
+    {
+      "name": "NOVOZYMES B",
+      "ticker": "NSIS B",
+      "weight": 0.08821,
+      "shares_held": 43119,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 57.87
+    },
+    {
+      "name": "NTT INC",
+      "ticker": "9432",
+      "weight": 0.1333,
+      "shares_held": 3791700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 0.99
+    },
+    {
+      "name": "NUTRIEN LTD",
+      "ticker": "NTR",
+      "weight": 0.15671,
+      "shares_held": 60185,
+      "exchange": "Toronto Stock Exchange",
+      "price": 73.66
+    },
+    {
+      "name": "NZD CASH",
+      "ticker": "NZD",
+      "weight": 0.00273,
+      "shares_held": 133845,
+      "exchange": "-",
+      "price": 57.78
+    },
+    {
+      "name": "OBAYASHI CORP",
+      "ticker": "1802",
+      "weight": 0.06403,
+      "shares_held": 73800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 24.55
+    },
+    {
+      "name": "OBIC LTD",
+      "ticker": "4684",
+      "weight": 0.03481,
+      "shares_held": 40900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 24.08
+    },
+    {
+      "name": "OLYMPUS CORP",
+      "ticker": "7733",
+      "weight": 0.04331,
+      "shares_held": 136600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.97
+    },
+    {
+      "name": "OMV AG",
+      "ticker": "OMV",
+      "weight": 0.04434,
+      "shares_held": 17503,
+      "exchange": "Wiener Boerse Ag",
+      "price": 71.67
+    },
+    {
+      "name": "OPEN TEXT CORP",
+      "ticker": "OTEX",
+      "weight": 0.02356,
+      "shares_held": 29956,
+      "exchange": "Toronto Stock Exchange",
+      "price": 22.25
+    },
+    {
+      "name": "ORACLE JAPAN CORP",
+      "ticker": "4716",
+      "weight": 0.00678,
+      "shares_held": 3600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 53.29
+    },
+    {
+      "name": "ORANGE SA",
+      "ticker": "ORA",
+      "weight": 0.16163,
+      "shares_held": 229616,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 19.91
+    },
+    {
+      "name": "ORIENTAL LAND LTD",
+      "ticker": "4661",
+      "weight": 0.07856,
+      "shares_held": 131700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.88
+    },
+    {
+      "name": "ORIGIN ENERGY LTD",
+      "ticker": "ORG",
+      "weight": 0.06633,
+      "shares_held": 219631,
+      "exchange": "Asx - All Markets",
+      "price": 8.54
+    },
+    {
+      "name": "ORION CLASS B",
+      "ticker": "ORNBV",
+      "weight": 0.038,
+      "shares_held": 13923,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 77.21
+    },
+    {
+      "name": "ORIX CORP",
+      "ticker": "8591",
+      "weight": 0.1463,
+      "shares_held": 138600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 29.86
+    },
+    {
+      "name": "ORKLA",
+      "ticker": "ORK",
+      "weight": 0.03481,
+      "shares_held": 80018,
+      "exchange": "Oslo Bors Asa",
+      "price": 12.31
+    },
+    {
+      "name": "ORSTED A/S",
+      "ticker": "ORSTED",
+      "weight": 0.05251,
+      "shares_held": 66316,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 22.4
+    },
+    {
+      "name": "OSAKA GAS LTD",
+      "ticker": "9532",
+      "weight": 0.06091,
+      "shares_held": 43100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 39.98
+    },
+    {
+      "name": "OTSUKA CORP",
+      "ticker": "4768",
+      "weight": 0.01696,
+      "shares_held": 25900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.52
+    },
+    {
+      "name": "OTSUKA HOLDINGS LTD",
+      "ticker": "4578",
+      "weight": 0.12301,
+      "shares_held": 50100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 69.46
+    },
+    {
+      "name": "OVERSEA-CHINESE BANKING LTD",
+      "ticker": "O39",
+      "weight": 0.24903,
+      "shares_held": 420500,
+      "exchange": "Singapore Exchange",
+      "price": 16.75
+    },
+    {
+      "name": "PAN AMERICAN SILVER CORP",
+      "ticker": "PAAS",
+      "weight": 0.08941,
+      "shares_held": 50866,
+      "exchange": "Toronto Stock Exchange",
+      "price": 49.73
+    },
+    {
+      "name": "PAN PACIFIC INTERNATIONAL HOLDINGS",
+      "ticker": "7532",
+      "weight": 0.04942,
+      "shares_held": 229900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 6.08
+    },
+    {
+      "name": "PANASONIC HOLDINGS CORP",
+      "ticker": "6752",
+      "weight": 0.17332,
+      "shares_held": 290600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.87
+    },
+    {
+      "name": "PANDORA",
+      "ticker": "PNDORA",
+      "weight": 0.02506,
+      "shares_held": 9834,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 72.08
+    },
+    {
+      "name": "PARTNERS GROUP HOLDING AG",
+      "ticker": "PGHN",
+      "weight": 0.10595,
+      "shares_held": 2861,
+      "exchange": "SIX Swiss Exchange",
+      "price": 1047.7
+    },
+    {
+      "name": "PEARSON PLC",
+      "ticker": "PSON",
+      "weight": 0.03108,
+      "shares_held": 68589,
+      "exchange": "London Stock Exchange",
+      "price": 12.82
+    },
+    {
+      "name": "PEMBINA PIPELINE CORP",
+      "ticker": "PPL",
+      "weight": 0.11587,
+      "shares_held": 71694,
+      "exchange": "Toronto Stock Exchange",
+      "price": 45.72
+    },
+    {
+      "name": "PERNOD RICARD SA",
+      "ticker": "RI",
+      "weight": 0.05988,
+      "shares_held": 24490,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 69.18
+    },
+    {
+      "name": "PHOENIX FINANCIAL LTD",
+      "ticker": "PHOE",
+      "weight": 0.05038,
+      "shares_held": 26962,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 52.87
+    },
+    {
+      "name": "PORSCHE AUTOMOBIL HOLDING PREF",
+      "ticker": "PAH3",
+      "weight": 0.02606,
+      "shares_held": 20524,
+      "exchange": "Xetra",
+      "price": 35.93
+    },
+    {
+      "name": "POSTE ITALIANE",
+      "ticker": "PST",
+      "weight": 0.05278,
+      "shares_held": 65407,
+      "exchange": "Borsa Italiana",
+      "price": 22.83
+    },
+    {
+      "name": "POWER ASSETS HOLDINGS LTD",
+      "ticker": "6",
+      "weight": 0.05442,
+      "shares_held": 197500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 7.8
+    },
+    {
+      "name": "POWER CORPORATION OF CANADA",
+      "ticker": "POW",
+      "weight": 0.11404,
+      "shares_held": 66880,
+      "exchange": "Toronto Stock Exchange",
+      "price": 48.24
+    },
+    {
+      "name": "PRO MEDICUS LTD",
+      "ticker": "PME",
+      "weight": 0.02094,
+      "shares_held": 7173,
+      "exchange": "Asx - All Markets",
+      "price": 82.6
+    },
+    {
+      "name": "PROSUS NV CLASS N",
+      "ticker": "PRX",
+      "weight": 0.2605,
+      "shares_held": 161662,
+      "exchange": "Euronext Amsterdam",
+      "price": 45.59
+    },
+    {
+      "name": "PRUDENTIAL PLC",
+      "ticker": "PRU",
+      "weight": 0.15735,
+      "shares_held": 315278,
+      "exchange": "London Stock Exchange",
+      "price": 14.12
+    },
+    {
+      "name": "PRYSMIAN",
+      "ticker": "PRY",
+      "weight": 0.13451,
+      "shares_held": 34389,
+      "exchange": "Borsa Italiana",
+      "price": 110.65
+    },
+    {
+      "name": "PUBLICIS GROUPE SA",
+      "ticker": "PUB",
+      "weight": 0.07963,
+      "shares_held": 28036,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 80.35
+    },
+    {
+      "name": "QANTAS AIRWAYS LTD",
+      "ticker": "QAN",
+      "weight": 0.01795,
+      "shares_held": 86346,
+      "exchange": "Asx - All Markets",
+      "price": 5.88
+    },
+    {
+      "name": "QBE INSURANCE GROUP LTD",
+      "ticker": "QBE",
+      "weight": 0.09568,
+      "shares_held": 184897,
+      "exchange": "Asx - All Markets",
+      "price": 14.64
+    },
+    {
+      "name": "QIAGEN NV",
+      "ticker": "QIA",
+      "weight": 0.0344,
+      "shares_held": 24049,
+      "exchange": "Xetra",
+      "price": 40.47
+    },
+    {
+      "name": "RAIFFEISEN BANK INTERNATIONAL AG",
+      "ticker": "RBI",
+      "weight": 0.0238,
+      "shares_held": 15582,
+      "exchange": "Wiener Boerse Ag",
+      "price": 43.21
+    },
+    {
+      "name": "RAKUTEN GROUP INC",
+      "ticker": "4755",
+      "weight": 0.0293,
+      "shares_held": 177800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 4.66
+    },
+    {
+      "name": "RANDSTAD HOLDING",
+      "ticker": "RAND",
+      "weight": 0.01224,
+      "shares_held": 12732,
+      "exchange": "Euronext Amsterdam",
+      "price": 27.2
+    },
+    {
+      "name": "RATIONAL AG",
+      "ticker": "RAA",
+      "weight": 0.01694,
+      "shares_held": 666,
+      "exchange": "Xetra",
+      "price": 719.58
+    },
+    {
+      "name": "RB GLOBAL INC",
+      "ticker": "RBA",
+      "weight": 0.07777,
+      "shares_held": 22459,
+      "exchange": "Toronto Stock Exchange",
+      "price": 97.97
+    },
+    {
+      "name": "REA GROUP LTD",
+      "ticker": "REA",
+      "weight": 0.02431,
+      "shares_held": 6478,
+      "exchange": "Asx - All Markets",
+      "price": 106.18
+    },
+    {
+      "name": "RECKITT BENCKISER GROUP PLC",
+      "ticker": "RKT",
+      "weight": 0.1887,
+      "shares_held": 78798,
+      "exchange": "London Stock Exchange",
+      "price": 67.75
+    },
+    {
+      "name": "RECORDATI INDUSTRIA CHIMICA E FARM",
+      "ticker": "REC",
+      "weight": 0.02772,
+      "shares_held": 14015,
+      "exchange": "Borsa Italiana",
+      "price": 55.95
+    },
+    {
+      "name": "RECRUIT HOLDINGS LTD",
+      "ticker": "6098",
+      "weight": 0.24692,
+      "shares_held": 174300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 40.08
+    },
+    {
+      "name": "RELX PLC",
+      "ticker": "REL",
+      "weight": 0.25306,
+      "shares_held": 223606,
+      "exchange": "London Stock Exchange",
+      "price": 32.02
+    },
+    {
+      "name": "RENAULT SA",
+      "ticker": "RNO",
+      "weight": 0.02908,
+      "shares_held": 25307,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 32.51
+    },
+    {
+      "name": "RENESAS ELECTRONICS CORP",
+      "ticker": "6723",
+      "weight": 0.12024,
+      "shares_held": 227300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 14.97
+    },
+    {
+      "name": "RENTOKIL INITIAL PLC",
+      "ticker": "RTO",
+      "weight": 0.07007,
+      "shares_held": 321777,
+      "exchange": "London Stock Exchange",
+      "price": 6.16
+    },
+    {
+      "name": "REPSOL SA",
+      "ticker": "REP",
+      "weight": 0.14172,
+      "shares_held": 143734,
+      "exchange": "Bolsa De Madrid",
+      "price": 27.89
+    },
+    {
+      "name": "RESONA HOLDINGS INC",
+      "ticker": "8308",
+      "weight": 0.10194,
+      "shares_held": 253200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.39
+    },
+    {
+      "name": "RESTAURANTS BRANDS INTERNATIONAL I",
+      "ticker": "QSR",
+      "weight": 0.09812,
+      "shares_held": 37977,
+      "exchange": "Toronto Stock Exchange",
+      "price": 73.09
+    },
+    {
+      "name": "REXEL SA",
+      "ticker": "RXL",
+      "weight": 0.04062,
+      "shares_held": 30029,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 38.27
+    },
+    {
+      "name": "RHEINMETALL AG",
+      "ticker": "RHM",
+      "weight": 0.32648,
+      "shares_held": 5573,
+      "exchange": "Xetra",
+      "price": 1657.28
+    },
+    {
+      "name": "RIO TINTO LTD",
+      "ticker": "RIO",
+      "weight": 0.16613,
+      "shares_held": 45023,
+      "exchange": "Asx - All Markets",
+      "price": 104.38
+    },
+    {
+      "name": "RIO TINTO PLC",
+      "ticker": "RIO",
+      "weight": 0.41908,
+      "shares_held": 138099,
+      "exchange": "London Stock Exchange",
+      "price": 85.85
+    },
+    {
+      "name": "ROCHE HOLDING AG",
+      "ticker": "RO",
+      "weight": 0.05392,
+      "shares_held": 3771,
+      "exchange": "SIX Swiss Exchange",
+      "price": 404.51
+    },
+    {
+      "name": "ROCHE PS PAR AG",
+      "ticker": "ROP",
+      "weight": 1.17927,
+      "shares_held": 84636,
+      "exchange": "SIX Swiss Exchange",
+      "price": 394.18
+    },
+    {
+      "name": "ROCKWOOL CLASS B",
+      "ticker": "ROCK B",
+      "weight": 0.0132,
+      "shares_held": 13732,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 27.19
+    },
+    {
+      "name": "ROGERS COMMUNICATIONS NON-VOTING I",
+      "ticker": "RCI.B",
+      "weight": 0.06229,
+      "shares_held": 45295,
+      "exchange": "Toronto Stock Exchange",
+      "price": 38.91
+    },
+    {
+      "name": "ROLLS-ROYCE HOLDINGS PLC",
+      "ticker": "RR.",
+      "weight": 0.55648,
+      "shares_held": 1025313,
+      "exchange": "London Stock Exchange",
+      "price": 15.35
+    },
+    {
+      "name": "ROYAL BANK OF CANADA",
+      "ticker": "RY",
+      "weight": 0.97156,
+      "shares_held": 171494,
+      "exchange": "Toronto Stock Exchange",
+      "price": 160.27
+    },
+    {
+      "name": "RWE AG",
+      "ticker": "RWE",
+      "weight": 0.17857,
+      "shares_held": 78164,
+      "exchange": "Xetra",
+      "price": 64.63
+    },
+    {
+      "name": "RYANAIR HOLDINGS PLC",
+      "ticker": "RYA",
+      "weight": 0.10472,
+      "shares_held": 103378,
+      "exchange": "Irish Stock Exchange - All Market",
+      "price": 28.66
+    },
+    {
+      "name": "RYOHIN KEIKAKU LTD",
+      "ticker": "7453",
+      "weight": 0.04812,
+      "shares_held": 63800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 21.34
+    },
+    {
+      "name": "SAAB CLASS B",
+      "ticker": "SAAB B",
+      "weight": 0.09205,
+      "shares_held": 39929,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 65.22
+    },
+    {
+      "name": "SAFRAN SA",
+      "ticker": "SAF",
+      "weight": 0.50318,
+      "shares_held": 43785,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 325.11
+    },
+    {
+      "name": "SAGAX CLASS B",
+      "ticker": "SAGA B",
+      "weight": 0.01537,
+      "shares_held": 24420,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 17.81
+    },
+    {
+      "name": "SAINSBURY(J) PLC",
+      "ticker": "SBRY",
+      "weight": 0.03302,
+      "shares_held": 211472,
+      "exchange": "London Stock Exchange",
+      "price": 4.42
+    },
+    {
+      "name": "SALMAR",
+      "ticker": "SALM",
+      "weight": 0.01615,
+      "shares_held": 7888,
+      "exchange": "Oslo Bors Asa",
+      "price": 57.91
+    },
+    {
+      "name": "SAMPO CLASS A",
+      "ticker": "SAMPO",
+      "weight": 0.11026,
+      "shares_held": 298246,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 10.46
+    },
+    {
+      "name": "SANDOZ GROUP AG",
+      "ticker": "SDZ",
+      "weight": 0.14086,
+      "shares_held": 52115,
+      "exchange": "SIX Swiss Exchange",
+      "price": 76.47
+    },
+    {
+      "name": "SANDS CHINA LTD",
+      "ticker": "1928",
+      "weight": 0.02132,
+      "shares_held": 281600,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 2.14
+    },
+    {
+      "name": "SANDVIK",
+      "ticker": "SAND",
+      "weight": 0.16814,
+      "shares_held": 128860,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 36.91
+    },
+    {
+      "name": "SANOFI SA",
+      "ticker": "SAN",
+      "weight": 0.44607,
+      "shares_held": 134743,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 93.65
+    },
+    {
+      "name": "SANRIO LTD",
+      "ticker": "8136",
+      "weight": 0.02544,
+      "shares_held": 22100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 32.57
+    },
+    {
+      "name": "SANTOS LTD",
+      "ticker": "STO",
+      "weight": 0.07797,
+      "shares_held": 406550,
+      "exchange": "Asx - All Markets",
+      "price": 5.43
+    },
+    {
+      "name": "SAP",
+      "ticker": "SAP",
+      "weight": 0.75155,
+      "shares_held": 127368,
+      "exchange": "Xetra",
+      "price": 166.93
+    },
+    {
+      "name": "SAPUTO INC",
+      "ticker": "SAP",
+      "weight": 0.03131,
+      "shares_held": 29032,
+      "exchange": "Toronto Stock Exchange",
+      "price": 30.51
+    },
+    {
+      "name": "SARTORIUS PREF AG",
+      "ticker": "SRT3",
+      "weight": 0.03014,
+      "shares_held": 3428,
+      "exchange": "Xetra",
+      "price": 248.71
+    },
+    {
+      "name": "SARTORIUS STEDIM BIOTECH SA",
+      "ticker": "DIM",
+      "weight": 0.02463,
+      "shares_held": 3614,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 192.79
+    },
+    {
+      "name": "SBI HOLDINGS INC",
+      "ticker": "8473",
+      "weight": 0.0477,
+      "shares_held": 72300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.66
+    },
+    {
+      "name": "SCENTRE GROUP",
+      "ticker": "SCG",
+      "weight": 0.05286,
+      "shares_held": 641996,
+      "exchange": "Asx - All Markets",
+      "price": 2.33
+    },
+    {
+      "name": "SCHINDLER HOLDING AG",
+      "ticker": "SCHN",
+      "weight": 0.03393,
+      "shares_held": 3096,
+      "exchange": "SIX Swiss Exchange",
+      "price": 310
+    },
+    {
+      "name": "SCHINDLER HOLDING PAR AG",
+      "ticker": "SCHP",
+      "weight": 0.05634,
+      "shares_held": 4906,
+      "exchange": "SIX Swiss Exchange",
+      "price": 324.87
+    },
+    {
+      "name": "SCHNEIDER ELECTRIC",
+      "ticker": "SU",
+      "weight": 0.64786,
+      "shares_held": 66670,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 274.91
+    },
+    {
+      "name": "SCHRODERS PLC",
+      "ticker": "SDR",
+      "weight": 0.02989,
+      "shares_held": 110540,
+      "exchange": "London Stock Exchange",
+      "price": 7.65
+    },
+    {
+      "name": "SCOUT24 N",
+      "ticker": "G24",
+      "weight": 0.02476,
+      "shares_held": 9587,
+      "exchange": "Xetra",
+      "price": 73.05
+    },
+    {
+      "name": "SCREEN HOLDINGS LTD",
+      "ticker": "7735",
+      "weight": 0.0342,
+      "shares_held": 7900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 122.48
+    },
+    {
+      "name": "SEA ADS REPRESENTING LTD CLASS A",
+      "ticker": "SE",
+      "weight": 0.1411,
+      "shares_held": 49984,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 79.86
+    },
+    {
+      "name": "SECOM LTD",
+      "ticker": "9735",
+      "weight": 0.06135,
+      "shares_held": 46900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 37.01
+    },
+    {
+      "name": "SECURITAS B",
+      "ticker": "SECU B",
+      "weight": 0.03317,
+      "shares_held": 57077,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 16.44
+    },
+    {
+      "name": "SEGRO REIT PLC",
+      "ticker": "SGRO",
+      "weight": 0.05044,
+      "shares_held": 163863,
+      "exchange": "London Stock Exchange",
+      "price": 8.71
+    },
+    {
+      "name": "SEIBU HOLDINGS INC",
+      "ticker": "9024",
+      "weight": 0.0244,
+      "shares_held": 26000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 26.55
+    },
+    {
+      "name": "SEK CASH",
+      "ticker": "SEK",
+      "weight": 0.03737,
+      "shares_held": 9949379,
+      "exchange": "-",
+      "price": 10.63
+    },
+    {
+      "name": "SEKISUI CHEMICAL LTD",
+      "ticker": "4204",
+      "weight": 0.02585,
+      "shares_held": 44200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.54
+    },
+    {
+      "name": "SEKISUI HOUSE LTD",
+      "ticker": "1928",
+      "weight": 0.05539,
+      "shares_held": 70600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 22.2
+    },
+    {
+      "name": "SEMBCORP INDUSTRIES LTD",
+      "ticker": "U96",
+      "weight": 0.01927,
+      "shares_held": 109600,
+      "exchange": "Singapore Exchange",
+      "price": 4.97
+    },
+    {
+      "name": "SEVEN & I HOLDINGS LTD",
+      "ticker": "3382",
+      "weight": 0.12305,
+      "shares_held": 264600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 13.16
+    },
+    {
+      "name": "SEVERN TRENT PLC",
+      "ticker": "SVT",
+      "weight": 0.0492,
+      "shares_held": 34886,
+      "exchange": "London Stock Exchange",
+      "price": 39.89
+    },
+    {
+      "name": "SGD CASH",
+      "ticker": "SGD",
+      "weight": 0.00849,
+      "shares_held": 308473,
+      "exchange": "-",
+      "price": 77.85
+    },
+    {
+      "name": "SGH LTD",
+      "ticker": "SGH",
+      "weight": 0.02833,
+      "shares_held": 27676,
+      "exchange": "Asx - All Markets",
+      "price": 28.95
+    },
+    {
+      "name": "SGS SA",
+      "ticker": "SGSN",
+      "weight": 0.07516,
+      "shares_held": 19842,
+      "exchange": "SIX Swiss Exchange",
+      "price": 107.16
+    },
+    {
+      "name": "SHELL PLC",
+      "ticker": "SHEL",
+      "weight": 1.159,
+      "shares_held": 707208,
+      "exchange": "London Stock Exchange",
+      "price": 46.36
+    },
+    {
+      "name": "SHIMADZU CORP",
+      "ticker": "7701",
+      "weight": 0.02273,
+      "shares_held": 26700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 24.09
+    },
+    {
+      "name": "SHIMANO INC",
+      "ticker": "7309",
+      "weight": 0.02703,
+      "shares_held": 7500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 101.96
+    },
+    {
+      "name": "SHIMIZU CORP",
+      "ticker": "1803",
+      "weight": 0.0157,
+      "shares_held": 24200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.35
+    },
+    {
+      "name": "SHIN ETSU CHEMICAL LTD",
+      "ticker": "4063",
+      "weight": 0.29262,
+      "shares_held": 210100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 39.4
+    },
+    {
+      "name": "SHIONOGI LTD",
+      "ticker": "4507",
+      "weight": 0.07064,
+      "shares_held": 92300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 21.65
+    },
+    {
+      "name": "SHISEIDO LTD",
+      "ticker": "4911",
+      "weight": 0.02973,
+      "shares_held": 44400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 18.95
+    },
+    {
+      "name": "SHOPIFY SUBORDINATE VOTING INC CLA",
+      "ticker": "SHOP",
+      "weight": 0.61154,
+      "shares_held": 149820,
+      "exchange": "Toronto Stock Exchange",
+      "price": 115.47
+    },
+    {
+      "name": "SIEMENS ENERGY N AG",
+      "ticker": "ENR",
+      "weight": 0.58662,
+      "shares_held": 95737,
+      "exchange": "Xetra",
+      "price": 173.35
+    },
+    {
+      "name": "SIEMENS HEALTHINEERS AG",
+      "ticker": "SHL",
+      "weight": 0.06291,
+      "shares_held": 42459,
+      "exchange": "Xetra",
+      "price": 41.92
+    },
+    {
+      "name": "SIEMENS N AG",
+      "ticker": "SIE",
+      "weight": 0.78958,
+      "shares_held": 92275,
+      "exchange": "Xetra",
+      "price": 242.07
+    },
+    {
+      "name": "SIGMA HEALTHCARE LTD",
+      "ticker": "SIG",
+      "weight": 0.03696,
+      "shares_held": 577311,
+      "exchange": "Asx - All Markets",
+      "price": 1.81
+    },
+    {
+      "name": "SIKA AG",
+      "ticker": "SIKA",
+      "weight": 0.10701,
+      "shares_held": 18487,
+      "exchange": "SIX Swiss Exchange",
+      "price": 163.76
+    },
+    {
+      "name": "SINGAPORE AIRLINES LTD",
+      "ticker": "C6L",
+      "weight": 0.03638,
+      "shares_held": 200600,
+      "exchange": "Singapore Exchange",
+      "price": 5.13
+    },
+    {
+      "name": "SINGAPORE EXCHANGE LTD",
+      "ticker": "S68",
+      "weight": 0.05009,
+      "shares_held": 93249,
+      "exchange": "Singapore Exchange",
+      "price": 15.2
+    },
+    {
+      "name": "SINGAPORE TECHNOLOGIES ENGINEERING",
+      "ticker": "S63",
+      "weight": 0.05763,
+      "shares_held": 191600,
+      "exchange": "Singapore Exchange",
+      "price": 8.51
+    },
+    {
+      "name": "SINGAPORE TELECOMMUNICATIONS LTD",
+      "ticker": "Z74",
+      "weight": 0.12399,
+      "shares_held": 910200,
+      "exchange": "Singapore Exchange",
+      "price": 3.85
+    },
+    {
+      "name": "SINO LAND LTD",
+      "ticker": "83",
+      "weight": 0.02664,
+      "shares_held": 516000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 1.46
+    },
+    {
+      "name": "SITC INTERNATIONAL HOLDINGS LTD",
+      "ticker": "1308",
+      "weight": 0.02769,
+      "shares_held": 182000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 4.3
+    },
+    {
+      "name": "SKANDINAVISKA ENSKILDA BANKEN",
+      "ticker": "SEB A",
+      "weight": 0.11843,
+      "shares_held": 184983,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 18.11
+    },
+    {
+      "name": "SKANSKA B",
+      "ticker": "SKA B",
+      "weight": 0.03651,
+      "shares_held": 39224,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 26.33
+    },
+    {
+      "name": "SKF B",
+      "ticker": "SKF B",
+      "weight": 0.03408,
+      "shares_held": 40930,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 23.56
+    },
+    {
+      "name": "SMC (JAPAN) CORP",
+      "ticker": "6273",
+      "weight": 0.07738,
+      "shares_held": 5400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 405.41
+    },
+    {
+      "name": "SMITH AND NEPHEW PLC",
+      "ticker": "SN.",
+      "weight": 0.05713,
+      "shares_held": 101258,
+      "exchange": "London Stock Exchange",
+      "price": 15.96
+    },
+    {
+      "name": "SMITHS GROUP PLC",
+      "ticker": "SMIN",
+      "weight": 0.0445,
+      "shares_held": 40854,
+      "exchange": "London Stock Exchange",
+      "price": 30.82
+    },
+    {
+      "name": "SNAM",
+      "ticker": "SRG",
+      "weight": 0.06643,
+      "shares_held": 257417,
+      "exchange": "Borsa Italiana",
+      "price": 7.3
+    },
+    {
+      "name": "SOCIETE GENERALE SA",
+      "ticker": "GLE",
+      "weight": 0.21866,
+      "shares_held": 84568,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 73.15
+    },
+    {
+      "name": "SODEXO SA",
+      "ticker": "SW",
+      "weight": 0.01866,
+      "shares_held": 10725,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 49.23
+    },
+    {
+      "name": "SOFINA SA",
+      "ticker": "SOF",
+      "weight": 0.01854,
+      "shares_held": 2079,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 252.29
+    },
+    {
+      "name": "SOFTBANK CORP",
+      "ticker": "9434",
+      "weight": 0.17659,
+      "shares_held": 3640500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 1.37
+    },
+    {
+      "name": "SOFTBANK GROUP CORP",
+      "ticker": "9984",
+      "weight": 0.39075,
+      "shares_held": 461800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 23.94
+    },
+    {
+      "name": "SOMPO HOLDINGS INC",
+      "ticker": "8630",
+      "weight": 0.14714,
+      "shares_held": 109400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 38.05
+    },
+    {
+      "name": "SONIC HEALTHCARE LTD",
+      "ticker": "SHL",
+      "weight": 0.03029,
+      "shares_held": 60833,
+      "exchange": "Asx - All Markets",
+      "price": 14.09
+    },
+    {
+      "name": "SONOVA HOLDING AG",
+      "ticker": "SOON",
+      "weight": 0.04916,
+      "shares_held": 6345,
+      "exchange": "SIX Swiss Exchange",
+      "price": 219.2
+    },
+    {
+      "name": "SONY FINANCIAL GROUP INC",
+      "ticker": "8729",
+      "weight": 0.02201,
+      "shares_held": 668200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 0.93
+    },
+    {
+      "name": "SONY GROUP CORP",
+      "ticker": "6758",
+      "weight": 0.53909,
+      "shares_held": 756700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.15
+    },
+    {
+      "name": "SOUTH32 LTD",
+      "ticker": "S32",
+      "weight": 0.05262,
+      "shares_held": 527877,
+      "exchange": "Asx - All Markets",
+      "price": 2.82
+    },
+    {
+      "name": "SPIRAX GROUP PLC",
+      "ticker": "SPX",
+      "weight": 0.03038,
+      "shares_held": 9614,
+      "exchange": "London Stock Exchange",
+      "price": 89.39
+    },
+    {
+      "name": "SPOTIFY TECHNOLOGY SA",
+      "ticker": "SPOT",
+      "weight": 0.32842,
+      "shares_held": 19430,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 478.18
+    },
+    {
+      "name": "SSE PLC",
+      "ticker": "SSE",
+      "weight": 0.1781,
+      "shares_held": 150711,
+      "exchange": "London Stock Exchange",
+      "price": 33.43
+    },
+    {
+      "name": "STANDARD CHARTERED PLC",
+      "ticker": "STAN",
+      "weight": 0.1715,
+      "shares_held": 233768,
+      "exchange": "London Stock Exchange",
+      "price": 20.75
+    },
+    {
+      "name": "STANDARD LIFE PLC",
+      "ticker": "SDLF",
+      "weight": 0.02573,
+      "shares_held": 81307,
+      "exchange": "London Stock Exchange",
+      "price": 8.95
+    },
+    {
+      "name": "STANTEC INC",
+      "ticker": "STN",
+      "weight": 0.04363,
+      "shares_held": 14204,
+      "exchange": "Toronto Stock Exchange",
+      "price": 86.91
+    },
+    {
+      "name": "STELLANTIS NV",
+      "ticker": "STLAM",
+      "weight": 0.06063,
+      "shares_held": 253182,
+      "exchange": "Borsa Italiana",
+      "price": 6.77
+    },
+    {
+      "name": "STMICROELECTRONICS NV",
+      "ticker": "STMPA",
+      "weight": 0.09911,
+      "shares_held": 82916,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 33.81
+    },
+    {
+      "name": "STOCKLAND STAPLED UNITS LTD",
+      "ticker": "SGP",
+      "weight": 0.03038,
+      "shares_held": 290532,
+      "exchange": "Asx - All Markets",
+      "price": 2.96
+    },
+    {
+      "name": "STORA ENSO CLASS R",
+      "ticker": "STERV",
+      "weight": 0.02676,
+      "shares_held": 65206,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 11.61
+    },
+    {
+      "name": "STRAUMANN HOLDING AG",
+      "ticker": "STMN",
+      "weight": 0.0497,
+      "shares_held": 13423,
+      "exchange": "SIX Swiss Exchange",
+      "price": 104.74
+    },
+    {
+      "name": "SUBARU CORP",
+      "ticker": "7270",
+      "weight": 0.04,
+      "shares_held": 69700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 16.23
+    },
+    {
+      "name": "SUMITOMO CORP",
+      "ticker": "8053",
+      "weight": 0.17191,
+      "shares_held": 131900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 36.87
+    },
+    {
+      "name": "SUMITOMO ELECTRIC INDUSTRIES LTD",
+      "ticker": "5802",
+      "weight": 0.19039,
+      "shares_held": 87000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 61.91
+    },
+    {
+      "name": "SUMITOMO METAL MINING LTD",
+      "ticker": "5713",
+      "weight": 0.05685,
+      "shares_held": 27500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 58.48
+    },
+    {
+      "name": "SUMITOMO MITSUI FINANCIAL GROUP IN",
+      "ticker": "8316",
+      "weight": 0.52275,
+      "shares_held": 450100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 32.86
+    },
+    {
+      "name": "SUMITOMO MITSUI TRUST GROUP INC",
+      "ticker": "8309",
+      "weight": 0.08318,
+      "shares_held": 73700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 31.93
+    },
+    {
+      "name": "SUMITOMO REALTY & DEVELOPMENT LTD",
+      "ticker": "8830",
+      "weight": 0.07261,
+      "shares_held": 71500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.73
+    },
+    {
+      "name": "SUN HUNG KAI PROPERTIES LTD",
+      "ticker": "16",
+      "weight": 0.11238,
+      "shares_held": 190500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 16.69
+    },
+    {
+      "name": "SUN LIFE FINANCIAL INC",
+      "ticker": "SLF",
+      "weight": 0.15018,
+      "shares_held": 67918,
+      "exchange": "Toronto Stock Exchange",
+      "price": 62.56
+    },
+    {
+      "name": "SUNBELT RENTALS HOLDINGS INC",
+      "ticker": "SUNB",
+      "weight": 0.12146,
+      "shares_held": 51471,
+      "exchange": "London Stock Exchange",
+      "price": 66.76
+    },
+    {
+      "name": "SUNCOR ENERGY INC",
+      "ticker": "SU",
+      "weight": 0.34413,
+      "shares_held": 149733,
+      "exchange": "Toronto Stock Exchange",
+      "price": 65.02
+    },
+    {
+      "name": "SUNCORP GROUP LTD",
+      "ticker": "SUN",
+      "weight": 0.05482,
+      "shares_held": 136808,
+      "exchange": "Asx - All Markets",
+      "price": 11.34
+    },
+    {
+      "name": "SUNTORY BEVERAGE & FOOD LTD",
+      "ticker": "2587",
+      "weight": 0.01824,
+      "shares_held": 18600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 27.75
+    },
+    {
+      "name": "SUZUKI MOTOR CORP",
+      "ticker": "7269",
+      "weight": 0.08644,
+      "shares_held": 200700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 12.18
+    },
+    {
+      "name": "SVENSKA CELLULOSA B",
+      "ticker": "SCA B",
+      "weight": 0.03324,
+      "shares_held": 80237,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 11.72
+    },
+    {
+      "name": "SVENSKA HANDELSBANKEN-A SHS",
+      "ticker": "SHB A",
+      "weight": 0.07859,
+      "shares_held": 177861,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 12.5
+    },
+    {
+      "name": "SWEDBANK",
+      "ticker": "SWED A",
+      "weight": 0.11684,
+      "shares_held": 102261,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 32.32
+    },
+    {
+      "name": "SWEDISH ORPHAN BIOVITRUM",
+      "ticker": "SOBI",
+      "weight": 0.03655,
+      "shares_held": 25405,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 40.7
+    },
+    {
+      "name": "SWIRE PACIFIC LTD A",
+      "ticker": "19",
+      "weight": 0.02443,
+      "shares_held": 63000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 10.97
+    },
+    {
+      "name": "SWISS LIFE HOLDING AG",
+      "ticker": "SLHN",
+      "weight": 0.13055,
+      "shares_held": 3499,
+      "exchange": "SIX Swiss Exchange",
+      "price": 1055.51
+    },
+    {
+      "name": "SWISS PRIME SITE AG",
+      "ticker": "SPSN",
+      "weight": 0.05614,
+      "shares_held": 9364,
+      "exchange": "SIX Swiss Exchange",
+      "price": 169.62
+    },
+    {
+      "name": "SWISS RE AG",
+      "ticker": "SREN",
+      "weight": 0.20692,
+      "shares_held": 36377,
+      "exchange": "SIX Swiss Exchange",
+      "price": 160.92
+    },
+    {
+      "name": "SWISSCOM AG",
+      "ticker": "SCMN",
+      "weight": 0.09631,
+      "shares_held": 3111,
+      "exchange": "SIX Swiss Exchange",
+      "price": 875.81
+    },
+    {
+      "name": "SYENSQO NV",
+      "ticker": "SYENS",
+      "weight": 0.02042,
+      "shares_held": 10160,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 56.86
+    },
+    {
+      "name": "SYMRISE AG",
+      "ticker": "SY1",
+      "weight": 0.04768,
+      "shares_held": 16391,
+      "exchange": "Xetra",
+      "price": 82.29
+    },
+    {
+      "name": "SYSMEX CORP",
+      "ticker": "6869",
+      "weight": 0.01952,
+      "shares_held": 64600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.55
+    },
+    {
+      "name": "T&D HOLDINGS INC",
+      "ticker": "8795",
+      "weight": 0.05396,
+      "shares_held": 61800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 24.7
+    },
+    {
+      "name": "TAISEI CORP",
+      "ticker": "1801",
+      "weight": 0.07147,
+      "shares_held": 19400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 104.22
+    },
+    {
+      "name": "TAKEDA PHARMACEUTICAL LTD",
+      "ticker": "4502",
+      "weight": 0.25017,
+      "shares_held": 195200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 36.26
+    },
+    {
+      "name": "TALANX AG",
+      "ticker": "TLX",
+      "weight": 0.03597,
+      "shares_held": 8486,
+      "exchange": "Xetra",
+      "price": 119.91
+    },
+    {
+      "name": "TC ENERGY CORP",
+      "ticker": "TRP",
+      "weight": 0.2861,
+      "shares_held": 127065,
+      "exchange": "Toronto Stock Exchange",
+      "price": 63.7
+    },
+    {
+      "name": "TDK CORP",
+      "ticker": "6762",
+      "weight": 0.11404,
+      "shares_held": 245700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 13.13
+    },
+    {
+      "name": "TECHTRONIC INDUSTRIES LTD",
+      "ticker": "669",
+      "weight": 0.09271,
+      "shares_held": 192000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 13.66
+    },
+    {
+      "name": "TECK RESOURCES SUBORDINATE VOTING",
+      "ticker": "TECK.B",
+      "weight": 0.09796,
+      "shares_held": 57078,
+      "exchange": "Toronto Stock Exchange",
+      "price": 48.55
+    },
+    {
+      "name": "TELE2 B",
+      "ticker": "TEL2 B",
+      "weight": 0.05185,
+      "shares_held": 72700,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 20.18
+    },
+    {
+      "name": "TELECOM ITALIA",
+      "ticker": "TIT",
+      "weight": 0.03535,
+      "shares_held": 1449364,
+      "exchange": "Borsa Italiana",
+      "price": 0.69
+    },
+    {
+      "name": "TELECOM ITALIA SPA",
+      "ticker": "TITIM",
+      "weight": 0,
+      "shares_held": 1320851,
+      "exchange": "Borsa Italiana",
+      "price": 0
+    },
+    {
+      "name": "TELEFONICA SA",
+      "ticker": "TEF",
+      "weight": 0.07109,
+      "shares_held": 475892,
+      "exchange": "Bolsa De Madrid",
+      "price": 4.23
+    },
+    {
+      "name": "TELENOR",
+      "ticker": "TEL",
+      "weight": 0.04796,
+      "shares_held": 79098,
+      "exchange": "Oslo Bors Asa",
+      "price": 17.15
+    },
+    {
+      "name": "TELIA COMPANY",
+      "ticker": "TELIA",
+      "weight": 0.05017,
+      "shares_held": 281826,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 5.04
+    },
+    {
+      "name": "TELSTRA GROUP LTD",
+      "ticker": "TLS",
+      "weight": 0.06324,
+      "shares_held": 487477,
+      "exchange": "Asx - All Markets",
+      "price": 3.67
+    },
+    {
+      "name": "TELUS",
+      "ticker": "T",
+      "weight": 0.01914,
+      "shares_held": 42014,
+      "exchange": "Toronto Stock Exchange",
+      "price": 12.89
+    },
+    {
+      "name": "TENARIS SA",
+      "ticker": "TEN",
+      "weight": 0.04615,
+      "shares_held": 44612,
+      "exchange": "Borsa Italiana",
+      "price": 29.27
+    },
+    {
+      "name": "TERNA RETE ELETTRICA NAZIONALE",
+      "ticker": "TRN",
+      "weight": 0.06854,
+      "shares_held": 177293,
+      "exchange": "Borsa Italiana",
+      "price": 10.94
+    },
+    {
+      "name": "TERUMO CORP",
+      "ticker": "4543",
+      "weight": 0.07404,
+      "shares_held": 159700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 13.11
+    },
+    {
+      "name": "TESCO PLC",
+      "ticker": "TSCO",
+      "weight": 0.16923,
+      "shares_held": 787928,
+      "exchange": "London Stock Exchange",
+      "price": 6.08
+    },
+    {
+      "name": "TEVA PHARMACEUTICAL INDUSTRIES ADR",
+      "ticker": "TEVA",
+      "weight": 0.14936,
+      "shares_held": 141885,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 29.78
+    },
+    {
+      "name": "TFI INTERNATIONAL INC",
+      "ticker": "TFII",
+      "weight": 0.03614,
+      "shares_held": 9680,
+      "exchange": "Toronto Stock Exchange",
+      "price": 105.63
+    },
+    {
+      "name": "THALES SA",
+      "ticker": "HO",
+      "weight": 0.1135,
+      "shares_held": 11516,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 278.83
+    },
+    {
+      "name": "THE LOTTERY CORPORATION LTD",
+      "ticker": "TLC",
+      "weight": 0.03691,
+      "shares_held": 277663,
+      "exchange": "Asx - All Markets",
+      "price": 3.76
+    },
+    {
+      "name": "THE SAGE GROUP PLC",
+      "ticker": "SGE",
+      "weight": 0.04456,
+      "shares_held": 115897,
+      "exchange": "London Stock Exchange",
+      "price": 10.88
+    },
+    {
+      "name": "THE SWATCH GROUP AG",
+      "ticker": "UHR",
+      "weight": 0.02764,
+      "shares_held": 3577,
+      "exchange": "SIX Swiss Exchange",
+      "price": 218.64
+    },
+    {
+      "name": "THOMSON REUTERS CORP",
+      "ticker": "TRI",
+      "weight": 0.06095,
+      "shares_held": 19052,
+      "exchange": "Toronto Stock Exchange",
+      "price": 90.5
+    },
+    {
+      "name": "TIS INC",
+      "ticker": "3626",
+      "weight": 0.01647,
+      "shares_held": 22300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.9
+    },
+    {
+      "name": "TMX GROUP LTD",
+      "ticker": "X",
+      "weight": 0.04634,
+      "shares_held": 37512,
+      "exchange": "Toronto Stock Exchange",
+      "price": 34.95
+    },
+    {
+      "name": "TOHO (TOKYO) LTD",
+      "ticker": "9602",
+      "weight": 0.02682,
+      "shares_held": 74400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 10.2
+    },
+    {
+      "name": "TOKIO MARINE HOLDINGS INC",
+      "ticker": "8766",
+      "weight": 0.37524,
+      "shares_held": 223400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 47.52
+    },
+    {
+      "name": "TOKYO ELECTRON LTD",
+      "ticker": "8035",
+      "weight": 0.48095,
+      "shares_held": 53600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 253.84
+    },
+    {
+      "name": "TOKYO GAS LTD",
+      "ticker": "9531",
+      "weight": 0.07033,
+      "shares_held": 41600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 47.83
+    },
+    {
+      "name": "TOKYU CORP",
+      "ticker": "9005",
+      "weight": 0.02644,
+      "shares_held": 63400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.8
+    },
+    {
+      "name": "TOPPAN HOLDINGS INC",
+      "ticker": "7911",
+      "weight": 0.02743,
+      "shares_held": 26700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 29.07
+    },
+    {
+      "name": "TORAY INDUSTRIES INC",
+      "ticker": "3402",
+      "weight": 0.044,
+      "shares_held": 177600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 7.01
+    },
+    {
+      "name": "TOROMONT INDUSTRIES LTD",
+      "ticker": "TIH",
+      "weight": 0.05238,
+      "shares_held": 10772,
+      "exchange": "Toronto Stock Exchange",
+      "price": 137.56
+    },
+    {
+      "name": "TORONTO DOMINION",
+      "ticker": "TD",
+      "weight": 0.67727,
+      "shares_held": 206276,
+      "exchange": "Toronto Stock Exchange",
+      "price": 92.89
+    },
+    {
+      "name": "TOTALENERGIES",
+      "ticker": "TTE",
+      "weight": 0.77932,
+      "shares_held": 241539,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 91.28
+    },
+    {
+      "name": "TOURMALINE OIL CORP",
+      "ticker": "TOU",
+      "weight": 0.07573,
+      "shares_held": 44195,
+      "exchange": "Toronto Stock Exchange",
+      "price": 48.48
+    },
+    {
+      "name": "TOWER SEMICONDUCTOR LTD",
+      "ticker": "TSEM",
+      "weight": 0.08717,
+      "shares_held": 13767,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 179.13
+    },
+    {
+      "name": "TOYOTA MOTOR CORP",
+      "ticker": "7203",
+      "weight": 0.87128,
+      "shares_held": 1161600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 21.22
+    },
+    {
+      "name": "TOYOTA TSUSHO CORP",
+      "ticker": "8015",
+      "weight": 0.11544,
+      "shares_held": 83900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 38.93
+    },
+    {
+      "name": "TRANSURBAN GROUP STAPLED UNITS",
+      "ticker": "TCL",
+      "weight": 0.12852,
+      "shares_held": 376801,
+      "exchange": "Asx - All Markets",
+      "price": 9.65
+    },
+    {
+      "name": "TRELLEBORG B",
+      "ticker": "TREL B",
+      "weight": 0.03089,
+      "shares_held": 24013,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 36.39
+    },
+    {
+      "name": "TRYG",
+      "ticker": "TRYG",
+      "weight": 0.03407,
+      "shares_held": 41741,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 23.09
+    },
+    {
+      "name": "TSURUHA HOLDINGS INC",
+      "ticker": "3391",
+      "weight": 0.01456,
+      "shares_held": 26600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.49
+    },
+    {
+      "name": "UBS GROUP AG",
+      "ticker": "UBSG",
+      "weight": 0.51178,
+      "shares_held": 388941,
+      "exchange": "SIX Swiss Exchange",
+      "price": 37.23
+    },
+    {
+      "name": "UCB SA",
+      "ticker": "UCB",
+      "weight": 0.15794,
+      "shares_held": 15406,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 290.02
+    },
+    {
+      "name": "UNIBAIL RODAMCO WE STAPLED UNITS",
+      "ticker": "URW",
+      "weight": 0.05808,
+      "shares_held": 15185,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 108.21
+    },
+    {
+      "name": "UNICHARM CORP",
+      "ticker": "8113",
+      "weight": 0.02792,
+      "shares_held": 136100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 5.8
+    },
+    {
+      "name": "UNICREDIT",
+      "ticker": "UCG",
+      "weight": 0.42793,
+      "shares_held": 171511,
+      "exchange": "Borsa Italiana",
+      "price": 70.58
+    },
+    {
+      "name": "UNILEVER PLC",
+      "ticker": "ULVR",
+      "weight": 0.56487,
+      "shares_held": 266865,
+      "exchange": "London Stock Exchange",
+      "price": 59.88
+    },
+    {
+      "name": "UNIPOL ASSICURAZIONI SPA",
+      "ticker": "UNI",
+      "weight": 0.03705,
+      "shares_held": 46497,
+      "exchange": "Borsa Italiana",
+      "price": 22.54
+    },
+    {
+      "name": "UNITED OVERSEAS BANK LTD",
+      "ticker": "U11",
+      "weight": 0.15798,
+      "shares_held": 156500,
+      "exchange": "Singapore Exchange",
+      "price": 28.56
+    },
+    {
+      "name": "UNITED UTILITIES GROUP PLC",
+      "ticker": "UU.",
+      "weight": 0.04816,
+      "shares_held": 79535,
+      "exchange": "London Stock Exchange",
+      "price": 17.13
+    },
+    {
+      "name": "UNIVERSAL MUSIC GROUP NV",
+      "ticker": "UMG",
+      "weight": 0.08486,
+      "shares_held": 133563,
+      "exchange": "Euronext Amsterdam",
+      "price": 17.98
+    },
+    {
+      "name": "UPM-KYMMENE",
+      "ticker": "UPM",
+      "weight": 0.06796,
+      "shares_held": 63243,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 30.4
+    },
+    {
+      "name": "USD CASH",
+      "ticker": "USD",
+      "weight": 0.1459,
+      "shares_held": 4127636,
+      "exchange": "-",
+      "price": 100
+    },
+    {
+      "name": "VAT GROUP AG",
+      "ticker": "VACN",
+      "weight": 0.07632,
+      "shares_held": 3345,
+      "exchange": "SIX Swiss Exchange",
+      "price": 645.45
+    },
+    {
+      "name": "VEOLIA ENVIRON. SA",
+      "ticker": "VIE",
+      "weight": 0.10304,
+      "shares_held": 78635,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 37.07
+    },
+    {
+      "name": "VERBUND AG",
+      "ticker": "VER",
+      "weight": 0.02414,
+      "shares_held": 9131,
+      "exchange": "Wiener Boerse Ag",
+      "price": 74.79
+    },
+    {
+      "name": "VESTAS WIND SYSTEMS",
+      "ticker": "VWS",
+      "weight": 0.1192,
+      "shares_held": 124199,
+      "exchange": "Omx Nordic Exchange Copenhagen A/S",
+      "price": 27.15
+    },
+    {
+      "name": "VICINITY CENTRES",
+      "ticker": "VCX",
+      "weight": 0.02679,
+      "shares_held": 464572,
+      "exchange": "Asx - All Markets",
+      "price": 1.63
+    },
+    {
+      "name": "VINCI SA",
+      "ticker": "DG",
+      "weight": 0.31595,
+      "shares_held": 60935,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 146.69
+    },
+    {
+      "name": "VODAFONE GROUP PLC",
+      "ticker": "VOD",
+      "weight": 0.1214,
+      "shares_held": 2313151,
+      "exchange": "London Stock Exchange",
+      "price": 1.48
+    },
+    {
+      "name": "VOLKSWAGEN NON-VOTING PREF AG",
+      "ticker": "VOW3",
+      "weight": 0.08799,
+      "shares_held": 24827,
+      "exchange": "Xetra",
+      "price": 100.27
+    },
+    {
+      "name": "VOLVO CLASS B",
+      "ticker": "VOLV B",
+      "weight": 0.22021,
+      "shares_held": 195176,
+      "exchange": "Nasdaq Omx Nordic",
+      "price": 31.92
+    },
+    {
+      "name": "VONOVIA SE",
+      "ticker": "VNA",
+      "weight": 0.07906,
+      "shares_held": 92284,
+      "exchange": "Xetra",
+      "price": 24.24
+    },
+    {
+      "name": "WARTSILA",
+      "ticker": "WRT1V",
+      "weight": 0.07993,
+      "shares_held": 60472,
+      "exchange": "Nasdaq Omx Helsinki Ltd.",
+      "price": 37.39
+    },
+    {
+      "name": "WASHINGTON H SOUL PATTINSON & COMP",
+      "ticker": "SOL",
+      "weight": 0.03847,
+      "shares_held": 41065,
+      "exchange": "Asx - All Markets",
+      "price": 26.5
+    },
+    {
+      "name": "WESFARMERS LTD",
+      "ticker": "WES",
+      "weight": 0.24809,
+      "shares_held": 138340,
+      "exchange": "Asx - All Markets",
+      "price": 50.73
+    },
+    {
+      "name": "WEST JAPAN RAILWAY",
+      "ticker": "9021",
+      "weight": 0.03254,
+      "shares_held": 45900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 20.05
+    },
+    {
+      "name": "WESTPAC BANKING CORPORATION CORP",
+      "ticker": "WBC",
+      "weight": 0.41537,
+      "shares_held": 420181,
+      "exchange": "Asx - All Markets",
+      "price": 27.97
+    },
+    {
+      "name": "WH GROUP LTD",
+      "ticker": "288",
+      "weight": 0.04951,
+      "shares_held": 1107000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 1.27
+    },
+    {
+      "name": "WHARF (HOLDINGS) LTD",
+      "ticker": "4",
+      "weight": 0.01811,
+      "shares_held": 179000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 2.86
+    },
+    {
+      "name": "WHARF REAL ESTATE INVESTMENT COMPA",
+      "ticker": "1997",
+      "weight": 0.02796,
+      "shares_held": 267000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 2.96
+    },
+    {
+      "name": "WHEATON PRECIOUS METALS CORP",
+      "ticker": "WPM",
+      "weight": 0.23624,
+      "shares_held": 56121,
+      "exchange": "Toronto Stock Exchange",
+      "price": 119.08
+    },
+    {
+      "name": "WHITBREAD PLC",
+      "ticker": "WTB",
+      "weight": 0.02306,
+      "shares_held": 21154,
+      "exchange": "London Stock Exchange",
+      "price": 30.84
+    },
+    {
+      "name": "WHITECAP RESOURCES INC",
+      "ticker": "WCP",
+      "weight": 0.05622,
+      "shares_held": 147372,
+      "exchange": "Toronto Stock Exchange",
+      "price": 10.79
+    },
+    {
+      "name": "WILMAR INTERNATIONAL LTD",
+      "ticker": "F34",
+      "weight": 0.02403,
+      "shares_held": 235400,
+      "exchange": "Singapore Exchange",
+      "price": 2.89
+    },
+    {
+      "name": "WISE PLC CLASS A",
+      "ticker": "WISE",
+      "weight": 0.03642,
+      "shares_held": 86421,
+      "exchange": "London Stock Exchange",
+      "price": 11.92
+    },
+    {
+      "name": "WISETECH GLOBAL LTD",
+      "ticker": "WTC",
+      "weight": 0.02184,
+      "shares_held": 23321,
+      "exchange": "Asx - All Markets",
+      "price": 26.49
+    },
+    {
+      "name": "WOLTERS KLUWER NV",
+      "ticker": "WKL",
+      "weight": 0.07495,
+      "shares_held": 28726,
+      "exchange": "Euronext Amsterdam",
+      "price": 73.82
+    },
+    {
+      "name": "WOODSIDE ENERGY GROUP LTD",
+      "ticker": "WDS",
+      "weight": 0.19321,
+      "shares_held": 230010,
+      "exchange": "Asx - All Markets",
+      "price": 23.76
+    },
+    {
+      "name": "WOOLWORTHS GROUP LTD",
+      "ticker": "WOW",
+      "weight": 0.13111,
+      "shares_held": 147542,
+      "exchange": "Asx - All Markets",
+      "price": 25.14
+    },
+    {
+      "name": "WSP GLOBAL INC",
+      "ticker": "WSP",
+      "weight": 0.09227,
+      "shares_held": 16606,
+      "exchange": "Toronto Stock Exchange",
+      "price": 157.2
+    },
+    {
+      "name": "XERO LTD",
+      "ticker": "XRO",
+      "weight": 0.03739,
+      "shares_held": 21135,
+      "exchange": "Asx - All Markets",
+      "price": 50.04
+    },
+    {
+      "name": "YAMAHA MOTOR LTD",
+      "ticker": "7272",
+      "weight": 0.02755,
+      "shares_held": 111000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 7.02
+    },
+    {
+      "name": "YANGZIJIANG SHIPBUILDING (HOLDINGS",
+      "ticker": "BS6",
+      "weight": 0.03352,
+      "shares_held": 316400,
+      "exchange": "Singapore Exchange",
+      "price": 3
+    },
+    {
+      "name": "YARA INTERNATIONAL",
+      "ticker": "YAR",
+      "weight": 0.03798,
+      "shares_held": 19487,
+      "exchange": "Oslo Bors Asa",
+      "price": 55.13
+    },
+    {
+      "name": "YOKOGAWA ELECTRIC CORP",
+      "ticker": "6841",
+      "weight": 0.02961,
+      "shares_held": 25900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 32.34
+    },
+    {
+      "name": "YOKOHAMA FINANCIAL GROUP INC",
+      "ticker": "7186",
+      "weight": 0.04098,
+      "shares_held": 129400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 8.96
+    },
+    {
+      "name": "ZALANDO",
+      "ticker": "ZAL",
+      "weight": 0.02562,
+      "shares_held": 30425,
+      "exchange": "Xetra",
+      "price": 23.82
+    },
+    {
+      "name": "ZENSHO HOLDINGS LTD",
+      "ticker": "7550",
+      "weight": 0.03161,
+      "shares_held": 15100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 59.22
+    },
+    {
+      "name": "ZOZO INC",
+      "ticker": "3092",
+      "weight": 0.0109,
+      "shares_held": 44600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 6.91
+    },
+    {
+      "name": "ZURICH INSURANCE GROUP AG",
+      "ticker": "ZURN",
+      "weight": 0.43365,
+      "shares_held": 17765,
+      "exchange": "SIX Swiss Exchange",
+      "price": 690.57
+    }
+  ],
+  "inception_date": "24-Jan-25",
+  "isin": "IE000R4ZNTN3",
+  "issuing_company": "iShares III plc",
+  "methodology": "Replicated",
+  "nav": "USD 6.32",
+  "nav_total_return_ytd": "-0.56%",
+  "net_assets": "USD 2,807,939,870",
+  "net_assets_of_fund": "USD 2,807,939,870",
+  "number_of_holdings": "769",
+  "price": 6.32,
+  "price_book_ratio": "2.21",
+  "price_earnings": "18.12",
+  "product_structure": "Physical",
+  "rebalance_frequency": "Quarterly",
+  "sfdr_classification": "Other",
+  "share_class_currency": "USD",
+  "shares_outstanding": "444,000,000",
+  "standard_deviation_3y": "-",
+  "ticker": "XUSE",
+  "total_expense_ratio": "0.15%",
+  "ucits": "Yes",
+  "use_of_income": "Accumulating"
+}

@@ -1,0 +1,2300 @@
+{
+  "1_day_nav_change": "USD -0.20 (-1.60%)",
+  "3y_beta": "0.997",
+  "52w_high": 14.01,
+  "52w_low": 5.48,
+  "administrator": "State Street Fund Services (Ireland) Limited",
+  "asset_class": "Equity",
+  "base_currency": "USD",
+  "benchmark_index": "MSCI ACWI IMI Semiconductors & Semiconductor Equipment ESG Screened Capped",
+  "benchmark_level": "USD 10,761.60",
+  "benchmark_ticker": "NU738380",
+  "bloomberg_ticker": "INAVSEM3",
+  "custodian": "State Street Custodial Services (Ireland) Limited",
+  "date": "2026-03-26",
+  "domicile": "Ireland",
+  "fiscal_year_end": "31 May",
+  "fund_launch_date": "03-Aug-21",
+  "fund_manager": "BlackRock Asset Management Ireland Limited",
+  "holdings": [
+    {
+      "name": "ACM RESEARCH (SHANGHAI) INC A",
+      "ticker": "688082",
+      "weight": 0.00478,
+      "shares_held": 5695,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 20.53
+    },
+    {
+      "name": "ACM RESEARCH CLASS A INC",
+      "ticker": "ACMR",
+      "weight": 0.04097,
+      "shares_held": 24348,
+      "exchange": "NASDAQ",
+      "price": 41.19
+    },
+    {
+      "name": "ADATA TECHNOLOGY LTD",
+      "ticker": "3260",
+      "weight": 0.05828,
+      "shares_held": 122473,
+      "exchange": "Gretai Securities Market",
+      "price": 11.65
+    },
+    {
+      "name": "ADVANCED ECHEM MATERIALS LTD",
+      "ticker": "4749",
+      "weight": 0.03641,
+      "shares_held": 32000,
+      "exchange": "Gretai Securities Market",
+      "price": 27.84
+    },
+    {
+      "name": "ADVANCED MICRO DEVICES INC",
+      "ticker": "AMD",
+      "weight": 4.79865,
+      "shares_held": 576374,
+      "exchange": "NASDAQ",
+      "price": 203.77
+    },
+    {
+      "name": "ADVANCED MICRO-FABRICATION EQUIPME",
+      "ticker": "688012",
+      "weight": 0.03032,
+      "shares_held": 16777,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 44.24
+    },
+    {
+      "name": "ADVANCED WIRELESS SEMICONDUCTOR",
+      "ticker": "8086",
+      "weight": 0.01475,
+      "shares_held": 92000,
+      "exchange": "Gretai Securities Market",
+      "price": 3.92
+    },
+    {
+      "name": "ADVANTEST CORP",
+      "ticker": "6857",
+      "weight": 2.01687,
+      "shares_held": 343200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 143.83
+    },
+    {
+      "name": "AEHR TEST SYSTEMS",
+      "ticker": "AEHR",
+      "weight": 0.01858,
+      "shares_held": 13155,
+      "exchange": "NASDAQ",
+      "price": 34.57
+    },
+    {
+      "name": "AIROHA TECHNOLOGY CORP",
+      "ticker": "6526",
+      "weight": 0.00636,
+      "shares_held": 10000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 15.57
+    },
+    {
+      "name": "AIXTRON",
+      "ticker": "AIXA",
+      "weight": 0.08588,
+      "shares_held": 51363,
+      "exchange": "Xetra",
+      "price": 40.92
+    },
+    {
+      "name": "ALCHIP TECHNOLOGIES LTD",
+      "ticker": "3661",
+      "weight": 0.12973,
+      "shares_held": 33000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 96.22
+    },
+    {
+      "name": "ALLEGRO MICROSYSTEMS INC",
+      "ticker": "ALGM",
+      "weight": 0.07826,
+      "shares_held": 61334,
+      "exchange": "NASDAQ",
+      "price": 31.23
+    },
+    {
+      "name": "ALPHA AND OMEGA SEMICONDUCTOR LTD",
+      "ticker": "AOSL",
+      "weight": 0.01156,
+      "shares_held": 12538,
+      "exchange": "NASDAQ",
+      "price": 22.57
+    },
+    {
+      "name": "AMBARELLA INC",
+      "ticker": "AMBA",
+      "weight": 0.04288,
+      "shares_held": 19928,
+      "exchange": "NASDAQ",
+      "price": 52.67
+    },
+    {
+      "name": "AMKOR TECHNOLOGY INC",
+      "ticker": "AMKR",
+      "weight": 0.10589,
+      "shares_held": 57415,
+      "exchange": "NASDAQ",
+      "price": 45.14
+    },
+    {
+      "name": "AMLOGIC (SHANGHAI) LTD A",
+      "ticker": "688099",
+      "weight": 0.00241,
+      "shares_held": 5148,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 11.47
+    },
+    {
+      "name": "AMS-OSRAM AG",
+      "ticker": "AMS",
+      "weight": 0.0204,
+      "shares_held": 44598,
+      "exchange": "SIX Swiss Exchange",
+      "price": 11.2
+    },
+    {
+      "name": "ANALOG DEVICES INC",
+      "ticker": "ADI",
+      "weight": 2.81191,
+      "shares_held": 219584,
+      "exchange": "NASDAQ",
+      "price": 313.42
+    },
+    {
+      "name": "AP MEMORY TECHNOLOGY CORP",
+      "ticker": "6531",
+      "weight": 0.02742,
+      "shares_held": 42000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 15.98
+    },
+    {
+      "name": "APPLIED MATERIAL INC",
+      "ticker": "AMAT",
+      "weight": 4.50735,
+      "shares_held": 325855,
+      "exchange": "NASDAQ",
+      "price": 338.55
+    },
+    {
+      "name": "ARDENTEC CORP",
+      "ticker": "3264",
+      "weight": 0.04079,
+      "shares_held": 212000,
+      "exchange": "Gretai Securities Market",
+      "price": 4.71
+    },
+    {
+      "name": "ASE TECHNOLOGY HOLDING LTD",
+      "ticker": "3711",
+      "weight": 0.69252,
+      "shares_held": 1504000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 11.27
+    },
+    {
+      "name": "ASM INTERNATIONAL NV",
+      "ticker": "ASM",
+      "weight": 0.67313,
+      "shares_held": 20999,
+      "exchange": "Euronext Amsterdam",
+      "price": 784.55
+    },
+    {
+      "name": "ASMEDIA TECHNOLOGY INC",
+      "ticker": "5269",
+      "weight": 0.02178,
+      "shares_held": 14390,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 37.04
+    },
+    {
+      "name": "ASML HOLDING NV",
+      "ticker": "ASML",
+      "weight": 7.56976,
+      "shares_held": 137702,
+      "exchange": "Euronext Amsterdam",
+      "price": 1345.44
+    },
+    {
+      "name": "ASMPT LTD",
+      "ticker": "522",
+      "weight": 0.0792,
+      "shares_held": 141500,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 13.7
+    },
+    {
+      "name": "ASPEED TECHNOLOGY INC",
+      "ticker": "5274",
+      "weight": 0.18757,
+      "shares_held": 12662,
+      "exchange": "Gretai Securities Market",
+      "price": 362.57
+    },
+    {
+      "name": "ASTERA LABS INC",
+      "ticker": "ALAB",
+      "weight": 0.27834,
+      "shares_held": 59966,
+      "exchange": "NASDAQ",
+      "price": 113.61
+    },
+    {
+      "name": "AUD CASH",
+      "ticker": "AUD",
+      "weight": 0.00086,
+      "shares_held": 30458,
+      "exchange": "-",
+      "price": 69.12
+    },
+    {
+      "name": "AXCELIS TECHNOLOGIES INC",
+      "ticker": "ACLS",
+      "weight": 0.05876,
+      "shares_held": 14624,
+      "exchange": "NASDAQ",
+      "price": 98.35
+    },
+    {
+      "name": "BE SEMICONDUCTOR INDUSTRIES NV",
+      "ticker": "BESI",
+      "weight": 0.28661,
+      "shares_held": 32784,
+      "exchange": "Euronext Amsterdam",
+      "price": 213.97
+    },
+    {
+      "name": "BESTECHNIC (SHANGHAI) LTD A",
+      "ticker": "688608",
+      "weight": 0.00328,
+      "shares_held": 3530,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 22.76
+    },
+    {
+      "name": "BLACK SESAME INTERNATIONAL HOLDING",
+      "ticker": "2533",
+      "weight": 0.00625,
+      "shares_held": 71800,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 2.13
+    },
+    {
+      "name": "BOROSIL RENEWABLES LTD",
+      "ticker": "BORORENEW",
+      "weight": 0.00383,
+      "shares_held": 21704,
+      "exchange": "National Stock Exchange Of India",
+      "price": 4.32
+    },
+    {
+      "name": "BROADCOM INC",
+      "ticker": "AVGO",
+      "weight": 7.41553,
+      "shares_held": 586579,
+      "exchange": "NASDAQ",
+      "price": 309.42
+    },
+    {
+      "name": "CAMBRICON TECHNOLOGIES CORPORATION",
+      "ticker": "688256",
+      "weight": 0.06081,
+      "shares_held": 10045,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 148.16
+    },
+    {
+      "name": "CAMTEK LTD",
+      "ticker": "CAMT",
+      "weight": 0.08975,
+      "shares_held": 13393,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 164.01
+    },
+    {
+      "name": "CASH COLLATERAL USD MLIFT",
+      "ticker": "MLIFT",
+      "weight": 0.02108,
+      "shares_held": 516000,
+      "exchange": "-",
+      "price": 100
+    },
+    {
+      "name": "CEVA INC",
+      "ticker": "CEVA",
+      "weight": 0.00885,
+      "shares_held": 11505,
+      "exchange": "NASDAQ",
+      "price": 18.82
+    },
+    {
+      "name": "CHANG WAH TECHNOLOGY LTD",
+      "ticker": "6548",
+      "weight": 0.017,
+      "shares_held": 278500,
+      "exchange": "Gretai Securities Market",
+      "price": 1.49
+    },
+    {
+      "name": "CHF CASH",
+      "ticker": "CHF",
+      "weight": 0.00306,
+      "shares_held": 59403,
+      "exchange": "-",
+      "price": 126.02
+    },
+    {
+      "name": "CHF/USD",
+      "ticker": "CHF",
+      "weight": 0,
+      "shares_held": 2868,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "CHINA RESOURCES MICROELECTRONICS L",
+      "ticker": "688396",
+      "weight": 0.00736,
+      "shares_held": 27498,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 6.55
+    },
+    {
+      "name": "CHIPBOND TECHNOLOGY CORP",
+      "ticker": "6147",
+      "weight": 0.02874,
+      "shares_held": 288000,
+      "exchange": "Gretai Securities Market",
+      "price": 2.44
+    },
+    {
+      "name": "CHIPMOS TECHNOLOGIES INC",
+      "ticker": "8150",
+      "weight": 0.01831,
+      "shares_held": 244000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.84
+    },
+    {
+      "name": "CIRRUS LOGIC INC",
+      "ticker": "CRUS",
+      "weight": 0.1187,
+      "shares_held": 19539,
+      "exchange": "NASDAQ",
+      "price": 148.69
+    },
+    {
+      "name": "CNH CASH",
+      "ticker": "CNH",
+      "weight": 0.00274,
+      "shares_held": 463803,
+      "exchange": "-",
+      "price": 14.46
+    },
+    {
+      "name": "CNH/USD",
+      "ticker": "CNH",
+      "weight": 0,
+      "shares_held": 714243,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "COHU INC",
+      "ticker": "COHU",
+      "weight": 0.02494,
+      "shares_held": 20195,
+      "exchange": "NASDAQ",
+      "price": 30.23
+    },
+    {
+      "name": "CREDO TECHNOLOGY GROUP HOLDING LTD",
+      "ticker": "CRDO",
+      "weight": 0.29145,
+      "shares_held": 73966,
+      "exchange": "NASDAQ",
+      "price": 96.44
+    },
+    {
+      "name": "CSI SOLAR LTD A",
+      "ticker": "688472",
+      "weight": 0.00801,
+      "shares_held": 96903,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.02
+    },
+    {
+      "name": "DAQO NEW ENERGY ADR REPRESENTING",
+      "ticker": "DQ",
+      "weight": 0.01842,
+      "shares_held": 21208,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 21.26
+    },
+    {
+      "name": "DB HITEK LTD",
+      "ticker": "000990",
+      "weight": 0.03358,
+      "shares_held": 15894,
+      "exchange": "Korea Exchange (Stock Market)",
+      "price": 51.7
+    },
+    {
+      "name": "DIODES INC",
+      "ticker": "DIOD",
+      "weight": 0.06562,
+      "shares_held": 22620,
+      "exchange": "NASDAQ",
+      "price": 71
+    },
+    {
+      "name": "DISCO CORP",
+      "ticker": "6146",
+      "weight": 0.715,
+      "shares_held": 41400,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 422.7
+    },
+    {
+      "name": "DUK SAN NEOLUX LTD",
+      "ticker": "213420",
+      "weight": 0.00712,
+      "shares_held": 4963,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 35.11
+    },
+    {
+      "name": "ELAN MICROELECTRONICS CORP",
+      "ticker": "2458",
+      "weight": 0.02271,
+      "shares_held": 140000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 3.97
+    },
+    {
+      "name": "ELITE ADVANCED LASER CORP",
+      "ticker": "3450",
+      "weight": 0.02648,
+      "shares_held": 74000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 8.76
+    },
+    {
+      "name": "ELITE SEMICONDUCTOR MICROELECTRONI",
+      "ticker": "3006",
+      "weight": 0.02269,
+      "shares_held": 105000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 5.29
+    },
+    {
+      "name": "ELMOS SEMICONDUCTOR",
+      "ticker": "ELG",
+      "weight": 0.02064,
+      "shares_held": 2930,
+      "exchange": "Xetra",
+      "price": 172.42
+    },
+    {
+      "name": "EMEMORY TECHNOLOGY INC",
+      "ticker": "3529",
+      "weight": 0.09567,
+      "shares_held": 25500,
+      "exchange": "Gretai Securities Market",
+      "price": 91.82
+    },
+    {
+      "name": "EMINI TECHNOLOGY SELECT SECTOR JUN",
+      "ticker": "IXTM6",
+      "weight": 0,
+      "shares_held": 15,
+      "exchange": "Chicago Mercantile Exchange",
+      "price": 2693.2
+    },
+    {
+      "name": "ENNOSTAR INC",
+      "ticker": "3714",
+      "weight": 0.01581,
+      "shares_held": 246000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.57
+    },
+    {
+      "name": "ENPHASE ENERGY INC",
+      "ticker": "ENPH",
+      "weight": 0.09653,
+      "shares_held": 58803,
+      "exchange": "NASDAQ",
+      "price": 40.18
+    },
+    {
+      "name": "ENTEGRIS INC",
+      "ticker": "ENTG",
+      "weight": 0.32292,
+      "shares_held": 68280,
+      "exchange": "NASDAQ",
+      "price": 115.75
+    },
+    {
+      "name": "EO TECHNICS LTD",
+      "ticker": "039030",
+      "weight": 0.05012,
+      "shares_held": 4530,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 270.8
+    },
+    {
+      "name": "EUGENE TECHNOLOGY LTD",
+      "ticker": "084370",
+      "weight": 0.01856,
+      "shares_held": 5515,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 82.37
+    },
+    {
+      "name": "EUR CASH",
+      "ticker": "EUR",
+      "weight": -0.05579,
+      "shares_held": -1183090,
+      "exchange": "-",
+      "price": 115.41
+    },
+    {
+      "name": "EUR/USD",
+      "ticker": "EUR",
+      "weight": 0,
+      "shares_held": 1705180,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "EVERLIGHT ELECTRONICS LTD",
+      "ticker": "2393",
+      "weight": 0.01214,
+      "shares_held": 136000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 2.18
+    },
+    {
+      "name": "FARADAY TECHNOLOGY CORP",
+      "ticker": "3035",
+      "weight": 0.02067,
+      "shares_held": 106743,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 4.74
+    },
+    {
+      "name": "FERROTEC CORP",
+      "ticker": "6890",
+      "weight": 0.02893,
+      "shares_held": 17500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 40.46
+    },
+    {
+      "name": "FIRST SOLAR INC",
+      "ticker": "FSLR",
+      "weight": 0.34836,
+      "shares_held": 45882,
+      "exchange": "NASDAQ",
+      "price": 185.83
+    },
+    {
+      "name": "FITIPOWER INTEGRATED TECHNOLOGY IN",
+      "ticker": "4961",
+      "weight": 0.00569,
+      "shares_held": 31000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 4.49
+    },
+    {
+      "name": "FORMFACTOR INC",
+      "ticker": "FORM",
+      "weight": 0.14438,
+      "shares_held": 35214,
+      "exchange": "NASDAQ",
+      "price": 100.35
+    },
+    {
+      "name": "FORMOSA SUMCO TECHNOLOGY CORP",
+      "ticker": "3532",
+      "weight": 0.00599,
+      "shares_held": 32000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 4.58
+    },
+    {
+      "name": "FOXSEMICON INTEGRATED TECHNOLOGY I",
+      "ticker": "3413",
+      "weight": 0.01119,
+      "shares_held": 28000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 9.78
+    },
+    {
+      "name": "GALAXYCORE INC A",
+      "ticker": "688728",
+      "weight": 0.00377,
+      "shares_held": 48729,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 1.89
+    },
+    {
+      "name": "GBP CASH",
+      "ticker": "GBP",
+      "weight": 0.00408,
+      "shares_held": 74842,
+      "exchange": "-",
+      "price": 133.51
+    },
+    {
+      "name": "GCL TECHNOLOGY HOLDINGS LTD",
+      "ticker": "3800",
+      "weight": 0.05251,
+      "shares_held": 11175000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 0.12
+    },
+    {
+      "name": "GIGADEVICE SEMICONDUCTOR INC A",
+      "ticker": "603986",
+      "weight": 0.02708,
+      "shares_held": 17500,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 37.87
+    },
+    {
+      "name": "GLOBAL MIXED-MODE TECHNOLOGY INC",
+      "ticker": "8081",
+      "weight": 0.00598,
+      "shares_held": 20000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 7.31
+    },
+    {
+      "name": "GLOBAL UNICHIP CORP",
+      "ticker": "3443",
+      "weight": 0.11402,
+      "shares_held": 35000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 79.74
+    },
+    {
+      "name": "GLOBALWAFERS LTD",
+      "ticker": "6488",
+      "weight": 0.07403,
+      "shares_held": 127000,
+      "exchange": "Gretai Securities Market",
+      "price": 14.27
+    },
+    {
+      "name": "GRAND PLASTIC TECHNOLOGY CORP",
+      "ticker": "3131",
+      "weight": 0.02473,
+      "shares_held": 7000,
+      "exchange": "Gretai Securities Market",
+      "price": 86.48
+    },
+    {
+      "name": "GREATECH TECHNOLOGY",
+      "ticker": "GREATEC",
+      "weight": 0.00426,
+      "shares_held": 221600,
+      "exchange": "Bursa Malaysia",
+      "price": 0.47
+    },
+    {
+      "name": "GREATEK ELECTRONICS INC",
+      "ticker": "2441",
+      "weight": 0.01592,
+      "shares_held": 130000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 3
+    },
+    {
+      "name": "GUDENG PRECISION INDUSTRIAL LTD",
+      "ticker": "3680",
+      "weight": 0.01217,
+      "shares_held": 23491,
+      "exchange": "Gretai Securities Market",
+      "price": 12.68
+    },
+    {
+      "name": "HANA MICRON INC",
+      "ticker": "067310",
+      "weight": 0.01751,
+      "shares_held": 19806,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 21.64
+    },
+    {
+      "name": "HANGZHOU CHANG CHUAN TECHNOLOGY LT",
+      "ticker": "300604",
+      "weight": 0.01121,
+      "shares_held": 15700,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 17.48
+    },
+    {
+      "name": "HANGZHOU FIRST APPLIED MATERIAL LT",
+      "ticker": "603806",
+      "weight": 0.00459,
+      "shares_held": 42651,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.63
+    },
+    {
+      "name": "HANGZHOU SILAN MICROELECTRONICS LT",
+      "ticker": "600460",
+      "weight": 0.00818,
+      "shares_held": 53200,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 3.76
+    },
+    {
+      "name": "HANMI SEMICONDUCTOR LTD",
+      "ticker": "042700",
+      "weight": 0.14916,
+      "shares_held": 19786,
+      "exchange": "Korea Exchange (Stock Market)",
+      "price": 184.52
+    },
+    {
+      "name": "HKD CASH",
+      "ticker": "HKD",
+      "weight": 0.00215,
+      "shares_held": 411579,
+      "exchange": "-",
+      "price": 12.78
+    },
+    {
+      "name": "HKD/USD",
+      "ticker": "HKD",
+      "weight": 0,
+      "shares_held": 565081,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "HPSP LTD",
+      "ticker": "403870",
+      "weight": 0.03614,
+      "shares_held": 29190,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 30.3
+    },
+    {
+      "name": "HUA HONG SEMICONDUCTOR LTD",
+      "ticker": "1347",
+      "weight": 0.14631,
+      "shares_held": 337000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 10.63
+    },
+    {
+      "name": "HUA HONG SEMICONDUCTOR LTD A",
+      "ticker": "688347",
+      "weight": 0.0055,
+      "shares_held": 8347,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 16.13
+    },
+    {
+      "name": "HWATSING TECHNOLOGY LTD A",
+      "ticker": "688120",
+      "weight": 0.01162,
+      "shares_held": 11981,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 23.73
+    },
+    {
+      "name": "HYGON INFORMATION TECHNOLOGY LTD A",
+      "ticker": "688041",
+      "weight": 0.07928,
+      "shares_held": 61375,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 31.62
+    },
+    {
+      "name": "ICHOR HOLDINGS LTD",
+      "ticker": "ICHR",
+      "weight": 0.02982,
+      "shares_held": 16057,
+      "exchange": "NASDAQ",
+      "price": 45.45
+    },
+    {
+      "name": "ILS CASH",
+      "ticker": "ILS",
+      "weight": -0.00103,
+      "shares_held": -78547,
+      "exchange": "-",
+      "price": 32.02
+    },
+    {
+      "name": "ILS/USD",
+      "ticker": "ILS",
+      "weight": 0,
+      "shares_held": 439586,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "IMPINJ INC",
+      "ticker": "PI",
+      "weight": 0.05112,
+      "shares_held": 12294,
+      "exchange": "NASDAQ",
+      "price": 101.78
+    },
+    {
+      "name": "INARI AMERTRON",
+      "ticker": "INARI",
+      "weight": 0.01631,
+      "shares_held": 1155400,
+      "exchange": "Bursa Malaysia",
+      "price": 0.35
+    },
+    {
+      "name": "INDIE SEMICONDUCTOR INC CLASS A",
+      "ticker": "INDI",
+      "weight": 0.01152,
+      "shares_held": 87026,
+      "exchange": "NASDAQ",
+      "price": 3.24
+    },
+    {
+      "name": "INFINEON TECHNOLOGIES AG",
+      "ticker": "IFX",
+      "weight": 1.07725,
+      "shares_held": 587510,
+      "exchange": "Xetra",
+      "price": 44.88
+    },
+    {
+      "name": "INGENIC SEMICONDUCTOR LTD A",
+      "ticker": "300223",
+      "weight": 0.00836,
+      "shares_held": 12900,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 15.87
+    },
+    {
+      "name": "INTEGRATED TECHNOLOGY EXPRESS INC",
+      "ticker": "3014",
+      "weight": 0.01235,
+      "shares_held": 83000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 3.64
+    },
+    {
+      "name": "INTEL CORPORATION CORP",
+      "ticker": "INTC",
+      "weight": 3.65242,
+      "shares_held": 2027067,
+      "exchange": "NASDAQ",
+      "price": 44.1
+    },
+    {
+      "name": "ISC TECHNOLOGY LTD",
+      "ticker": "095340",
+      "weight": 0.03101,
+      "shares_held": 4764,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 159.29
+    },
+    {
+      "name": "ITH CORP",
+      "ticker": "6962",
+      "weight": 0.00548,
+      "shares_held": 126000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.06
+    },
+    {
+      "name": "JA SOLAR TECHNOLOGY LTD A",
+      "ticker": "002459",
+      "weight": 0.00537,
+      "shares_held": 77068,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 1.7
+    },
+    {
+      "name": "JAPAN MATERIAL LTD",
+      "ticker": "6055",
+      "weight": 0.01132,
+      "shares_held": 25900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 10.7
+    },
+    {
+      "name": "JCET GROUP LTD A",
+      "ticker": "600584",
+      "weight": 0.01318,
+      "shares_held": 56600,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 5.7
+    },
+    {
+      "name": "JENTECH PRECISION INDUSTRIAL LTD",
+      "ticker": "3653",
+      "weight": 0.19557,
+      "shares_held": 38700,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 123.68
+    },
+    {
+      "name": "JINKO SOLAR LTD A",
+      "ticker": "688223",
+      "weight": 0.01297,
+      "shares_held": 301134,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 1.05
+    },
+    {
+      "name": "JINKOSOLAR HOLDING ADR REP LTD",
+      "ticker": "JKS",
+      "weight": 0.01403,
+      "shares_held": 13454,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 25.52
+    },
+    {
+      "name": "JPY CASH",
+      "ticker": "JPY",
+      "weight": -0.04241,
+      "shares_held": -165738770,
+      "exchange": "-",
+      "price": 0.63
+    },
+    {
+      "name": "JPY/USD",
+      "ticker": "JPY",
+      "weight": 0,
+      "shares_held": 211303250,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "JUSUNG ENGINEERING LTD",
+      "ticker": "036930",
+      "weight": 0.02982,
+      "shares_held": 15424,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 47.32
+    },
+    {
+      "name": "KING YUAN ELECTRONICS LTD",
+      "ticker": "2449",
+      "weight": 0.1858,
+      "shares_held": 503000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 9.04
+    },
+    {
+      "name": "KINSUS INTERCONNECT TECHNOLOGY COR",
+      "ticker": "3189",
+      "weight": 0.06181,
+      "shares_held": 137098,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 11.03
+    },
+    {
+      "name": "KIOXIA HOLDINGS CORP",
+      "ticker": "285A",
+      "weight": 0.46145,
+      "shares_held": 85200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 132.56
+    },
+    {
+      "name": "KLA CORP",
+      "ticker": "KLAC",
+      "weight": 3.49289,
+      "shares_held": 58912,
+      "exchange": "NASDAQ",
+      "price": 1451.13
+    },
+    {
+      "name": "KOH YOUNG TECHNOLOGY",
+      "ticker": "098460",
+      "weight": 0.02072,
+      "shares_held": 28198,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 17.99
+    },
+    {
+      "name": "KOKUSAI ELECTRIC CORP",
+      "ticker": "6525",
+      "weight": 0.12691,
+      "shares_held": 87100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 35.66
+    },
+    {
+      "name": "KRW CASH",
+      "ticker": "KRW",
+      "weight": -0.0064,
+      "shares_held": -236012530,
+      "exchange": "-",
+      "price": 0.07
+    },
+    {
+      "name": "KRW/USD",
+      "ticker": "KRW",
+      "weight": 0,
+      "shares_held": 1678084200,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "KULICKE AND SOFFA INDUSTRIES INC",
+      "ticker": "KLIC",
+      "weight": 0.0546,
+      "shares_held": 20638,
+      "exchange": "NASDAQ",
+      "price": 64.75
+    },
+    {
+      "name": "LAM RESEARCH CORP",
+      "ticker": "LRCX",
+      "weight": 4.2802,
+      "shares_held": 495032,
+      "exchange": "NASDAQ",
+      "price": 211.62
+    },
+    {
+      "name": "LAND MARK CORP",
+      "ticker": "3081",
+      "weight": 0.07153,
+      "shares_held": 33000,
+      "exchange": "Gretai Securities Market",
+      "price": 53.05
+    },
+    {
+      "name": "LASERTEC CORP",
+      "ticker": "6920",
+      "weight": 0.31935,
+      "shares_held": 36100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 216.52
+    },
+    {
+      "name": "LATTICE SEMICONDUCTOR CORP",
+      "ticker": "LSCC",
+      "weight": 0.23976,
+      "shares_held": 61823,
+      "exchange": "NASDAQ",
+      "price": 94.92
+    },
+    {
+      "name": "LEENO INDUSTRIAL INC",
+      "ticker": "058470",
+      "weight": 0.0643,
+      "shares_held": 22974,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 68.5
+    },
+    {
+      "name": "LONGI GREEN ENERGY TECHNOLOGY LTD",
+      "ticker": "601012",
+      "weight": 0.02625,
+      "shares_held": 241940,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.66
+    },
+    {
+      "name": "LOONGSON TECHNOLOGY CORP LTD A",
+      "ticker": "688047",
+      "weight": 0.00551,
+      "shares_held": 6672,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 20.2
+    },
+    {
+      "name": "LX SEMICON LTD",
+      "ticker": "108320",
+      "weight": 0.00721,
+      "shares_held": 5242,
+      "exchange": "Korea Exchange (Stock Market)",
+      "price": 33.65
+    },
+    {
+      "name": "M31 TECHNOLOGY CORPORATION CORP",
+      "ticker": "6643",
+      "weight": 0.00491,
+      "shares_held": 8400,
+      "exchange": "Gretai Securities Market",
+      "price": 14.31
+    },
+    {
+      "name": "MACHVISION INC",
+      "ticker": "3563",
+      "weight": 0.01549,
+      "shares_held": 15400,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 24.61
+    },
+    {
+      "name": "MACOM TECHNOLOGY SOLUTIONS INC",
+      "ticker": "MTSI",
+      "weight": 0.28195,
+      "shares_held": 30200,
+      "exchange": "NASDAQ",
+      "price": 228.5
+    },
+    {
+      "name": "MACRONIX INTERNATIONAL LTD",
+      "ticker": "2337",
+      "weight": 0.13544,
+      "shares_held": 825000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 4.02
+    },
+    {
+      "name": "MALAYSIAN PACIFIC INDUSTRIES",
+      "ticker": "MPI",
+      "weight": 0.01205,
+      "shares_held": 40600,
+      "exchange": "Bursa Malaysia",
+      "price": 7.27
+    },
+    {
+      "name": "MARKETECH INTERNATIONAL CORP",
+      "ticker": "6196",
+      "weight": 0.01451,
+      "shares_held": 39000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 9.1
+    },
+    {
+      "name": "MARVELL TECHNOLOGY INC",
+      "ticker": "MRVL",
+      "weight": 1.51559,
+      "shares_held": 379754,
+      "exchange": "NASDAQ",
+      "price": 97.68
+    },
+    {
+      "name": "MAXLINEAR INC",
+      "ticker": "MXL",
+      "weight": 0.02606,
+      "shares_held": 37176,
+      "exchange": "NASDAQ",
+      "price": 17.16
+    },
+    {
+      "name": "MEDIATEK INC",
+      "ticker": "2454",
+      "weight": 1.3847,
+      "shares_held": 679000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 49.91
+    },
+    {
+      "name": "MEGACHIPS CORP",
+      "ticker": "6875",
+      "weight": 0.00792,
+      "shares_held": 3700,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 52.36
+    },
+    {
+      "name": "MELEXIS NV",
+      "ticker": "MELE",
+      "weight": 0.02437,
+      "shares_held": 9750,
+      "exchange": "Nyse Euronext - Euronext Brussels",
+      "price": 61.17
+    },
+    {
+      "name": "MICROCHIP TECHNOLOGY INC",
+      "ticker": "MCHP",
+      "weight": 0.63523,
+      "shares_held": 242169,
+      "exchange": "NASDAQ",
+      "price": 64.2
+    },
+    {
+      "name": "MICRON TECHNOLOGY INC",
+      "ticker": "MU",
+      "weight": 7.0858,
+      "shares_held": 487892,
+      "exchange": "NASDAQ",
+      "price": 355.46
+    },
+    {
+      "name": "MICRONICS JAPAN LTD",
+      "ticker": "6871",
+      "weight": 0.03588,
+      "shares_held": 13800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 63.63
+    },
+    {
+      "name": "MITSUI HIGH TEC INC",
+      "ticker": "6966",
+      "weight": 0.00742,
+      "shares_held": 49000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 3.71
+    },
+    {
+      "name": "MKS",
+      "ticker": "MKSI",
+      "weight": 0.27851,
+      "shares_held": 30280,
+      "exchange": "NASDAQ",
+      "price": 225.12
+    },
+    {
+      "name": "MONOLITHIC POWER SYSTEMS INC",
+      "ticker": "MPWR",
+      "weight": 0.92851,
+      "shares_held": 21474,
+      "exchange": "NASDAQ",
+      "price": 1058.28
+    },
+    {
+      "name": "MONTAGE TECHNOLOGY LTD A",
+      "ticker": "688008",
+      "weight": 0.02293,
+      "shares_held": 28336,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 19.8
+    },
+    {
+      "name": "MPI CORP",
+      "ticker": "6223",
+      "weight": 0.17345,
+      "shares_held": 37000,
+      "exchange": "Gretai Securities Market",
+      "price": 114.74
+    },
+    {
+      "name": "MSCI TAIWAN INDEX APR 26",
+      "ticker": "HJAJ6",
+      "weight": 0,
+      "shares_held": 12,
+      "exchange": "Hong Kong Futures Exchange Ltd.",
+      "price": 1479.6
+    },
+    {
+      "name": "MYR CASH",
+      "ticker": "MYR",
+      "weight": 0.00249,
+      "shares_held": 243572,
+      "exchange": "-",
+      "price": 25.04
+    },
+    {
+      "name": "MYR/USD",
+      "ticker": "MYR",
+      "weight": 0,
+      "shares_held": 36256,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "NANYA TECHNOLOGY CORP",
+      "ticker": "2408",
+      "weight": 0.15734,
+      "shares_held": 544000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 7.08
+    },
+    {
+      "name": "NATIONAL SILICON INDUSTRY GROUP LT",
+      "ticker": "688126",
+      "weight": 0.00576,
+      "shares_held": 55746,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.53
+    },
+    {
+      "name": "NAURA TECHNOLOGY GROUP LTD A",
+      "ticker": "002371",
+      "weight": 0.05614,
+      "shares_held": 21305,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 64.49
+    },
+    {
+      "name": "NAVITAS SEMICONDUCTOR CORP",
+      "ticker": "NVTS",
+      "weight": 0.03278,
+      "shares_held": 88946,
+      "exchange": "NASDAQ",
+      "price": 9.02
+    },
+    {
+      "name": "NEXCHIP SEMICONDUCTOR CORP A",
+      "ticker": "688249",
+      "weight": 0.00897,
+      "shares_held": 54347,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 4.04
+    },
+    {
+      "name": "NOK CASH",
+      "ticker": "NOK",
+      "weight": 0.00456,
+      "shares_held": 1079284,
+      "exchange": "-",
+      "price": 10.33
+    },
+    {
+      "name": "NOK/USD",
+      "ticker": "NOK",
+      "weight": 0,
+      "shares_held": 93282,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "NORDIC SEMICONDUCTOR",
+      "ticker": "NOD",
+      "weight": 0.05273,
+      "shares_held": 82550,
+      "exchange": "Oslo Bors Asa",
+      "price": 15.63
+    },
+    {
+      "name": "NOVA LTD",
+      "ticker": "NVMI",
+      "weight": 0.2547,
+      "shares_held": 13389,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 465.59
+    },
+    {
+      "name": "NOVATEK MICROELECTRONICS CORP",
+      "ticker": "3034",
+      "weight": 0.13223,
+      "shares_held": 263000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 12.31
+    },
+    {
+      "name": "NUVOTON TECHNOLOGY CORP",
+      "ticker": "4919",
+      "weight": 0.01267,
+      "shares_held": 106000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 2.93
+    },
+    {
+      "name": "NVIDIA CORP",
+      "ticker": "NVDA",
+      "weight": 7.37917,
+      "shares_held": 1054698,
+      "exchange": "NASDAQ",
+      "price": 171.24
+    },
+    {
+      "name": "NXP SEMICONDUCTORS NV",
+      "ticker": "NXPI",
+      "weight": 0.9058,
+      "shares_held": 112582,
+      "exchange": "NASDAQ",
+      "price": 196.92
+    },
+    {
+      "name": "OMNIVISION INTEGRATED CIRCUITS GRO",
+      "ticker": "603501",
+      "weight": 0.02154,
+      "shares_held": 36465,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 14.46
+    },
+    {
+      "name": "ON SEMICONDUCTOR CORP",
+      "ticker": "ON",
+      "weight": 0.44864,
+      "shares_held": 180392,
+      "exchange": "NASDAQ",
+      "price": 60.87
+    },
+    {
+      "name": "ONTO INNOVATION INC",
+      "ticker": "ONTO",
+      "weight": 0.186,
+      "shares_held": 22234,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 204.75
+    },
+    {
+      "name": "ORIENT SEMICONDUCTOR ELECTRONICS L",
+      "ticker": "2329",
+      "weight": 0.01069,
+      "shares_held": 157000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.67
+    },
+    {
+      "name": "PAN JIT INTERNATIONAL INC",
+      "ticker": "2481",
+      "weight": 0.0165,
+      "shares_held": 129000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 3.13
+    },
+    {
+      "name": "PARADE TECHNOLOGIES LTD",
+      "ticker": "4966",
+      "weight": 0.01618,
+      "shares_held": 25377,
+      "exchange": "Gretai Securities Market",
+      "price": 15.6
+    },
+    {
+      "name": "PDF SOLUTIONS INC",
+      "ticker": "PDFS",
+      "weight": 0.01694,
+      "shares_held": 12049,
+      "exchange": "NASDAQ",
+      "price": 34.42
+    },
+    {
+      "name": "PENGUIN SOLUTIONS INC",
+      "ticker": "PENG",
+      "weight": 0.01786,
+      "shares_held": 24757,
+      "exchange": "NASDAQ",
+      "price": 17.66
+    },
+    {
+      "name": "PHISON ELECTRONICS CORP",
+      "ticker": "8299",
+      "weight": 0.17142,
+      "shares_held": 81000,
+      "exchange": "Gretai Securities Market",
+      "price": 51.8
+    },
+    {
+      "name": "PHOENIX SILICON INTERNATIONAL CORP",
+      "ticker": "8028",
+      "weight": 0.02916,
+      "shares_held": 116000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 6.15
+    },
+    {
+      "name": "PHOTRONICS INC",
+      "ticker": "PLAB",
+      "weight": 0.04061,
+      "shares_held": 24996,
+      "exchange": "NASDAQ",
+      "price": 39.76
+    },
+    {
+      "name": "PIOTECH INC A",
+      "ticker": "688072",
+      "weight": 0.01455,
+      "shares_held": 6703,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 53.12
+    },
+    {
+      "name": "PIXART IMAGING INC",
+      "ticker": "3227",
+      "weight": 0.01118,
+      "shares_held": 46000,
+      "exchange": "Gretai Securities Market",
+      "price": 5.95
+    },
+    {
+      "name": "POWER INTEGRATIONS INC",
+      "ticker": "POWI",
+      "weight": 0.05535,
+      "shares_held": 27066,
+      "exchange": "NASDAQ",
+      "price": 50.05
+    },
+    {
+      "name": "POWERCHIP SEMICONDUCTOR MANUFACTUR",
+      "ticker": "6770",
+      "weight": 0.11422,
+      "shares_held": 1418000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.97
+    },
+    {
+      "name": "POWERTECH TECHNOLOGY INC",
+      "ticker": "6239",
+      "weight": 0.07765,
+      "shares_held": 305000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 6.23
+    },
+    {
+      "name": "PSK HOLDINGS INC",
+      "ticker": "031980",
+      "weight": 0.01312,
+      "shares_held": 4798,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 66.9
+    },
+    {
+      "name": "QNITY ELECTRONICS INC",
+      "ticker": "Q",
+      "weight": 0.43372,
+      "shares_held": 94124,
+      "exchange": "New York Stock Exchange Inc.",
+      "price": 112.78
+    },
+    {
+      "name": "QORVO INC",
+      "ticker": "QRVO",
+      "weight": 0.13151,
+      "shares_held": 39929,
+      "exchange": "NASDAQ",
+      "price": 80.61
+    },
+    {
+      "name": "QUALCOMM INC",
+      "ticker": "QCOM",
+      "weight": 2.5437,
+      "shares_held": 476922,
+      "exchange": "NASDAQ",
+      "price": 130.54
+    },
+    {
+      "name": "RADIANT OPTO-ELECTRONICS CORP",
+      "ticker": "6176",
+      "weight": 0.02532,
+      "shares_held": 216000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 2.87
+    },
+    {
+      "name": "RAMBUS INC",
+      "ticker": "RMBS",
+      "weight": 0.18652,
+      "shares_held": 49924,
+      "exchange": "NASDAQ",
+      "price": 91.44
+    },
+    {
+      "name": "RAYDIUM SEMI-CONDUCTOR CORP",
+      "ticker": "3592",
+      "weight": 0.00629,
+      "shares_held": 22000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 7
+    },
+    {
+      "name": "REALTEK SEMICONDUCTOR CORP",
+      "ticker": "2379",
+      "weight": 0.14174,
+      "shares_held": 226000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 15.35
+    },
+    {
+      "name": "RENESAS ELECTRONICS CORP",
+      "ticker": "6723",
+      "weight": 0.4877,
+      "shares_held": 797600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 14.97
+    },
+    {
+      "name": "RIGETTI COMPUTING INC",
+      "ticker": "RGTI",
+      "weight": 0.09155,
+      "shares_held": 155492,
+      "exchange": "NASDAQ",
+      "price": 14.41
+    },
+    {
+      "name": "ROCKCHIP ELECTRONICS LTD A",
+      "ticker": "603893",
+      "weight": 0.01034,
+      "shares_held": 11700,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 21.63
+    },
+    {
+      "name": "ROHM LTD",
+      "ticker": "6963",
+      "weight": 0.13442,
+      "shares_held": 155600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 21.14
+    },
+    {
+      "name": "RORZE CORP",
+      "ticker": "6323",
+      "weight": 0.0309,
+      "shares_held": 43200,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 17.51
+    },
+    {
+      "name": "RS TECHNOLOGIES LTD",
+      "ticker": "3445",
+      "weight": 0.00255,
+      "shares_held": 2600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 23.99
+    },
+    {
+      "name": "SANAN OPTOELECTRONICS LTD A",
+      "ticker": "600703",
+      "weight": 0.01466,
+      "shares_held": 192200,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 1.87
+    },
+    {
+      "name": "SANKEN ELECTRIC LTD",
+      "ticker": "6707",
+      "weight": 0.019,
+      "shares_held": 10100,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 46.05
+    },
+    {
+      "name": "SCREEN HOLDINGS LTD",
+      "ticker": "7735",
+      "weight": 0.18165,
+      "shares_held": 36300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 122.48
+    },
+    {
+      "name": "SEMTECH CORP",
+      "ticker": "SMTC",
+      "weight": 0.12782,
+      "shares_held": 42186,
+      "exchange": "NASDAQ",
+      "price": 74.16
+    },
+    {
+      "name": "SG MICRO CORP A",
+      "ticker": "300661",
+      "weight": 0.00909,
+      "shares_held": 21339,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 10.42
+    },
+    {
+      "name": "SGD CASH",
+      "ticker": "SGD",
+      "weight": 0.00222,
+      "shares_held": 69749,
+      "exchange": "-",
+      "price": 77.85
+    },
+    {
+      "name": "SGD/USD",
+      "ticker": "SGD",
+      "weight": 0,
+      "shares_held": 3888,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "SHENZHEN GOODIX TECHNOLOGY LTD A",
+      "ticker": "603160",
+      "weight": 0.00513,
+      "shares_held": 12800,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 9.81
+    },
+    {
+      "name": "SHIBAURA MECHATRONICS CORP",
+      "ticker": "6590",
+      "weight": 0.02991,
+      "shares_held": 25800,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 28.37
+    },
+    {
+      "name": "SHUNSIN TECHNOLOGY HOLDINGS LTD",
+      "ticker": "6451",
+      "weight": 0.00766,
+      "shares_held": 18000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 10.42
+    },
+    {
+      "name": "SIGURD MICROELECTRONICS CORP",
+      "ticker": "6257",
+      "weight": 0.04082,
+      "shares_held": 218000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 4.58
+    },
+    {
+      "name": "SILERGY CORP",
+      "ticker": "6415",
+      "weight": 0.05557,
+      "shares_held": 146360,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 9.29
+    },
+    {
+      "name": "SILICON INTEGRATED SYSTEM CORP",
+      "ticker": "2363",
+      "weight": 0.01099,
+      "shares_held": 176200,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.53
+    },
+    {
+      "name": "SILICON LABORATORIES INC",
+      "ticker": "SLAB",
+      "weight": 0.13031,
+      "shares_held": 15423,
+      "exchange": "NASDAQ",
+      "price": 206.79
+    },
+    {
+      "name": "SILTRONIC N AG",
+      "ticker": "WAF",
+      "weight": 0.01398,
+      "shares_held": 5165,
+      "exchange": "Xetra",
+      "price": 66.25
+    },
+    {
+      "name": "SINO-AMERICAN SILICON PRODUCTS INC",
+      "ticker": "5483",
+      "weight": 0.03906,
+      "shares_held": 257000,
+      "exchange": "Gretai Securities Market",
+      "price": 3.72
+    },
+    {
+      "name": "SITIME CORP",
+      "ticker": "SITM",
+      "weight": 0.13593,
+      "shares_held": 9941,
+      "exchange": "NASDAQ",
+      "price": 334.67
+    },
+    {
+      "name": "SITRONIX TECHNOLOGY CORP",
+      "ticker": "8016",
+      "weight": 0.01151,
+      "shares_held": 45000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 6.26
+    },
+    {
+      "name": "SK HYNIX INC",
+      "ticker": "000660",
+      "weight": 4.84399,
+      "shares_held": 191452,
+      "exchange": "Korea Exchange (Stock Market)",
+      "price": 619.25
+    },
+    {
+      "name": "SKYWATER TECHNOLOGY INC",
+      "ticker": "SKYT",
+      "weight": 0.01511,
+      "shares_held": 13267,
+      "exchange": "NASDAQ",
+      "price": 27.87
+    },
+    {
+      "name": "SKYWORKS SOLUTIONS INC",
+      "ticker": "SWKS",
+      "weight": 0.15901,
+      "shares_held": 68686,
+      "exchange": "NASDAQ",
+      "price": 56.66
+    },
+    {
+      "name": "SOCIONEXT INC",
+      "ticker": "6526",
+      "weight": 0.04576,
+      "shares_held": 90000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 12.44
+    },
+    {
+      "name": "SOITEC SA",
+      "ticker": "SOI",
+      "weight": 0.03086,
+      "shares_held": 12242,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 61.7
+    },
+    {
+      "name": "SOLAREDGE TECHNOLOGIES INC",
+      "ticker": "SEDG",
+      "weight": 0.06104,
+      "shares_held": 29717,
+      "exchange": "NASDAQ",
+      "price": 50.27
+    },
+    {
+      "name": "STMICROELECTRONICS NV",
+      "ticker": "STMPA",
+      "weight": 0.42261,
+      "shares_held": 305881,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 33.81
+    },
+    {
+      "name": "STOXX 600 TECH JUN 26",
+      "ticker": "ULM6",
+      "weight": 0,
+      "shares_held": 5,
+      "exchange": "Eurex Deutschland",
+      "price": 924.78
+    },
+    {
+      "name": "SUMCO CORP",
+      "ticker": "3436",
+      "weight": 0.07178,
+      "shares_held": 151500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 11.6
+    },
+    {
+      "name": "SUSS MICROTEC N",
+      "ticker": "SMHN",
+      "weight": 0.02101,
+      "shares_held": 7859,
+      "exchange": "Xetra",
+      "price": 65.44
+    },
+    {
+      "name": "SYNAPTICS INC",
+      "ticker": "SYNA",
+      "weight": 0.05571,
+      "shares_held": 18632,
+      "exchange": "NASDAQ",
+      "price": 73.18
+    },
+    {
+      "name": "TAESUNG COLTD LTD",
+      "ticker": "323280",
+      "weight": 0.01086,
+      "shares_held": 7150,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 37.17
+    },
+    {
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
+      "ticker": "2330",
+      "weight": 7.58025,
+      "shares_held": 3212000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 57.76
+    },
+    {
+      "name": "TCL ZHONGHUAN RENEWABLE ENERGY TEC",
+      "ticker": "002129",
+      "weight": 0.00462,
+      "shares_held": 85375,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 1.33
+    },
+    {
+      "name": "TECHNOPROBE SPA",
+      "ticker": "TPRO",
+      "weight": 0.04057,
+      "shares_held": 59672,
+      "exchange": "Borsa Italiana",
+      "price": 16.64
+    },
+    {
+      "name": "TECHWING INC",
+      "ticker": "089030",
+      "weight": 0.01938,
+      "shares_held": 13798,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 34.38
+    },
+    {
+      "name": "TERADYNE INC",
+      "ticker": "TER",
+      "weight": 0.85293,
+      "shares_held": 70208,
+      "exchange": "NASDAQ",
+      "price": 297.34
+    },
+    {
+      "name": "TEXAS INSTRUMENT INC",
+      "ticker": "TXN",
+      "weight": 3.22026,
+      "shares_held": 407510,
+      "exchange": "NASDAQ",
+      "price": 193.41
+    },
+    {
+      "name": "TIANSHUI HUATIAN TECHNOLOGY LTD A",
+      "ticker": "002185",
+      "weight": 0.01011,
+      "shares_held": 140000,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 1.77
+    },
+    {
+      "name": "TOKAI CARBON KOREA LTD",
+      "ticker": "064760",
+      "weight": 0.01281,
+      "shares_held": 1932,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 162.28
+    },
+    {
+      "name": "TOKYO ELECTRON LTD",
+      "ticker": "8035",
+      "weight": 2.07948,
+      "shares_held": 200500,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 253.84
+    },
+    {
+      "name": "TOKYO SEIMITSU LTD",
+      "ticker": "7729",
+      "weight": 0.06477,
+      "shares_held": 17300,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 91.63
+    },
+    {
+      "name": "TONGFU MICROELECTRONICS LTD A",
+      "ticker": "002156",
+      "weight": 0.01364,
+      "shares_held": 54000,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 6.18
+    },
+    {
+      "name": "TONGWEI LTD A",
+      "ticker": "600438",
+      "weight": 0.01064,
+      "shares_held": 107500,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.42
+    },
+    {
+      "name": "TOPCO SCIENTIFIC LTD",
+      "ticker": "5434",
+      "weight": 0.03599,
+      "shares_held": 87953,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 10.01
+    },
+    {
+      "name": "TOWA CORP",
+      "ticker": "6315",
+      "weight": 0.01896,
+      "shares_held": 30600,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 15.16
+    },
+    {
+      "name": "TOWER SEMICONDUCTOR LTD",
+      "ticker": "TSEM",
+      "weight": 0.37092,
+      "shares_held": 50682,
+      "exchange": "Tel Aviv Stock Exchange",
+      "price": 179.13
+    },
+    {
+      "name": "TRI CHEMICAL LABORATORIES INC",
+      "ticker": "4369",
+      "weight": 0.00765,
+      "shares_held": 10900,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 17.19
+    },
+    {
+      "name": "TRINA SOLAR LTD A",
+      "ticker": "688599",
+      "weight": 0.00642,
+      "shares_held": 59814,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 2.63
+    },
+    {
+      "name": "TRY CASH",
+      "ticker": "TRY",
+      "weight": 0.00284,
+      "shares_held": 3086535,
+      "exchange": "-",
+      "price": 2.25
+    },
+    {
+      "name": "TWD CASH",
+      "ticker": "TWD",
+      "weight": -0.06778,
+      "shares_held": -52843875,
+      "exchange": "-",
+      "price": 3.14
+    },
+    {
+      "name": "TWD/USD",
+      "ticker": "TWD",
+      "weight": -0.00003,
+      "shares_held": 74172672,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "ULTRA CLEAN HOLDINGS INC",
+      "ticker": "UCTT",
+      "weight": 0.0531,
+      "shares_held": 21837,
+      "exchange": "NASDAQ",
+      "price": 59.51
+    },
+    {
+      "name": "ULVAC INC",
+      "ticker": "6728",
+      "weight": 0.05412,
+      "shares_held": 23000,
+      "exchange": "Tokyo Stock Exchange",
+      "price": 57.59
+    },
+    {
+      "name": "UMS INTEGRATION LTD",
+      "ticker": "558",
+      "weight": 0.01305,
+      "shares_held": 259650,
+      "exchange": "Singapore Exchange",
+      "price": 1.23
+    },
+    {
+      "name": "UNIGROUP GUOXIN MICROELECTRONICS L",
+      "ticker": "002049",
+      "weight": 0.01075,
+      "shares_held": 26879,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 9.79
+    },
+    {
+      "name": "UNISEM M",
+      "ticker": "UNISEM",
+      "weight": 0.00395,
+      "shares_held": 143600,
+      "exchange": "Bursa Malaysia",
+      "price": 0.67
+    },
+    {
+      "name": "UNITED MICRO ELECTRONICS CORP",
+      "ticker": "2303",
+      "weight": 0.38197,
+      "shares_held": 5117000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.83
+    },
+    {
+      "name": "UNITED NOVA TECHNOLOGY LTD A",
+      "ticker": "688469",
+      "weight": 0.00707,
+      "shares_held": 188224,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 0.92
+    },
+    {
+      "name": "UNIVERSAL DISPLAY CORP",
+      "ticker": "OLED",
+      "weight": 0.07566,
+      "shares_held": 19795,
+      "exchange": "NASDAQ",
+      "price": 93.55
+    },
+    {
+      "name": "UPI SEMICONDUCTOR CORP",
+      "ticker": "6719",
+      "weight": 0.00534,
+      "shares_held": 25000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 5.23
+    },
+    {
+      "name": "USD CASH",
+      "ticker": "USD",
+      "weight": 0.42767,
+      "shares_held": 10467348,
+      "exchange": "-",
+      "price": 100
+    },
+    {
+      "name": "VANGUARD INTERNATIONAL SEMICONDUCT",
+      "ticker": "5347",
+      "weight": 0.07864,
+      "shares_held": 524025,
+      "exchange": "Gretai Securities Market",
+      "price": 3.67
+    },
+    {
+      "name": "VEECO INSTRUMENTS INC",
+      "ticker": "VECO",
+      "weight": 0.04108,
+      "shares_held": 27905,
+      "exchange": "NASDAQ",
+      "price": 36.03
+    },
+    {
+      "name": "VERISILICON MICROELECTRONICS (SHAN",
+      "ticker": "688521",
+      "weight": 0.02102,
+      "shares_held": 16682,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 30.84
+    },
+    {
+      "name": "VIA TECHNOLOGIES INC",
+      "ticker": "2388",
+      "weight": 0.00833,
+      "shares_held": 124000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 1.64
+    },
+    {
+      "name": "VISERA TECHNOLOGIES LTD",
+      "ticker": "6789",
+      "weight": 0.01751,
+      "shares_held": 42000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 10.2
+    },
+    {
+      "name": "VISUAL PHOTONICS EPITAXY LTD",
+      "ticker": "2455",
+      "weight": 0.02861,
+      "shares_held": 82000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 8.54
+    },
+    {
+      "name": "VITROX CORPORATION",
+      "ticker": "VITROX",
+      "weight": 0.01241,
+      "shares_held": 282200,
+      "exchange": "Bursa Malaysia",
+      "price": 1.08
+    },
+    {
+      "name": "WAAREE ENERGIES LTD",
+      "ticker": "WAAREEENER",
+      "weight": 0.05602,
+      "shares_held": 40547,
+      "exchange": "National Stock Exchange Of India",
+      "price": 33.82
+    },
+    {
+      "name": "WIN SEMICONDUCTORS CORP",
+      "ticker": "3105",
+      "weight": 0.06805,
+      "shares_held": 148000,
+      "exchange": "Gretai Securities Market",
+      "price": 11.25
+    },
+    {
+      "name": "WINBOND ELECTRONICS CORP",
+      "ticker": "2344",
+      "weight": 0.17609,
+      "shares_held": 1430102,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 3.01
+    },
+    {
+      "name": "WINWAY TECHNOLOGY LTD",
+      "ticker": "6515",
+      "weight": 0.11491,
+      "shares_held": 11000,
+      "exchange": "Taiwan Stock Exchange",
+      "price": 255.69
+    },
+    {
+      "name": "WONIK IPS LTD",
+      "ticker": "240810",
+      "weight": 0.04338,
+      "shares_held": 13165,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 80.64
+    },
+    {
+      "name": "X-FAB SILICON FOUNDRIES",
+      "ticker": "XFAB",
+      "weight": 0.00465,
+      "shares_held": 20349,
+      "exchange": "Nyse Euronext - Euronext Paris",
+      "price": 5.6
+    },
+    {
+      "name": "XINJIANG DAQO NEW ENERGY LTD A",
+      "ticker": "688303",
+      "weight": 0.00592,
+      "shares_held": 46802,
+      "exchange": "Shanghai Stock Exchange",
+      "price": 3.1
+    },
+    {
+      "name": "XINTEC INC",
+      "ticker": "3374",
+      "weight": 0.01815,
+      "shares_held": 89000,
+      "exchange": "Gretai Securities Market",
+      "price": 4.99
+    },
+    {
+      "name": "XINYI SOLAR HOLDINGS LTD",
+      "ticker": "968",
+      "weight": 0.03698,
+      "shares_held": 2270000,
+      "exchange": "Hong Kong Exchanges And Clearing Ltd",
+      "price": 0.4
+    },
+    {
+      "name": "YCC CORP",
+      "ticker": "232140",
+      "weight": 0.00886,
+      "shares_held": 16850,
+      "exchange": "Korea Exchange (Kosdaq)",
+      "price": 12.88
+    },
+    {
+      "name": "ZHEJIANG JINGSHENG MECHANICAL & EL",
+      "ticker": "300316",
+      "weight": 0.00661,
+      "shares_held": 26000,
+      "exchange": "Shenzhen Stock Exchange",
+      "price": 6.23
+    }
+  ],
+  "inception_date": "03-Aug-21",
+  "isin": "IE000I8KRLL9",
+  "issuing_company": "iShares IV plc",
+  "methodology": "Replicated",
+  "nav": "USD 12.34",
+  "nav_total_return_ytd": "12.92%",
+  "net_assets": "USD 2,407,181,151",
+  "net_assets_of_fund": "USD 2,407,181,151",
+  "number_of_holdings": "252",
+  "price": 12.34,
+  "price_book_ratio": "7.30",
+  "price_earnings": "39.80",
+  "product_structure": "Physical",
+  "rebalance_frequency": "Quarterly",
+  "securities_lending_return": "0.01%",
+  "sfdr_classification": "Article 8",
+  "share_class_currency": "USD",
+  "shares_outstanding": "195,000,000",
+  "standard_deviation_3y": "27.65%",
+  "ticker": "SEMI",
+  "total_expense_ratio": "0.35%",
+  "ucits": "Yes",
+  "use_of_income": "Accumulating"
+}

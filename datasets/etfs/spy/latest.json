@@ -1,5 +1,6 @@
 {
   "30_day_median_bid_ask_spread": "0.00%",
+  "base_currency": "USD",
   "bid_ask": "$645.10",
   "closing_price": "$645.09",
   "date": "2026-03-26",
@@ -3035,9 +3036,11 @@
   ],
   "number_of_holdings": "503",
   "premium_discount": "-0.02%",
+  "price": 645.09,
   "price_book_ratio": "4.78",
   "price_cash_flow": "17.65",
   "price_earnings": "25.79",
   "price_earnings_fw": "20.68",
+  "ticker": "SPY",
   "weighted_average_market_cap": "$1,207,041.60 M"
 }

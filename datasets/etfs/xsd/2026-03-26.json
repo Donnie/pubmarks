@@ -1,5 +1,6 @@
 {
   "30_day_median_bid_ask_spread": "0.15%",
+  "base_currency": "USD",
   "bid_ask": "$328.44",
   "closing_price": "$328.33",
   "date": "2026-03-26",
@@ -287,9 +288,11 @@
   ],
   "number_of_holdings": "43",
   "premium_discount": "0.01%",
+  "price": 328.33,
   "price_book_ratio": "3.98",
   "price_cash_flow": "22.15",
   "price_earnings": "31.16",
   "price_earnings_fw": "22.92",
+  "ticker": "XSD",
   "weighted_average_market_cap": "$191,801.16 M"
 }
