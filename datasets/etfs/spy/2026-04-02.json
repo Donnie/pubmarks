@@ -1,3042 +1,3042 @@
 {
   "30_day_median_bid_ask_spread": "0.00%",
   "base_currency": "USD",
-  "bid_ask": "$655.18",
-  "closing_price": "$655.24",
+  "bid_ask": "$655.91",
+  "closing_price": "$655.83",
   "date": "2026-04-02",
-  "day_high": "$658.52",
-  "day_low": "$653.00",
+  "day_high": "$657.92",
+  "day_low": "$645.11",
   "est_3_5_year_eps_growth": "13.97%",
-  "exchange_volume_shares": "24,799,876",
+  "exchange_volume_shares": "13,213,069",
   "holdings": [
     {
       "name": "3M CO",
       "ticker": "MMM",
-      "weight": 0.135614,
-      "shares_held": 6091881
+      "weight": 0.134515,
+      "shares_held": 6082395
     },
     {
       "name": "ABBOTT LABORATORIES",
       "ticker": "ABT",
-      "weight": 0.315863,
-      "shares_held": 20130164
+      "weight": 0.316503,
+      "shares_held": 20098823
     },
     {
       "name": "ABBVIE INC",
       "ticker": "ABBV",
-      "weight": 0.67484,
-      "shares_held": 20481727
+      "weight": 0.653766,
+      "shares_held": 20449859
     },
     {
       "name": "ACCENTURE PLC CL A",
       "ticker": "ACN",
-      "weight": 0.21507,
-      "shares_held": 7121049
+      "weight": 0.219126,
+      "shares_held": 7109951
     },
     {
       "name": "ADOBE INC",
       "ticker": "ADBE",
-      "weight": 0.175709,
-      "shares_held": 4749786
+      "weight": 0.176351,
+      "shares_held": 4742377
     },
     {
       "name": "ADVANCED MICRO DEVICES",
       "ticker": "AMD",
-      "weight": 0.608779,
-      "shares_held": 18896005
+      "weight": 0.628162,
+      "shares_held": 18866617
     },
     {
       "name": "AES CORP",
       "ticker": "AES",
-      "weight": 0.018169,
-      "shares_held": 8348269
+      "weight": 0.018247,
+      "shares_held": 8335435
     },
     {
       "name": "AFLAC INC",
       "ticker": "AFL",
-      "weight": 0.090662,
-      "shares_held": 5395326
+      "weight": 0.091105,
+      "shares_held": 5386894
     },
     {
       "name": "AGILENT TECHNOLOGIES INC",
       "ticker": "A",
-      "weight": 0.057926,
-      "shares_held": 3299739
+      "weight": 0.058241,
+      "shares_held": 3294624
     },
     {
       "name": "AIR PRODUCTS + CHEMICALS INC",
       "ticker": "APD",
-      "weight": 0.114736,
-      "shares_held": 2586552
+      "weight": 0.11605,
+      "shares_held": 2582522
     },
     {
       "name": "AIRBNB INC CLASS A",
       "ticker": "ABNB",
-      "weight": 0.093948,
-      "shares_held": 4896468
+      "weight": 0.093511,
+      "shares_held": 4888842
     },
     {
       "name": "AKAMAI TECHNOLOGIES INC",
       "ticker": "AKAM",
-      "weight": 0.02944,
-      "shares_held": 1659487
+      "weight": 0.029929,
+      "shares_held": 1656883
     },
     {
       "name": "ALBEMARLE CORP",
       "ticker": "ALB",
-      "weight": 0.037179,
-      "shares_held": 1359249
+      "weight": 0.036998,
+      "shares_held": 1357110
     },
     {
       "name": "ALEXANDRIA REAL ESTATE EQUIT",
       "ticker": "ARE",
-      "weight": 0.011966,
-      "shares_held": 1803564
+      "weight": 0.011917,
+      "shares_held": 1800743
     },
     {
       "name": "ALIGN TECHNOLOGY INC",
       "ticker": "ALGN",
-      "weight": 0.020507,
-      "shares_held": 774629
+      "weight": 0.020198,
+      "shares_held": 773420
     },
     {
       "name": "ALLEGION PLC",
       "ticker": "ALLE",
-      "weight": 0.022082,
-      "shares_held": 999459
+      "weight": 0.021548,
+      "shares_held": 997909
     },
     {
       "name": "ALLIANT ENERGY CORP",
       "ticker": "LNT",
-      "weight": 0.032678,
-      "shares_held": 2963779
+      "weight": 0.033,
+      "shares_held": 2959129
     },
     {
       "name": "ALLSTATE CORP",
       "ticker": "ALL",
-      "weight": 0.094008,
-      "shares_held": 3005273
+      "weight": 0.095095,
+      "shares_held": 3000592
     },
     {
       "name": "ALPHABET INC CL A",
       "ticker": "GOOGL",
-      "weight": 3.074492,
-      "shares_held": 67454428
+      "weight": 3.049345,
+      "shares_held": 67349462
     },
     {
       "name": "ALPHABET INC CL C",
       "ticker": "GOOG",
-      "weight": 2.449034,
-      "shares_held": 54185558
+      "weight": 2.438663,
+      "shares_held": 54101238
     },
     {
       "name": "ALTRIA GROUP INC",
       "ticker": "MO",
-      "weight": 0.195467,
-      "shares_held": 19477301
+      "weight": 0.195764,
+      "shares_held": 19447045
     },
     {
       "name": "AMAZON.COM INC",
       "ticker": "AMZN",
-      "weight": 3.652638,
-      "shares_held": 113181015
+      "weight": 3.628766,
+      "shares_held": 113004873
     },
     {
       "name": "AMCOR PLC",
       "ticker": "AMCR",
-      "weight": 0.033449,
-      "shares_held": 5362390
+      "weight": 0.032727,
+      "shares_held": 5354051
     },
     {
       "name": "AMEREN CORPORATION",
       "ticker": "AEE",
-      "weight": 0.054366,
-      "shares_held": 3201747
+      "weight": 0.054652,
+      "shares_held": 3196756
     },
     {
       "name": "AMERICAN ELECTRIC POWER",
       "ticker": "AEP",
-      "weight": 0.126432,
-      "shares_held": 6265171
+      "weight": 0.127051,
+      "shares_held": 6255406
     },
     {
       "name": "AMERICAN EXPRESS CO",
       "ticker": "AXP",
-      "weight": 0.285511,
-      "shares_held": 6199285
+      "weight": 0.284422,
+      "shares_held": 6189613
     },
     {
       "name": "AMERICAN INTERNATIONAL GROUP",
       "ticker": "AIG",
-      "weight": 0.071772,
-      "shares_held": 6197603
+      "weight": 0.071441,
+      "shares_held": 6187931
     },
     {
       "name": "AMERICAN TOWER CORP",
       "ticker": "AMT",
-      "weight": 0.142217,
-      "shares_held": 5425849
+      "weight": 0.144074,
+      "shares_held": 5417417
     },
     {
       "name": "AMERICAN WATER WORKS CO INC",
       "ticker": "AWK",
-      "weight": 0.047532,
-      "shares_held": 2267242
+      "weight": 0.047869,
+      "shares_held": 2263708
     },
     {
       "name": "AMERIPRISE FINANCIAL INC",
       "ticker": "AMP",
-      "weight": 0.070578,
-      "shares_held": 1054577
+      "weight": 0.069944,
+      "shares_held": 1052934
     },
     {
       "name": "AMETEK INC",
       "ticker": "AME",
-      "weight": 0.089641,
-      "shares_held": 2675216
+      "weight": 0.089256,
+      "shares_held": 2671062
     },
     {
       "name": "AMGEN INC",
       "ticker": "AMGN",
-      "weight": 0.337526,
-      "shares_held": 6233779
+      "weight": 0.331511,
+      "shares_held": 6224076
     },
     {
       "name": "AMPHENOL CORP CL A",
       "ticker": "APH",
-      "weight": 0.278674,
-      "shares_held": 14238670
+      "weight": 0.278562,
+      "shares_held": 14216505
     },
     {
       "name": "ANALOG DEVICES INC",
       "ticker": "ADI",
-      "weight": 0.277889,
-      "shares_held": 5655866
+      "weight": 0.27519,
+      "shares_held": 5647062
     },
     {
       "name": "AON PLC CLASS A",
       "ticker": "AON",
-      "weight": 0.122168,
-      "shares_held": 2480604
+      "weight": 0.122515,
+      "shares_held": 2476729
     },
     {
       "name": "APA CORP",
       "ticker": "APA",
-      "weight": 0.026117,
-      "shares_held": 4121095
+      "weight": 0.02648,
+      "shares_held": 4114709
     },
     {
       "name": "APOLLO GLOBAL MANAGEMENT INC",
       "ticker": "APO",
-      "weight": 0.091169,
-      "shares_held": 5395516
+      "weight": 0.088272,
+      "shares_held": 5387146
     },
     {
       "name": "APPLE INC",
       "ticker": "AAPL",
-      "weight": 6.663929,
-      "shares_held": 170091279
+      "weight": 6.653164,
+      "shares_held": 169826570
     },
     {
       "name": "APPLIED MATERIALS INC",
       "ticker": "AMAT",
-      "weight": 0.498352,
-      "shares_held": 9190552
+      "weight": 0.489495,
+      "shares_held": 9176230
     },
     {
       "name": "APPLOVIN CORP CLASS A",
       "ticker": "APP",
-      "weight": 0.186761,
-      "shares_held": 3141938
+      "weight": 0.185542,
+      "shares_held": 3137040
     },
     {
       "name": "APTIV PLC",
       "ticker": "APTV",
-      "weight": 0.023272,
-      "shares_held": 2445546
+      "weight": 0.022797,
+      "shares_held": 2441702
     },
     {
       "name": "ARCH CAPITAL GROUP LTD",
       "ticker": "ACGL",
-      "weight": 0.060393,
-      "shares_held": 4126622
+      "weight": 0.061015,
+      "shares_held": 4120174
     },
     {
       "name": "ARCHER DANIELS MIDLAND CO",
       "ticker": "ADM",
-      "weight": 0.06171,
-      "shares_held": 5563670
+      "weight": 0.062782,
+      "shares_held": 5554990
     },
     {
       "name": "ARES MANAGEMENT CORP   A",
       "ticker": "ARES",
-      "weight": 0.038702,
-      "shares_held": 2386780
+      "weight": 0.037366,
+      "shares_held": 2383060
     },
     {
       "name": "ARISTA NETWORKS INC",
       "ticker": "ANET",
-      "weight": 0.228695,
-      "shares_held": 11951762
+      "weight": 0.231409,
+      "shares_held": 11933131
     },
     {
       "name": "ARTHUR J GALLAGHER + CO",
       "ticker": "AJG",
-      "weight": 0.098804,
-      "shares_held": 2979882
+      "weight": 0.099111,
+      "shares_held": 2975263
     },
     {
       "name": "ASSURANT INC",
       "ticker": "AIZ",
-      "weight": 0.019457,
-      "shares_held": 586857
+      "weight": 0.019578,
+      "shares_held": 585958
     },
     {
       "name": "AT+T INC",
       "ticker": "T",
-      "weight": 0.351642,
-      "shares_held": 81044696
+      "weight": 0.350924,
+      "shares_held": 80918464
     },
     {
       "name": "ATMOS ENERGY CORP",
       "ticker": "ATO",
-      "weight": 0.054479,
-      "shares_held": 1916354
+      "weight": 0.055349,
+      "shares_held": 1913378
     },
     {
       "name": "AUTODESK INC",
       "ticker": "ADSK",
-      "weight": 0.089335,
-      "shares_held": 2450436
+      "weight": 0.089168,
+      "shares_held": 2446623
     },
     {
       "name": "AUTOMATIC DATA PROCESSING",
       "ticker": "ADP",
-      "weight": 0.143688,
-      "shares_held": 4657835
+      "weight": 0.145237,
+      "shares_held": 4650581
     },
     {
       "name": "AUTOZONE INC",
       "ticker": "AZO",
-      "weight": 0.100604,
-      "shares_held": 191571
+      "weight": 0.099562,
+      "shares_held": 191261
     },
     {
       "name": "AVALONBAY COMMUNITIES INC",
       "ticker": "AVB",
-      "weight": 0.041538,
-      "shares_held": 1643571
+      "weight": 0.041706,
+      "shares_held": 1641029
     },
     {
       "name": "AVERY DENNISON CORP",
       "ticker": "AVY",
-      "weight": 0.023829,
-      "shares_held": 898212
+      "weight": 0.02354,
+      "shares_held": 896817
     },
     {
       "name": "AXON ENTERPRISE INC",
       "ticker": "AXON",
-      "weight": 0.059229,
-      "shares_held": 912372
+      "weight": 0.057565,
+      "shares_held": 910946
     },
     {
       "name": "BAKER HUGHES CO",
       "ticker": "BKR",
-      "weight": 0.105934,
-      "shares_held": 11454968
+      "weight": 0.105713,
+      "shares_held": 11437143
     },
     {
       "name": "BALL CORP",
       "ticker": "BALL",
-      "weight": 0.028814,
-      "shares_held": 3114203
+      "weight": 0.028545,
+      "shares_held": 3109367
     },
     {
       "name": "BANK OF AMERICA CORP",
       "ticker": "BAC",
-      "weight": 0.580697,
-      "shares_held": 76900793
+      "weight": 0.580396,
+      "shares_held": 76781164
     },
     {
       "name": "BANK OF NEW YORK MELLON CORP",
       "ticker": "BK",
-      "weight": 0.147595,
-      "shares_held": 7960804
+      "weight": 0.148601,
+      "shares_held": 7948404
     },
     {
       "name": "BAXTER INTERNATIONAL INC",
       "ticker": "BAX",
-      "weight": 0.01541,
-      "shares_held": 5991960
+      "weight": 0.015276,
+      "shares_held": 5982691
     },
     {
       "name": "BECTON DICKINSON AND CO",
       "ticker": "BDX",
-      "weight": 0.078833,
-      "shares_held": 3290026
+      "weight": 0.077695,
+      "shares_held": 3284880
     },
     {
       "name": "BERKSHIRE HATHAWAY INC CL B",
       "ticker": "BRK.B",
-      "weight": 1.558185,
-      "shares_held": 21247147
+      "weight": 1.55017,
+      "shares_held": 21214070
     },
     {
       "name": "BEST BUY CO INC",
       "ticker": "BBY",
-      "weight": 0.022378,
-      "shares_held": 2270392
+      "weight": 0.022382,
+      "shares_held": 2266889
     },
     {
       "name": "BIO TECHNE CORP",
       "ticker": "TECH",
-      "weight": 0.01484,
-      "shares_held": 1810506
+      "weight": 0.014702,
+      "shares_held": 1807685
     },
     {
       "name": "BIOGEN INC",
       "ticker": "BIIB",
-      "weight": 0.048078,
-      "shares_held": 1706930
+      "weight": 0.046267,
+      "shares_held": 1704295
     },
     {
       "name": "BLACKROCK INC",
       "ticker": "BLK",
-      "weight": 0.245055,
-      "shares_held": 1670064
+      "weight": 0.246719,
+      "shares_held": 1667460
     },
     {
       "name": "BLACKSTONE INC",
       "ticker": "BX",
-      "weight": 0.151963,
-      "shares_held": 8672429
+      "weight": 0.149849,
+      "shares_held": 8658944
     },
     {
       "name": "BLOCK INC",
       "ticker": "XYZ",
-      "weight": 0.058268,
-      "shares_held": 6385362
+      "weight": 0.058343,
+      "shares_held": 6375473
     },
     {
       "name": "BOEING CO/THE",
       "ticker": "BA",
-      "weight": 0.289263,
-      "shares_held": 9103654
+      "weight": 0.289721,
+      "shares_held": 9089487
     },
     {
       "name": "BOOKING HOLDINGS INC",
       "ticker": "BKNG",
-      "weight": 0.239684,
-      "shares_held": 373726
+      "weight": 0.239578,
+      "shares_held": 9328425
     },
     {
       "name": "BOSTON SCIENTIFIC CORP",
       "ticker": "BSX",
-      "weight": 0.163327,
-      "shares_held": 17188127
+      "weight": 0.165032,
+      "shares_held": 17161374
     },
     {
       "name": "BRISTOL MYERS SQUIBB CO",
       "ticker": "BMY",
-      "weight": 0.221062,
-      "shares_held": 23606759
+      "weight": 0.215043,
+      "shares_held": 23570055
     },
     {
       "name": "BROADCOM INC",
       "ticker": "AVGO",
-      "weight": 2.639353,
-      "shares_held": 54933510
+      "weight": 2.641003,
+      "shares_held": 54848012
     },
     {
       "name": "BROADRIDGE FINANCIAL SOLUTIO",
       "ticker": "BR",
-      "weight": 0.03334,
-      "shares_held": 1359743
+      "weight": 0.033446,
+      "shares_held": 1357635
     },
     {
       "name": "BROWN + BROWN INC",
       "ticker": "BRO",
-      "weight": 0.033568,
-      "shares_held": 3401019
+      "weight": 0.034282,
+      "shares_held": 3395749
     },
     {
       "name": "BROWN FORMAN CORP CLASS B",
       "ticker": "BF.B",
-      "weight": 0.008122,
-      "shares_held": 1998991
+      "weight": 0.008173,
+      "shares_held": 1995922
     },
     {
       "name": "BUILDERS FIRSTSOURCE INC",
       "ticker": "BLDR",
-      "weight": 0.016091,
-      "shares_held": 1296626
+      "weight": 0.01568,
+      "shares_held": 1294642
     },
     {
       "name": "BUNGE GLOBAL SA",
       "ticker": "BG",
-      "weight": 0.030932,
-      "shares_held": 1572789
+      "weight": 0.031111,
+      "shares_held": 1570340
     },
     {
       "name": "BXP INC",
       "ticker": "BXP",
-      "weight": 0.013339,
-      "shares_held": 1705832
+      "weight": 0.0135,
+      "shares_held": 1703166
     },
     {
       "name": "C.H. ROBINSON WORLDWIDE INC",
       "ticker": "CHRW",
-      "weight": 0.035571,
-      "shares_held": 1377380
+      "weight": 0.035334,
+      "shares_held": 1375241
     },
     {
       "name": "CADENCE DESIGN SYS INC",
       "ticker": "CDNS",
-      "weight": 0.135577,
-      "shares_held": 3157170
+      "weight": 0.134496,
+      "shares_held": 3152272
     },
     {
       "name": "CAMDEN PROPERTY TRUST",
       "ticker": "CPT",
-      "weight": 0.01804,
-      "shares_held": 1197771
+      "weight": 0.018446,
+      "shares_held": 1195911
     },
     {
       "name": "CAPITAL ONE FINANCIAL CORP",
       "ticker": "COF",
-      "weight": 0.204543,
-      "shares_held": 7233571
+      "weight": 0.201128,
+      "shares_held": 7222287
     },
     {
       "name": "CARDINAL HEALTH INC",
       "ticker": "CAH",
-      "weight": 0.088373,
-      "shares_held": 2719615
+      "weight": 0.088974,
+      "shares_held": 2715368
     },
     {
       "name": "CARNIVAL CORP",
       "ticker": "CCL",
-      "weight": 0.054273,
-      "shares_held": 13322668
+      "weight": 0.05221,
+      "shares_held": 13301929
     },
     {
       "name": "CARRIER GLOBAL CORP",
       "ticker": "CARR",
-      "weight": 0.079175,
-      "shares_held": 9079066
+      "weight": 0.077306,
+      "shares_held": 9064899
     },
     {
       "name": "CARVANA CO",
       "ticker": "CVNA",
-      "weight": 0.078616,
-      "shares_held": 1643589
+      "weight": 0.078858,
+      "shares_held": 1641047
     },
     {
       "name": "CATERPILLAR INC",
       "ticker": "CAT",
-      "weight": 0.603569,
-      "shares_held": 5392342
+      "weight": 0.591114,
+      "shares_held": 5383941
     },
     {
       "name": "CBOE GLOBAL MARKETS INC",
       "ticker": "CBOE",
-      "weight": 0.051994,
-      "shares_held": 1210337
+      "weight": 0.053638,
+      "shares_held": 1208446
     },
     {
       "name": "CBRE GROUP INC   A",
       "ticker": "CBRE",
-      "weight": 0.069174,
-      "shares_held": 3355975
+      "weight": 0.070066,
+      "shares_held": 3350736
     },
     {
       "name": "CDW CORP/DE",
       "ticker": "CDW",
-      "weight": 0.028304,
-      "shares_held": 1521202
+      "weight": 0.028368,
+      "shares_held": 1518846
     },
     {
       "name": "CENCORA INC",
       "ticker": "COR",
-      "weight": 0.109688,
-      "shares_held": 2252994
+      "weight": 0.111846,
+      "shares_held": 2249491
     },
     {
       "name": "CENTENE CORP",
       "ticker": "CNC",
-      "weight": 0.028135,
-      "shares_held": 5407117
+      "weight": 0.029016,
+      "shares_held": 5398685
     },
     {
       "name": "CENTERPOINT ENERGY INC",
       "ticker": "CNP",
-      "weight": 0.050037,
-      "shares_held": 7548643
+      "weight": 0.05043,
+      "shares_held": 7536863
     },
     {
       "name": "CF INDUSTRIES HOLDINGS INC",
       "ticker": "CF",
-      "weight": 0.035551,
-      "shares_held": 1812477
+      "weight": 0.036005,
+      "shares_held": 1809656
     },
     {
       "name": "CHARLES RIVER LABORATORIES",
       "ticker": "CRL",
-      "weight": 0.015438,
-      "shares_held": 575919
+      "weight": 0.015306,
+      "shares_held": 575020
     },
     {
       "name": "CHARTER COMMUNICATIONS INC A",
       "ticker": "CHTR",
-      "weight": 0.032858,
-      "shares_held": 991306
+      "weight": 0.033301,
+      "shares_held": 989756
     },
     {
       "name": "CHEVRON CORP",
       "ticker": "CVX",
-      "weight": 0.657249,
-      "shares_held": 21723225
+      "weight": 0.660624,
+      "shares_held": 21689435
     },
     {
       "name": "CHIPOTLE MEXICAN GRILL INC",
       "ticker": "CMG",
-      "weight": 0.07525,
-      "shares_held": 15047102
+      "weight": 0.076262,
+      "shares_held": 15023604
     },
     {
       "name": "CHUBB LTD",
       "ticker": "CB",
-      "weight": 0.211059,
-      "shares_held": 4209266
+      "weight": 0.211231,
+      "shares_held": 4202694
     },
     {
       "name": "CHURCH + DWIGHT CO INC",
       "ticker": "CHD",
-      "weight": 0.038821,
-      "shares_held": 2728025
+      "weight": 0.038714,
+      "shares_held": 2723747
     },
     {
       "name": "CIENA CORP",
       "ticker": "CIEN",
-      "weight": 0.103674,
-      "shares_held": 1628468
+      "weight": 0.111446,
+      "shares_held": 1625926
     },
     {
       "name": "CINCINNATI FINANCIAL CORP",
       "ticker": "CINF",
-      "weight": 0.043809,
-      "shares_held": 1813024
+      "weight": 0.043896,
+      "shares_held": 1810203
     },
     {
       "name": "CINTAS CORP",
       "ticker": "CTAS",
-      "weight": 0.103628,
-      "shares_held": 3930156
+      "weight": 0.104724,
+      "shares_held": 3924018
     },
     {
       "name": "CISCO SYSTEMS INC",
       "ticker": "CSCO",
-      "weight": 0.543889,
-      "shares_held": 45784271
+      "weight": 0.552962,
+      "shares_held": 45713033
     },
     {
       "name": "CITIGROUP INC",
       "ticker": "C",
-      "weight": 0.357494,
-      "shares_held": 20230337
+      "weight": 0.356357,
+      "shares_held": 20198841
     },
     {
       "name": "CITIZENS FINANCIAL GROUP",
       "ticker": "CFG",
-      "weight": 0.045487,
-      "shares_held": 4899953
+      "weight": 0.045676,
+      "shares_held": 4892296
     },
     {
       "name": "CLOROX COMPANY",
       "ticker": "CLX",
-      "weight": 0.022431,
-      "shares_held": 1404055
+      "weight": 0.021705,
+      "shares_held": 1401885
     },
     {
       "name": "CME GROUP INC",
       "ticker": "CME",
-      "weight": 0.189904,
-      "shares_held": 4172820
+      "weight": 0.194593,
+      "shares_held": 4166310
     },
     {
       "name": "CMS ENERGY CORP",
       "ticker": "CMS",
-      "weight": 0.042388,
-      "shares_held": 3549440
+      "weight": 0.04263,
+      "shares_held": 3543922
     },
     {
       "name": "COCA COLA CO/THE",
       "ticker": "KO",
-      "weight": 0.522703,
-      "shares_held": 44827858
+      "weight": 0.525652,
+      "shares_held": 44758046
     },
     {
       "name": "COGNIZANT TECH SOLUTIONS A",
       "ticker": "CTSH",
-      "weight": 0.051805,
-      "shares_held": 5518637
+      "weight": 0.052751,
+      "shares_held": 5510019
     },
     {
       "name": "COHERENT CORP",
       "ticker": "COHR",
-      "weight": 0.082478,
-      "shares_held": 2171707
+      "weight": 0.08569,
+      "shares_held": 2168328
     },
     {
       "name": "COINBASE GLOBAL INC  CLASS A",
       "ticker": "COIN",
-      "weight": 0.06833,
-      "shares_held": 2577222
+      "weight": 0.067539,
+      "shares_held": 2573192
     },
     {
       "name": "COLGATE PALMOLIVE CO",
       "ticker": "CL",
-      "weight": 0.122611,
-      "shares_held": 9366634
+      "weight": 0.121888,
+      "shares_held": 9352095
     },
     {
       "name": "COMCAST CORP CLASS A",
       "ticker": "CMCSA",
-      "weight": 0.178502,
-      "shares_held": 41521498
+      "weight": 0.17725,
+      "shares_held": 41456801
     },
     {
       "name": "COMFORT SYSTEMS USA INC",
       "ticker": "FIX",
-      "weight": 0.089455,
-      "shares_held": 408584
+      "weight": 0.088505,
+      "shares_held": 407964
     },
     {
       "name": "CONAGRA BRANDS INC",
       "ticker": "CAG",
-      "weight": 0.013299,
-      "shares_held": 5590915
+      "weight": 0.013433,
+      "shares_held": 5582297
     },
     {
       "name": "CONOCOPHILLIPS",
       "ticker": "COP",
-      "weight": 0.279033,
-      "shares_held": 14181466
+      "weight": 0.282904,
+      "shares_held": 14159363
     },
     {
       "name": "CONSOLIDATED EDISON INC",
       "ticker": "ED",
-      "weight": 0.073141,
-      "shares_held": 4189484
+      "weight": 0.073913,
+      "shares_held": 4182974
     },
     {
       "name": "CONSTELLATION BRANDS INC A",
       "ticker": "STZ",
-      "weight": 0.037936,
-      "shares_held": 1638258
+      "weight": 0.03786,
+      "shares_held": 1635716
     },
     {
       "name": "CONSTELLATION ENERGY",
       "ticker": "CEG",
-      "weight": 0.15443,
-      "shares_held": 3605578
+      "weight": 0.150346,
+      "shares_held": 3599967
     },
     {
       "name": "COOPER COS INC/THE",
       "ticker": "COO",
-      "weight": 0.024651,
-      "shares_held": 2251695
+      "weight": 0.024149,
+      "shares_held": 2248161
     },
     {
       "name": "COPART INC",
       "ticker": "CPRT",
-      "weight": 0.052178,
-      "shares_held": 10310322
+      "weight": 0.052633,
+      "shares_held": 10294264
     },
     {
       "name": "CORNING INC",
       "ticker": "GLW",
-      "weight": 0.197692,
-      "shares_held": 9059473
+      "weight": 0.20482,
+      "shares_held": 9045399
     },
     {
       "name": "CORPAY INC",
       "ticker": "CPAY",
-      "weight": 0.036074,
-      "shares_held": 812814
+      "weight": 0.036442,
+      "shares_held": 811543
     },
     {
       "name": "CORTEVA INC",
       "ticker": "CTVA",
-      "weight": 0.09985,
-      "shares_held": 7773483
+      "weight": 0.101536,
+      "shares_held": 7761362
     },
     {
       "name": "COSTAR GROUP INC",
       "ticker": "CSGP",
-      "weight": 0.02996,
-      "shares_held": 4932627
+      "weight": 0.030119,
+      "shares_held": 4924970
     },
     {
       "name": "COSTCO WHOLESALE CORP",
       "ticker": "COST",
-      "weight": 0.785757,
-      "shares_held": 5144561
+      "weight": 0.798068,
+      "shares_held": 5136563
     },
     {
       "name": "COTERRA ENERGY INC",
       "ticker": "CTRA",
-      "weight": 0.045842,
-      "shares_held": 8817976
+      "weight": 0.046579,
+      "shares_held": 8804305
     },
     {
       "name": "CRH PLC",
       "ticker": "CRH",
-      "weight": 0.12677,
-      "shares_held": 7788554
+      "weight": 0.124554,
+      "shares_held": 7776464
     },
     {
       "name": "CROWDSTRIKE HOLDINGS INC   A",
       "ticker": "CRWD",
-      "weight": 0.176214,
-      "shares_held": 2923276
+      "weight": 0.178326,
+      "shares_held": 2918719
     },
     {
       "name": "CROWN CASTLE INC",
       "ticker": "CCI",
-      "weight": 0.062535,
-      "shares_held": 5047968
+      "weight": 0.065411,
+      "shares_held": 5040125
     },
     {
       "name": "CSX CORP",
       "ticker": "CSX",
-      "weight": 0.1371,
-      "shares_held": 21586381
+      "weight": 0.135997,
+      "shares_held": 21552839
     },
     {
       "name": "CUMMINS INC",
       "ticker": "CMI",
-      "weight": 0.134854,
-      "shares_held": 1599530
+      "weight": 0.134384,
+      "shares_held": 1597050
     },
     {
       "name": "CVS HEALTH CORP",
       "ticker": "CVS",
-      "weight": 0.163652,
-      "shares_held": 14730091
+      "weight": 0.165453,
+      "shares_held": 14707151
     },
     {
       "name": "DANAHER CORP",
       "ticker": "DHR",
-      "weight": 0.21319,
-      "shares_held": 7290803
+      "weight": 0.212972,
+      "shares_held": 7279457
     },
     {
       "name": "DARDEN RESTAURANTS INC",
       "ticker": "DRI",
-      "weight": 0.039275,
-      "shares_held": 1327368
+      "weight": 0.039831,
+      "shares_held": 1325291
     },
     {
       "name": "DATADOG INC   CLASS A",
       "ticker": "DDOG",
-      "weight": 0.069342,
-      "shares_held": 3812587
+      "weight": 0.070137,
+      "shares_held": 3806666
     },
     {
       "name": "DAVITA INC",
       "ticker": "DVA",
-      "weight": 0.008712,
-      "shares_held": 378093
+      "weight": 0.008413,
+      "shares_held": 377504
     },
     {
       "name": "DECKERS OUTDOOR CORP",
       "ticker": "DECK",
-      "weight": 0.025239,
-      "shares_held": 1631941
+      "weight": 0.024521,
+      "shares_held": 1629368
     },
     {
       "name": "DEERE + CO",
       "ticker": "DE",
-      "weight": 0.255625,
-      "shares_held": 2922535
+      "weight": 0.25716,
+      "shares_held": 2917978
     },
     {
       "name": "DELL TECHNOLOGIES  C",
       "ticker": "DELL",
-      "weight": 0.08915,
-      "shares_held": 3434188
+      "weight": 0.091524,
+      "shares_held": 3428825
     },
     {
       "name": "DELTA AIR LINES INC",
       "ticker": "DAL",
-      "weight": 0.078068,
-      "shares_held": 7535153
+      "weight": 0.076887,
+      "shares_held": 7523435
     },
     {
       "name": "DEVON ENERGY CORP",
       "ticker": "DVN",
-      "weight": 0.053308,
-      "shares_held": 7158220
+      "weight": 0.054145,
+      "shares_held": 7147029
     },
     {
       "name": "DEXCOM INC",
       "ticker": "DXCM",
-      "weight": 0.04243,
-      "shares_held": 4438772
+      "weight": 0.042212,
+      "shares_held": 4431828
     },
     {
       "name": "DIAMONDBACK ENERGY INC",
       "ticker": "FANG",
-      "weight": 0.065695,
-      "shares_held": 2248679
+      "weight": 0.066635,
+      "shares_held": 2245176
     },
     {
       "name": "DIGITAL REALTY TRUST INC",
       "ticker": "DLR",
-      "weight": 0.103772,
-      "shares_held": 3752220
+      "weight": 0.104199,
+      "shares_held": 3746392
     },
     {
       "name": "DOLLAR GENERAL CORP",
       "ticker": "DG",
-      "weight": 0.045709,
-      "shares_held": 2545363
+      "weight": 0.046583,
+      "shares_held": 2541395
     },
     {
       "name": "DOLLAR TREE INC",
       "ticker": "DLTR",
-      "weight": 0.035483,
-      "shares_held": 2129886
+      "weight": 0.035301,
+      "shares_held": 2126538
     },
     {
       "name": "DOMINION ENERGY INC",
       "ticker": "D",
-      "weight": 0.094113,
-      "shares_held": 9896258
+      "weight": 0.094943,
+      "shares_held": 9880851
     },
     {
       "name": "DOMINO S PIZZA INC",
       "ticker": "DPZ",
-      "weight": 0.020046,
-      "shares_held": 361775
+      "weight": 0.020505,
+      "shares_held": 361217
     },
     {
       "name": "DOORDASH INC   A",
       "ticker": "DASH",
-      "weight": 0.100196,
-      "shares_held": 4343879
+      "weight": 0.103872,
+      "shares_held": 4337152
     },
     {
       "name": "DOVER CORP",
       "ticker": "DOV",
-      "weight": 0.049436,
-      "shares_held": 1556002
+      "weight": 0.048844,
+      "shares_held": 1553584
     },
     {
       "name": "DOW INC",
       "ticker": "DOW",
-      "weight": 0.051699,
-      "shares_held": 8290095
+      "weight": 0.052457,
+      "shares_held": 8277168
     },
     {
       "name": "DR HORTON INC",
       "ticker": "DHI",
-      "weight": 0.065928,
-      "shares_held": 3111492
+      "weight": 0.066431,
+      "shares_held": 3106625
     },
     {
       "name": "DTE ENERGY COMPANY",
       "ticker": "DTE",
-      "weight": 0.054145,
-      "shares_held": 2401323
+      "weight": 0.054334,
+      "shares_held": 2397572
     },
     {
       "name": "DUKE ENERGY CORP",
       "ticker": "DUK",
-      "weight": 0.180864,
-      "shares_held": 9015237
+      "weight": 0.182187,
+      "shares_held": 9001225
     },
     {
       "name": "DUPONT DE NEMOURS INC",
       "ticker": "DD",
-      "weight": 0.033358,
-      "shares_held": 4710030
+      "weight": 0.03274,
+      "shares_held": 4702652
     },
     {
       "name": "EATON CORP PLC",
       "ticker": "ETN",
-      "weight": 0.252386,
-      "shares_held": 4504745
+      "weight": 0.248622,
+      "shares_held": 4497739
     },
     {
       "name": "EBAY INC",
       "ticker": "EBAY",
-      "weight": 0.074974,
-      "shares_held": 5252694
+      "weight": 0.075579,
+      "shares_held": 5244541
     },
     {
       "name": "ECHOSTAR CORP A",
       "ticker": "SATS",
-      "weight": 0.028821,
-      "shares_held": 1559294
+      "weight": 0.030668,
+      "shares_held": 1556876
     },
     {
       "name": "ECOLAB INC",
       "ticker": "ECL",
-      "weight": 0.122057,
-      "shares_held": 2954630
+      "weight": 0.119347,
+      "shares_held": 2950042
     },
     {
       "name": "EDISON INTERNATIONAL",
       "ticker": "EIX",
-      "weight": 0.050501,
-      "shares_held": 4478239
+      "weight": 0.050281,
+      "shares_held": 4471295
     },
     {
       "name": "EDWARDS LIFESCIENCES CORP",
       "ticker": "EW",
-      "weight": 0.083983,
-      "shares_held": 6743362
+      "weight": 0.083536,
+      "shares_held": 6732884
     },
     {
       "name": "ELECTRONIC ARTS INC",
       "ticker": "EA",
-      "weight": 0.081605,
-      "shares_held": 2615456
+      "weight": 0.08139,
+      "shares_held": 2611395
     },
     {
       "name": "ELEVANCE HEALTH INC",
       "ticker": "ELV",
-      "weight": 0.116753,
-      "shares_held": 2552028
+      "weight": 0.117306,
+      "shares_held": 2548060
     },
     {
       "name": "ELI LILLY + CO",
       "ticker": "LLY",
-      "weight": 1.34324,
-      "shares_held": 9181890
+      "weight": 1.31297,
+      "shares_held": 9167599
     },
     {
       "name": "EMCOR GROUP INC",
       "ticker": "EME",
-      "weight": 0.060497,
-      "shares_held": 519686
+      "weight": 0.060073,
+      "shares_held": 518880
     },
     {
       "name": "EMERSON ELECTRIC CO",
       "ticker": "EMR",
-      "weight": 0.132216,
-      "shares_held": 6517137
+      "weight": 0.131185,
+      "shares_held": 6507000
     },
     {
       "name": "ENTERGY CORP",
       "ticker": "ETR",
-      "weight": 0.091211,
-      "shares_held": 5239710
+      "weight": 0.092017,
+      "shares_held": 5231557
     },
     {
       "name": "EOG RESOURCES INC",
       "ticker": "EOG",
-      "weight": 0.135702,
-      "shares_held": 6305505
+      "weight": 0.137469,
+      "shares_held": 6295709
     },
     {
       "name": "EPAM SYSTEMS INC",
       "ticker": "EPAM",
-      "weight": 0.013273,
-      "shares_held": 640940
+      "weight": 0.013518,
+      "shares_held": 639948
     },
     {
       "name": "EQT CORP",
       "ticker": "EQT",
-      "weight": 0.067843,
-      "shares_held": 7245983
+      "weight": 0.066117,
+      "shares_held": 7234730
     },
     {
       "name": "EQUIFAX INC",
       "ticker": "EFX",
-      "weight": 0.038204,
-      "shares_held": 1387468
+      "weight": 0.038678,
+      "shares_held": 1385298
     },
     {
       "name": "EQUINIX INC",
       "ticker": "EQIX",
-      "weight": 0.173652,
-      "shares_held": 1137609
+      "weight": 0.173939,
+      "shares_held": 1135842
     },
     {
       "name": "EQUITY RESIDENTIAL",
       "ticker": "EQR",
-      "weight": 0.036147,
-      "shares_held": 3960532
+      "weight": 0.036483,
+      "shares_held": 3954332
     },
     {
       "name": "ERIE INDEMNITY COMPANY CL A",
       "ticker": "ERIE",
-      "weight": 0.011084,
-      "shares_held": 292805
+      "weight": 0.011166,
+      "shares_held": 292340
     },
     {
       "name": "ESSEX PROPERTY TRUST INC",
       "ticker": "ESS",
-      "weight": 0.027639,
-      "shares_held": 741874
+      "weight": 0.028046,
+      "shares_held": 740727
     },
     {
       "name": "ESTEE LAUDER COMPANIES CL A",
       "ticker": "EL",
-      "weight": 0.030836,
-      "shares_held": 2845419
+      "weight": 0.03006,
+      "shares_held": 2840955
     },
     {
       "name": "EVEREST GROUP LTD",
       "ticker": "EG",
-      "weight": 0.023198,
-      "shares_held": 467352
+      "weight": 0.023363,
+      "shares_held": 466608
     },
     {
       "name": "EVERGY INC",
       "ticker": "EVRG",
-      "weight": 0.033832,
-      "shares_held": 2682842
+      "weight": 0.033969,
+      "shares_held": 2678688
     },
     {
       "name": "EVERSOURCE ENERGY",
       "ticker": "ES",
-      "weight": 0.046277,
-      "shares_held": 4335156
+      "weight": 0.04603,
+      "shares_held": 4328398
     },
     {
       "name": "EXELON CORP",
       "ticker": "EXC",
-      "weight": 0.088765,
-      "shares_held": 11848776
+      "weight": 0.089336,
+      "shares_held": 11830331
     },
     {
       "name": "EXPAND ENERGY CORP",
       "ticker": "EXE",
-      "weight": 0.044909,
-      "shares_held": 2763581
+      "weight": 0.043882,
+      "shares_held": 2759272
     },
     {
       "name": "EXPEDIA GROUP INC",
       "ticker": "EXPE",
-      "weight": 0.047449,
-      "shares_held": 1359832
+      "weight": 0.046826,
+      "shares_held": 1357724
     },
     {
       "name": "EXPEDITORS INTL WASH INC",
       "ticker": "EXPD",
-      "weight": 0.034447,
-      "shares_held": 1557466
+      "weight": 0.03471,
+      "shares_held": 1555048
     },
     {
       "name": "EXTRA SPACE STORAGE INC",
       "ticker": "EXR",
-      "weight": 0.050076,
-      "shares_held": 2466110
+      "weight": 0.050456,
+      "shares_held": 2462297
     },
     {
       "name": "EXXON MOBIL CORP",
       "ticker": "XOM",
-      "weight": 1.193215,
-      "shares_held": 48422849
+      "weight": 1.189272,
+      "shares_held": 48347488
     },
     {
       "name": "F5 INC",
       "ticker": "FFIV",
-      "weight": 0.029462,
-      "shares_held": 650200
+      "weight": 0.030146,
+      "shares_held": 649177
     },
     {
       "name": "FACTSET RESEARCH SYSTEMS INC",
       "ticker": "FDS",
-      "weight": 0.014997,
-      "shares_held": 435158
+      "weight": 0.015143,
+      "shares_held": 434476
     },
     {
       "name": "FAIR ISAAC CORP",
       "ticker": "FICO",
-      "weight": 0.044827,
-      "shares_held": 275413
+      "weight": 0.045872,
+      "shares_held": 274979
     },
     {
       "name": "FASTENAL CO",
       "ticker": "FAST",
-      "weight": 0.095311,
-      "shares_held": 13336528
+      "weight": 0.094377,
+      "shares_held": 13315820
     },
     {
       "name": "FEDERAL REALTY INVS TRUST",
       "ticker": "FRT",
-      "weight": 0.014797,
-      "shares_held": 910330
+      "weight": 0.014858,
+      "shares_held": 908904
     },
     {
       "name": "FEDEX CORP",
       "ticker": "FDX",
-      "weight": 0.137782,
-      "shares_held": 2501997
+      "weight": 0.13829,
+      "shares_held": 2498091
     },
     {
       "name": "FIDELITY NATIONAL INFO SERV",
       "ticker": "FIS",
-      "weight": 0.041658,
-      "shares_held": 6017441
+      "weight": 0.042574,
+      "shares_held": 6008110
     },
     {
       "name": "FIFTH THIRD BANCORP",
       "ticker": "FITB",
-      "weight": 0.074896,
-      "shares_held": 10437293
+      "weight": 0.075152,
+      "shares_held": 10421049
     },
     {
       "name": "FIRST SOLAR INC",
       "ticker": "FSLR",
-      "weight": 0.037889,
-      "shares_held": 1239682
+      "weight": 0.037008,
+      "shares_held": 1237760
     },
     {
       "name": "FIRSTENERGY CORP",
       "ticker": "FE",
-      "weight": 0.046936,
-      "shares_held": 6009583
+      "weight": 0.047129,
+      "shares_held": 6000221
     },
     {
       "name": "FISERV INC",
       "ticker": "FISV",
-      "weight": 0.053117,
-      "shares_held": 6250223
+      "weight": 0.05365,
+      "shares_held": 6240520
     },
     {
       "name": "FORD MOTOR CO",
       "ticker": "F",
-      "weight": 0.081302,
-      "shares_held": 45417107
+      "weight": 0.080523,
+      "shares_held": 45346458
     },
     {
       "name": "FORTINET INC",
       "ticker": "FTNT",
-      "weight": 0.091358,
-      "shares_held": 7345463
+      "weight": 0.092656,
+      "shares_held": 7334055
     },
     {
       "name": "FORTIVE CORP",
       "ticker": "FTV",
-      "weight": 0.030901,
-      "shares_held": 3606853
+      "weight": 0.030915,
+      "shares_held": 3601211
     },
     {
       "name": "FOX CORP   CLASS A",
       "ticker": "FOXA",
-      "weight": 0.020627,
-      "shares_held": 2302163
+      "weight": 0.020626,
+      "shares_held": 2298536
     },
     {
       "name": "FOX CORP   CLASS B",
       "ticker": "FOX",
-      "weight": 0.013087,
-      "shares_held": 1614731
+      "weight": 0.013048,
+      "shares_held": 1612189
     },
     {
       "name": "FRANKLIN RESOURCES INC",
       "ticker": "BEN",
-      "weight": 0.013099,
-      "shares_held": 3622994
+      "weight": 0.012958,
+      "shares_held": 3617445
     },
     {
       "name": "FREEPORT MCMORAN INC",
       "ticker": "FCX",
-      "weight": 0.156525,
-      "shares_held": 16687635
+      "weight": 0.156554,
+      "shares_held": 16661719
     },
     {
       "name": "GARMIN LTD",
       "ticker": "GRMN",
-      "weight": 0.069238,
-      "shares_held": 1901582
+      "weight": 0.069071,
+      "shares_held": 1898637
     },
     {
       "name": "GARTNER INC",
       "ticker": "IT",
-      "weight": 0.019166,
-      "shares_held": 807891
+      "weight": 0.019491,
+      "shares_held": 806620
     },
     {
       "name": "GE HEALTHCARE TECHNOLOGY",
       "ticker": "GEHC",
-      "weight": 0.058475,
-      "shares_held": 5303158
+      "weight": 0.057022,
+      "shares_held": 5294943
     },
     {
       "name": "GE VERNOVA INC",
       "ticker": "GEV",
-      "weight": 0.427955,
-      "shares_held": 3120650
+      "weight": 0.428586,
+      "shares_held": 3115783
     },
     {
       "name": "GEN DIGITAL INC",
       "ticker": "GEN",
-      "weight": 0.018627,
-      "shares_held": 6495786
+      "weight": 0.018755,
+      "shares_held": 6485835
     },
     {
       "name": "GENERAC HOLDINGS INC",
       "ticker": "GNRC",
-      "weight": 0.020533,
-      "shares_held": 673069
+      "weight": 0.019966,
+      "shares_held": 672015
     },
     {
       "name": "GENERAL DYNAMICS CORP",
       "ticker": "GD",
-      "weight": 0.15827,
-      "shares_held": 2946036
+      "weight": 0.157187,
+      "shares_held": 2941448
     },
     {
       "name": "GENERAL ELECTRIC",
       "ticker": "GE",
-      "weight": 0.544766,
-      "shares_held": 12144520
+      "weight": 0.521886,
+      "shares_held": 12125610
     },
     {
       "name": "GENERAL MILLS INC",
       "ticker": "GIS",
-      "weight": 0.035398,
-      "shares_held": 6207027
+      "weight": 0.0355,
+      "shares_held": 6197417
     },
     {
       "name": "GENERAL MOTORS CO",
       "ticker": "GM",
-      "weight": 0.120224,
-      "shares_held": 10453538
+      "weight": 0.115899,
+      "shares_held": 10437232
     },
     {
       "name": "GENUINE PARTS CO",
       "ticker": "GPC",
-      "weight": 0.025885,
-      "shares_held": 1605756
+      "weight": 0.025394,
+      "shares_held": 1603245
     },
     {
       "name": "GILEAD SCIENCES INC",
       "ticker": "GILD",
-      "weight": 0.308829,
-      "shares_held": 14362276
+      "weight": 0.306684,
+      "shares_held": 14339894
     },
     {
       "name": "GLOBAL PAYMENTS INC",
       "ticker": "GPN",
-      "weight": 0.027558,
-      "shares_held": 2751029
+      "weight": 0.026931,
+      "shares_held": 2746751
     },
     {
       "name": "GLOBE LIFE INC",
       "ticker": "GL",
-      "weight": 0.019643,
-      "shares_held": 914827
+      "weight": 0.019939,
+      "shares_held": 913401
     },
     {
       "name": "GODADDY INC   CLASS A",
       "ticker": "GDDY",
-      "weight": 0.019436,
-      "shares_held": 1570265
+      "weight": 0.019601,
+      "shares_held": 1567816
     },
     {
       "name": "GOLDMAN SACHS GROUP INC",
       "ticker": "GS",
-      "weight": 0.457819,
-      "shares_held": 3472586
+      "weight": 0.458065,
+      "shares_held": 3467192
     },
     {
       "name": "HALLIBURTON CO",
       "ticker": "HAL",
-      "weight": 0.056958,
-      "shares_held": 9779919
+      "weight": 0.057056,
+      "shares_held": 9764822
     },
     {
       "name": "HARTFORD INSURANCE GROUP INC",
       "ticker": "HIG",
-      "weight": 0.066828,
-      "shares_held": 3238282
+      "weight": 0.067407,
+      "shares_held": 3233260
     },
     {
       "name": "HASBRO INC",
       "ticker": "HAS",
-      "weight": 0.021081,
-      "shares_held": 1538917
+      "weight": 0.021206,
+      "shares_held": 1536499
     },
     {
       "name": "HCA HEALTHCARE INC",
       "ticker": "HCA",
-      "weight": 0.131744,
-      "shares_held": 1810625
+      "weight": 0.130576,
+      "shares_held": 1807804
     },
     {
       "name": "HEALTHPEAK PROPERTIES INC",
       "ticker": "DOC",
-      "weight": 0.020059,
-      "shares_held": 7990208
+      "weight": 0.020175,
+      "shares_held": 7977684
     },
     {
       "name": "HENRY SCHEIN INC",
       "ticker": "HSIC",
-      "weight": 0.013019,
-      "shares_held": 1163013
+      "weight": 0.013143,
+      "shares_held": 1161215
     },
     {
       "name": "HERSHEY CO/THE",
       "ticker": "HSY",
-      "weight": 0.053311,
-      "shares_held": 1714430
+      "weight": 0.054029,
+      "shares_held": 1711764
     },
     {
       "name": "HEWLETT PACKARD ENTERPRISE",
       "ticker": "HPE",
-      "weight": 0.056353,
-      "shares_held": 15333105
+      "weight": 0.057674,
+      "shares_held": 15309142
     },
     {
       "name": "HILTON WORLDWIDE HOLDINGS IN",
       "ticker": "HLT",
-      "weight": 0.125275,
-      "shares_held": 2651615
+      "weight": 0.12359,
+      "shares_held": 2647492
     },
     {
       "name": "HOLOGIC INC",
       "ticker": "HOLX",
-      "weight": 0.029749,
-      "shares_held": 2567532
+      "weight": 0.029687,
+      "shares_held": 2563533
     },
     {
       "name": "HOME DEPOT INC",
       "ticker": "HD",
-      "weight": 0.582249,
-      "shares_held": 11527578
+      "weight": 0.566678,
+      "shares_held": 11509629
     },
     {
       "name": "HONEYWELL INTERNATIONAL INC",
       "ticker": "HON",
-      "weight": 0.257011,
-      "shares_held": 7348520
+      "weight": 0.257709,
+      "shares_held": 7337081
     },
     {
       "name": "HORMEL FOODS CORP",
       "ticker": "HRL",
       "weight": 0.01152,
-      "shares_held": 3412088
+      "shares_held": 3406818
     },
     {
       "name": "HOST HOTELS + RESORTS INC",
       "ticker": "HST",
-      "weight": 0.021664,
-      "shares_held": 7400668
+      "weight": 0.02165,
+      "shares_held": 7389136
     },
     {
       "name": "HOWMET AEROSPACE INC",
       "ticker": "HWM",
-      "weight": 0.169944,
-      "shares_held": 4638723
+      "weight": 0.164968,
+      "shares_held": 4631500
     },
     {
       "name": "HP INC",
       "ticker": "HPQ",
-      "weight": 0.030679,
-      "shares_held": 10563071
+      "weight": 0.031498,
+      "shares_held": 10546517
     },
     {
       "name": "HUBBELL INC",
       "ticker": "HUBB",
-      "weight": 0.047128,
-      "shares_held": 614523
+      "weight": 0.046422,
+      "shares_held": 613562
     },
     {
       "name": "HUMANA INC",
       "ticker": "HUM",
-      "weight": 0.037875,
-      "shares_held": 1396581
+      "weight": 0.037959,
+      "shares_held": 1394411
     },
     {
       "name": "HUNT (JB) TRANSPRT SVCS INC",
       "ticker": "JBHT",
-      "weight": 0.028586,
-      "shares_held": 873857
+      "weight": 0.028705,
+      "shares_held": 872524
     },
     {
       "name": "HUNTINGTON BANCSHARES INC",
       "ticker": "HBAN",
-      "weight": 0.057433,
-      "shares_held": 23597793
+      "weight": 0.05695,
+      "shares_held": 23561182
     },
     {
       "name": "HUNTINGTON INGALLS INDUSTRIE",
       "ticker": "HII",
-      "weight": 0.027276,
-      "shares_held": 452484
+      "weight": 0.027429,
+      "shares_held": 451771
     },
     {
       "name": "IDEX CORP",
       "ticker": "IEX",
-      "weight": 0.025585,
-      "shares_held": 869558
+      "weight": 0.025314,
+      "shares_held": 868194
     },
     {
       "name": "IDEXX LABORATORIES INC",
       "ticker": "IDXX",
-      "weight": 0.080018,
-      "shares_held": 924621
+      "weight": 0.08049,
+      "shares_held": 923195
     },
     {
       "name": "ILLINOIS TOOL WORKS",
       "ticker": "ITW",
-      "weight": 0.121111,
-      "shares_held": 3032997
+      "weight": 0.119697,
+      "shares_held": 3028254
     },
     {
       "name": "INCYTE CORP",
       "ticker": "INCY",
-      "weight": 0.027798,
-      "shares_held": 1923370
+      "weight": 0.0282,
+      "shares_held": 1920363
     },
     {
       "name": "INGERSOLL RAND INC",
       "ticker": "IR",
-      "weight": 0.050356,
-      "shares_held": 4107013
+      "weight": 0.048906,
+      "shares_held": 4100596
     },
     {
       "name": "INSULET CORP",
       "ticker": "PODD",
-      "weight": 0.02584,
-      "shares_held": 814343
+      "weight": 0.025429,
+      "shares_held": 813072
     },
     {
       "name": "INTEL CORP",
       "ticker": "INTC",
-      "weight": 0.400363,
-      "shares_held": 54388205
+      "weight": 0.418798,
+      "shares_held": 54303544
     },
     {
       "name": "INTERACTIVE BROKERS GRO CL A",
       "ticker": "IBKR",
-      "weight": 0.053801,
-      "shares_held": 5169117
+      "weight": 0.053519,
+      "shares_held": 5161088
     },
     {
       "name": "INTERCONTINENTAL EXCHANGE IN",
       "ticker": "ICE",
-      "weight": 0.159177,
-      "shares_held": 6570025
+      "weight": 0.16366,
+      "shares_held": 6559795
     },
     {
       "name": "INTERNATIONAL PAPER CO",
       "ticker": "IP",
-      "weight": 0.033334,
-      "shares_held": 6099176
+      "weight": 0.032431,
+      "shares_held": 6089659
     },
     {
       "name": "INTL BUSINESS MACHINES CORP",
       "ticker": "IBM",
-      "weight": 0.40329,
-      "shares_held": 10822418
+      "weight": 0.410485,
+      "shares_held": 10805554
     },
     {
       "name": "INTL FLAVORS + FRAGRANCES",
       "ticker": "IFF",
-      "weight": 0.03286,
-      "shares_held": 2954398
+      "weight": 0.032706,
+      "shares_held": 2949779
     },
     {
       "name": "INTUIT INC",
       "ticker": "INTU",
-      "weight": 0.210205,
-      "shares_held": 3220547
+      "weight": 0.207958,
+      "shares_held": 3215525
     },
     {
       "name": "INTUITIVE SURGICAL INC",
       "ticker": "ISRG",
-      "weight": 0.292687,
-      "shares_held": 4111765
+      "weight": 0.284102,
+      "shares_held": 4105348
     },
     {
       "name": "INVESCO LTD",
       "ticker": "IVZ",
-      "weight": 0.019118,
-      "shares_held": 5129086
+      "weight": 0.018924,
+      "shares_held": 5121088
     },
     {
       "name": "INVITATION HOMES INC",
       "ticker": "INVH",
-      "weight": 0.0249,
-      "shares_held": 6537983
+      "weight": 0.025532,
+      "shares_held": 6527815
     },
     {
       "name": "IQVIA HOLDINGS INC",
       "ticker": "IQV",
-      "weight": 0.05216,
-      "shares_held": 1974060
+      "weight": 0.052276,
+      "shares_held": 1970991
     },
     {
       "name": "IRON MOUNTAIN INC",
       "ticker": "IRM",
-      "weight": 0.052887,
-      "shares_held": 3418274
+      "weight": 0.053969,
+      "shares_held": 3412942
     },
     {
       "name": "JABIL INC",
       "ticker": "JBL",
-      "weight": 0.050775,
-      "shares_held": 1218167
+      "weight": 0.050001,
+      "shares_held": 1216276
     },
     {
       "name": "JACK HENRY + ASSOCIATES INC",
       "ticker": "JKHY",
-      "weight": 0.020062,
-      "shares_held": 841106
+      "weight": 0.020245,
+      "shares_held": 839804
     },
     {
       "name": "JACOBS SOLUTIONS INC",
       "ticker": "J",
-      "weight": 0.027145,
-      "shares_held": 1379186
+      "weight": 0.026987,
+      "shares_held": 1377078
     },
     {
       "name": "JM SMUCKER CO/THE",
       "ticker": "SJM",
-      "weight": 0.018288,
-      "shares_held": 1249605
+      "weight": 0.018234,
+      "shares_held": 1247683
     },
     {
       "name": "JOHNSON + JOHNSON",
       "ticker": "JNJ",
-      "weight": 1.044795,
-      "shares_held": 27924867
+      "weight": 1.037315,
+      "shares_held": 27881405
     },
     {
       "name": "JOHNSON CONTROLS INTERNATION",
       "ticker": "JCI",
-      "weight": 0.146633,
-      "shares_held": 7101724
+      "weight": 0.144331,
+      "shares_held": 7090688
     },
     {
       "name": "JPMORGAN CHASE + CO",
       "ticker": "JPM",
-      "weight": 1.414297,
-      "shares_held": 31240856
+      "weight": 1.399526,
+      "shares_held": 31192248
     },
     {
       "name": "KENVUE INC",
       "ticker": "KVUE",
-      "weight": 0.059228,
-      "shares_held": 22235100
+      "weight": 0.05825,
+      "shares_held": 22200566
     },
     {
       "name": "KEURIG DR PEPPER INC",
       "ticker": "KDP",
-      "weight": 0.061991,
-      "shares_held": 15744397
+      "weight": 0.060906,
+      "shares_held": 15719907
     },
     {
       "name": "KEYCORP",
       "ticker": "KEY",
-      "weight": 0.033698,
-      "shares_held": 10809760
+      "weight": 0.03382,
+      "shares_held": 10792865
     },
     {
       "name": "KEYSIGHT TECHNOLOGIES IN",
       "ticker": "KEYS",
-      "weight": 0.088059,
-      "shares_held": 1982333
+      "weight": 0.08824,
+      "shares_held": 1979233
     },
     {
       "name": "KIMBERLY CLARK CORP",
       "ticker": "KMB",
-      "weight": 0.057643,
-      "shares_held": 3854733
+      "weight": 0.056637,
+      "shares_held": 3848750
     },
     {
       "name": "KIMCO REALTY CORP",
       "ticker": "KIM",
-      "weight": 0.027058,
-      "shares_held": 7863863
+      "weight": 0.027164,
+      "shares_held": 7851711
     },
     {
       "name": "KINDER MORGAN INC",
       "ticker": "KMI",
-      "weight": 0.114509,
-      "shares_held": 22723247
+      "weight": 0.114507,
+      "shares_held": 22687938
     },
     {
       "name": "KKR + CO INC",
       "ticker": "KKR",
-      "weight": 0.111686,
-      "shares_held": 7976358
+      "weight": 0.111221,
+      "shares_held": 7963989
     },
     {
       "name": "KLA CORP",
       "ticker": "KLAC",
-      "weight": 0.353466,
-      "shares_held": 1517445
+      "weight": 0.3518,
+      "shares_held": 1515089
     },
     {
       "name": "KRAFT HEINZ CO/THE",
       "ticker": "KHC",
-      "weight": 0.033751,
-      "shares_held": 9888489
+      "weight": 0.034444,
+      "shares_held": 9873113
     },
     {
       "name": "KROGER CO",
       "ticker": "KR",
-      "weight": 0.072722,
-      "shares_held": 6726546
+      "weight": 0.074382,
+      "shares_held": 6716037
     },
     {
       "name": "L3HARRIS TECHNOLOGIES INC",
       "ticker": "LHX",
-      "weight": 0.117693,
-      "shares_held": 2169809
+      "weight": 0.118063,
+      "shares_held": 2166430
     },
     {
       "name": "LABCORP HOLDINGS INC",
       "ticker": "LH",
-      "weight": 0.040353,
-      "shares_held": 965367
+      "weight": 0.040388,
+      "shares_held": 963879
     },
     {
       "name": "LAM RESEARCH CORP",
       "ticker": "LRCX",
-      "weight": 0.492002,
-      "shares_held": 14459647
+      "weight": 0.48276,
+      "shares_held": 14437141
     },
     {
       "name": "LAS VEGAS SANDS CORP",
       "ticker": "LVS",
-      "weight": 0.029433,
-      "shares_held": 3535374
+      "weight": 0.029363,
+      "shares_held": 3529918
     },
     {
       "name": "LEIDOS HOLDINGS INC",
       "ticker": "LDOS",
-      "weight": 0.035594,
-      "shares_held": 1488646
+      "weight": 0.036136,
+      "shares_held": 1486352
     },
     {
       "name": "LENNAR CORP W/D",
       "ticker": "LEN",
-      "weight": 0.03283,
-      "shares_held": 2507111
+      "weight": 0.033142,
+      "shares_held": 2503205
     },
     {
       "name": "LENNOX INTERNATIONAL INC",
       "ticker": "LII",
-      "weight": 0.026241,
-      "shares_held": 368333
+      "weight": 0.025594,
+      "shares_held": 367744
     },
     {
       "name": "LINDE PLC",
       "ticker": "LIN",
-      "weight": 0.40918,
-      "shares_held": 5406307
+      "weight": 0.415302,
+      "shares_held": 5397875
     },
     {
       "name": "LIVE NATION ENTERTAINMENT IN",
       "ticker": "LYV",
-      "weight": 0.043005,
-      "shares_held": 1838403
+      "weight": 0.043764,
+      "shares_held": 1835551
     },
     {
       "name": "LOCKHEED MARTIN CORP",
       "ticker": "LMT",
-      "weight": 0.221821,
-      "shares_held": 2343319
+      "weight": 0.223055,
+      "shares_held": 2339661
     },
     {
       "name": "LOEWS CORP",
       "ticker": "L",
-      "weight": 0.032225,
-      "shares_held": 1971694
+      "weight": 0.032454,
+      "shares_held": 1968656
     },
     {
       "name": "LOWE S COS INC",
       "ticker": "LOW",
-      "weight": 0.235251,
-      "shares_held": 6504581
+      "weight": 0.229684,
+      "shares_held": 6494475
     },
     {
       "name": "LULULEMON ATHLETICA INC",
       "ticker": "LULU",
-      "weight": 0.030517,
-      "shares_held": 1253785
+      "weight": 0.029841,
+      "shares_held": 1251863
     },
     {
       "name": "LUMENTUM HOLDINGS INC",
       "ticker": "LITE",
-      "weight": 0.096938,
-      "shares_held": 827166
+      "weight": 0.104537,
+      "shares_held": 825864
     },
     {
       "name": "LYONDELLBASELL INDU CL A",
       "ticker": "LYB",
-      "weight": 0.035179,
-      "shares_held": 2992233
+      "weight": 0.036404,
+      "shares_held": 2987583
     },
     {
       "name": "M + T BANK CORP",
       "ticker": "MTB",
-      "weight": 0.05612,
-      "shares_held": 1752158
+      "weight": 0.056281,
+      "shares_held": 1749430
     },
     {
       "name": "MARATHON PETROLEUM CORP",
       "ticker": "MPC",
-      "weight": 0.124531,
-      "shares_held": 3411701
+      "weight": 0.126049,
+      "shares_held": 3406369
     },
     {
       "name": "MARRIOTT INTERNATIONAL  CL A",
       "ticker": "MAR",
-      "weight": 0.13,
-      "shares_held": 2543678
+      "weight": 0.129047,
+      "shares_held": 2539710
     },
     {
       "name": "MARSH + MCLENNAN COS",
       "ticker": "MRSH",
-      "weight": 0.14752,
-      "shares_held": 5600348
+      "weight": 0.14946,
+      "shares_held": 5591606
     },
     {
       "name": "MARTIN MARIETTA MATERIALS",
       "ticker": "MLM",
-      "weight": 0.064292,
-      "shares_held": 700409
+      "weight": 0.06393,
+      "shares_held": 699324
     },
     {
       "name": "MASCO CORP",
       "ticker": "MAS",
-      "weight": 0.021734,
-      "shares_held": 2336588
+      "weight": 0.021113,
+      "shares_held": 2332930
     },
     {
       "name": "MASTERCARD INC   A",
       "ticker": "MA",
-      "weight": 0.711146,
-      "shares_held": 9437701
+      "weight": 0.711774,
+      "shares_held": 9423007
     },
     {
       "name": "MCCORMICK + CO NON VTG SHRS",
       "ticker": "MKC",
-      "weight": 0.021814,
-      "shares_held": 2941957
+      "weight": 0.021966,
+      "shares_held": 2937400
     },
     {
       "name": "MCDONALD S CORP",
       "ticker": "MCD",
-      "weight": 0.38831,
-      "shares_held": 8245058
+      "weight": 0.387054,
+      "shares_held": 8232224
     },
     {
       "name": "MCKESSON CORP",
       "ticker": "MCK",
-      "weight": 0.189491,
-      "shares_held": 1417348
+      "weight": 0.191562,
+      "shares_held": 1415147
     },
     {
       "name": "MEDTRONIC PLC",
       "ticker": "MDT",
-      "weight": 0.195674,
-      "shares_held": 14835282
+      "weight": 0.196429,
+      "shares_held": 14812156
     },
     {
       "name": "MERCK + CO. INC.",
       "ticker": "MRK",
-      "weight": 0.532752,
-      "shares_held": 28765914
+      "weight": 0.531421,
+      "shares_held": 28721150
     },
     {
       "name": "META PLATFORMS INC CLASS A",
       "ticker": "META",
-      "weight": 2.249675,
-      "shares_held": 25341495
+      "weight": 2.225021,
+      "shares_held": 25302063
     },
     {
       "name": "METLIFE INC",
       "ticker": "MET",
-      "weight": 0.069342,
-      "shares_held": 6357157
+      "weight": 0.068714,
+      "shares_held": 6347237
     },
     {
       "name": "METTLER TOLEDO INTERNATIONAL",
       "ticker": "MTD",
-      "weight": 0.046343,
-      "shares_held": 237335
+      "weight": 0.045703,
+      "shares_held": 236963
     },
     {
       "name": "MGM RESORTS INTERNATIONAL",
       "ticker": "MGM",
-      "weight": 0.012331,
-      "shares_held": 2187527
+      "weight": 0.012263,
+      "shares_held": 2184055
     },
     {
       "name": "MICROCHIP TECHNOLOGY INC",
       "ticker": "MCHP",
-      "weight": 0.063025,
-      "shares_held": 6289735
+      "weight": 0.063064,
+      "shares_held": 6279970
     },
     {
       "name": "MICRON TECHNOLOGY INC",
       "ticker": "MU",
-      "weight": 0.735015,
-      "shares_held": 13037342
+      "weight": 0.729787,
+      "shares_held": 13017037
     },
     {
       "name": "MICROSOFT CORP",
       "ticker": "MSFT",
-      "weight": 4.870329,
-      "shares_held": 86032023
+      "weight": 4.910731,
+      "shares_held": 85898134
     },
     {
       "name": "MID AMERICA APARTMENT COMM",
       "ticker": "MAA",
-      "weight": 0.025623,
-      "shares_held": 1364196
+      "weight": 0.026039,
+      "shares_held": 1362088
     },
     {
       "name": "MODERNA INC",
       "ticker": "MRNA",
-      "weight": 0.030887,
-      "shares_held": 4028227
+      "weight": 0.030292,
+      "shares_held": 4021965
     },
     {
       "name": "MOLSON COORS BEVERAGE CO   B",
       "ticker": "TAP",
-      "weight": 0.012736,
-      "shares_held": 1937057
+      "weight": 0.013038,
+      "shares_held": 1934019
     },
     {
       "name": "MONDELEZ INTERNATIONAL INC A",
       "ticker": "MDLZ",
-      "weight": 0.129672,
-      "shares_held": 14825219
+      "weight": 0.13038,
+      "shares_held": 14802093
     },
     {
       "name": "MONOLITHIC POWER SYSTEMS INC",
       "ticker": "MPWR",
-      "weight": 0.096805,
-      "shares_held": 564198
+      "weight": 0.096452,
+      "shares_held": 563330
     },
     {
       "name": "MONSTER BEVERAGE CORP",
       "ticker": "MNST",
-      "weight": 0.092361,
-      "shares_held": 8281339
+      "weight": 0.091601,
+      "shares_held": 8268474
     },
     {
       "name": "MOODY S CORP",
       "ticker": "MCO",
-      "weight": 0.119906,
-      "shares_held": 1783025
+      "weight": 0.120125,
+      "shares_held": 1780266
     },
     {
       "name": "MORGAN STANLEY",
       "ticker": "MS",
-      "weight": 0.354708,
-      "shares_held": 13927782
+      "weight": 0.352967,
+      "shares_held": 13906082
     },
     {
       "name": "MOSAIC CO/THE",
       "ticker": "MOS",
-      "weight": 0.015038,
-      "shares_held": 3696933
+      "weight": 0.014787,
+      "shares_held": 3691198
     },
     {
       "name": "MOTOROLA SOLUTIONS INC",
       "ticker": "MSI",
-      "weight": 0.127485,
-      "shares_held": 1916029
+      "weight": 0.128549,
+      "shares_held": 1913053
     },
     {
       "name": "MSCI INC",
       "ticker": "MSCI",
-      "weight": 0.069845,
-      "shares_held": 848799
+      "weight": 0.070674,
+      "shares_held": 847466
     },
     {
       "name": "NASDAQ INC",
       "ticker": "NDAQ",
-      "weight": 0.067688,
-      "shares_held": 5186713
+      "weight": 0.068691,
+      "shares_held": 5178622
     },
     {
       "name": "NETAPP INC",
       "ticker": "NTAP",
-      "weight": 0.035499,
-      "shares_held": 2281536
+      "weight": 0.036039,
+      "shares_held": 2277971
     },
     {
       "name": "NETFLIX INC",
       "ticker": "NFLX",
-      "weight": 0.716524,
-      "shares_held": 48928719
+      "weight": 0.737814,
+      "shares_held": 48852583
     },
     {
       "name": "NEWMONT CORP",
       "ticker": "NEM",
-      "weight": 0.220702,
-      "shares_held": 12655082
+      "weight": 0.220598,
+      "shares_held": 12635397
     },
     {
       "name": "NEWS CORP   CLASS A",
       "ticker": "NWSA",
-      "weight": 0.016479,
-      "shares_held": 4351420
+      "weight": 0.016228,
+      "shares_held": 4344755
     },
     {
-      "name": "NEWS CORP   CLASS B",
+      "name": "NEWS CORP  CLASS B",
       "ticker": "NWS",
-      "weight": 0.006077,
-      "shares_held": 1408498
+      "weight": 0.006051,
+      "shares_held": 1406297
     },
     {
       "name": "NEXTERA ENERGY INC",
       "ticker": "NEE",
-      "weight": 0.343094,
-      "shares_held": 24109875
+      "weight": 0.343257,
+      "shares_held": 24072334
     },
     {
       "name": "NIKE INC  CL B",
       "ticker": "NKE",
-      "weight": 0.094305,
-      "shares_held": 13787021
+      "weight": 0.093118,
+      "shares_held": 13765538
     },
     {
       "name": "NISOURCE INC",
       "ticker": "NI",
-      "weight": 0.039667,
-      "shares_held": 5518537
+      "weight": 0.040056,
+      "shares_held": 5509919
     },
     {
       "name": "NORDSON CORP",
       "ticker": "NDSN",
-      "weight": 0.025337,
-      "shares_held": 618615
+      "weight": 0.024876,
+      "shares_held": 617654
     },
     {
       "name": "NORFOLK SOUTHERN CORP",
       "ticker": "NSC",
-      "weight": 0.114696,
-      "shares_held": 2607544
+      "weight": 0.11478,
+      "shares_held": 2603483
     },
     {
       "name": "NORTHERN TRUST CORP",
       "ticker": "NTRS",
-      "weight": 0.046571,
-      "shares_held": 2148830
+      "weight": 0.046719,
+      "shares_held": 2145482
     },
     {
       "name": "NORTHROP GRUMMAN CORP",
       "ticker": "NOC",
-      "weight": 0.164888,
-      "shares_held": 1543545
+      "weight": 0.165731,
+      "shares_held": 1541127
     },
     {
       "name": "NORWEGIAN CRUISE LINE HOLDIN",
       "ticker": "NCLH",
-      "weight": 0.015861,
-      "shares_held": 5339839
+      "weight": 0.01545,
+      "shares_held": 5331624
     },
     {
       "name": "NRG ENERGY INC",
       "ticker": "NRG",
-      "weight": 0.056629,
-      "shares_held": 2464895
+      "weight": 0.057524,
+      "shares_held": 2461051
     },
     {
       "name": "NUCOR CORP",
       "ticker": "NUE",
-      "weight": 0.070537,
-      "shares_held": 2649297
+      "weight": 0.069833,
+      "shares_held": 2645174
     },
     {
       "name": "NVIDIA CORP",
       "ticker": "NVDA",
-      "weight": 7.58331,
-      "shares_held": 281531491
+      "weight": 7.633049,
+      "shares_held": 281093337
     },
     {
       "name": "NVR INC",
       "ticker": "NVR",
-      "weight": 0.033533,
-      "shares_held": 32831
+      "weight": 0.033424,
+      "shares_held": 32769
     },
     {
       "name": "NXP SEMICONDUCTORS NV",
       "ticker": "NXPI",
-      "weight": 0.087398,
-      "shares_held": 2915688
+      "weight": 0.086699,
+      "shares_held": 2911162
     },
     {
       "name": "O REILLY AUTOMOTIVE INC",
       "ticker": "ORLY",
-      "weight": 0.13745,
-      "shares_held": 9737527
+      "weight": 0.13606,
+      "shares_held": 9722337
     },
     {
       "name": "OCCIDENTAL PETROLEUM CORP",
       "ticker": "OXY",
-      "weight": 0.079388,
-      "shares_held": 8323757
+      "weight": 0.080111,
+      "shares_held": 8310799
     },
     {
       "name": "OLD DOMINION FREIGHT LINE",
       "ticker": "ODFL",
-      "weight": 0.065162,
-      "shares_held": 2129779
+      "weight": 0.064453,
+      "shares_held": 2126462
     },
     {
       "name": "OMNICOM GROUP",
       "ticker": "OMC",
-      "weight": 0.041809,
-      "shares_held": 3627099
+      "weight": 0.041472,
+      "shares_held": 3621426
     },
     {
       "name": "ON SEMICONDUCTOR",
       "ticker": "ON",
-      "weight": 0.0433,
-      "shares_held": 4542156
+      "weight": 0.043174,
+      "shares_held": 4535057
     },
     {
       "name": "ONEOK INC",
       "ticker": "OKE",
-      "weight": 0.097561,
-      "shares_held": 7286600
+      "weight": 0.098339,
+      "shares_held": 7275254
     },
     {
       "name": "ORACLE CORP",
       "ticker": "ORCL",
-      "weight": 0.437206,
-      "shares_held": 19642362
+      "weight": 0.439458,
+      "shares_held": 19611796
     },
     {
       "name": "OTIS WORLDWIDE CORP",
       "ticker": "OTIS",
-      "weight": 0.053756,
-      "shares_held": 4528611
+      "weight": 0.053892,
+      "shares_held": 4521605
     },
     {
       "name": "P G + E CORP",
       "ticker": "PCG",
-      "weight": 0.069435,
-      "shares_held": 25523846
+      "weight": 0.069323,
+      "shares_held": 25484228
     },
     {
       "name": "PACCAR INC",
       "ticker": "PCAR",
-      "weight": 0.109861,
-      "shares_held": 6092795
+      "weight": 0.110183,
+      "shares_held": 6083309
     },
     {
       "name": "PACKAGING CORP OF AMERICA",
       "ticker": "PKG",
-      "weight": 0.033404,
-      "shares_held": 1031626
+      "weight": 0.032238,
+      "shares_held": 1030014
     },
     {
       "name": "PALANTIR TECHNOLOGIES INC A",
       "ticker": "PLTR",
-      "weight": 0.593893,
-      "shares_held": 26452314
+      "weight": 0.600226,
+      "shares_held": 26411115
     },
     {
       "name": "PALO ALTO NETWORKS INC",
       "ticker": "PANW",
-      "weight": 0.230497,
-      "shares_held": 9360395
+      "weight": 0.233498,
+      "shares_held": 9345825
     },
     {
       "name": "PARAMOUNT SKYDANCE CL B",
       "ticker": "PSKY",
-      "weight": 0.005143,
-      "shares_held": 3627902
+      "weight": 0.005279,
+      "shares_held": 3622291
     },
     {
       "name": "PARKER HANNIFIN CORP",
       "ticker": "PH",
-      "weight": 0.206112,
-      "shares_held": 1460550
+      "weight": 0.20271,
+      "shares_held": 1458287
     },
     {
       "name": "PAYCHEX INC",
       "ticker": "PAYX",
-      "weight": 0.05244,
-      "shares_held": 3763725
+      "weight": 0.052751,
+      "shares_held": 3757897
     },
     {
       "name": "PAYPAL HOLDINGS INC",
       "ticker": "PYPL",
-      "weight": 0.072745,
-      "shares_held": 10635005
+      "weight": 0.073699,
+      "shares_held": 10618420
     },
     {
       "name": "PENTAIR PLC",
       "ticker": "PNR",
-      "weight": 0.025287,
-      "shares_held": 1901665
+      "weight": 0.024944,
+      "shares_held": 1898720
     },
     {
       "name": "PEPSICO INC",
       "ticker": "PEP",
-      "weight": 0.375018,
-      "shares_held": 15822149
+      "weight": 0.379694,
+      "shares_held": 15797504
     },
     {
       "name": "PFIZER INC",
       "ticker": "PFE",
-      "weight": 0.288638,
-      "shares_held": 65964590
+      "weight": 0.285527,
+      "shares_held": 65862073
     },
     {
       "name": "PHILIP MORRIS INTERNATIONAL",
       "ticker": "PM",
-      "weight": 0.434606,
-      "shares_held": 18023870
+      "weight": 0.435534,
+      "shares_held": 17995815
     },
     {
       "name": "PHILLIPS 66",
       "ticker": "PSX",
-      "weight": 0.12573,
-      "shares_held": 4670652
+      "weight": 0.125792,
+      "shares_held": 4663398
     },
     {
       "name": "PINNACLE WEST CAPITAL",
       "ticker": "PNW",
-      "weight": 0.021788,
-      "shares_held": 1400219
+      "weight": 0.021979,
+      "shares_held": 1398049
     },
     {
       "name": "PNC FINANCIAL SERVICES GROUP",
       "ticker": "PNC",
-      "weight": 0.150038,
-      "shares_held": 4678635
+      "weight": 0.151385,
+      "shares_held": 4671350
     },
     {
       "name": "POOL CORP",
       "ticker": "POOL",
-      "weight": 0.011652,
-      "shares_held": 379991
+      "weight": 0.011786,
+      "shares_held": 379402
     },
     {
       "name": "PPG INDUSTRIES INC",
       "ticker": "PPG",
-      "weight": 0.042333,
-      "shares_held": 2594247
+      "weight": 0.040935,
+      "shares_held": 2590186
     },
     {
       "name": "PPL CORP",
       "ticker": "PPL",
-      "weight": 0.050306,
-      "shares_held": 8554438
+      "weight": 0.050521,
+      "shares_held": 8541108
     },
     {
       "name": "PRINCIPAL FINANCIAL GROUP",
       "ticker": "PFG",
-      "weight": 0.032072,
-      "shares_held": 2323073
+      "weight": 0.031992,
+      "shares_held": 2319508
     },
     {
       "name": "PROCTER + GAMBLE CO/THE",
       "ticker": "PG",
-      "weight": 0.594298,
-      "shares_held": 26911238
+      "weight": 0.588675,
+      "shares_held": 26869326
     },
     {
       "name": "PROGRESSIVE CORP",
       "ticker": "PGR",
-      "weight": 0.201394,
-      "shares_held": 6799370
+      "weight": 0.202909,
+      "shares_held": 6788799
     },
     {
       "name": "PROLOGIS INC",
       "ticker": "PLD",
-      "weight": 0.219829,
-      "shares_held": 10757748
+      "weight": 0.219948,
+      "shares_held": 10740977
     },
     {
       "name": "PRUDENTIAL FINANCIAL INC",
       "ticker": "PRU",
-      "weight": 0.060321,
-      "shares_held": 4016905
+      "weight": 0.059909,
+      "shares_held": 4010643
     },
     {
       "name": "PTC INC",
       "ticker": "PTC",
-      "weight": 0.030366,
-      "shares_held": 1390216
+      "weight": 0.030311,
+      "shares_held": 1388077
     },
     {
       "name": "PUBLIC SERVICE ENTERPRISE GP",
       "ticker": "PEG",
-      "weight": 0.072037,
-      "shares_held": 5786308
+      "weight": 0.072361,
+      "shares_held": 5777318
     },
     {
       "name": "PUBLIC STORAGE",
       "ticker": "PSA",
-      "weight": 0.077671,
-      "shares_held": 1834579
+      "weight": 0.07861,
+      "shares_held": 1831727
     },
     {
       "name": "PULTEGROUP INC",
       "ticker": "PHM",
-      "weight": 0.039764,
-      "shares_held": 2214685
+      "weight": 0.039702,
+      "shares_held": 2211213
     },
     {
       "name": "QNITY ELECTRONICS INC",
       "ticker": "Q",
-      "weight": 0.044402,
-      "shares_held": 2443601
+      "weight": 0.043522,
+      "shares_held": 2439819
     },
     {
       "name": "QUALCOMM INC",
       "ticker": "QCOM",
-      "weight": 0.240908,
-      "shares_held": 12349672
+      "weight": 0.23934,
+      "shares_held": 12330421
     },
     {
       "name": "QUANTA SERVICES INC",
       "ticker": "PWR",
-      "weight": 0.148519,
-      "shares_held": 1730409
+      "weight": 0.148274,
+      "shares_held": 1727712
     },
     {
       "name": "QUEST DIAGNOSTICS INC",
       "ticker": "DGX",
-      "weight": 0.038404,
-      "shares_held": 1267535
+      "weight": 0.038196,
+      "shares_held": 1265551
     },
     {
       "name": "RALPH LAUREN CORP",
       "ticker": "RL",
-      "weight": 0.024234,
-      "shares_held": 447921
+      "weight": 0.023827,
+      "shares_held": 447239
     },
     {
       "name": "RAYMOND JAMES FINANCIAL INC",
       "ticker": "RJF",
-      "weight": 0.045023,
-      "shares_held": 2048548
+      "weight": 0.044524,
+      "shares_held": 2045386
     },
     {
       "name": "REALTY INCOME CORP",
       "ticker": "O",
-      "weight": 0.101379,
-      "shares_held": 10689614
+      "weight": 0.10164,
+      "shares_held": 10673029
     },
     {
       "name": "REGENCY CENTERS CORP",
       "ticker": "REG",
-      "weight": 0.022363,
-      "shares_held": 1917121
+      "weight": 0.022556,
+      "shares_held": 1914145
     },
     {
       "name": "REGENERON PHARMACEUTICALS",
       "ticker": "REGN",
-      "weight": 0.139494,
-      "shares_held": 1171008
+      "weight": 0.136354,
+      "shares_held": 1169179
     },
     {
       "name": "REGIONS FINANCIAL CORP",
       "ticker": "RF",
-      "weight": 0.040381,
-      "shares_held": 10002893
+      "weight": 0.040469,
+      "shares_held": 9987238
     },
     {
       "name": "REPUBLIC SERVICES INC",
       "ticker": "RSG",
-      "weight": 0.078854,
-      "shares_held": 2338386
+      "weight": 0.079769,
+      "shares_held": 2334759
     },
     {
       "name": "RESMED INC",
       "ticker": "RMD",
-      "weight": 0.057686,
-      "shares_held": 1688970
+      "weight": 0.057848,
+      "shares_held": 1686335
     },
     {
       "name": "REVVITY INC",
       "ticker": "RVTY",
-      "weight": 0.017572,
-      "shares_held": 1304030
+      "weight": 0.017726,
+      "shares_held": 1301984
     },
     {
       "name": "ROBINHOOD MARKETS INC   A",
       "ticker": "HOOD",
-      "weight": 0.098192,
-      "shares_held": 9138182
+      "weight": 0.096232,
+      "shares_held": 9123922
     },
     {
       "name": "ROCKWELL AUTOMATION INC",
       "ticker": "ROK",
-      "weight": 0.073866,
-      "shares_held": 1306395
+      "weight": 0.072885,
+      "shares_held": 1304380
     },
     {
       "name": "ROLLINS INC",
       "ticker": "ROL",
-      "weight": 0.027798,
-      "shares_held": 3390773
+      "weight": 0.027949,
+      "shares_held": 3385472
     },
     {
       "name": "ROPER TECHNOLOGIES INC",
       "ticker": "ROP",
-      "weight": 0.067148,
-      "shares_held": 1231131
+      "weight": 0.06717,
+      "shares_held": 1229209
     },
     {
       "name": "ROSS STORES INC",
       "ticker": "ROST",
-      "weight": 0.126091,
-      "shares_held": 3740456
+      "weight": 0.125762,
+      "shares_held": 3734628
     },
     {
       "name": "ROYAL CARIBBEAN CRUISES LTD",
       "ticker": "RCL",
-      "weight": 0.125775,
-      "shares_held": 2909487
+      "weight": 0.121663,
+      "shares_held": 2904961
     },
     {
       "name": "RTX CORP",
       "ticker": "RTX",
-      "weight": 0.463825,
-      "shares_held": 15542022
+      "weight": 0.46609,
+      "shares_held": 15517811
     },
     {
       "name": "S+P GLOBAL INC",
       "ticker": "SPGI",
-      "weight": 0.230775,
-      "shares_held": 3541523
+      "weight": 0.233383,
+      "shares_held": 3536005
     },
     {
       "name": "SALESFORCE INC",
       "ticker": "CRM",
-      "weight": 0.309618,
-      "shares_held": 10847170
+      "weight": 0.310325,
+      "shares_held": 10830275
     },
     {
       "name": "SANDISK CORP",
       "ticker": "SNDK",
-      "weight": 0.181913,
-      "shares_held": 1713413
+      "weight": 0.183733,
+      "shares_held": 1710747
     },
     {
       "name": "SBA COMMUNICATIONS CORP",
       "ticker": "SBAC",
-      "weight": 0.032556,
-      "shares_held": 1238151
+      "weight": 0.038613,
+      "shares_held": 1236229
     },
     {
       "name": "SCHWAB (CHARLES) CORP",
       "ticker": "SCHW",
-      "weight": 0.274246,
-      "shares_held": 19374031
+      "weight": 0.277668,
+      "shares_held": 19343899
     },
     {
       "name": "SEAGATE TECHNOLOGY HOLDINGS",
       "ticker": "STX",
-      "weight": 0.164181,
-      "shares_held": 2531759
+      "weight": 0.166145,
+      "shares_held": 2527822
     },
     {
       "name": "SEMPRA",
       "ticker": "SRE",
-      "weight": 0.113048,
-      "shares_held": 7572197
+      "weight": 0.114809,
+      "shares_held": 7560417
     },
     {
       "name": "SERVICENOW INC",
       "ticker": "NOW",
-      "weight": 0.193201,
-      "shares_held": 12116364
+      "weight": 0.188893,
+      "shares_held": 12097516
     },
     {
       "name": "SHERWIN WILLIAMS CO/THE",
       "ticker": "SHW",
-      "weight": 0.133731,
-      "shares_held": 2679026
+      "weight": 0.130211,
+      "shares_held": 2674872
     },
     {
       "name": "SIMON PROPERTY GROUP INC",
       "ticker": "SPG",
-      "weight": 0.1084,
-      "shares_held": 3760353
+      "weight": 0.108436,
+      "shares_held": 3754494
     },
     {
       "name": "SKYWORKS SOLUTIONS INC",
       "ticker": "SWKS",
-      "weight": 0.014403,
-      "shares_held": 1765842
+      "weight": 0.014896,
+      "shares_held": 1763145
     },
     {
       "name": "SLB LTD",
       "ticker": "SLB",
-      "weight": 0.13293,
-      "shares_held": 17336287
+      "weight": 0.131002,
+      "shares_held": 17309317
     },
     {
       "name": "SMITH (A.O.) CORP",
       "ticker": "AOS",
-      "weight": 0.013043,
-      "shares_held": 1307700
+      "weight": 0.012862,
+      "shares_held": 1305685
     },
     {
       "name": "SMURFIT WESTROCK PLC",
       "ticker": "SW",
-      "weight": 0.037267,
-      "shares_held": 6059326
+      "weight": 0.036387,
+      "shares_held": 6049902
     },
     {
       "name": "SNAP ON INC",
       "ticker": "SNA",
-      "weight": 0.033904,
-      "shares_held": 602739
+      "weight": 0.033679,
+      "shares_held": 601809
     },
     {
       "name": "SOLVENTUM CORP",
       "ticker": "SOLV",
-      "weight": 0.016973,
-      "shares_held": 1721018
+      "weight": 0.016722,
+      "shares_held": 1718352
     },
     {
       "name": "SOUTHERN CO/THE",
       "ticker": "SO",
-      "weight": 0.189299,
-      "shares_held": 12741147
+      "weight": 0.189772,
+      "shares_held": 12721307
     },
     {
       "name": "SOUTHWEST AIRLINES CO",
       "ticker": "LUV",
-      "weight": 0.033159,
-      "shares_held": 5659324
+      "weight": 0.032523,
+      "shares_held": 5650458
     },
     {
       "name": "STANLEY BLACK + DECKER INC",
       "ticker": "SWK",
-      "weight": 0.019715,
-      "shares_held": 1807442
+      "weight": 0.018962,
+      "shares_held": 1804652
     },
     {
       "name": "STARBUCKS CORP",
       "ticker": "SBUX",
-      "weight": 0.182701,
-      "shares_held": 13182352
+      "weight": 0.182078,
+      "shares_held": 13161799
     },
     {
       "name": "STATE STREET CORP",
       "ticker": "STT",
-      "weight": 0.063794,
-      "shares_held": 3245526
+      "weight": 0.063892,
+      "shares_held": 3240504
     },
     {
       "name": "STEEL DYNAMICS INC",
       "ticker": "STLD",
-      "weight": 0.044704,
-      "shares_held": 1595212
+      "weight": 0.043936,
+      "shares_held": 1592732
     },
     {
       "name": "STERIS PLC",
       "ticker": "STE",
-      "weight": 0.03845,
-      "shares_held": 1140673
+      "weight": 0.038131,
+      "shares_held": 1138906
     },
     {
       "name": "STRYKER CORP",
       "ticker": "SYK",
-      "weight": 0.201476,
-      "shares_held": 3990833
+      "weight": 0.202229,
+      "shares_held": 3984633
     },
     {
       "name": "SUPER MICRO COMPUTER INC",
       "ticker": "SMCI",
-      "weight": 0.020073,
-      "shares_held": 5818224
+      "weight": 0.020649,
+      "shares_held": 5809141
     },
     {
       "name": "SYNCHRONY FINANCIAL",
       "ticker": "SYF",
-      "weight": 0.041952,
-      "shares_held": 4006545
+      "weight": 0.041898,
+      "shares_held": 4000283
     },
     {
       "name": "SYNOPSYS INC",
       "ticker": "SNPS",
-      "weight": 0.134751,
-      "shares_held": 2216105
+      "weight": 0.134114,
+      "shares_held": 2212664
     },
     {
       "name": "SYSCO CORP",
       "ticker": "SYY",
-      "weight": 0.06089,
-      "shares_held": 5546488
+      "weight": 0.060325,
+      "shares_held": 5537839
     },
     {
       "name": "T MOBILE US INC",
       "ticker": "TMUS",
-      "weight": 0.17161,
-      "shares_held": 5482072
+      "weight": 0.16875,
+      "shares_held": 5473516
     },
     {
       "name": "T ROWE PRICE GROUP INC",
       "ticker": "TROW",
-      "weight": 0.035126,
-      "shares_held": 2550195
+      "weight": 0.035147,
+      "shares_held": 2546258
     },
     {
       "name": "TAKE TWO INTERACTIVE SOFTWRE",
       "ticker": "TTWO",
-      "weight": 0.061191,
-      "shares_held": 2014423
+      "weight": 0.061538,
+      "shares_held": 2011292
     },
     {
       "name": "TAPESTRY INC",
       "ticker": "TPR",
-      "weight": 0.051683,
-      "shares_held": 2336131
+      "weight": 0.050416,
+      "shares_held": 2332473
     },
     {
       "name": "TARGA RESOURCES CORP",
       "ticker": "TRGP",
-      "weight": 0.093239,
-      "shares_held": 2485231
+      "weight": 0.092831,
+      "shares_held": 2481356
     },
     {
       "name": "TARGET CORP",
       "ticker": "TGT",
-      "weight": 0.096616,
-      "shares_held": 5233644
+      "weight": 0.09635,
+      "shares_held": 5225491
     },
     {
       "name": "TE CONNECTIVITY PLC",
       "ticker": "TEL",
-      "weight": 0.110056,
-      "shares_held": 3392478
+      "weight": 0.108405,
+      "shares_held": 3387177
     },
     {
       "name": "TELEDYNE TECHNOLOGIES INC",
       "ticker": "TDY",
-      "weight": 0.05139,
-      "shares_held": 542594
+      "weight": 0.051678,
+      "shares_held": 541757
     },
     {
       "name": "TERADYNE INC",
       "ticker": "TER",
-      "weight": 0.087086,
-      "shares_held": 1820030
+      "weight": 0.086127,
+      "shares_held": 1817209
     },
     {
       "name": "TESLA INC",
       "ticker": "TSLA",
-      "weight": 1.90413,
-      "shares_held": 32586584
+      "weight": 1.795951,
+      "shares_held": 32535868
     },
     {
       "name": "TEXAS INSTRUMENTS INC",
       "ticker": "TXN",
-      "weight": 0.316071,
-      "shares_held": 10505776
+      "weight": 0.312906,
+      "shares_held": 10489408
     },
     {
       "name": "TEXAS PACIFIC LAND CORP",
       "ticker": "TPL",
-      "weight": 0.045165,
-      "shares_held": 670964
+      "weight": 0.045557,
+      "shares_held": 669910
     },
     {
       "name": "TEXTRON INC",
       "ticker": "TXT",
-      "weight": 0.02729,
-      "shares_held": 2002704
+      "weight": 0.026952,
+      "shares_held": 1999573
     },
     {
       "name": "THE CAMPBELL S COMPANY",
       "ticker": "CPB",
-      "weight": 0.007754,
-      "shares_held": 2300731
+      "weight": 0.00774,
+      "shares_held": 2297197
     },
     {
       "name": "THE CIGNA GROUP",
       "ticker": "CI",
-      "weight": 0.124832,
-      "shares_held": 3046894
+      "weight": 0.125746,
+      "shares_held": 3042151
     },
     {
       "name": "THERMO FISHER SCIENTIFIC INC",
       "ticker": "TMO",
-      "weight": 0.329649,
-      "shares_held": 4349248
+      "weight": 0.326695,
+      "shares_held": 4342459
     },
     {
       "name": "TJX COMPANIES INC",
       "ticker": "TJX",
-      "weight": 0.319225,
-      "shares_held": 12854783
+      "weight": 0.316894,
+      "shares_held": 12834757
     },
     {
       "name": "TKO GROUP HOLDINGS INC",
       "ticker": "TKO",
-      "weight": 0.023733,
-      "shares_held": 770138
+      "weight": 0.023984,
+      "shares_held": 768929
     },
     {
       "name": "TRACTOR SUPPLY COMPANY",
       "ticker": "TSCO",
-      "weight": 0.042001,
-      "shares_held": 6154123
+      "weight": 0.041218,
+      "shares_held": 6144606
     },
     {
       "name": "TRADE DESK INC/THE  CLASS A",
       "ticker": "TTD",
-      "weight": 0.017235,
-      "shares_held": 5116339
+      "weight": 0.017243,
+      "shares_held": 5108403
     },
     {
       "name": "TRANE TECHNOLOGIES PLC",
       "ticker": "TT",
-      "weight": 0.168033,
-      "shares_held": 2560778
+      "weight": 0.167152,
+      "shares_held": 2556779
     },
     {
       "name": "TRANSDIGM GROUP INC",
       "ticker": "TDG",
-      "weight": 0.117565,
-      "shares_held": 653797
+      "weight": 0.116614,
+      "shares_held": 652774
     },
     {
       "name": "TRAVELERS COS INC/THE",
       "ticker": "TRV",
-      "weight": 0.111338,
-      "shares_held": 2500432
+      "weight": 0.112354,
+      "shares_held": 2496526
     },
     {
       "name": "TRIMBLE INC",
       "ticker": "TRMB",
-      "weight": 0.027426,
-      "shares_held": 2749693
+      "weight": 0.027368,
+      "shares_held": 2745415
     },
     {
       "name": "TRUIST FINANCIAL CORP",
       "ticker": "TFC",
-      "weight": 0.104478,
-      "shares_held": 14594139
+      "weight": 0.105194,
+      "shares_held": 14571385
     },
     {
       "name": "TYLER TECHNOLOGIES INC",
       "ticker": "TYL",
-      "weight": 0.025557,
-      "shares_held": 500029
+      "weight": 0.025834,
+      "shares_held": 499254
     },
     {
       "name": "TYSON FOODS INC CL A",
       "ticker": "TSN",
-      "weight": 0.032412,
-      "shares_held": 3288931
+      "weight": 0.032489,
+      "shares_held": 3283847
     },
     {
       "name": "UBER TECHNOLOGIES INC",
       "ticker": "UBER",
-      "weight": 0.261827,
-      "shares_held": 23823069
+      "weight": 0.261581,
+      "shares_held": 23785962
     },
     {
       "name": "UDR INC",
       "ticker": "UDR",
-      "weight": 0.018494,
-      "shares_held": 3524251
+      "weight": 0.018659,
+      "shares_held": 3518826
     },
     {
       "name": "ULTA BEAUTY INC",
       "ticker": "ULTA",
-      "weight": 0.042063,
-      "shares_held": 511448
+      "weight": 0.042007,
+      "shares_held": 510642
     },
     {
       "name": "UNION PACIFIC CORP",
       "ticker": "UNP",
-      "weight": 0.256411,
-      "shares_held": 6881445
+      "weight": 0.25738,
+      "shares_held": 6870750
     },
     {
       "name": "UNITED AIRLINES HOLDINGS INC",
       "ticker": "UAL",
-      "weight": 0.054784,
-      "shares_held": 3759489
+      "weight": 0.052985,
+      "shares_held": 3753661
     },
     {
       "name": "UNITED PARCEL SERVICE CL B",
       "ticker": "UPS",
       "weight": 0.128655,
-      "shares_held": 8573574
+      "shares_held": 8560244
     },
     {
       "name": "UNITED RENTALS INC",
       "ticker": "URI",
-      "weight": 0.081619,
-      "shares_held": 727977
+      "weight": 0.081455,
+      "shares_held": 726830
     },
     {
       "name": "UNITEDHEALTH GROUP INC",
       "ticker": "UNH",
-      "weight": 0.44041,
-      "shares_held": 10488227
+      "weight": 0.444458,
+      "shares_held": 10471890
     },
     {
       "name": "UNIVERSAL HEALTH SERVICES B",
       "ticker": "UHS",
-      "weight": 0.017309,
-      "shares_held": 634703
+      "weight": 0.017141,
+      "shares_held": 633711
     },
     {
       "name": "US BANCORP",
       "ticker": "USB",
-      "weight": 0.145785,
-      "shares_held": 18032403
+      "weight": 0.145936,
+      "shares_held": 18004379
     },
     {
       "name": "US DOLLAR",
       "ticker": "-",
-      "weight": 0.302406,
-      "shares_held": 1973120770.91
+      "weight": 0.306047,
+      "shares_held": 1999260394.19
     },
     {
       "name": "VALERO ENERGY CORP",
       "ticker": "VLO",
-      "weight": 0.131156,
-      "shares_held": 3544101
+      "weight": 0.132221,
+      "shares_held": 3538614
     },
     {
       "name": "VENTAS INC",
       "ticker": "VTR",
-      "weight": 0.069152,
-      "shares_held": 5501793
+      "weight": 0.070022,
+      "shares_held": 5493237
     },
     {
       "name": "VERALTO CORP",
       "ticker": "VLTO",
-      "weight": 0.039089,
-      "shares_held": 2896238
+      "weight": 0.03896,
+      "shares_held": 2891774
     },
     {
       "name": "VERISIGN INC",
       "ticker": "VRSN",
-      "weight": 0.036534,
-      "shares_held": 950572
+      "weight": 0.037752,
+      "shares_held": 949084
     },
     {
       "name": "VERISK ANALYTICS INC",
       "ticker": "VRSK",
-      "weight": 0.045649,
-      "shares_held": 1623146
+      "weight": 0.045916,
+      "shares_held": 1620635
     },
     {
       "name": "VERIZON COMMUNICATIONS INC",
       "ticker": "VZ",
-      "weight": 0.369562,
-      "shares_held": 48821526
+      "weight": 0.368621,
+      "shares_held": 48745483
     },
     {
       "name": "VERTEX PHARMACEUTICALS INC",
       "ticker": "VRTX",
-      "weight": 0.202097,
-      "shares_held": 2948250
+      "weight": 0.19769,
+      "shares_held": 2943662
     },
     {
       "name": "VERTIV HOLDINGS CO A",
       "ticker": "VRT",
-      "weight": 0.176154,
-      "shares_held": 4431355
+      "weight": 0.17697,
+      "shares_held": 4424442
     },
     {
       "name": "VIATRIS INC",
       "ticker": "VTRS",
-      "weight": 0.028057,
-      "shares_held": 13430840
+      "weight": 0.02759,
+      "shares_held": 13410070
     },
     {
       "name": "VICI PROPERTIES INC",
       "ticker": "VICI",
-      "weight": 0.051955,
-      "shares_held": 12344895
+      "weight": 0.052189,
+      "shares_held": 12325613
     },
     {
       "name": "VISA INC CLASS A SHARES",
       "ticker": "V",
-      "weight": 0.891235,
-      "shares_held": 19480350
+      "weight": 0.895605,
+      "shares_held": 19450032
     },
     {
       "name": "VISTRA CORP",
       "ticker": "VST",
-      "weight": 0.087344,
-      "shares_held": 3701587
+      "weight": 0.085532,
+      "shares_held": 3695852
     },
     {
       "name": "VULCAN MATERIALS CO",
       "ticker": "VMC",
-      "weight": 0.065758,
-      "shares_held": 1531619
+      "weight": 0.065518,
+      "shares_held": 1529232
     },
     {
       "name": "WABTEC CORP",
       "ticker": "WAB",
-      "weight": 0.077727,
-      "shares_held": 1980814
+      "weight": 0.076872,
+      "shares_held": 1977745
     },
     {
       "name": "WALMART INC",
       "ticker": "WMT",
-      "weight": 0.971116,
-      "shares_held": 50795901
+      "weight": 0.9766,
+      "shares_held": 50716851
     },
     {
       "name": "WALT DISNEY CO/THE",
       "ticker": "DIS",
-      "weight": 0.303489,
-      "shares_held": 20507362
+      "weight": 0.302812,
+      "shares_held": 20475432
     },
     {
       "name": "WARNER BROS DISCOVERY INC",
       "ticker": "WBD",
-      "weight": 0.121194,
-      "shares_held": 28765348
+      "weight": 0.120114,
+      "shares_held": 28720646
     },
     {
       "name": "WASTE MANAGEMENT INC",
       "ticker": "WM",
-      "weight": 0.152521,
-      "shares_held": 4308058
+      "weight": 0.155013,
+      "shares_held": 4301362
     },
     {
       "name": "WATERS CORP",
       "ticker": "WAT",
-      "weight": 0.052627,
-      "shares_held": 1145006.316
+      "weight": 0.053244,
+      "shares_held": 1143239.316
     },
     {
       "name": "WEC ENERGY GROUP INC",
       "ticker": "WEC",
-      "weight": 0.067296,
-      "shares_held": 3779711
+      "weight": 0.067926,
+      "shares_held": 3773852
     },
     {
       "name": "WELLS FARGO + CO",
       "ticker": "WFC",
-      "weight": 0.442149,
-      "shares_held": 35806210
+      "weight": 0.441098,
+      "shares_held": 35750441
     },
     {
       "name": "WELLTOWER INC",
       "ticker": "WELL",
-      "weight": 0.246338,
-      "shares_held": 8082528
+      "weight": 0.249948,
+      "shares_held": 8069942
     },
     {
       "name": "WEST PHARMACEUTICAL SERVICES",
       "ticker": "WST",
-      "weight": 0.032382,
-      "shares_held": 835962
+      "weight": 0.032556,
+      "shares_held": 834660
     },
     {
       "name": "WESTERN DIGITAL CORP",
       "ticker": "WDC",
-      "weight": 0.179015,
-      "shares_held": 3923119
+      "weight": 0.176869,
+      "shares_held": 3917012
     },
     {
       "name": "WEYERHAEUSER CO",
       "ticker": "WY",
-      "weight": 0.031032,
-      "shares_held": 8366699
+      "weight": 0.031241,
+      "shares_held": 8353710
     },
     {
       "name": "WILLIAMS COS INC",
       "ticker": "WMB",
-      "weight": 0.155538,
-      "shares_held": 14128481
+      "weight": 0.155478,
+      "shares_held": 14106471
     },
     {
       "name": "WILLIAMS SONOMA INC",
       "ticker": "WSM",
-      "weight": 0.038029,
-      "shares_held": 1375659
+      "weight": 0.037882,
+      "shares_held": 1373520
     },
     {
       "name": "WILLIS TOWERS WATSON PLC",
       "ticker": "WTW",
-      "weight": 0.048333,
-      "shares_held": 1096781
+      "weight": 0.048386,
+      "shares_held": 1095076
     },
     {
       "name": "WORKDAY INC CLASS A",
       "ticker": "WDAY",
-      "weight": 0.048607,
-      "shares_held": 2457549
+      "weight": 0.049679,
+      "shares_held": 2453705
     },
     {
       "name": "WR BERKLEY CORP",
       "ticker": "WRB",
-      "weight": 0.034334,
-      "shares_held": 3431645
+      "weight": 0.034611,
+      "shares_held": 3426282
     },
     {
       "name": "WW GRAINGER INC",
       "ticker": "GWW",
-      "weight": 0.086324,
-      "shares_held": 508536
+      "weight": 0.086857,
+      "shares_held": 507761
     },
     {
       "name": "WYNN RESORTS LTD",
       "ticker": "WYNN",
-      "weight": 0.015363,
-      "shares_held": 976977
+      "weight": 0.015235,
+      "shares_held": 975458
     },
     {
       "name": "XCEL ENERGY INC",
       "ticker": "XEL",
-      "weight": 0.083935,
-      "shares_held": 6870558
+      "weight": 0.084786,
+      "shares_held": 6859894
     },
     {
       "name": "XYLEM INC",
       "ticker": "XYL",
-      "weight": 0.052916,
-      "shares_held": 2818931
+      "weight": 0.052245,
+      "shares_held": 2814529
     },
     {
       "name": "YUM  BRANDS INC",
       "ticker": "YUM",
-      "weight": 0.075943,
-      "shares_held": 3223852
+      "weight": 0.076912,
+      "shares_held": 3218861
     },
     {
       "name": "ZEBRA TECHNOLOGIES CORP CL A",
       "ticker": "ZBRA",
-      "weight": 0.017903,
-      "shares_held": 563559
+      "weight": 0.017471,
+      "shares_held": 562660
     },
     {
       "name": "ZIMMER BIOMET HOLDINGS INC",
       "ticker": "ZBH",
-      "weight": 0.03213,
-      "shares_held": 2302961
+      "weight": 0.031992,
+      "shares_held": 2299396
     },
     {
       "name": "ZOETIS INC",
       "ticker": "ZTS",
-      "weight": 0.087697,
-      "shares_held": 4878523
+      "weight": 0.08794,
+      "shares_held": 4870897
     }
   ],
   "number_of_holdings": "503",
-  "premium_discount": "0.02%",
-  "price": 655.24,
+  "premium_discount": "0.01%",
+  "price": 655.83,
   "price_book_ratio": "4.86",
   "price_cash_flow": "17.92",
   "price_earnings": "26.18",

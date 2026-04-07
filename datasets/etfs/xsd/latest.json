@@ -1,66 +1,66 @@
 {
   "30_day_median_bid_ask_spread": "0.15%",
   "base_currency": "USD",
-  "bid_ask": "$331.84",
-  "closing_price": "$332.18",
+  "bid_ask": "$336.52",
+  "closing_price": "$336.61",
   "date": "2026-04-02",
-  "day_high": "$336.83",
-  "day_low": "$330.47",
+  "day_high": "$336.89",
+  "day_low": "$322.12",
   "est_3_5_year_eps_growth": "27.21%",
-  "exchange_volume_shares": "7,589",
+  "exchange_volume_shares": "3,903",
   "holdings": [
     {
       "name": "ADVANCED MICRO DEVICES",
       "ticker": "AMD",
-      "weight": 2.811581,
+      "weight": 2.868269,
       "shares_held": 219698
     },
     {
       "name": "ALLEGRO MICROSYSTEMS INC",
       "ticker": "ALGM",
-      "weight": 2.766738,
+      "weight": 2.670576,
       "shares_held": 1364749
     },
     {
       "name": "ALPHA + OMEGA SEMICONDUCTOR",
       "ticker": "AOSL",
-      "weight": 0.661169,
+      "weight": 0.648182,
       "shares_held": 475494
     },
     {
       "name": "AMBARELLA INC",
       "ticker": "AMBA",
-      "weight": 2.59816,
+      "weight": 2.534624,
       "shares_held": 835495
     },
     {
       "name": "ANALOG DEVICES INC",
       "ticker": "ADI",
-      "weight": 2.757912,
+      "weight": 2.700217,
       "shares_held": 141310
     },
     {
       "name": "ASTERA LABS INC",
       "ticker": "ALAB",
-      "weight": 2.341897,
+      "weight": 2.543787,
       "shares_held": 361777
     },
     {
       "name": "BROADCOM INC",
       "ticker": "AVGO",
-      "weight": 2.5208,
+      "weight": 2.493836,
       "shares_held": 132082
     },
     {
       "name": "CEVA INC",
       "ticker": "CEVA",
-      "weight": 0.812663,
+      "weight": 0.807428,
       "shares_held": 684901
     },
     {
       "name": "CIRRUS LOGIC INC",
       "ticker": "CRUS",
-      "weight": 2.985113,
+      "weight": 2.94323,
       "shares_held": 333264
     },
     {
@@ -72,217 +72,217 @@
     {
       "name": "CREDO TECHNOLOGY GROUP HOLDI",
       "ticker": "CRDO",
-      "weight": 2.273213,
+      "weight": 2.370535,
       "shares_held": 389278
     },
     {
       "name": "DIODES INC",
       "ticker": "DIOD",
-      "weight": 1.990965,
+      "weight": 1.953346,
       "shares_held": 474512
     },
     {
       "name": "FIRST SOLAR INC",
       "ticker": "FSLR",
-      "weight": 2.735202,
+      "weight": 2.64138,
       "shares_held": 225294
     },
     {
       "name": "IMPINJ INC",
       "ticker": "PI",
-      "weight": 2.825512,
+      "weight": 2.745149,
       "shares_held": 455283
     },
     {
       "name": "INDIE SEMICONDUCTOR INC A",
       "ticker": "INDI",
-      "weight": 1.345452,
+      "weight": 1.348109,
       "shares_held": 7175403
     },
     {
       "name": "INTEL CORP",
       "ticker": "INTC",
-      "weight": 2.749559,
+      "weight": 2.843623,
       "shares_held": 940328
     },
     {
       "name": "KOPIN CORP",
       "ticker": "KOPN",
-      "weight": 0.667372,
+      "weight": 0.70655,
       "shares_held": 4492697
     },
     {
       "name": "LATTICE SEMICONDUCTOR CORP",
       "ticker": "LSCC",
-      "weight": 2.882813,
+      "weight": 2.826895,
       "shares_held": 495633
     },
     {
       "name": "MACOM TECHNOLOGY SOLUTIONS H",
       "ticker": "MTSI",
-      "weight": 2.824124,
+      "weight": 2.893034,
       "shares_held": 202253
     },
     {
       "name": "MARVELL TECHNOLOGY INC",
       "ticker": "MRVL",
-      "weight": 3.240683,
+      "weight": 3.207192,
       "shares_held": 498839
     },
     {
       "name": "MAXLINEAR INC",
       "ticker": "MXL",
-      "weight": 2.191606,
+      "weight": 2.19628,
       "shares_held": 2034996
     },
     {
       "name": "MICROCHIP TECHNOLOGY INC",
       "ticker": "MCHP",
-      "weight": 2.729691,
+      "weight": 2.700448,
       "shares_held": 685800
     },
     {
       "name": "MICRON TECHNOLOGY INC",
       "ticker": "MU",
-      "weight": 2.413055,
+      "weight": 2.368785,
       "shares_held": 107752
     },
     {
       "name": "MONOLITHIC POWER SYSTEMS INC",
       "ticker": "MPWR",
-      "weight": 2.863337,
+      "weight": 2.82059,
       "shares_held": 42012
     },
     {
       "name": "NAVITAS SEMICONDUCTOR CORP",
       "ticker": "NVTS",
-      "weight": 2.14442,
+      "weight": 2.178703,
       "shares_held": 4124591
     },
     {
       "name": "NVE CORP",
       "ticker": "NVEC",
-      "weight": 0.316579,
+      "weight": 0.31657,
       "shares_held": 76125
     },
     {
       "name": "NVIDIA CORP",
       "ticker": "NVDA",
-      "weight": 2.595106,
+      "weight": 2.582572,
       "shares_held": 242543
     },
     {
       "name": "NXP SEMICONDUCTORS NV",
       "ticker": "NXPI",
-      "weight": 2.680771,
+      "weight": 2.629238,
       "shares_held": 225146
     },
     {
       "name": "ON SEMICONDUCTOR",
       "ticker": "ON",
-      "weight": 2.876926,
+      "weight": 2.836105,
       "shares_held": 759744
     },
     {
       "name": "PENGUIN SOLUTIONS INC",
       "ticker": "PENG",
-      "weight": 1.497562,
+      "weight": 1.673963,
       "shares_held": 1347879
     },
     {
       "name": "POWER INTEGRATIONS INC",
       "ticker": "POWI",
-      "weight": 3.070303,
+      "weight": 3.027225,
       "shares_held": 963003
     },
     {
       "name": "QORVO INC",
       "ticker": "QRVO",
-      "weight": 2.692128,
+      "weight": 2.710495,
       "shares_held": 573772
     },
     {
       "name": "QUALCOMM INC",
       "ticker": "QCOM",
-      "weight": 2.599951,
+      "weight": 2.553805,
       "shares_held": 335532
     },
     {
       "name": "RAMBUS INC",
       "ticker": "RMBS",
-      "weight": 2.663684,
+      "weight": 2.71624,
       "shares_held": 486419
     },
     {
       "name": "RIGETTI COMPUTING INC",
       "ticker": "RGTI",
-      "weight": 2.188936,
+      "weight": 2.268533,
       "shares_held": 2663350
     },
     {
       "name": "SEMTECH CORP",
       "ticker": "SMTC",
-      "weight": 2.561624,
+      "weight": 2.608042,
       "shares_held": 525699
     },
     {
       "name": "SILICON LABORATORIES INC",
       "ticker": "SLAB",
-      "weight": 2.828484,
+      "weight": 2.807864,
       "shares_held": 223679
     },
     {
       "name": "SITIME CORP",
       "ticker": "SITM",
-      "weight": 2.773461,
+      "weight": 2.678364,
       "shares_held": 128571
     },
     {
       "name": "SKYWATER TECHNOLOGY INC",
       "ticker": "SKYT",
-      "weight": 1.22257,
+      "weight": 1.259582,
       "shares_held": 739661
     },
     {
       "name": "SKYWORKS SOLUTIONS INC",
       "ticker": "SWKS",
-      "weight": 2.634647,
+      "weight": 2.693838,
       "shares_held": 813161
     },
     {
       "name": "SSI US GOV MONEY MARKET CLASS",
       "ticker": "-",
-      "weight": 0.085914,
+      "weight": 0.084709,
       "shares_held": 1411216.27
     },
     {
       "name": "SYNAPTICS INC",
       "ticker": "SYNA",
-      "weight": 2.600348,
+      "weight": 2.619324,
       "shares_held": 588496
     },
     {
       "name": "TEXAS INSTRUMENTS INC",
       "ticker": "TXN",
-      "weight": 2.713884,
+      "weight": 2.656314,
       "shares_held": 227091
     },
     {
       "name": "UNIVERSAL DISPLAY CORP",
       "ticker": "OLED",
-      "weight": 2.499959,
+      "weight": 2.467909,
       "shares_held": 458253
     },
     {
       "name": "WOLFSPEED INC",
       "ticker": "WOLF",
-      "weight": 0.772436,
+      "weight": 0.808822,
       "shares_held": 771304
     }
   ],
   "number_of_holdings": "43",
-  "premium_discount": "0.00%",
-  "price": 332.18,
+  "premium_discount": "-0.01%",
+  "price": 336.61,
   "price_book_ratio": "4.08",
   "price_cash_flow": "22.61",
   "price_earnings": "31.25",
