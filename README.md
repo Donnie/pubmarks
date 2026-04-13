@@ -6,10 +6,10 @@ A repository of daily updated datasets.
 
 | Data | Source |
 |------|--------|
-| [S&P 500](./datasets/etfs/spy/latest.json) | [State Street® SPDR® S&P 500® ETF Trust](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy) |
-| [S&P Semiconductor Select Industry](./datasets/etfs/xsd/latest.json) | [State Street® SPDR® S&P® Semiconductor ETF](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-semiconductor-etf-xsd) |
-| [MSCI Global Semiconductors](./datasets/etfs/semi/latest.json) | [iShares MSCI Global Semiconductors UCITS ETF](https://www.blackrock.com/lu/intermediaries/products/319084/ishares-msci-global-semiconductors-ucits-etf) |
-| [MSCI World ex USA](./datasets/etfs/xuse/latest.json) | [iShares MSCI World ex USA UCITS ETF](https://www.blackrock.com/lu/intermediaries/products/340748/ishares-msci-world-ex-usa-ucits-etf) |
+| [S&P 500](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/etfs/spy/latest.json) | [State Street® SPDR® S&P 500® ETF Trust](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy) |
+| [S&P Semiconductor Select Industry](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/etfs/xsd/latest.json) | [State Street® SPDR® S&P® Semiconductor ETF](https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-semiconductor-etf-xsd) |
+| [MSCI Global Semiconductors](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/etfs/semi/latest.json) | [iShares MSCI Global Semiconductors UCITS ETF](https://www.blackrock.com/lu/intermediaries/products/319084/ishares-msci-global-semiconductors-ucits-etf) |
+| [MSCI World ex USA](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/etfs/xuse/latest.json) | [iShares MSCI World ex USA UCITS ETF](https://www.blackrock.com/lu/intermediaries/products/340748/ishares-msci-world-ex-usa-ucits-etf) |
 
 ## Expected schema
 
@@ -32,3 +32,5 @@ Both tools print a single JSON object to stdout with:
 | `ticker` | string | Fund symbol (e.g. `SPY`, `SEMI`). Use it (lowercased) as `{ticker}` in `datasets/etfs/{ticker}/`. |
 
 Additional top-level keys are merged in as strings unless noted. Key order in JSON is not guaranteed.
+
+CDN delivery for the `latest.json` links in the table above is provided by [jsDelivr](https://www.jsdelivr.com/).
