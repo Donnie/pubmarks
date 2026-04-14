@@ -1,4 +1,4 @@
-name: Stocks OHLCV update daily
+name: Stocks update daily
 
 on:
   schedule:

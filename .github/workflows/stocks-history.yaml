@@ -1,4 +1,4 @@
-name: Stocks OHLCV history
+name: Stocks history
 
 on:
   workflow_dispatch:
