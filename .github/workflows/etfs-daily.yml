@@ -23,6 +23,8 @@ jobs:
             page_url: "https://www.blackrock.com/lu/intermediaries/products/319084/ishares-msci-global-semiconductors-ucits-etf"
           - scraper: blackrock
             page_url: "https://www.blackrock.com/lu/intermediaries/products/340748/ishares-msci-world-ex-usa-ucits-etf"
+          - scraper: blackrock
+            page_url: "https://www.blackrock.com/uk/individual/products/315592/ishares-msci-em-ex-china-ucits-etf"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
