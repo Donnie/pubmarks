@@ -39,7 +39,7 @@ func parseTickerYear(args []string) (ticker string, year int, yearSet bool, err 
 	}
 
 	if strings.TrimSpace(ticker) == "" {
-		return "", 0, false, fmt.Errorf("set TICKER or pass ticker (e.g. macrotrends --ohlcv AAPL)")
+		return "", 0, false, fmt.Errorf("set TICKER or pass ticker (e.g. macrotrends ohlcv AAPL)")
 	}
 	return ticker, year, yearSet, nil
 }

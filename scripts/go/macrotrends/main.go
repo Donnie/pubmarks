@@ -1,4 +1,4 @@
-// Command macrotrends fetches daily OHLCV from MacroTrends when run with --ohlcv.
+// Command macrotrends provides MacroTrends scrapers (ohlcv, peratio placeholder).
 package main
 
 import (
