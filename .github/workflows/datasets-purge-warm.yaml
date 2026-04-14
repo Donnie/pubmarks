@@ -1,0 +1,46 @@
+name: Datasets jsDelivr purge and warm
+
+on:
+  workflow_run:
+    workflows:
+      - Stocks update daily
+      - ETFs update daily
+      - Stocks history
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
+    steps:
+      # head_sha is pre-run; daily workflow may push — use branch tip after fetch.
+      - name: Checkout branch updated by daily workflow
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+          fetch-depth: 1
+
+      - name: Sync to latest on branch
+        run: git fetch origin "${{ github.event.workflow_run.head_branch }}" && git reset --hard "origin/${{ github.event.workflow_run.head_branch }}"
+
+      - name: Purge and warm jsDelivr for all CSV and JSON
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          n=0
+          while IFS= read -r -d '' f; do
+            rel="${f#./}"
+            purge_url="https://purge.jsdelivr.net/gh/${REPO}/${rel}"
+            cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${rel}"
+            echo "Purging ${purge_url}"
+            curl -fsSL -o /dev/null -sS -X GET "$purge_url"
+            echo "Warming ${cdn_url}"
+            curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
+            n=$((n + 1))
+          done < <(find . -type f \( -name '*.csv' -o -name '*.json' \) ! -path './.git/*' -print0)
+          echo "Processed ${n} file(s)."

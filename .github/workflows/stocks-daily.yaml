@@ -71,22 +71,3 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datasets/stocks/
           git diff --staged --quiet || (git commit -m "chore: stocks ohlcv and peratio update" && git pull --rebase origin main && git push)
-
-      - name: Purge and warm jsDelivr cache for stocks current-year OHLCV and P/E
-        env:
-          REPO: ${{ github.repository }}
-          YEAR: ${{ steps.year.outputs.year }}
-        run: |
-          set -euo pipefail
-          shopt -s nullglob
-          for csv in datasets/stocks/*/"${YEAR}"/{ohlcv,peratio}.csv; do
-            ticker=$(basename "$(dirname "$(dirname "$csv")")")
-            kind=$(basename "$csv")
-            path="datasets/stocks/${ticker}/${YEAR}/${kind}"
-            purge_url="https://purge.jsdelivr.net/gh/${REPO}/${path}"
-            cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${path}"
-            echo "Purging ${purge_url}"
-            curl -fsSL -o /dev/null -sS -X GET "$purge_url"
-            echo "Warming ${cdn_url}"
-            curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
-          done

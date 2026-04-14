@@ -107,20 +107,3 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datasets/
           git diff --staged --quiet || (git commit -m "chore: etfs update" && git pull --rebase origin main && git push)
-
-      - name: Purge and warm jsDelivr cache for ETF latest.json
-        env:
-          REPO: ${{ github.repository }}
-        run: |
-          set -euo pipefail
-          shopt -s nullglob
-          for latest in datasets/etfs/*/latest.json; do
-            ticker=$(basename "$(dirname "$latest")")
-            path="datasets/etfs/${ticker}/latest.json"
-            purge_url="https://purge.jsdelivr.net/gh/${REPO}/${path}"
-            cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${path}"
-            echo "Purging ${purge_url}"
-            curl -fsSL -o /dev/null -sS -X GET "$purge_url"
-            echo "Warming ${cdn_url}"
-            curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
-          done
