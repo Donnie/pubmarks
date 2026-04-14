@@ -1,12 +1,7 @@
-# Reproduces stocks-ohlcv-history (same release binary + split logic). Uses stdout/stderr capture here only so logs show macrotrends errors; production workflow still pipes to Python.
-
 name: macrotrends PR repro (temp)
 
 on:
   pull_request:
-    paths:
-      - "scripts/go/macrotrends/**"
-      - ".github/workflows/macrotrends-pr-repro.yaml"
   workflow_dispatch:
     inputs:
       ticker:
@@ -42,7 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Full history by year (repro + macrotrends capture)
+      - name: Full history by year
         env:
           TICKER_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.ticker || 'AAPL' }}
         run: |
@@ -57,26 +52,19 @@ jobs:
           ROOT="datasets/stocks/${TICKER_LOWER}"
           mkdir -p "$ROOT"
           echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
-          echo "::notice::repro captures ./macrotrends stdout/stderr (stocks-ohlcv-history still uses a pipe)"
           OUT="$RUNNER_TEMP/macrotrends.stdout"
           ERR="$RUNNER_TEMP/macrotrends.stderr"
           set +e
           ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
           mt=$?
           set -e
-          echo "::group::./macrotrends stderr (full)"
-          cat "$ERR" || true
-          echo "::endgroup::"
-          echo "::group::./macrotrends stdout (bytes + hex preview)"
-          wc -c "$OUT" || true
-          head -c 512 "$OUT" | od -An -tx1c | head -32 || true
-          echo "::endgroup::"
           if [ "$mt" -ne 0 ]; then
-            echo "::error::./macrotrends exited with status $mt (see stderr group above)"
+            echo "::error::./macrotrends exited with status $mt"
+            cat "$ERR" >&2 || true
             exit "$mt"
           fi
           if [ ! -s "$OUT" ]; then
-            echo "::error::./macrotrends produced empty stdout (expected CSV on stdout)"
+            echo "::error::./macrotrends produced empty stdout"
             exit 1
           fi
           python3 - "$TICKER_LOWER" "$OUT" << 'PY'
@@ -86,11 +74,6 @@ jobs:
 
           ticker_lower = sys.argv[1]
           path = sys.argv[2]
-          raw = open(path, "rb").read()
-          print(f"macrotrends stdout file: {len(raw)} bytes", file=sys.stderr)
-          first = raw.split(b"\n", 1)[0]
-          print(f"first line repr (<=200B): {first[:200]!r}", file=sys.stderr)
-
           root = os.path.join("datasets", "stocks", ticker_lower)
           rows_by_year = {}
           with open(path, newline="") as f:
@@ -99,7 +82,6 @@ jobs:
               if not fieldnames:
                   print("empty or headerless CSV", file=sys.stderr)
                   sys.exit(1)
-              print(f"CSV fieldnames: {fieldnames}", file=sys.stderr)
               fn = [x.strip() for x in fieldnames]
               date_key = "date" if "date" in fn else (fn[0] if fn else None)
               if not date_key:
