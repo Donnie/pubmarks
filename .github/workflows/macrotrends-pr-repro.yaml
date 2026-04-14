@@ -1,5 +1,4 @@
-# Temporary: reproduce macrotrends CI failures on PRs with verbose logging (go run ., no release binary).
-# Remove or narrow once the upstream scrape issue is fixed.
+# Mirrors stocks-ohlcv-history (release binary + ./macrotrends | python3) for debugging; does not push.
 
 name: macrotrends PR repro (temp)
 
@@ -11,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: Symbol to fetch (full history, split by year like stocks-ohlcv-history)
+        description: Symbol (same as stocks-ohlcv-history workflow_dispatch)
         required: false
         default: AAPL
         type: string
@@ -30,131 +29,79 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version-file: scripts/go/macrotrends/go.mod
-
-      - name: Environment and toolchain
+      - name: Download latest macrotrends release
         run: |
-          set -x
-          go version
-          which go
-          uname -a
-          echo "GITHUB_EVENT_NAME=${{ github.event_name }}"
-
-      - name: Resolve ticker
-        id: ticker
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            T="${{ github.event.inputs.ticker }}"
-          else
-            T="AAPL"
-          fi
-          T=$(echo "$T" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-          [ -n "$T" ] || T=AAPL
-          echo "upper=$(echo "$T" | tr '[:lower:]' '[:upper:]')" >> "$GITHUB_OUTPUT"
-          echo "lower=$(echo "$T" | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
-          echo "Using ticker: $(echo "$T" | tr '[:lower:]' '[:upper:]')"
-
-      - name: go mod download (warm log)
-        working-directory: scripts/go/macrotrends
-        run: |
-          set -x
-          go mod download
-          go vet ./...
-
-      - name: Run macrotrends via go run . (capture stdout/stderr)
-        working-directory: scripts/go/macrotrends
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("macrotrends-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'macrotrends' \
+            --output ./macrotrends
+          chmod +x ./macrotrends
         env:
-          MACROTRENDS_DEBUG: "1"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Same run block as stocks-ohlcv-history "Full history by year"; TICKER_INPUT only differs for PRs.
+      - name: Full history by year (repro stocks-ohlcv-history)
+        env:
+          TICKER_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.ticker || 'AAPL' }}
         run: |
           set -euo pipefail
-          TICKER_UPPER="${{ steps.ticker.outputs.upper }}"
-          echo "::group::go run . $TICKER_UPPER"
-          set +e
-          go run . "$TICKER_UPPER" > "$RUNNER_TEMP/macrotrends.stdout" 2> "$RUNNER_TEMP/macrotrends.stderr"
-          code=$?
-          set -e
-          echo "::endgroup::"
-          echo "go run exit code: $code"
-          echo "::group::stderr (macrotrends + debug, full)"
-          cat "$RUNNER_TEMP/macrotrends.stderr" || true
-          echo "::endgroup::"
-          echo "::group::stdout byte count and hex/ascii preview"
-          wc -c "$RUNNER_TEMP/macrotrends.stdout" || true
-          if [ -f "$RUNNER_TEMP/macrotrends.stdout" ]; then
-            head -c 512 "$RUNNER_TEMP/macrotrends.stdout" | od -An -tx1c | head -48
-          fi
-          echo "::endgroup::"
-          if [ "$code" != 0 ]; then
-            echo "::error::go run failed with exit $code"
-            exit "$code"
-          fi
-          if [ ! -s "$RUNNER_TEMP/macrotrends.stdout" ]; then
-            echo "::error::macrotrends wrote empty stdout (CSV expected on stdout)"
+          TICKER=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -z "$TICKER" ]; then
+            echo "::error::ticker input is empty"
             exit 1
           fi
-
-      - name: Split by year (same Python as stocks-ohlcv-history) + extra diagnostics
-        env:
-          TICKER_LOWER: ${{ steps.ticker.outputs.lower }}
-        run: |
-          set -euo pipefail
+          TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
+          TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
           ROOT="datasets/stocks/${TICKER_LOWER}"
           mkdir -p "$ROOT"
-          echo "Splitting into ${ROOT}/<year>/ohlcv.csv"
-          python3 - "$TICKER_LOWER" "$RUNNER_TEMP/macrotrends.stdout" << 'PY'
+          echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
+          ./macrotrends "$TICKER_UPPER" | python3 - "$TICKER_LOWER" << 'PY'
           import csv
           import os
           import sys
 
           ticker_lower = sys.argv[1]
-          path = sys.argv[2]
-          raw = open(path, "rb").read()
-          print(f"stdin file bytes: {len(raw)}", file=sys.stderr)
-          first_nl = raw.split(b"\n", 1)[0]
-          print(f"first line (repr, up to 200 bytes): {first_nl[:200]!r}", file=sys.stderr)
-
           root = os.path.join("datasets", "stocks", ticker_lower)
           rows_by_year = {}
-          with open(path, "r", newline="") as f:
-              r = csv.DictReader(f)
-              fieldnames = r.fieldnames
-              if not fieldnames:
-                  print("empty or headerless CSV", file=sys.stderr)
-                  sys.exit(1)
-              fn = [x.strip() for x in fieldnames]
-              print(f"CSV fieldnames: {fn}", file=sys.stderr)
-              date_key = "date" if "date" in fn else (fn[0] if fn else None)
-              if not date_key:
-                  print("could not resolve date column", file=sys.stderr)
-                  sys.exit(1)
-              for row in r:
-                  d = (row.get(date_key) or "").strip()
-                  if len(d) < 4:
-                      continue
-                  y = d[:4]
-                  if not y.isdigit():
-                      continue
-                  rows_by_year.setdefault(y, []).append(row)
+          r = csv.DictReader(sys.stdin)
+          fieldnames = r.fieldnames
+          if not fieldnames:
+              print("empty or headerless CSV", file=sys.stderr)
+              sys.exit(1)
+          fn = [f.strip() for f in fieldnames]
+          date_key = "date" if "date" in fn else (fn[0] if fn else None)
+          if not date_key:
+              print("could not resolve date column", file=sys.stderr)
+              sys.exit(1)
+          for row in r:
+              d = (row.get(date_key) or "").strip()
+              if len(d) < 4:
+                  continue
+              y = d[:4]
+              if not y.isdigit():
+                  continue
+              rows_by_year.setdefault(y, []).append(row)
           if not rows_by_year:
               print("no data rows after parse", file=sys.stderr)
               sys.exit(1)
           for y in sorted(rows_by_year.keys()):
               ydir = os.path.join(root, y)
               os.makedirs(ydir, exist_ok=True)
-              out_path = os.path.join(ydir, "ohlcv.csv")
-              with open(out_path, "w", newline="") as f:
+              path = os.path.join(ydir, "ohlcv.csv")
+              with open(path, "w", newline="") as f:
                   w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
                   w.writeheader()
                   w.writerows(rows_by_year[y])
-              print("wrote", out_path, f"({len(rows_by_year[y])} rows)")
+              print("wrote", path, f"({len(rows_by_year[y])} rows)")
           PY
 
       - name: List output tree (no commit)
+        if: success()
         run: |
           set -x
-          TICKER_LOWER="${{ steps.ticker.outputs.lower }}"
-          find "datasets/stocks/${TICKER_LOWER}" -type f -name 'ohlcv.csv' | sort | head -20
-          find "datasets/stocks/${TICKER_LOWER}" -type f -name 'ohlcv.csv' | wc -l
+          TICKER_LOWER=$(echo "${{ github.event_name == 'workflow_dispatch' && github.event.inputs.ticker || 'AAPL' }}" | tr '[:upper:]' '[:lower:]')
+          find "datasets/stocks/${TICKER_LOWER}" -type f -name 'ohlcv.csv' 2>/dev/null | sort | head -20 || true
+          find "datasets/stocks/${TICKER_LOWER}" -type f -name 'ohlcv.csv' 2>/dev/null | wc -l
