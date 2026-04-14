@@ -1,0 +1,96 @@
+name: Stocks OHLCV history
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: Symbol to fetch; writes datasets/stocks/<ticker>/<year>/ohlcv.csv for each year in the series.
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download latest macrotrends release
+        run: |
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("macrotrends-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'macrotrends' \
+            --output ./macrotrends
+          chmod +x ./macrotrends
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Full history by year
+        env:
+          TICKER_INPUT: ${{ github.event.inputs.ticker }}
+        run: |
+          set -euo pipefail
+          TICKER=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -z "$TICKER" ]; then
+            echo "::error::ticker input is empty"
+            exit 1
+          fi
+          TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
+          TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
+          ROOT="datasets/stocks/${TICKER_LOWER}"
+          mkdir -p "$ROOT"
+          echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
+          ./macrotrends "$TICKER_UPPER" | python3 - "$TICKER_LOWER" << 'PY'
+          import csv
+          import os
+          import sys
+
+          ticker_lower = sys.argv[1]
+          root = os.path.join("datasets", "stocks", ticker_lower)
+          rows_by_year = {}
+          r = csv.DictReader(sys.stdin)
+          fieldnames = r.fieldnames
+          if not fieldnames:
+              print("empty or headerless CSV", file=sys.stderr)
+              sys.exit(1)
+          fn = [f.strip() for f in fieldnames]
+          date_key = "date" if "date" in fn else (fn[0] if fn else None)
+          if not date_key:
+              print("could not resolve date column", file=sys.stderr)
+              sys.exit(1)
+          for row in r:
+              d = (row.get(date_key) or "").strip()
+              if len(d) < 4:
+                  continue
+              y = d[:4]
+              if not y.isdigit():
+                  continue
+              rows_by_year.setdefault(y, []).append(row)
+          if not rows_by_year:
+              print("no data rows after parse", file=sys.stderr)
+              sys.exit(1)
+          for y in sorted(rows_by_year.keys()):
+              ydir = os.path.join(root, y)
+              os.makedirs(ydir, exist_ok=True)
+              path = os.path.join(ydir, "ohlcv.csv")
+              with open(path, "w", newline="") as f:
+                  w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
+                  w.writeheader()
+                  w.writerows(rows_by_year[y])
+              print("wrote", path, f"({len(rows_by_year[y])} rows)")
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datasets/stocks/
+          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv history" && git pull --rebase origin main && git push)
