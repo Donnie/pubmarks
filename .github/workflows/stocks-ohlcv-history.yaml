@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: Symbol to fetch; writes datasets/stocks/<ticker>/<year>/ohlcv.csv for each year in the series.
+        description: "Single Ticker to fetch as found on NYSE for e.g. MSFT"
         required: true
         type: string
 
