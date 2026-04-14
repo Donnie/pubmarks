@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "Single Ticker to fetch as found on NYSE, for e.g. MSFT"
+        description: "One or more tickers (comma-separated), e.g. MSFT,AAPL. Existing datasets/stocks/<ticker> dirs are skipped. Fetches run one after another with a 3s gap."
         required: true
         type: string
 
@@ -38,32 +38,59 @@ jobs:
           TICKER_INPUT: ${{ github.event.inputs.ticker }}
         run: |
           set -euo pipefail
-          TICKER=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-          if [ -z "$TICKER" ]; then
+          TICKER_INPUT_TRIMMED=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -z "$TICKER_INPUT_TRIMMED" ]; then
             echo "::error::ticker input is empty"
             exit 1
           fi
-          TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
-          TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
-          ROOT="datasets/stocks/${TICKER_LOWER}"
-          mkdir -p "$ROOT"
-          echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
-          OUT="$RUNNER_TEMP/macrotrends.stdout"
-          ERR="$RUNNER_TEMP/macrotrends.stderr"
-          set +e
-          ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
-          mt=$?
-          set -e
-          if [ "$mt" -ne 0 ]; then
-            echo "::error::./macrotrends exited with status $mt"
-            cat "$ERR" >&2 || true
-            exit "$mt"
-          fi
-          if [ ! -s "$OUT" ]; then
-            echo "::error::./macrotrends produced empty stdout"
+          IFS=',' read -ra TICKER_PARTS <<< "$TICKER_INPUT_TRIMMED"
+          NONEMPTY=0
+          for TICKER_RAW in "${TICKER_PARTS[@]}"; do
+            T=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            if [ -n "$T" ]; then
+              NONEMPTY=$((NONEMPTY + 1))
+            fi
+          done
+          if [ "$NONEMPTY" -eq 0 ]; then
+            echo "::error::no valid tickers in input (comma-separated list is empty)"
             exit 1
           fi
-          python3 - "$TICKER_LOWER" "$OUT" << 'PY'
+          NEED_SLEEP_BEFORE_FETCH=false
+          for TICKER_RAW in "${TICKER_PARTS[@]}"; do
+            TICKER=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+            if [ -z "$TICKER" ]; then
+              continue
+            fi
+            TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
+            TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
+            ROOT="datasets/stocks/${TICKER_LOWER}"
+            if [ -d "$ROOT" ]; then
+              echo "Skipping ${TICKER_UPPER}: directory already exists (${ROOT})"
+              continue
+            fi
+            if [ "$NEED_SLEEP_BEFORE_FETCH" = true ]; then
+              echo "Waiting 3s before fetching ${TICKER_UPPER}..."
+              sleep 3
+            fi
+            NEED_SLEEP_BEFORE_FETCH=true
+            mkdir -p "$ROOT"
+            echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
+            OUT="$RUNNER_TEMP/macrotrends.stdout"
+            ERR="$RUNNER_TEMP/macrotrends.stderr"
+            set +e
+            ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
+            mt=$?
+            set -e
+            if [ "$mt" -ne 0 ]; then
+              echo "::error::./macrotrends exited with status $mt for ${TICKER_UPPER}"
+              cat "$ERR" >&2 || true
+              exit "$mt"
+            fi
+            if [ ! -s "$OUT" ]; then
+              echo "::error::./macrotrends produced empty stdout for ${TICKER_UPPER}"
+              exit 1
+            fi
+            python3 - "$TICKER_LOWER" "$OUT" << 'PY'
           import csv
           import os
           import sys
@@ -104,6 +131,7 @@ jobs:
                   w.writerows(rows_by_year[y])
               print("wrote", out_path, f"({len(rows_by_year[y])} rows)")
           PY
+          done
 
       - name: Update README stocks table
         env:
