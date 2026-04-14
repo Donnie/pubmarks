@@ -19,20 +19,20 @@ Latest fundamental values including holding patterns, price and P/E Ratio.
 
 ### Stocks
 
-Daily OHLCV Data
+Daily OHLCV and Quarterly P/E ratio, one CSV per calendar year.
 
-| Ticker | First year | Last year |
-| ------ | ---------- | --------- |
-| AAPL | [1980](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/1980/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/2026/ohlcv.csv) |
-| ADBE | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/2026/ohlcv.csv) |
-| GOOG | [2004](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2004/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2026/ohlcv.csv) |
-| INTU | [1993](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/1993/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/2026/ohlcv.csv) |
-| META | [2012](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2012/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2026/ohlcv.csv) |
-| MSFT | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/2026/ohlcv.csv) |
-| NVDA | [1999](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/1999/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/2026/ohlcv.csv) |
-| RMD | [1995](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/1995/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/2026/ohlcv.csv) |
-| TSLA | [2010](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2010/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2026/ohlcv.csv) |
-| TSM | [1997](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/1997/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/2026/ohlcv.csv) |
+| Ticker | OHLCV (first) | OHLCV (last) | P/E (first) | P/E (last) |
+| ------ | ------------- | ------------ | ----------- | ---------- |
+| AAPL | [1980](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/1980/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/aapl/2026/peratio.csv) |
+| ADBE | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/2026/peratio.csv) |
+| GOOG | [2004](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2004/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/goog/2026/peratio.csv) |
+| INTU | [1993](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/1993/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/2026/peratio.csv) |
+| META | [2012](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2012/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2026/ohlcv.csv) | [2013](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2013/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/meta/2026/peratio.csv) |
+| MSFT | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/2026/peratio.csv) |
+| NVDA | [1999](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/1999/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/nvda/2026/peratio.csv) |
+| RMD | [1995](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/1995/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/rmd/2026/peratio.csv) |
+| TSLA | [2010](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2010/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2026/ohlcv.csv) | [2011](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2011/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsla/2026/peratio.csv) |
+| TSM | [1997](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/1997/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/2026/ohlcv.csv) | [2006](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/2006/peratio.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/tsm/2026/peratio.csv) |
 
 
 ### Delivery

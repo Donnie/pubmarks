@@ -1,4 +1,4 @@
-name: Stocks update daily
+name: Stocks OHLCV update daily
 
 on:
   schedule:
@@ -34,9 +34,21 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Discover tickers and refresh current-year OHLCV and P/E
+      - name: Discover tickers and refresh current-year OHLCV
         run: |
           set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          commit_if_staged() {
+            local msg="$1"
+            if git diff --staged --quiet; then
+              echo "No git changes to commit (${msg})"
+            else
+              git commit -m "$msg"
+              git pull --rebase origin main
+              git push
+            fi
+          }
           YEAR="${{ steps.year.outputs.year }}"
           ROOT="datasets/stocks"
           if [ ! -d "$ROOT" ]; then
@@ -59,15 +71,6 @@ jobs:
             echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
             mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
             ./macrotrends ohlcv "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
-            echo "Waiting 3s before P/E fetch for ${ticker}..."
-            sleep 3
-            echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
-            ./macrotrends peratio "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
+            git add "${ROOT}/${ticker_lower}"
+            commit_if_staged "chore: ${ticker_lower} ohlcv daily update"
           done
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/stocks/
-          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv and peratio update" && git pull --rebase origin main && git push)
