@@ -18,8 +18,8 @@ A repository of daily updated datasets with data from the public markets.
 ### Stocks
 
 
-| Ticker | First year                                                                              | Last year                                                                               |
-| ------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Ticker | First year | Last year |
+| ------ | ---------- | --------- |
 | ADBE   | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/adbe/2026/ohlcv.csv) |
 | INTU   | [1993](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/1993/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/intu/2026/ohlcv.csv) |
 | MSFT   | [1986](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/1986/ohlcv.csv) | [2026](https://cdn.jsdelivr.net/gh/Donnie/pubmarks/datasets/stocks/msft/2026/ohlcv.csv) |
