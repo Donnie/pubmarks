@@ -178,9 +178,15 @@ jobs:
               sys.exit(1)
 
           j = start + 1
-          while j < len(lines) and lines[j].strip() == "":
+          while j < len(lines):
+              line = lines[j]
+              if line.strip() == "":
+                  j += 1
+                  continue
+              if "| Ticker |" in line and line.lstrip().startswith("|"):
+                  break
               j += 1
-          if j >= len(lines) or "| Ticker |" not in lines[j]:
+          else:
               print("README.md: stocks table not found after ### Stocks", file=sys.stderr)
               sys.exit(1)
 
