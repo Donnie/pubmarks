@@ -48,15 +48,22 @@ jobs:
                   path = os.path.join(root, name)
                   if not os.path.isdir(path):
                       continue
-                  years = sorted(
-                      y
-                      for y in os.listdir(path)
-                      if len(y) == 4
-                      and y.isdigit()
-                      and os.path.isdir(os.path.join(path, y))
-                  )
-                  if years:
-                      entries.append((name.upper(), name.lower(), years[0], years[-1]))
+                  ohlcv_years = []
+                  peratio_years = []
+                  for y in os.listdir(path):
+                      if len(y) != 4 or not y.isdigit():
+                          continue
+                      ydir = os.path.join(path, y)
+                      if not os.path.isdir(ydir):
+                          continue
+                      if os.path.isfile(os.path.join(ydir, "ohlcv.csv")):
+                          ohlcv_years.append(y)
+                      if os.path.isfile(os.path.join(ydir, "peratio.csv")):
+                          peratio_years.append(y)
+                  ohlcv_years.sort()
+                  peratio_years.sort()
+                  if ohlcv_years or peratio_years:
+                      entries.append((name.upper(), name.lower(), ohlcv_years, peratio_years))
           entries.sort(key=lambda x: x[0])
 
           with open(readme_path, encoding="utf-8") as f:
@@ -88,20 +95,32 @@ jobs:
           while k < len(lines) and lines[k].lstrip().startswith("|"):
               k += 1
 
-          def row(t_upper: str, t_lower: str, y0: str, y1: str) -> str:
+          def link_cell(base: str, year: str, filename: str) -> str:
+              return f"[{year}]({base}/{year}/{filename})"
+
+          def row(
+              t_upper: str,
+              t_lower: str,
+              ohlcv_years: list,
+              peratio_years: list,
+          ) -> str:
               base = f"https://cdn.jsdelivr.net/gh/{repo}/datasets/stocks/{t_lower}"
-              return (
-                  f"| {t_upper} | "
-                  f"[{y0}]({base}/{y0}/ohlcv.csv) | "
-                  f"[{y1}]({base}/{y1}/ohlcv.csv) |\n"
-              )
+              o0 = o1 = "—"
+              if ohlcv_years:
+                  o0 = link_cell(base, ohlcv_years[0], "ohlcv.csv")
+                  o1 = link_cell(base, ohlcv_years[-1], "ohlcv.csv")
+              p0 = p1 = "—"
+              if peratio_years:
+                  p0 = link_cell(base, peratio_years[0], "peratio.csv")
+                  p1 = link_cell(base, peratio_years[-1], "peratio.csv")
+              return f"| {t_upper} | {o0} | {o1} | {p0} | {p1} |\n"
 
           new_table = [
-              "| Ticker | First year | Last year |\n",
-              "| ------ | ---------- | --------- |\n",
+              "| Ticker | OHLCV (first) | OHLCV (last) | P/E (first) | P/E (last) |\n",
+              "| ------ | ------------- | ------------ | ----------- | ---------- |\n",
           ]
-          for t_upper, t_lower, y0, y1 in entries:
-              new_table.append(row(t_upper, t_lower, y0, y1))
+          for t_upper, t_lower, oy, py in entries:
+              new_table.append(row(t_upper, t_lower, oy, py))
 
           new_lines = lines[:j] + new_table + lines[k:]
           with open(readme_path, "w", encoding="utf-8", newline="\n") as f:
