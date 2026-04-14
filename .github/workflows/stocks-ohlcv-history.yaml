@@ -48,44 +48,61 @@ jobs:
           ROOT="datasets/stocks/${TICKER_LOWER}"
           mkdir -p "$ROOT"
           echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
-          ./macrotrends "$TICKER_UPPER" | python3 - "$TICKER_LOWER" << 'PY'
+          OUT="$RUNNER_TEMP/macrotrends.stdout"
+          ERR="$RUNNER_TEMP/macrotrends.stderr"
+          set +e
+          ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
+          mt=$?
+          set -e
+          if [ "$mt" -ne 0 ]; then
+            echo "::error::./macrotrends exited with status $mt"
+            cat "$ERR" >&2 || true
+            exit "$mt"
+          fi
+          if [ ! -s "$OUT" ]; then
+            echo "::error::./macrotrends produced empty stdout"
+            exit 1
+          fi
+          python3 - "$TICKER_LOWER" "$OUT" << 'PY'
           import csv
           import os
           import sys
 
           ticker_lower = sys.argv[1]
+          path = sys.argv[2]
           root = os.path.join("datasets", "stocks", ticker_lower)
           rows_by_year = {}
-          r = csv.DictReader(sys.stdin)
-          fieldnames = r.fieldnames
-          if not fieldnames:
-              print("empty or headerless CSV", file=sys.stderr)
-              sys.exit(1)
-          fn = [f.strip() for f in fieldnames]
-          date_key = "date" if "date" in fn else (fn[0] if fn else None)
-          if not date_key:
-              print("could not resolve date column", file=sys.stderr)
-              sys.exit(1)
-          for row in r:
-              d = (row.get(date_key) or "").strip()
-              if len(d) < 4:
-                  continue
-              y = d[:4]
-              if not y.isdigit():
-                  continue
-              rows_by_year.setdefault(y, []).append(row)
+          with open(path, newline="") as f:
+              r = csv.DictReader(f)
+              fieldnames = r.fieldnames
+              if not fieldnames:
+                  print("empty or headerless CSV", file=sys.stderr)
+                  sys.exit(1)
+              fn = [x.strip() for x in fieldnames]
+              date_key = "date" if "date" in fn else (fn[0] if fn else None)
+              if not date_key:
+                  print("could not resolve date column", file=sys.stderr)
+                  sys.exit(1)
+              for row in r:
+                  d = (row.get(date_key) or "").strip()
+                  if len(d) < 4:
+                      continue
+                  y = d[:4]
+                  if not y.isdigit():
+                      continue
+                  rows_by_year.setdefault(y, []).append(row)
           if not rows_by_year:
               print("no data rows after parse", file=sys.stderr)
               sys.exit(1)
           for y in sorted(rows_by_year.keys()):
               ydir = os.path.join(root, y)
               os.makedirs(ydir, exist_ok=True)
-              path = os.path.join(ydir, "ohlcv.csv")
-              with open(path, "w", newline="") as f:
+              out_path = os.path.join(ydir, "ohlcv.csv")
+              with open(out_path, "w", newline="") as f:
                   w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
                   w.writeheader()
                   w.writerows(rows_by_year[y])
-              print("wrote", path, f"({len(rows_by_year[y])} rows)")
+              print("wrote", out_path, f"({len(rows_by_year[y])} rows)")
           PY
 
       - name: Commit and push
