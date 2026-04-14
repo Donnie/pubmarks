@@ -3,7 +3,8 @@ name: Datasets jsDelivr purge and warm
 on:
   workflow_run:
     workflows:
-      - Stocks update daily
+      - Stocks OHLCV update daily
+      - Stocks P/E update monthly
       - ETFs update daily
       - Stocks history
     types:
@@ -27,12 +28,13 @@ jobs:
       - name: Sync to latest on branch
         run: git fetch origin "${{ github.event.workflow_run.head_branch }}" && git reset --hard "origin/${{ github.event.workflow_run.head_branch }}"
 
-      - name: Purge and warm jsDelivr for CSV and JSON (current year paths)
+      - name: Purge and warm jsDelivr for CSV and JSON (current UTC year paths)
         env:
           REPO: ${{ github.repository }}
           TRIGGER_WORKFLOW: ${{ github.event.workflow_run.name }}
         run: |
           set -euo pipefail
+          YEAR="$(date -u +%Y)"
           n=0
           process_files() {
             while IFS= read -r -d '' f; do
@@ -51,9 +53,17 @@ jobs:
               echo "Targeting datasets/etfs/**/latest.json"
               process_files < <(find ./datasets/etfs -type f -name 'latest.json' -print0)
               ;;
-            "Stocks update daily"|"Stocks history")
-              echo "Targeting datasets/stocks CSV/JSON under paths containing 2026"
-              process_files < <(find ./datasets/stocks -type f \( -name '*.csv' -o -name '*.json' \) -path '*2026*' -print0)
+            "Stocks OHLCV update daily")
+              echo "Targeting ohlcv.csv under datasets/stocks (UTC year ${YEAR})"
+              process_files < <(find ./datasets/stocks -type f -name 'ohlcv.csv' -path "*${YEAR}*" -print0)
+              ;;
+            "Stocks P/E update monthly")
+              echo "Targeting peratio.csv under datasets/stocks (UTC year ${YEAR})"
+              process_files < <(find ./datasets/stocks -type f -name 'peratio.csv' -path "*${YEAR}*" -print0)
+              ;;
+            "Stocks history")
+              echo "Targeting datasets/stocks CSV/JSON under paths containing UTC year ${YEAR}"
+              process_files < <(find ./datasets/stocks -type f \( -name '*.csv' -o -name '*.json' \) -path "*${YEAR}*" -print0)
               ;;
             *)
               echo "::error::Unexpected triggering workflow: ${TRIGGER_WORKFLOW}"

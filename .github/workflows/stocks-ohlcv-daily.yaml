@@ -1,4 +1,4 @@
-name: Stocks update daily
+name: Stocks OHLCV update daily
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Discover tickers and refresh current-year OHLCV and P/E
+      - name: Discover tickers and refresh current-year OHLCV
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -73,10 +73,4 @@ jobs:
             ./macrotrends ohlcv "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
             git add "${ROOT}/${ticker_lower}"
             commit_if_staged "chore: ${ticker_lower} ohlcv daily update"
-            echo "Waiting 3s before P/E fetch for ${ticker}..."
-            sleep 3
-            echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
-            ./macrotrends peratio "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
-            git add "${ROOT}/${ticker_lower}"
-            commit_if_staged "chore: ${ticker_lower} peratio daily update"
           done

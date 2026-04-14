@@ -1,0 +1,76 @@
+name: Stocks P/E update monthly
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Current year (UTC)
+        id: year
+        run: echo "year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
+
+      - name: Download latest macrotrends release
+        run: |
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("macrotrends-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'macrotrends' \
+            --output ./macrotrends
+          chmod +x ./macrotrends
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Discover tickers and refresh current-year P/E
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          commit_if_staged() {
+            local msg="$1"
+            if git diff --staged --quiet; then
+              echo "No git changes to commit (${msg})"
+            else
+              git commit -m "$msg"
+              git pull --rebase origin main
+              git push
+            fi
+          }
+          YEAR="${{ steps.year.outputs.year }}"
+          ROOT="datasets/stocks"
+          if [ ! -d "$ROOT" ]; then
+            echo "No ${ROOT}; nothing to update."
+            exit 0
+          fi
+          mapfile -t dirs < <(find "$ROOT" -mindepth 1 -maxdepth 1 -type d | sort)
+          if [ ${#dirs[@]} -eq 0 ]; then
+            echo "No ticker directories under ${ROOT}; nothing to update."
+            exit 0
+          fi
+          first=true
+          for dir in "${dirs[@]}"; do
+            ticker_lower=$(basename "$dir")
+            if [ "$first" != true ]; then
+              sleep 3
+            fi
+            first=false
+            ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
+            echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
+            mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
+            ./macrotrends peratio "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
+            git add "${ROOT}/${ticker_lower}"
+            commit_if_staged "chore: ${ticker_lower} peratio monthly update"
+          done
