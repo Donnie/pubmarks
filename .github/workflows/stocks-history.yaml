@@ -1,11 +1,12 @@
-name: Stocks OHLCV history
+name: Stocks history
 
 on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "One or more tickers (comma-separated), e.g. MSFT,AAPL."
-        required: true
+        description: "Optional. Comma-separated tickers (e.g. MSFT,AAPL). Leave empty to refresh full history for every ticker under datasets/stocks."
+        required: false
+        default: ""
         type: string
 
 permissions:
@@ -35,15 +36,33 @@ jobs:
 
       - name: Full history by year
         env:
-          TICKER_INPUT: ${{ github.event.inputs.ticker }}
+          TICKER_INPUT: ${{ github.event.inputs.ticker || '' }}
         run: |
           set -euo pipefail
-          TICKER_INPUT_TRIMMED=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-          if [ -z "$TICKER_INPUT_TRIMMED" ]; then
-            echo "::error::ticker input is empty"
-            exit 1
+          RAW="${TICKER_INPUT:-}"
+          TICKER_INPUT_TRIMMED=$(echo "$RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -n "$TICKER_INPUT_TRIMMED" ]; then
+            IFS=',' read -ra TICKER_PARTS <<< "$TICKER_INPUT_TRIMMED"
+            SKIP_EXISTING=true
+          else
+            STOCKS_ROOT="datasets/stocks"
+            if [ ! -d "$STOCKS_ROOT" ]; then
+              echo "::error::ticker input is empty and ${STOCKS_ROOT} does not exist"
+              exit 1
+            fi
+            mapfile -t ticker_dirs < <(find "$STOCKS_ROOT" -mindepth 1 -maxdepth 1 -type d | sort)
+            if [ ${#ticker_dirs[@]} -eq 0 ]; then
+              echo "::error::ticker input is empty and no ticker directories under ${STOCKS_ROOT}"
+              exit 1
+            fi
+            TICKER_PARTS=()
+            for d in "${ticker_dirs[@]}"; do
+              tl=$(basename "$d")
+              TICKER_PARTS+=("$(echo "$tl" | tr '[:lower:]' '[:upper:]')")
+            done
+            SKIP_EXISTING=false
+            echo "No ticker input; updating full history for ${#TICKER_PARTS[@]} ticker(s) from ${STOCKS_ROOT}"
           fi
-          IFS=',' read -ra TICKER_PARTS <<< "$TICKER_INPUT_TRIMMED"
           NONEMPTY=0
           for TICKER_RAW in "${TICKER_PARTS[@]}"; do
             T=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
@@ -52,10 +71,12 @@ jobs:
             fi
           done
           if [ "$NONEMPTY" -eq 0 ]; then
-            echo "::error::no valid tickers in input (comma-separated list is empty)"
+            echo "::error::no valid tickers (comma-separated list is empty)"
             exit 1
           fi
           NEED_SLEEP_BEFORE_FETCH=false
+          TOUCHED="${RUNNER_TEMP}/touched_stocks.txt"
+          : > "$TOUCHED"
           for TICKER_RAW in "${TICKER_PARTS[@]}"; do
             TICKER=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
             if [ -z "$TICKER" ]; then
@@ -64,7 +85,7 @@ jobs:
             TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
             TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
             ROOT="datasets/stocks/${TICKER_LOWER}"
-            if [ -d "$ROOT" ]; then
+            if [ "$SKIP_EXISTING" = true ] && [ -d "$ROOT" ]; then
               echo "Skipping ${TICKER_UPPER}: directory already exists (${ROOT})"
               continue
             fi
@@ -74,63 +95,42 @@ jobs:
             fi
             NEED_SLEEP_BEFORE_FETCH=true
             mkdir -p "$ROOT"
-            echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
-            OUT="$RUNNER_TEMP/macrotrends.stdout"
-            ERR="$RUNNER_TEMP/macrotrends.stderr"
+            echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv and peratio.csv"
+            OUT="$RUNNER_TEMP/macrotrends_ohlcv.stdout"
+            ERR="$RUNNER_TEMP/macrotrends_ohlcv.stderr"
             set +e
-            ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
+            ./macrotrends ohlcv "$TICKER_UPPER" >"$OUT" 2>"$ERR"
             mt=$?
             set -e
             if [ "$mt" -ne 0 ]; then
-              echo "::error::./macrotrends exited with status $mt for ${TICKER_UPPER}"
+              echo "::error::./macrotrends ohlcv exited with status $mt for ${TICKER_UPPER}"
               cat "$ERR" >&2 || true
               exit "$mt"
             fi
             if [ ! -s "$OUT" ]; then
-              echo "::error::./macrotrends produced empty stdout for ${TICKER_UPPER}"
+              echo "::error::./macrotrends ohlcv produced empty stdout for ${TICKER_UPPER}"
               exit 1
             fi
-            python3 - "$TICKER_LOWER" "$OUT" << 'PY'
-          import csv
-          import os
-          import sys
-
-          ticker_lower = sys.argv[1]
-          path = sys.argv[2]
-          root = os.path.join("datasets", "stocks", ticker_lower)
-          rows_by_year = {}
-          with open(path, newline="") as f:
-              r = csv.DictReader(f)
-              fieldnames = r.fieldnames
-              if not fieldnames:
-                  print("empty or headerless CSV", file=sys.stderr)
-                  sys.exit(1)
-              fn = [x.strip() for x in fieldnames]
-              date_key = "date" if "date" in fn else (fn[0] if fn else None)
-              if not date_key:
-                  print("could not resolve date column", file=sys.stderr)
-                  sys.exit(1)
-              for row in r:
-                  d = (row.get(date_key) or "").strip()
-                  if len(d) < 4:
-                      continue
-                  y = d[:4]
-                  if not y.isdigit():
-                      continue
-                  rows_by_year.setdefault(y, []).append(row)
-          if not rows_by_year:
-              print("no data rows after parse", file=sys.stderr)
-              sys.exit(1)
-          for y in sorted(rows_by_year.keys()):
-              ydir = os.path.join(root, y)
-              os.makedirs(ydir, exist_ok=True)
-              out_path = os.path.join(ydir, "ohlcv.csv")
-              with open(out_path, "w", newline="") as f:
-                  w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
-                  w.writeheader()
-                  w.writerows(rows_by_year[y])
-              print("wrote", out_path, f"({len(rows_by_year[y])} rows)")
-          PY
+            python3 scripts/python/split_stock_csv_by_year.py "$TICKER_LOWER" "$OUT" ohlcv.csv
+            echo "Waiting 3s before P/E fetch for ${TICKER_UPPER}..."
+            sleep 3
+            OUT_PE="$RUNNER_TEMP/macrotrends_peratio.stdout"
+            ERR_PE="$RUNNER_TEMP/macrotrends_peratio.stderr"
+            set +e
+            ./macrotrends peratio "$TICKER_UPPER" >"$OUT_PE" 2>"$ERR_PE"
+            mt=$?
+            set -e
+            if [ "$mt" -ne 0 ]; then
+              echo "::error::./macrotrends peratio exited with status $mt for ${TICKER_UPPER}"
+              cat "$ERR_PE" >&2 || true
+              exit "$mt"
+            fi
+            if [ ! -s "$OUT_PE" ]; then
+              echo "::error::./macrotrends peratio produced empty stdout for ${TICKER_UPPER}"
+              exit 1
+            fi
+            python3 scripts/python/split_stock_csv_by_year.py "$TICKER_LOWER" "$OUT_PE" peratio.csv
+            echo "$TICKER_LOWER" >> "$TOUCHED"
           done
 
       - name: Update README stocks table
@@ -219,5 +219,29 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/stocks/ README.md
-          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv history" && git pull --rebase origin main && git push)
+          git add datasets/stocks/ README.md scripts/python/split_stock_csv_by_year.py
+          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv and peratio history" && git pull --rebase origin main && git push)
+
+      - name: Purge and warm jsDelivr cache for new stocks OHLCV and P/E
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TOUCHED="${RUNNER_TEMP}/touched_stocks.txt"
+          if [ ! -s "$TOUCHED" ]; then
+            echo "No tickers touched; skip purge/warm."
+            exit 0
+          fi
+          shopt -s nullglob
+          while IFS= read -r t; do
+            [ -z "$t" ] && continue
+            for csv in datasets/stocks/${t}/*/{ohlcv,peratio}.csv; do
+              path="$csv"
+              purge_url="https://purge.jsdelivr.net/gh/${REPO}/${path}"
+              cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${path}"
+              echo "Purging ${purge_url}"
+              curl -fsSL -o /dev/null -sS -X GET "$purge_url"
+              echo "Warming ${cdn_url}"
+              curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
+            done
+          done < <(sort -u "$TOUCHED")

@@ -1,4 +1,4 @@
-name: Stocks OHLCV update daily
+name: Stocks update daily
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Discover tickers and refresh current-year OHLCV
+      - name: Discover tickers and refresh current-year OHLCV and P/E
         run: |
           set -euo pipefail
           YEAR="${{ steps.year.outputs.year }}"
@@ -58,7 +58,11 @@ jobs:
             ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
             echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
             mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
-            ./macrotrends "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+            ./macrotrends ohlcv "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+            echo "Waiting 3s before P/E fetch for ${ticker}..."
+            sleep 3
+            echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
+            ./macrotrends peratio "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
           done
 
       - name: Commit and push
@@ -66,18 +70,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datasets/stocks/
-          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv update" && git pull --rebase origin main && git push)
+          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv and peratio update" && git pull --rebase origin main && git push)
 
-      - name: Purge and warm jsDelivr cache for stocks current-year OHLCV
+      - name: Purge and warm jsDelivr cache for stocks current-year OHLCV and P/E
         env:
           REPO: ${{ github.repository }}
           YEAR: ${{ steps.year.outputs.year }}
         run: |
           set -euo pipefail
           shopt -s nullglob
-          for csv in datasets/stocks/*/"${YEAR}"/ohlcv.csv; do
+          for csv in datasets/stocks/*/"${YEAR}"/{ohlcv,peratio}.csv; do
             ticker=$(basename "$(dirname "$(dirname "$csv")")")
-            path="datasets/stocks/${ticker}/${YEAR}/ohlcv.csv"
+            kind=$(basename "$csv")
+            path="datasets/stocks/${ticker}/${YEAR}/${kind}"
             purge_url="https://purge.jsdelivr.net/gh/${REPO}/${path}"
             cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${path}"
             echo "Purging ${purge_url}"
