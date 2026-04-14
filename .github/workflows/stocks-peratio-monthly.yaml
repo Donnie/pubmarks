@@ -1,9 +1,15 @@
-name: Stocks P/E update monthly
+name: Stocks P/E update weekly
 
 on:
   schedule:
-    - cron: "0 0 1 * *"
+    # Saturday
+    - cron: "0 0 * * 6"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Run every ticker even if its peratio was updated within the last 7 days"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,6 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Current year (UTC)
         id: year
@@ -49,6 +56,11 @@ jobs:
               git push
             fi
           }
+          FORCE_ALL=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_ALL=true
+          fi
+
           YEAR="${{ steps.year.outputs.year }}"
           ROOT="datasets/stocks"
           if [ ! -d "$ROOT" ]; then
@@ -60,17 +72,32 @@ jobs:
             echo "No ticker directories under ${ROOT}; nothing to update."
             exit 0
           fi
-          first=true
+          prev_ran=false
           for dir in "${dirs[@]}"; do
             ticker_lower=$(basename "$dir")
-            if [ "$first" != true ]; then
+            ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
+
+            if [ "$FORCE_ALL" != true ]; then
+              last_ts=$(git log -1 --format=%ct -- ":(glob)datasets/stocks/${ticker_lower}/**/peratio.csv" 2>/dev/null || true)
+              last_ts=$(echo "$last_ts" | tr -d '[:space:]')
+              if [ -n "$last_ts" ]; then
+                now=$(date +%s)
+                week_ago=$((now - 7 * 24 * 3600))
+                if [ "$last_ts" -gt "$week_ago" ]; then
+                  echo "Skipping ${ticker}: peratio last committed within 7 days ($(date -u -d "@$last_ts" +%Y-%m-%dT%H:%M:%SZ))"
+                  continue
+                fi
+              fi
+            fi
+
+            if [ "$prev_ran" = true ]; then
               sleep 3
             fi
-            first=false
-            ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
+            prev_ran=true
+
             echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
             mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
             ./macrotrends peratio "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/peratio.csv"
             git add "${ROOT}/${ticker_lower}"
-            commit_if_staged "chore: ${ticker_lower} peratio monthly update"
+            commit_if_staged "chore: ${ticker_lower} peratio weekly update"
           done
