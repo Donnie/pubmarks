@@ -16,7 +16,7 @@ func newRootCmd() *cobra.Command {
 
 Subcommands:
   ohlcv   daily OHLCV CSV to stdout
-  peratio price/earnings ratio data (placeholder)`,
+  peratio historical P/E table as CSV to stdout`,
 		Args:          cobra.NoArgs,
 		SilenceErrors: true,
 		SilenceUsage:  true,
@@ -37,7 +37,8 @@ func errNeedSubcommand(cmd *cobra.Command) error {
 	fmt.Fprintf(&b, "Examples:\n")
 	fmt.Fprintf(&b, "  %s ohlcv AAPL\n", path)
 	fmt.Fprintf(&b, "  %s ohlcv MSFT 2024\n", path)
-	fmt.Fprintf(&b, "  TICKER=AAPL %s ohlcv 2024\n\n", path)
+	fmt.Fprintf(&b, "  TICKER=AAPL %s ohlcv 2024\n", path)
+	fmt.Fprintf(&b, "  %s peratio AAPL\n\n", path)
 	fmt.Fprintf(&b, "Run \"%s --help\" for full usage.\n", path)
 	return errors.New(strings.TrimRight(b.String(), "\n"))
 }

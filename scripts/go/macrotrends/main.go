@@ -1,4 +1,3 @@
-// Command macrotrends provides MacroTrends scrapers (ohlcv, peratio placeholder).
 package main
 
 import (
