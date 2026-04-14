@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows:
       - Stocks OHLCV update daily
-      - Stocks P/E update monthly
+      - Stocks P/E update weekly
       - ETFs update daily
       - Stocks history
     types:
@@ -57,7 +57,7 @@ jobs:
               echo "Targeting ohlcv.csv under datasets/stocks (UTC year ${YEAR})"
               process_files < <(find ./datasets/stocks -type f -name 'ohlcv.csv' -path "*${YEAR}*" -print0)
               ;;
-            "Stocks P/E update monthly")
+            "Stocks P/E update weekly")
               echo "Targeting peratio.csv under datasets/stocks (UTC year ${YEAR})"
               process_files < <(find ./datasets/stocks -type f -name 'peratio.csv' -path "*${YEAR}*" -print0)
               ;;
