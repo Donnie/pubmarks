@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "Single Ticker to fetch as found on NYSE for e.g. MSFT"
+        description: "Single Ticker to fetch as found on NYSE, for e.g. MSFT"
         required: true
         type: string
 
