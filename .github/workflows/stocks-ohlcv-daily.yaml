@@ -58,7 +58,7 @@ jobs:
             ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
             echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
             mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
-            ./macrotrends "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+            ./macrotrends --ohlcv "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
           done
 
       - name: Commit and push

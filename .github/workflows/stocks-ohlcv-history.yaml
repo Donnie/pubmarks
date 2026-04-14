@@ -78,7 +78,7 @@ jobs:
             OUT="$RUNNER_TEMP/macrotrends.stdout"
             ERR="$RUNNER_TEMP/macrotrends.stderr"
             set +e
-            ./macrotrends "$TICKER_UPPER" >"$OUT" 2>"$ERR"
+            ./macrotrends --ohlcv "$TICKER_UPPER" >"$OUT" 2>"$ERR"
             mt=$?
             set -e
             if [ "$mt" -ne 0 ]; then
