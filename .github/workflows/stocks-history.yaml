@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "One or more tickers (comma-separated), e.g. MSFT,AAPL."
-        required: true
+        description: "Optional. Comma-separated tickers (e.g. MSFT,AAPL). Leave empty to refresh full history for every ticker under datasets/stocks."
+        required: false
+        default: ""
         type: string
 
 permissions:
@@ -35,15 +36,33 @@ jobs:
 
       - name: Full history by year
         env:
-          TICKER_INPUT: ${{ github.event.inputs.ticker }}
+          TICKER_INPUT: ${{ github.event.inputs.ticker || '' }}
         run: |
           set -euo pipefail
-          TICKER_INPUT_TRIMMED=$(echo "$TICKER_INPUT" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-          if [ -z "$TICKER_INPUT_TRIMMED" ]; then
-            echo "::error::ticker input is empty"
-            exit 1
+          RAW="${TICKER_INPUT:-}"
+          TICKER_INPUT_TRIMMED=$(echo "$RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          if [ -n "$TICKER_INPUT_TRIMMED" ]; then
+            IFS=',' read -ra TICKER_PARTS <<< "$TICKER_INPUT_TRIMMED"
+            SKIP_EXISTING=true
+          else
+            STOCKS_ROOT="datasets/stocks"
+            if [ ! -d "$STOCKS_ROOT" ]; then
+              echo "::error::ticker input is empty and ${STOCKS_ROOT} does not exist"
+              exit 1
+            fi
+            mapfile -t ticker_dirs < <(find "$STOCKS_ROOT" -mindepth 1 -maxdepth 1 -type d | sort)
+            if [ ${#ticker_dirs[@]} -eq 0 ]; then
+              echo "::error::ticker input is empty and no ticker directories under ${STOCKS_ROOT}"
+              exit 1
+            fi
+            TICKER_PARTS=()
+            for d in "${ticker_dirs[@]}"; do
+              tl=$(basename "$d")
+              TICKER_PARTS+=("$(echo "$tl" | tr '[:lower:]' '[:upper:]')")
+            done
+            SKIP_EXISTING=false
+            echo "No ticker input; updating full history for ${#TICKER_PARTS[@]} ticker(s) from ${STOCKS_ROOT}"
           fi
-          IFS=',' read -ra TICKER_PARTS <<< "$TICKER_INPUT_TRIMMED"
           NONEMPTY=0
           for TICKER_RAW in "${TICKER_PARTS[@]}"; do
             T=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
@@ -52,7 +71,7 @@ jobs:
             fi
           done
           if [ "$NONEMPTY" -eq 0 ]; then
-            echo "::error::no valid tickers in input (comma-separated list is empty)"
+            echo "::error::no valid tickers (comma-separated list is empty)"
             exit 1
           fi
           NEED_SLEEP_BEFORE_FETCH=false
@@ -66,7 +85,7 @@ jobs:
             TICKER_LOWER=$(echo "$TICKER" | tr '[:upper:]' '[:lower:]')
             TICKER_UPPER=$(echo "$TICKER" | tr '[:lower:]' '[:upper:]')
             ROOT="datasets/stocks/${TICKER_LOWER}"
-            if [ -d "$ROOT" ]; then
+            if [ "$SKIP_EXISTING" = true ] && [ -d "$ROOT" ]; then
               echo "Skipping ${TICKER_UPPER}: directory already exists (${ROOT})"
               continue
             fi
