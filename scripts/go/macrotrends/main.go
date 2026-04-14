@@ -27,6 +27,30 @@ const (
 
 var stockDataDownloadRE = regexp.MustCompile(`stock_data_download\.php\?s=([^&']+)&t=([^']+)`)
 
+func debugOn() bool {
+	switch strings.TrimSpace(strings.ToLower(os.Getenv("MACROTRENDS_DEBUG"))) {
+	case "1", "true", "yes":
+		return true
+	default:
+		return false
+	}
+}
+
+func debugf(format string, args ...any) {
+	if !debugOn() {
+		return
+	}
+	log.Printf("debug: "+format, args...)
+}
+
+func debugTruncate(s string, max int) string {
+	s = strings.ReplaceAll(s, "\r", " ")
+	if len(s) <= max {
+		return s
+	}
+	return s[:max] + "…"
+}
+
 type candle struct {
 	date   string
 	open   float64
@@ -57,6 +81,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	debugf("fetched body: %d bytes, prefix %q", len(csvBytes), debugTruncate(string(csvBytes), 400))
 	rows, err := parseMacroTrendsCSV(strings.NewReader(string(csvBytes)))
 	if err != nil {
 		log.Fatal(err)
@@ -219,14 +244,22 @@ func downloadURLFromChartHTML(chartHTML string) (string, error) {
 
 func fetchOHLCVCSV(ctx context.Context, client *http.Client, symbol string, yearsBack *int) ([]byte, error) {
 	chartURL := chartIframeURL(symbol, yearsBack)
+	debugf("GET chart iframe: %s", chartURL)
 	html, err := fetchHTML(ctx, client, chartURL)
 	if err != nil {
 		return nil, err
 	}
+	debugf("chart HTML: %d bytes, prefix %q", len(html), debugTruncate(html, 500))
 	dl, err := downloadURLFromChartHTML(html)
 	if err != nil {
+		sufStart := len(html) - 600
+		if sufStart < 0 {
+			sufStart = 0
+		}
+		debugf("could not find download URL in chart HTML; suffix %q", debugTruncate(html[sufStart:], 600))
 		return nil, err
 	}
+	debugf("download URL: %s", dl)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, dl, nil)
 	if err != nil {
 		return nil, err
@@ -243,6 +276,9 @@ func fetchOHLCVCSV(ctx context.Context, client *http.Client, symbol string, year
 	if err != nil {
 		return nil, err
 	}
+	ct := resp.Header.Get("Content-Type")
+	debugf("download GET: status=%s content-type=%q body=%d bytes prefix %q",
+		resp.Status, ct, len(body), debugTruncate(string(body), 400))
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
 		return nil, fmt.Errorf("GET %s: %s", dl, resp.Status)
 	}
