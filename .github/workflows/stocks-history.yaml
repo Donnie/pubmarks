@@ -56,6 +56,8 @@ jobs:
             exit 1
           fi
           NEED_SLEEP_BEFORE_FETCH=false
+          TOUCHED="${RUNNER_TEMP}/touched_stocks.txt"
+          : > "$TOUCHED"
           for TICKER_RAW in "${TICKER_PARTS[@]}"; do
             TICKER=$(echo "$TICKER_RAW" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
             if [ -z "$TICKER" ]; then
@@ -74,63 +76,42 @@ jobs:
             fi
             NEED_SLEEP_BEFORE_FETCH=true
             mkdir -p "$ROOT"
-            echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv"
-            OUT="$RUNNER_TEMP/macrotrends.stdout"
-            ERR="$RUNNER_TEMP/macrotrends.stderr"
+            echo "Fetching full series for ${TICKER_UPPER}, splitting into ${ROOT}/<year>/ohlcv.csv and peratio.csv"
+            OUT="$RUNNER_TEMP/macrotrends_ohlcv.stdout"
+            ERR="$RUNNER_TEMP/macrotrends_ohlcv.stderr"
             set +e
             ./macrotrends ohlcv "$TICKER_UPPER" >"$OUT" 2>"$ERR"
             mt=$?
             set -e
             if [ "$mt" -ne 0 ]; then
-              echo "::error::./macrotrends exited with status $mt for ${TICKER_UPPER}"
+              echo "::error::./macrotrends ohlcv exited with status $mt for ${TICKER_UPPER}"
               cat "$ERR" >&2 || true
               exit "$mt"
             fi
             if [ ! -s "$OUT" ]; then
-              echo "::error::./macrotrends produced empty stdout for ${TICKER_UPPER}"
+              echo "::error::./macrotrends ohlcv produced empty stdout for ${TICKER_UPPER}"
               exit 1
             fi
-            python3 - "$TICKER_LOWER" "$OUT" << 'PY'
-          import csv
-          import os
-          import sys
-
-          ticker_lower = sys.argv[1]
-          path = sys.argv[2]
-          root = os.path.join("datasets", "stocks", ticker_lower)
-          rows_by_year = {}
-          with open(path, newline="") as f:
-              r = csv.DictReader(f)
-              fieldnames = r.fieldnames
-              if not fieldnames:
-                  print("empty or headerless CSV", file=sys.stderr)
-                  sys.exit(1)
-              fn = [x.strip() for x in fieldnames]
-              date_key = "date" if "date" in fn else (fn[0] if fn else None)
-              if not date_key:
-                  print("could not resolve date column", file=sys.stderr)
-                  sys.exit(1)
-              for row in r:
-                  d = (row.get(date_key) or "").strip()
-                  if len(d) < 4:
-                      continue
-                  y = d[:4]
-                  if not y.isdigit():
-                      continue
-                  rows_by_year.setdefault(y, []).append(row)
-          if not rows_by_year:
-              print("no data rows after parse", file=sys.stderr)
-              sys.exit(1)
-          for y in sorted(rows_by_year.keys()):
-              ydir = os.path.join(root, y)
-              os.makedirs(ydir, exist_ok=True)
-              out_path = os.path.join(ydir, "ohlcv.csv")
-              with open(out_path, "w", newline="") as f:
-                  w = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
-                  w.writeheader()
-                  w.writerows(rows_by_year[y])
-              print("wrote", out_path, f"({len(rows_by_year[y])} rows)")
-          PY
+            python3 scripts/python/split_stock_csv_by_year.py "$TICKER_LOWER" "$OUT" ohlcv.csv
+            echo "Waiting 3s before P/E fetch for ${TICKER_UPPER}..."
+            sleep 3
+            OUT_PE="$RUNNER_TEMP/macrotrends_peratio.stdout"
+            ERR_PE="$RUNNER_TEMP/macrotrends_peratio.stderr"
+            set +e
+            ./macrotrends peratio "$TICKER_UPPER" >"$OUT_PE" 2>"$ERR_PE"
+            mt=$?
+            set -e
+            if [ "$mt" -ne 0 ]; then
+              echo "::error::./macrotrends peratio exited with status $mt for ${TICKER_UPPER}"
+              cat "$ERR_PE" >&2 || true
+              exit "$mt"
+            fi
+            if [ ! -s "$OUT_PE" ]; then
+              echo "::error::./macrotrends peratio produced empty stdout for ${TICKER_UPPER}"
+              exit 1
+            fi
+            python3 scripts/python/split_stock_csv_by_year.py "$TICKER_LOWER" "$OUT_PE" peratio.csv
+            echo "$TICKER_LOWER" >> "$TOUCHED"
           done
 
       - name: Update README stocks table
@@ -219,5 +200,29 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasets/stocks/ README.md
-          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv history" && git pull --rebase origin main && git push)
+          git add datasets/stocks/ README.md scripts/python/split_stock_csv_by_year.py
+          git diff --staged --quiet || (git commit -m "chore: stocks ohlcv and peratio history" && git pull --rebase origin main && git push)
+
+      - name: Purge and warm jsDelivr cache for new stocks OHLCV and P/E
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TOUCHED="${RUNNER_TEMP}/touched_stocks.txt"
+          if [ ! -s "$TOUCHED" ]; then
+            echo "No tickers touched; skip purge/warm."
+            exit 0
+          fi
+          shopt -s nullglob
+          while IFS= read -r t; do
+            [ -z "$t" ] && continue
+            for csv in datasets/stocks/${t}/*/{ohlcv,peratio}.csv; do
+              path="$csv"
+              purge_url="https://purge.jsdelivr.net/gh/${REPO}/${path}"
+              cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${path}"
+              echo "Purging ${purge_url}"
+              curl -fsSL -o /dev/null -sS -X GET "$purge_url"
+              echo "Warming ${cdn_url}"
+              curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
+            done
+          done < <(sort -u "$TOUCHED")
