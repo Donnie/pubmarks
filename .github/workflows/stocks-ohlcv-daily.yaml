@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Current year (UTC)
         id: year
@@ -68,9 +69,27 @@ jobs:
             fi
             first=false
             ticker=$(echo "$ticker_lower" | tr '[:lower:]' '[:upper:]')
-            echo "Updating ${ticker} -> ${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+            target="${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+            echo "Checking ${ticker} -> ${target}"
             mkdir -p "${ROOT}/${ticker_lower}/${YEAR}"
-            ./macrotrends ohlcv "$ticker" "$YEAR" > "${ROOT}/${ticker_lower}/${YEAR}/ohlcv.csv"
+
+            if [ -f "$target" ]; then
+              recent_commit="$(git log -1 --since='6 hours ago' --format='%H' -- "$target" 2>/dev/null || true)"
+              if [ -n "$recent_commit" ]; then
+                echo "Skipping ${ticker}: ${target} updated in last 6 hours (${recent_commit})"
+                continue
+              fi
+            fi
+
+            tmp="$RUNNER_TEMP/${ticker_lower}_${YEAR}_ohlcv.csv"
+            ./macrotrends ohlcv "$ticker" "$YEAR" > "$tmp"
+            if [ ! -s "$tmp" ]; then
+              echo "::warning::Empty OHLCV output for ${ticker}; skipping"
+              continue
+            fi
+
+            echo "Updating ${ticker} (calling MacroTrends)"
+            mv "$tmp" "$target"
             git add "${ROOT}/${ticker_lower}"
             commit_if_staged "chore: ${ticker_lower} ohlcv daily update"
           done
