@@ -22,18 +22,11 @@ jobs:
         id: year
         run: echo "year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
 
-      - name: Download latest macrotrends release
-        run: |
-          gh release download \
-            $(gh release list --repo ${{ github.repository }} \
-              --json tagName \
-              --jq '[.[] | select(.tagName | startswith("macrotrends-"))] | .[0].tagName') \
-            --repo ${{ github.repository }} \
-            --pattern 'macrotrends' \
-            --output ./macrotrends
-          chmod +x ./macrotrends
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Sync yf app (scripts/python/yf)
+        run: uv sync --project scripts/python/yf --frozen --no-dev
 
       - name: Discover tickers and refresh current-year OHLCV
         run: |
@@ -82,13 +75,13 @@ jobs:
             fi
 
             tmp="$RUNNER_TEMP/${ticker_lower}_${YEAR}_ohlcv.csv"
-            ./macrotrends ohlcv "$ticker" "$YEAR" > "$tmp"
+            uv run --project scripts/python/yf --frozen --no-dev -- yf ohlcv "$ticker" "$YEAR" > "$tmp"
             if [ ! -s "$tmp" ]; then
               echo "::warning::Empty OHLCV output for ${ticker}; skipping"
               continue
             fi
 
-            echo "Updating ${ticker} (calling MacroTrends)"
+            echo "Updating ${ticker}"
             mv "$tmp" "$target"
             git add "${ROOT}/${ticker_lower}"
             commit_if_staged "chore: ${ticker_lower} ohlcv daily update"
