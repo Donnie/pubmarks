@@ -17,21 +17,18 @@ permissions:
 jobs:
   purge:
     runs-on: ubuntu-latest
-    if: github.event.workflow_run.conclusion == 'success'
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     steps:
-      # head_sha is pre-run; daily workflow may push — use branch tip after fetch.
-      - name: Checkout branch updated by daily workflow
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_branch }}
+          ref: main
           fetch-depth: 1
-
-      - name: Sync to latest on branch
-        run: git fetch origin "${{ github.event.workflow_run.head_branch }}" && git reset --hard "origin/${{ github.event.workflow_run.head_branch }}"
 
       - name: Purge and warm jsDelivr for CSV and JSON (current UTC year paths)
         env:
           REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
           TRIGGER_WORKFLOW: ${{ github.event.workflow_run.name }}
         run: |
           set -euo pipefail
@@ -49,18 +46,23 @@ jobs:
               n=$((n + 1))
             done
           }
-          case "${TRIGGER_WORKFLOW}" in
-            "ETFs update daily")
-              echo "Targeting datasets/etfs/**/latest.json"
-              process_files < <(find ./datasets/etfs -type f -name 'latest.json' -print0)
-              ;;
-            "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
-              echo "Targeting all CSV under datasets/stocks"
-              process_files < <(find ./datasets/stocks -type f -name '*.csv' -print0)
-              ;;
-            *)
-              echo "Targeting all files"
-              process_files < <(find ./datasets -type f -print0)
-              ;;
-          esac
+          if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
+            echo "Manual trigger: targeting all files"
+            process_files < <(find ./datasets -type f -print0)
+          else
+            case "${TRIGGER_WORKFLOW}" in
+              "ETFs update daily")
+                echo "Targeting datasets/etfs/**/latest.json"
+                process_files < <(find ./datasets/etfs -type f -name 'latest.json' -print0)
+                ;;
+              "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
+                echo "Targeting all CSV under datasets/stocks"
+                process_files < <(find ./datasets/stocks -type f -name '*.csv' -print0)
+                ;;
+              *)
+                echo "Targeting all files"
+                process_files < <(find ./datasets -type f -print0)
+                ;;
+            esac
+          fi
           echo "Processed ${n} file(s)."
