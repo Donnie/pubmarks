@@ -53,17 +53,9 @@ jobs:
               echo "Targeting datasets/etfs/**/latest.json"
               process_files < <(find ./datasets/etfs -type f -name 'latest.json' -print0)
               ;;
-            "Stocks OHLCV update daily")
-              echo "Targeting ohlcv.csv under datasets/stocks (UTC year ${YEAR})"
-              process_files < <(find ./datasets/stocks -type f -name 'ohlcv.csv' -path "*${YEAR}*" -print0)
-              ;;
-            "Stocks P/E update weekly")
-              echo "Targeting peratio.csv under datasets/stocks (UTC year ${YEAR})"
-              process_files < <(find ./datasets/stocks -type f -name 'peratio.csv' -path "*${YEAR}*" -print0)
-              ;;
-            "Stocks history")
-              echo "Targeting datasets/stocks CSV/JSON under paths containing UTC year ${YEAR}"
-              process_files < <(find ./datasets/stocks -type f \( -name '*.csv' -o -name '*.json' \) -path "*${YEAR}*" -print0)
+            "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
+              echo "Targeting all CSV under datasets/stocks"
+              process_files < <(find ./datasets/stocks -type f -name '*.csv' -print0)
               ;;
             *)
               echo "::error::Unexpected triggering workflow: ${TRIGGER_WORKFLOW}"
