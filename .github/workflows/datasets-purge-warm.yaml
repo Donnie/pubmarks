@@ -3,12 +3,13 @@ name: Datasets jsDelivr purge and warm
 on:
   workflow_run:
     workflows:
-      - Stocks OHLCV update daily
-      - Stocks P/E update weekly
       - ETFs update daily
       - Stocks history
+      - Stocks OHLCV update daily
+      - Stocks P/E update weekly
     types:
       - completed
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -58,8 +59,8 @@ jobs:
               process_files < <(find ./datasets/stocks -type f -name '*.csv' -print0)
               ;;
             *)
-              echo "::error::Unexpected triggering workflow: ${TRIGGER_WORKFLOW}"
-              exit 1
+              echo "Targeting all files"
+              process_files < <(find ./datasets -type f -print0)
               ;;
           esac
           echo "Processed ${n} file(s)."
