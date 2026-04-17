@@ -30,7 +30,7 @@ jobs:
           REPO: ${{ github.repository }}
           EVENT_NAME: ${{ github.event_name }}
           TRIGGER_WORKFLOW: ${{ github.event.workflow_run.name }}
-          MAX_PARALLEL: 10
+          MAX_PARALLEL: 20
         run: |
           set -euo pipefail
           tmp="$(mktemp -d)"
@@ -40,22 +40,22 @@ jobs:
           write_files0() {
             # Writes a NUL-delimited list of file paths to stdout.
             if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
-              echo "Manual trigger: targeting all files"
+              echo "Manual trigger: targeting all files" >&2
               find ./datasets -type f -print0
               return 0
             fi
 
             case "${TRIGGER_WORKFLOW}" in
               "ETFs update daily")
-                echo "Targeting datasets/etfs/**/latest.json"
+                echo "Targeting datasets/etfs/**/latest.json" >&2
                 find ./datasets/etfs -type f -name 'latest.json' -print0
                 ;;
               "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
-                echo "Targeting all CSV under datasets/stocks"
+                echo "Targeting all CSV under datasets/stocks" >&2
                 find ./datasets/stocks -type f -name '*.csv' -print0
                 ;;
               *)
-                echo "Targeting all files"
+                echo "Targeting all files" >&2
                 find ./datasets -type f -print0
                 ;;
             esac
