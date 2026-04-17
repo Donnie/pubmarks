@@ -30,39 +30,61 @@ jobs:
           REPO: ${{ github.repository }}
           EVENT_NAME: ${{ github.event_name }}
           TRIGGER_WORKFLOW: ${{ github.event.workflow_run.name }}
+          MAX_PARALLEL: 10
         run: |
           set -euo pipefail
-          YEAR="$(date -u +%Y)"
-          n=0
-          process_files() {
-            while IFS= read -r -d '' f; do
-              rel="${f#./}"
-              purge_url="https://purge.jsdelivr.net/gh/${REPO}/${rel}"
-              cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${rel}"
-              echo "Purging ${purge_url}"
-              curl -fsSL -o /dev/null -sS -X GET "$purge_url"
-              echo "Warming ${cdn_url}"
-              curl -fsSL -o /dev/null -sS -X GET "$cdn_url"
-              n=$((n + 1))
-            done
-          }
-          if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
-            echo "Manual trigger: targeting all files"
-            process_files < <(find ./datasets -type f -print0)
-          else
+          tmp="$(mktemp -d)"
+          files0="${tmp}/files0"
+          : > "${files0}"
+
+          write_files0() {
+            # Writes a NUL-delimited list of file paths to stdout.
+            if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
+              echo "Manual trigger: targeting all files"
+              find ./datasets -type f -print0
+              return 0
+            fi
+
             case "${TRIGGER_WORKFLOW}" in
               "ETFs update daily")
                 echo "Targeting datasets/etfs/**/latest.json"
-                process_files < <(find ./datasets/etfs -type f -name 'latest.json' -print0)
+                find ./datasets/etfs -type f -name 'latest.json' -print0
                 ;;
               "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
                 echo "Targeting all CSV under datasets/stocks"
-                process_files < <(find ./datasets/stocks -type f -name '*.csv' -print0)
+                find ./datasets/stocks -type f -name '*.csv' -print0
                 ;;
               *)
                 echo "Targeting all files"
-                process_files < <(find ./datasets -type f -print0)
+                find ./datasets -type f -print0
                 ;;
             esac
+          }
+
+          write_files0 > "${files0}"
+          n="$(tr -cd '\0' < "${files0}" | wc -c | tr -d ' ')"
+          echo "Discovered ${n} file(s)."
+
+          export REPO
+          curl_pair() {
+            local f="$1"
+            local rel="${f#./}"
+            local purge_url="https://purge.jsdelivr.net/gh/${REPO}/${rel}"
+            local cdn_url="https://cdn.jsdelivr.net/gh/${REPO}/${rel}"
+
+            echo "Purging ${purge_url}"
+            curl -fsSL -o /dev/null -sS --retry 2 --retry-delay 1 --max-time 30 -X GET "${purge_url}"
+            echo "Warming ${cdn_url}"
+            curl -fsSL -o /dev/null -sS --retry 2 --retry-delay 1 --max-time 30 -X GET "${cdn_url}"
+          }
+          export -f curl_pair
+
+          # Run multiple curl pairs concurrently on ONE runner.
+          # If MAX_PARALLEL is unset/empty/non-numeric, default to 10.
+          p="${MAX_PARALLEL:-10}"
+          if ! [[ "${p}" =~ ^[0-9]+$ ]] || [[ "${p}" -lt 1 ]]; then
+            p=10
           fi
+
+          xargs -0 -n 1 -P "${p}" bash -lc 'curl_pair "$0"' < "${files0}"
           echo "Processed ${n} file(s)."
