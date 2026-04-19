@@ -106,16 +106,26 @@ func cleanCaption(sel *goquery.Selection) string {
 	return strings.Join(strings.Fields(strings.TrimSpace(c.Text())), " ")
 }
 
+// parseBlackRockHoldingsDate parses holdings "as of" strings from HTML options or CSV.
+// BlackRock has used "02-Jan-06" and, more recently, "02/Jan/2006" (slashes, 4-digit year).
+func parseBlackRockHoldingsDate(s string) (time.Time, error) {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return time.Time{}, fmt.Errorf("empty date")
+	}
+	if t, err := time.Parse("02-Jan-06", s); err == nil {
+		return t, nil
+	}
+	return time.Parse("02/Jan/2006", s)
+}
+
 func holdingsTabDate(doc *goquery.Document) time.Time {
 	sel := doc.Find("#allHoldingsTab select.date-dropdown option[selected]")
 	if sel.Length() == 0 {
 		sel = doc.Find("#allHoldingsTab select.date-dropdown option").First()
 	}
 	text := strings.TrimSpace(sel.Text())
-	if text == "" {
-		return time.Time{}
-	}
-	t, err := time.Parse("02-Jan-06", text)
+	t, err := parseBlackRockHoldingsDate(text)
 	if err != nil {
 		return time.Time{}
 	}
@@ -134,7 +144,7 @@ func holdingsAsOfFromCSV(csv []byte) (time.Time, error) {
 	rest := strings.TrimSpace(strings.TrimPrefix(line, prefix))
 	rest = strings.Trim(rest, `"`)
 	rest = strings.TrimSpace(rest)
-	return time.Parse("02-Jan-06", rest)
+	return parseBlackRockHoldingsDate(rest)
 }
 
 // parse52WeekRange reads strings like "52 WK: 5.48 - 14.01" and returns low, high.
