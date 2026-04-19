@@ -1,5 +1,5 @@
 {
-  "1_day_nav_change": "USD -0.06 (-0.72%)",
+  "1_day_nav_change": "USD 0.17 (2.17%)",
   "3y_beta": "0.996",
   "52w_high": 8.45,
   "52w_low": 4.95,
@@ -7,7 +7,7 @@
   "asset_class": "Equity",
   "base_currency": "USD",
   "benchmark_index": "MSCI Emerging Markets ex China Index (Net)",
-  "benchmark_level": "USD 11,059.77",
+  "benchmark_level": "USD 11,300.71",
   "benchmark_ticker": "M1CXBRVR",
   "bloomberg_ticker": "-",
   "custodian": "State Street Custodial Services (Ireland) Limited",
@@ -21,111 +21,111 @@
     {
       "name": "ABB INDIA LTD",
       "ticker": "ABB",
-      "weight": 0.04636,
+      "weight": 0.04517,
       "shares_held": 36988,
       "exchange": "National Stock Exchange Of India",
-      "price": 73.97
+      "price": 73.12
     },
     {
       "name": "ABSA GROUP LTD",
       "ticker": "ABG",
-      "weight": 0.14839,
+      "weight": 0.1466,
       "shares_held": 574987,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 15.23
+      "price": 15.27
     },
     {
       "name": "ABU DHABI COMMERCIAL BANK",
       "ticker": "ADCB",
-      "weight": 0.13173,
+      "weight": 0.1273,
       "shares_held": 2147180,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 3.62
+      "price": 3.55
     },
     {
       "name": "ABU DHABI ISLAMIC BANK",
       "ticker": "ADIB",
-      "weight": 0.10514,
+      "weight": 0.104,
       "shares_held": 1003260,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 6.19
+      "price": 6.21
     },
     {
       "name": "ABU DHABI NATIONAL OIL COMPANY FOR",
       "ticker": "ADNOCDIST",
-      "weight": 0.0392,
+      "weight": 0.03833,
       "shares_held": 2242216,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 1.03
+      "price": 1.02
     },
     {
       "name": "ACCTON TECHNOLOGY CORP",
       "ticker": "2345",
-      "weight": 0.35214,
-      "shares_held": 359415,
+      "weight": 0.34416,
+      "shares_held": 345415,
       "exchange": "Taiwan Stock Exchange",
-      "price": 57.83
+      "price": 59.66
     },
     {
       "name": "ACWA POWER CO",
       "ticker": "2082",
-      "weight": 0.08259,
+      "weight": 0.08319,
       "shares_held": 107720,
       "exchange": "Saudi Stock Exchange",
-      "price": 45.25
+      "price": 46.24
     },
     {
       "name": "ADANI ENTERPRISES LTD",
       "ticker": "ADANIENT",
-      "weight": 0.04408,
+      "weight": 0.04401,
       "shares_held": 115591,
       "exchange": "National Stock Exchange Of India",
-      "price": 22.5
+      "price": 22.8
     },
     {
       "name": "ADANI PORTS AND SPECIAL ECONOMIC Z",
       "ticker": "ADANIPORTS",
-      "weight": 0.10152,
+      "weight": 0.09869,
       "shares_held": 376595,
       "exchange": "National Stock Exchange Of India",
-      "price": 15.91
+      "price": 15.69
     },
     {
       "name": "ADANI POWER LTD",
       "ticker": "ADANIPOWER",
-      "weight": 0.0669,
+      "weight": 0.06754,
       "shares_held": 2082409,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.9
+      "price": 1.94
     },
     {
       "name": "ADES HOLDING CO",
       "ticker": "2382",
-      "weight": 0.01494,
+      "weight": 0.01506,
       "shares_held": 181661,
       "exchange": "Saudi Stock Exchange",
-      "price": 4.85
+      "price": 4.96
     },
     {
       "name": "ADITYA BIRLA CAPITAL LTD",
       "ticker": "ABCAPITAL",
-      "weight": 0.03092,
+      "weight": 0.02987,
       "shares_held": 494933,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.69
+      "price": 3.61
     },
     {
       "name": "ADNOC DRILLING COMPANY",
       "ticker": "ADNOCDRILL",
-      "weight": 0.05548,
+      "weight": 0.05531,
       "shares_held": 2304104,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 1.42
+      "price": 1.44
     },
     {
       "name": "ADNOC GAS PLC",
       "ticker": "ADNOCGAS",
-      "weight": 0.0601,
+      "weight": 0.05906,
       "shares_held": 3972514,
       "exchange": "Abu Dhabi Securities Exchange",
       "price": 0.89
@@ -133,15 +133,15 @@
     {
       "name": "ADNOC LOGISTICS & SERVICES PLC",
       "ticker": "ADNOCLS",
-      "weight": 0.03244,
+      "weight": 0.03192,
       "shares_held": 1314522,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 1.46
+      "price": 1.45
     },
     {
       "name": "ADVANCED INFO SERVICE NON-VOTING D",
       "ticker": "ADVANC.R",
-      "weight": 0.13769,
+      "weight": 0.13572,
       "shares_held": 719100,
       "exchange": "Stock Exchange Of Thailand",
       "price": 11.3
@@ -149,31 +149,47 @@
     {
       "name": "ADVANTECH LTD",
       "ticker": "2395",
-      "weight": 0.05762,
+      "weight": 0.05657,
       "shares_held": 311919,
       "exchange": "Taiwan Stock Exchange",
-      "price": 10.9
+      "price": 10.86
     },
     {
       "name": "AED CASH",
       "ticker": "AED",
-      "weight": 0.06899,
+      "weight": 0.06801,
       "shares_held": 14957492,
       "exchange": "-",
       "price": 27.22
     },
     {
+      "name": "AED/USD",
+      "ticker": "AED",
+      "weight": 0,
+      "shares_held": -4986291,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "AED/USD",
+      "ticker": "AED",
+      "weight": 0,
+      "shares_held": -860536,
+      "exchange": "-",
+      "price": 1
+    },
+    {
       "name": "AIR ARABIA",
       "ticker": "AIRARABIA",
-      "weight": 0.03517,
+      "weight": 0.03431,
       "shares_held": 1581834,
       "exchange": "Dubai Financial Market",
-      "price": 1.31
+      "price": 1.3
     },
     {
       "name": "AIRPORTS OF THAILAND NON-VOTING DR",
       "ticker": "AOT.R",
-      "weight": 0.08477,
+      "weight": 0.08355,
       "shares_held": 2976000,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.68
@@ -181,10 +197,10 @@
     {
       "name": "AIRTAC INTERNATIONAL GROUP",
       "ticker": "1590",
-      "weight": 0.04988,
+      "weight": 0.04925,
       "shares_held": 83782,
       "exchange": "Taiwan Stock Exchange",
-      "price": 35.14
+      "price": 35.2
     },
     {
       "name": "AK ALROSA",
@@ -197,7 +213,7 @@
     {
       "name": "AKBANK A",
       "ticker": "AKBNK.E",
-      "weight": 0.06592,
+      "weight": 0.06495,
       "shares_held": 2216925,
       "exchange": "Istanbul Stock Exchange",
       "price": 1.75
@@ -205,231 +221,231 @@
     {
       "name": "AL MOUWASAT MEDICAL SERVICES",
       "ticker": "4002",
-      "weight": 0.0189,
+      "weight": 0.01882,
       "shares_held": 58941,
       "exchange": "Saudi Stock Exchange",
-      "price": 18.92
+      "price": 19.12
     },
     {
       "name": "AL RAJHI BANK",
       "ticker": "1120",
-      "weight": 0.65302,
+      "weight": 0.64552,
       "shares_held": 1340387,
       "exchange": "Saudi Stock Exchange",
-      "price": 28.75
+      "price": 28.84
     },
     {
       "name": "AL-ELM INFORMATION SECURITY COMPAN",
       "ticker": "7203",
-      "weight": 0.04165,
+      "weight": 0.04519,
       "shares_held": 17340,
       "exchange": "Saudi Stock Exchange",
-      "price": 141.77
+      "price": 156.04
     },
     {
       "name": "ALCHIP TECHNOLOGIES LTD",
       "ticker": "3661",
-      "weight": 0.07914,
+      "weight": 0.08266,
       "shares_held": 49000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 95.33
+      "price": 101.01
     },
     {
       "name": "ALDAR PROPERTIES",
       "ticker": "ALDAR",
-      "weight": 0.09758,
+      "weight": 0.09974,
       "shares_held": 2611604,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 2.21
+      "price": 2.29
     },
     {
       "name": "ALFA A",
       "ticker": "SIGMAFA",
-      "weight": 0.03892,
+      "weight": 0.03809,
       "shares_held": 2248804,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 1.02
+      "price": 1.01
     },
     {
       "name": "ALINMA BANK",
       "ticker": "1150",
-      "weight": 0.10703,
+      "weight": 0.10672,
       "shares_held": 800840,
       "exchange": "Saudi Stock Exchange",
-      "price": 7.89
+      "price": 7.98
     },
     {
       "name": "ALKEM LABORATORIES LTD",
       "ticker": "ALKEM",
-      "weight": 0.03113,
+      "weight": 0.03005,
       "shares_held": 31321,
       "exchange": "National Stock Exchange Of India",
-      "price": 58.67
+      "price": 57.44
     },
     {
       "name": "ALLEGRO SA",
       "ticker": "ALE",
-      "weight": 0.06071,
+      "weight": 0.06271,
       "shares_held": 468085,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 7.65
+      "price": 8.02
     },
     {
       "name": "ALLWYN AG",
       "ticker": "ALWN",
-      "weight": 0.03634,
+      "weight": 0.03406,
       "shares_held": 126998,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 16.89
+      "price": 16.06
     },
     {
       "name": "ALMARAI",
       "ticker": "2280",
-      "weight": 0.06659,
+      "weight": 0.06681,
       "shares_held": 344606,
       "exchange": "Saudi Stock Exchange",
-      "price": 11.41
+      "price": 11.61
     },
     {
       "name": "ALPHA BANK SA",
       "ticker": "ALPHA",
-      "weight": 0.08086,
+      "weight": 0.08377,
       "shares_held": 1117791,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 4.27
+      "price": 4.49
     },
     {
       "name": "ALTEOGEN INC",
       "ticker": "196170",
-      "weight": 0.11369,
+      "weight": 0.10954,
       "shares_held": 27522,
       "exchange": "Korea Exchange (Kosdaq)",
-      "price": 243.8
+      "price": 238.31
     },
     {
       "name": "AMBUJA CEMENTS LTD",
       "ticker": "AMBUJACEM",
-      "weight": 0.03748,
+      "weight": 0.03634,
       "shares_held": 460764,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.8
+      "price": 4.72
     },
     {
       "name": "AMERICA MOVIL B",
       "ticker": "AMXB",
-      "weight": 0.28438,
+      "weight": 0.27078,
       "shares_held": 12304778,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 1.36
+      "price": 1.32
     },
     {
       "name": "AMMAN MINERAL INTERNASIONAL",
       "ticker": "AMMN",
-      "weight": 0.05303,
+      "weight": 0.05508,
       "shares_held": 9859954,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.32
+      "price": 0.33
     },
     {
       "name": "AMMB HOLDINGS",
       "ticker": "AMBANK",
-      "weight": 0.04717,
+      "weight": 0.04575,
       "shares_held": 1803800,
       "exchange": "Bursa Malaysia",
-      "price": 1.54
+      "price": 1.52
     },
     {
       "name": "AMOREPACIFIC CORP",
       "ticker": "090430",
-      "weight": 0.0278,
+      "weight": 0.02687,
       "shares_held": 18445,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 88.96
+      "price": 87.22
     },
     {
       "name": "ANGLOGOLD ASHANTI PLC",
       "ticker": "ANG",
-      "weight": 0.64055,
+      "weight": 0.63535,
       "shares_held": 345141,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 109.53
+      "price": 110.22
     },
     {
       "name": "APL APOLLO TUBES LTD",
       "ticker": "APLAPOLLO",
-      "weight": 0.04727,
+      "weight": 0.04437,
       "shares_held": 125307,
       "exchange": "National Stock Exchange Of India",
-      "price": 22.27
+      "price": 21.2
     },
     {
       "name": "APOLLO HOSPITALS ENTERPRISE LTD",
       "ticker": "APOLLOHOSP",
-      "weight": 0.10294,
+      "weight": 0.10082,
       "shares_held": 75000,
       "exchange": "National Stock Exchange Of India",
-      "price": 81.01
+      "price": 80.49
     },
     {
       "name": "APR LTD",
       "ticker": "278470",
-      "weight": 0.07603,
+      "weight": 0.07368,
       "shares_held": 16929,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 265.05
+      "price": 260.59
     },
     {
       "name": "ARAB NATIONAL BANK",
       "ticker": "1080",
-      "weight": 0.06274,
+      "weight": 0.06293,
       "shares_held": 635975,
       "exchange": "Saudi Stock Exchange",
-      "price": 5.82
+      "price": 5.92
     },
     {
       "name": "ARABIAN INTERNET AND COMMUNICATION",
       "ticker": "7202",
-      "weight": 0.01721,
+      "weight": 0.01871,
       "shares_held": 19328,
       "exchange": "Saudi Stock Exchange",
-      "price": 52.55
+      "price": 57.96
     },
     {
       "name": "ARCA CONTINENTAL",
       "ticker": "AC*",
-      "weight": 0.0717,
+      "weight": 0.06886,
       "shares_held": 341816,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 12.38
+      "price": 12.06
     },
     {
       "name": "ASE TECHNOLOGY HOLDING LTD",
       "ticker": "3711",
-      "weight": 0.47348,
+      "weight": 0.50436,
       "shares_held": 2256400,
       "exchange": "Taiwan Stock Exchange",
-      "price": 12.38
+      "price": 13.38
     },
     {
       "name": "ASELSAN ELEKTRONIK SANAYI VE TICAR",
       "ticker": "ASELS.E",
-      "weight": 0.13742,
+      "weight": 0.13981,
       "shares_held": 909203,
       "exchange": "Istanbul Stock Exchange",
-      "price": 8.92
+      "price": 9.21
     },
     {
       "name": "ASHOK LEYLAND LTD",
       "ticker": "ASHOKLEY",
-      "weight": 0.06758,
+      "weight": 0.06393,
       "shares_held": 2077481,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.92
+      "price": 1.84
     },
     {
       "name": "ASIA CEMENT CORP",
       "ticker": "1102",
-      "weight": 0.02543,
+      "weight": 0.02504,
       "shares_held": 1336000,
       "exchange": "Taiwan Stock Exchange",
       "price": 1.12
@@ -437,175 +453,175 @@
     {
       "name": "ASIA VITAL COMPONENTS LTD",
       "ticker": "3017",
-      "weight": 0.26364,
-      "shares_held": 218000,
+      "weight": 0.27644,
+      "shares_held": 227000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 71.38
+      "price": 72.92
     },
     {
       "name": "ASIAN PAINTS LTD",
       "ticker": "ASIANPAINT",
-      "weight": 0.11471,
+      "weight": 0.11187,
       "shares_held": 265917,
       "exchange": "National Stock Exchange Of India",
-      "price": 25.46
+      "price": 25.19
     },
     {
       "name": "ASPEED TECHNOLOGY INC",
       "ticker": "5274",
-      "weight": 0.13434,
+      "weight": 0.13712,
       "shares_held": 20000,
       "exchange": "Gretai Securities Market",
-      "price": 396.43
+      "price": 410.5
     },
     {
       "name": "ASSECO POLAND SA",
       "ticker": "ACP",
-      "weight": 0.03106,
+      "weight": 0.03153,
       "shares_held": 37303,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 49.15
+      "price": 50.61
     },
     {
       "name": "ASTRA INTERNATIONAL",
       "ticker": "ASII",
-      "weight": 0.08774,
+      "weight": 0.08431,
       "shares_held": 14047700,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.37
+      "price": 0.36
     },
     {
       "name": "ASTRAL LTD",
       "ticker": "ASTRAL",
-      "weight": 0.0215,
+      "weight": 0.02098,
       "shares_held": 72176,
       "exchange": "National Stock Exchange Of India",
-      "price": 17.58
+      "price": 17.4
     },
     {
       "name": "ASUSTEK COMPUTER INC",
       "ticker": "2357",
-      "weight": 0.15755,
+      "weight": 0.15609,
       "shares_held": 510500,
       "exchange": "Taiwan Stock Exchange",
-      "price": 18.21
+      "price": 18.31
     },
     {
       "name": "AU SMALL FINANCE BANK LTD",
       "ticker": "AUBANK",
-      "weight": 0.06816,
+      "weight": 0.06652,
       "shares_held": 379922,
       "exchange": "National Stock Exchange Of India",
-      "price": 10.59
+      "price": 10.48
     },
     {
       "name": "AUROBINDO PHARMA LTD",
       "ticker": "AUROPHARMA",
-      "weight": 0.04426,
+      "weight": 0.04301,
       "shares_held": 179509,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.55
+      "price": 14.35
     },
     {
       "name": "AVENUE SUPERMARTS LTD",
       "ticker": "DMART",
-      "weight": 0.08506,
+      "weight": 0.08415,
       "shares_held": 105782,
       "exchange": "National Stock Exchange Of India",
-      "price": 47.46
+      "price": 47.63
     },
     {
       "name": "AXIATA GROUP",
       "ticker": "AXIATA",
-      "weight": 0.01995,
+      "weight": 0.01885,
       "shares_held": 2074400,
       "exchange": "Bursa Malaysia",
-      "price": 0.57
+      "price": 0.54
     },
     {
       "name": "AXIS BANK LTD",
       "ticker": "AXISBANK",
-      "weight": 0.37737,
-      "shares_held": 1528902,
+      "weight": 0.38105,
+      "shares_held": 1574049,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.57
+      "price": 14.49
     },
     {
       "name": "AYALA CORP",
       "ticker": "AC",
-      "weight": 0.02859,
+      "weight": 0.02753,
       "shares_held": 186370,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 9.05
+      "price": 8.84
     },
     {
       "name": "AYALA LAND INC",
       "ticker": "ALI",
-      "weight": 0.02497,
+      "weight": 0.02373,
       "shares_held": 4889300,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 0.3
+      "price": 0.29
     },
     {
       "name": "BAJAJ AUTO LTD",
       "ticker": "BAJAJ-AUTO",
-      "weight": 0.08412,
+      "weight": 0.08236,
       "shares_held": 46912,
       "exchange": "National Stock Exchange Of India",
-      "price": 105.83
+      "price": 105.11
     },
     {
       "name": "BAJAJ FINANCE LTD",
       "ticker": "BAJFINANCE",
-      "weight": 0.32337,
+      "weight": 0.30774,
       "shares_held": 1914154,
       "exchange": "National Stock Exchange Of India",
-      "price": 9.97
+      "price": 9.63
     },
     {
       "name": "BAJAJ FINSERV LTD",
       "ticker": "BAJAJFINSV",
-      "weight": 0.09013,
+      "weight": 0.08719,
       "shares_held": 272631,
       "exchange": "National Stock Exchange Of India",
-      "price": 19.51
+      "price": 19.15
     },
     {
       "name": "BAJAJ HOLDINGS AND INVESTMENT LTD",
       "ticker": "BAJAJHLDNG",
-      "weight": 0.03686,
-      "shares_held": 20180,
+      "weight": 0.02794,
+      "shares_held": 15849,
       "exchange": "National Stock Exchange Of India",
-      "price": 107.82
+      "price": 105.56
     },
     {
       "name": "BALKRISHNA INDUSTRIES LTD",
       "ticker": "BALKRISIND",
-      "weight": 0.01964,
+      "weight": 0.01893,
       "shares_held": 47380,
       "exchange": "National Stock Exchange Of India",
-      "price": 24.47
+      "price": 23.93
     },
     {
       "name": "BANCO DE CHILE",
       "ticker": "CHILE",
-      "weight": 0.10637,
+      "weight": 0.10669,
       "shares_held": 32266618,
       "exchange": "Santiago Stock Exchange",
-      "price": 0.19
+      "price": 0.2
     },
     {
       "name": "BANCO DE CREDITO E INVERSION",
       "ticker": "BCI",
-      "weight": 0.07457,
+      "weight": 0.07649,
       "shares_held": 62507,
       "exchange": "Santiago Stock Exchange",
-      "price": 70.41
+      "price": 73.27
     },
     {
       "name": "BANCO SANTANDER CHILE",
       "ticker": "BSANTANDER",
-      "weight": 0.06626,
+      "weight": 0.06659,
       "shares_held": 44288848,
       "exchange": "Santiago Stock Exchange",
       "price": 0.09
@@ -613,7 +629,7 @@
     {
       "name": "BANGKOK DUSIT MEDICAL SERVICES NON",
       "ticker": "BDMS.R",
-      "weight": 0.07401,
+      "weight": 0.07295,
       "shares_held": 7543400,
       "exchange": "Stock Exchange Of Thailand",
       "price": 0.58
@@ -621,23 +637,23 @@
     {
       "name": "BANK ALBILAD",
       "ticker": "1140",
-      "weight": 0.0648,
+      "weight": 0.06479,
       "shares_held": 537957,
       "exchange": "Saudi Stock Exchange",
-      "price": 7.11
+      "price": 7.21
     },
     {
       "name": "BANK ALJAZIRA",
       "ticker": "1020",
-      "weight": 0.02476,
+      "weight": 0.02453,
       "shares_held": 467016,
       "exchange": "Saudi Stock Exchange",
-      "price": 3.13
+      "price": 3.14
     },
     {
       "name": "BANK CENTRAL ASIA",
       "ticker": "BBCA",
-      "weight": 0.25108,
+      "weight": 0.24897,
       "shares_held": 37797600,
       "exchange": "Indonesia Stock Exchange",
       "price": 0.39
@@ -645,15 +661,15 @@
     {
       "name": "BANK MANDIRI (PERSERO)",
       "ticker": "BMRI",
-      "weight": 0.11695,
+      "weight": 0.11609,
       "shares_held": 25259000,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.27
+      "price": 0.28
     },
     {
       "name": "BANK MILLENNIUM SA",
       "ticker": "MIL",
-      "weight": 0.03217,
+      "weight": 0.03171,
       "shares_held": 356867,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
       "price": 5.32
@@ -661,7 +677,7 @@
     {
       "name": "BANK NEGARA INDONESIA",
       "ticker": "BBNI",
-      "weight": 0.03984,
+      "weight": 0.03932,
       "shares_held": 10773000,
       "exchange": "Indonesia Stock Exchange",
       "price": 0.22
@@ -669,31 +685,31 @@
     {
       "name": "BANK OF BARODA LTD",
       "ticker": "BANKBARODA",
-      "weight": 0.03754,
+      "weight": 0.03668,
       "shares_held": 743827,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.98
+      "price": 2.95
     },
     {
       "name": "BANK OF THE PHILIPPINE ISLANDS",
       "ticker": "BPI",
-      "weight": 0.0345,
+      "weight": 0.03333,
       "shares_held": 1204543,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 1.69
+      "price": 1.66
     },
     {
       "name": "BANK PEKAO SA",
       "ticker": "PEO",
-      "weight": 0.15063,
+      "weight": 0.15135,
       "shares_held": 129830,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 68.48
+      "price": 69.8
     },
     {
       "name": "BANK RAKYAT INDONESIA (PERSERO)",
       "ticker": "BBRI",
-      "weight": 0.15639,
+      "weight": 0.1571,
       "shares_held": 46530150,
       "exchange": "Indonesia Stock Exchange",
       "price": 0.2
@@ -709,130 +725,130 @@
     {
       "name": "BANQUE SAUDI FRANSI",
       "ticker": "1050",
-      "weight": 0.07992,
+      "weight": 0.08023,
       "shares_held": 879321,
       "exchange": "Saudi Stock Exchange",
-      "price": 5.36
+      "price": 5.46
     },
     {
       "name": "BARITO PACIFIC",
       "ticker": "BRPT",
-      "weight": 0.03238,
+      "weight": 0.04061,
       "shares_held": 17054357,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.11
+      "price": 0.14
     },
     {
       "name": "BARITO RENEWABLES ENERGY",
       "ticker": "BREN",
-      "weight": 0.02974,
+      "weight": 0.0328,
       "shares_held": 5171700,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.34
+      "price": 0.38
     },
     {
       "name": "BDO UNIBANK INC",
       "ticker": "BDO",
-      "weight": 0.05945,
+      "weight": 0.05546,
       "shares_held": 1713913,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 2.05
+      "price": 1.94
     },
     {
       "name": "BHARAT ELECTRONICS LTD",
       "ticker": "BEL",
-      "weight": 0.20509,
+      "weight": 0.20032,
       "shares_held": 2536737,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.77
+      "price": 4.73
     },
     {
       "name": "BHARAT FORGE LTD",
       "ticker": "BHARATFORG",
-      "weight": 0.05734,
-      "shares_held": 174447,
+      "weight": 0.04825,
+      "shares_held": 149763,
       "exchange": "National Stock Exchange Of India",
-      "price": 19.4
+      "price": 19.29
     },
     {
       "name": "BHARAT HEAVY ELECTRICALS LTD",
       "ticker": "BHEL",
-      "weight": 0.03614,
+      "weight": 0.03576,
       "shares_held": 694773,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.07
+      "price": 3.08
     },
     {
       "name": "BHARAT PETROLEUM LTD",
       "ticker": "BPCL",
-      "weight": 0.05734,
+      "weight": 0.05493,
       "shares_held": 1048349,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.23
+      "price": 3.14
     },
     {
       "name": "BHARTI AIRTEL LTD",
       "ticker": "BHARTIARTL",
-      "weight": 0.60247,
+      "weight": 0.58996,
       "shares_held": 1763170,
       "exchange": "National Stock Exchange Of India",
-      "price": 20.17
+      "price": 20.03
     },
     {
       "name": "BID CORPORATION LTD",
       "ticker": "BID",
-      "weight": 0.09902,
+      "weight": 0.09743,
       "shares_held": 233574,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 25.02
+      "price": 24.97
     },
     {
       "name": "BIDVEST GROUP LTD",
       "ticker": "BVT",
-      "weight": 0.05515,
+      "weight": 0.05449,
       "shares_held": 225527,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 14.43
+      "price": 14.47
     },
     {
       "name": "BIM BIRLESIK MAGAZALAR A",
       "ticker": "BIMAS.E",
-      "weight": 0.08769,
+      "weight": 0.08646,
       "shares_held": 307852,
       "exchange": "Istanbul Stock Exchange",
-      "price": 16.81
+      "price": 16.82
     },
     {
       "name": "BIZLINK HOLDING INC",
       "ticker": "3665",
-      "weight": 0.13274,
+      "weight": 0.13672,
       "shares_held": 113000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 69.33
+      "price": 72.44
     },
     {
       "name": "BOSCH LTD",
       "ticker": "BOSCHLTD",
-      "weight": 0.03763,
+      "weight": 0.03612,
       "shares_held": 5516,
       "exchange": "National Stock Exchange Of India",
-      "price": 402.58
+      "price": 392.09
     },
     {
       "name": "BOUBYAN BANK",
       "ticker": "BOUBYAN",
-      "weight": 0.04024,
+      "weight": 0.03907,
       "shares_held": 1107977,
       "exchange": "Kuwait Stock Exchange",
-      "price": 2.14
+      "price": 2.11
     },
     {
       "name": "BRITANNIA INDUSTRIES LTD",
       "ticker": "BRITANNIA",
-      "weight": 0.07676,
+      "weight": 0.07555,
       "shares_held": 75587,
       "exchange": "National Stock Exchange Of India",
-      "price": 59.93
+      "price": 59.85
     },
     {
       "name": "BRL CASH",
@@ -840,36 +856,36 @@
       "weight": 0,
       "shares_held": 1,
       "exchange": "-",
-      "price": 19.91
+      "price": 20.1
     },
     {
       "name": "BSE LTD",
       "ticker": "BSE",
-      "weight": 0.02145,
+      "weight": 0.02114,
       "shares_held": 35781,
       "exchange": "National Stock Exchange Of India",
-      "price": 35.39
+      "price": 35.38
     },
     {
       "name": "BUDIMEX SA",
       "ticker": "BDX",
-      "weight": 0.02478,
+      "weight": 0.02496,
       "shares_held": 7028,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 208.08
+      "price": 212.69
     },
     {
       "name": "BUENAVENTURA ADR REPRESENTING",
       "ticker": "BVN",
-      "weight": 0.07182,
+      "weight": 0.07033,
       "shares_held": 112230,
       "exchange": "New York Stock Exchange Inc.",
-      "price": 37.77
+      "price": 37.52
     },
     {
       "name": "BUMI RESOURCES MINERALS",
       "ticker": "BRMS",
-      "weight": 0.03133,
+      "weight": 0.03138,
       "shares_held": 37393500,
       "exchange": "Indonesia Stock Exchange",
       "price": 0.05
@@ -877,7 +893,7 @@
     {
       "name": "BUMRUNGRAD HOSPITAL NON-VOTING DR",
       "ticker": "BH.R",
-      "weight": 0.03519,
+      "weight": 0.03468,
       "shares_held": 386700,
       "exchange": "Stock Exchange Of Thailand",
       "price": 5.37
@@ -885,103 +901,103 @@
     {
       "name": "BUPA ARABIA",
       "ticker": "8210",
-      "weight": 0.04933,
+      "weight": 0.05,
       "shares_held": 60361,
       "exchange": "Saudi Stock Exchange",
-      "price": 48.23
+      "price": 49.6
     },
     {
       "name": "CALIWAY BIOPHARMACEUTICALS LTD",
       "ticker": "6919",
-      "weight": 0.043,
+      "weight": 0.04056,
       "shares_held": 719000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 3.53
+      "price": 3.38
     },
     {
       "name": "CANARA BANK LTD",
       "ticker": "532483",
-      "weight": 0.03185,
+      "weight": 0.03086,
       "shares_held": 1243524,
       "exchange": "Bse Ltd",
-      "price": 1.51
+      "price": 1.49
     },
     {
       "name": "CAPITEC LTD",
       "ticker": "CPI",
-      "weight": 0.27114,
+      "weight": 0.26664,
       "shares_held": 60405,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 264.92
+      "price": 264.3
     },
     {
       "name": "CASH COLLATERAL USD MLIFT",
       "ticker": "MLIFT",
-      "weight": 0.02167,
-      "shares_held": 1279000,
+      "weight": 0.01815,
+      "shares_held": 1087000,
       "exchange": "-",
       "price": 100
     },
     {
       "name": "CATCHER TECHNOLOGY LTD",
       "ticker": "2474",
-      "weight": 0.03798,
+      "weight": 0.03858,
       "shares_held": 370500,
       "exchange": "Taiwan Stock Exchange",
-      "price": 6.05
+      "price": 6.23
     },
     {
       "name": "CATHAY FINANCIAL HOLDING LTD",
       "ticker": "2882",
-      "weight": 0.25491,
+      "weight": 0.251,
       "shares_held": 6549040,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.3
+      "price": 2.29
     },
     {
       "name": "CD PROJEKT SA",
       "ticker": "CDR",
-      "weight": 0.05475,
+      "weight": 0.05744,
       "shares_held": 47458,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 68.09
+      "price": 72.47
     },
     {
       "name": "CELCOMDIGI",
       "ticker": "CDB",
-      "weight": 0.0335,
+      "weight": 0.03248,
       "shares_held": 2595800,
       "exchange": "Bursa Malaysia",
-      "price": 0.76
+      "price": 0.75
     },
     {
       "name": "CELLTRION INC",
       "ticker": "068270",
-      "weight": 0.23525,
+      "weight": 0.23142,
       "shares_held": 103087,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 134.68
+      "price": 134.41
     },
     {
       "name": "CEMEX CPO",
       "ticker": "CEMEXCPO",
-      "weight": 0.2125,
+      "weight": 0.20784,
       "shares_held": 10509511,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 1.19
+      "price": 1.18
     },
     {
       "name": "CENCOSUD SA",
       "ticker": "CENCOSUD",
-      "weight": 0.04009,
+      "weight": 0.03906,
       "shares_held": 800913,
       "exchange": "Santiago Stock Exchange",
-      "price": 2.95
+      "price": 2.92
     },
     {
       "name": "CENTRAL PATTANA NON-VOTING DR PCL",
       "ticker": "CPN.R",
-      "weight": 0.04389,
+      "weight": 0.04327,
       "shares_held": 1310500,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.98
@@ -989,39 +1005,39 @@
     {
       "name": "CEZ",
       "ticker": "CEZ",
-      "weight": 0.08781,
+      "weight": 0.08934,
       "shares_held": 90737,
       "exchange": "Prague Stock Exchange",
-      "price": 57.11
+      "price": 58.96
     },
     {
       "name": "CG POWER AND INDUSTRIAL SOLUTIONS",
       "ticker": "CGPOWER",
-      "weight": 0.06566,
+      "weight": 0.06294,
       "shares_held": 491473,
       "exchange": "National Stock Exchange Of India",
-      "price": 7.88
+      "price": 7.67
     },
     {
       "name": "CHAILEASE HOLDING LTD",
       "ticker": "5871",
-      "weight": 0.06446,
+      "weight": 0.06721,
       "shares_held": 1128255,
       "exchange": "Taiwan Stock Exchange",
-      "price": 3.37
+      "price": 3.57
     },
     {
       "name": "CHANDRA ASRI PACIFIC",
       "ticker": "TPIA",
-      "weight": 0.03763,
+      "weight": 0.03993,
       "shares_held": 6247300,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.36
+      "price": 0.38
     },
     {
       "name": "CHANG HWA COMMERCIAL BANK LTD",
       "ticker": "2801",
-      "weight": 0.05863,
+      "weight": 0.05803,
       "shares_held": 5192155,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.67
@@ -1029,7 +1045,7 @@
     {
       "name": "CHAROEN POKPHAND FOODS NON-VOTING",
       "ticker": "CPF.R",
-      "weight": 0.02788,
+      "weight": 0.02748,
       "shares_held": 2541100,
       "exchange": "Stock Exchange Of Thailand",
       "price": 0.65
@@ -1037,130 +1053,138 @@
     {
       "name": "CHAROEN POKPHAND INDONESIA",
       "ticker": "CPIN",
-      "weight": 0.02412,
+      "weight": 0.02336,
       "shares_held": 5529600,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.26
+      "price": 0.25
     },
     {
       "name": "CHINA AIRLINES LTD",
       "ticker": "2610",
-      "weight": 0.01933,
+      "weight": 0.01924,
       "shares_held": 2000000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.57
+      "price": 0.58
     },
     {
       "name": "CHINA STEEL CORP",
       "ticker": "2002",
-      "weight": 0.08675,
+      "weight": 0.08757,
       "shares_held": 8103000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.63
+      "price": 0.65
     },
     {
       "name": "CHOLAMANDALAM INVESTMENT AND FINAN",
       "ticker": "CHOLAFIN",
-      "weight": 0.08417,
+      "weight": 0.07853,
       "shares_held": 291334,
       "exchange": "National Stock Exchange Of India",
-      "price": 17.05
+      "price": 16.14
     },
     {
       "name": "CHROMA ATE INC",
       "ticker": "2360",
-      "weight": 0.24685,
+      "weight": 0.25123,
       "shares_held": 259000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 56.25
+      "price": 58.08
     },
     {
       "name": "CHUNGHWA TELECOM LTD",
       "ticker": "2412",
-      "weight": 0.19143,
+      "weight": 0.18831,
       "shares_held": 2646000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 4.27
+      "price": 4.26
     },
     {
       "name": "CIMB GROUP HOLDINGS",
       "ticker": "CIMB",
-      "weight": 0.17835,
+      "weight": 0.17713,
       "shares_held": 5550100,
       "exchange": "Bursa Malaysia",
-      "price": 1.9
+      "price": 1.91
     },
     {
       "name": "CIPLA LTD",
       "ticker": "CIPLA",
-      "weight": 0.08888,
+      "weight": 0.08569,
       "shares_held": 395618,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.26
+      "price": 12.97
     },
     {
       "name": "CLICKS GROUP LTD",
       "ticker": "CLS",
-      "weight": 0.05038,
+      "weight": 0.04915,
       "shares_held": 164373,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 18.09
+      "price": 17.9
     },
     {
       "name": "CLP CASH",
       "ticker": "CLP",
-      "weight": 0.01278,
-      "shares_held": 670514439,
+      "weight": 0.01282,
+      "shares_held": 680918001,
       "exchange": "-",
       "price": 0.11
     },
     {
+      "name": "CLP/USD",
+      "ticker": "CLP",
+      "weight": 0.00001,
+      "shares_held": -526752153,
+      "exchange": "-",
+      "price": 1
+    },
+    {
       "name": "COAL INDIA LTD",
       "ticker": "COALINDIA",
-      "weight": 0.09837,
+      "weight": 0.0965,
       "shares_held": 1240119,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.68
+      "price": 4.66
     },
     {
       "name": "COCA-COLA FEMSA CLASS UBL UNITS",
       "ticker": "KOFUBL",
-      "weight": 0.0612,
+      "weight": 0.05954,
       "shares_held": 345153,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 10.46
+      "price": 10.33
     },
     {
       "name": "COLGATE PALMOLIVE INDIA LTD",
       "ticker": "COLPAL",
-      "weight": 0.03133,
+      "weight": 0.03029,
       "shares_held": 88412,
       "exchange": "National Stock Exchange Of India",
-      "price": 20.91
+      "price": 20.52
     },
     {
       "name": "COMMERCIAL BANK OF QATAR",
       "ticker": "CBQK",
-      "weight": 0.04636,
+      "weight": 0.04518,
       "shares_held": 2238480,
       "exchange": "Qatar Exchange",
-      "price": 1.22
+      "price": 1.21
     },
     {
       "name": "COMMERCIAL INTERNATIONAL BANK EGYP",
       "ticker": "COMI",
-      "weight": 0.06595,
+      "weight": 0.06807,
       "shares_held": 1596860,
       "exchange": "Egyptian Exchange",
-      "price": 2.44
+      "price": 2.55
     },
     {
       "name": "COMPAL ELECTRONICS INC",
       "ticker": "2324",
-      "weight": 0.04135,
+      "weight": 0.04271,
       "shares_held": 2746000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.89
+      "price": 0.93
     },
     {
       "name": "COP CASH",
@@ -1173,15 +1197,15 @@
     {
       "name": "COROMANDEL INTERNATIONAL LTD",
       "ticker": "COROMANDEL",
-      "weight": 0.03022,
+      "weight": 0.02874,
       "shares_held": 76748,
       "exchange": "National Stock Exchange Of India",
-      "price": 23.24
+      "price": 22.42
     },
     {
       "name": "CP ALL NON-VOTING DR PCL",
       "ticker": "CPALL.R",
-      "weight": 0.09171,
+      "weight": 0.0904,
       "shares_held": 3641300,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.49
@@ -1189,26 +1213,26 @@
     {
       "name": "CREDICORP LTD",
       "ticker": "BAP",
-      "weight": 0.27389,
+      "weight": 0.27628,
       "shares_held": 46261,
       "exchange": "New York Stock Exchange Inc.",
-      "price": 349.42
+      "price": 357.59
     },
     {
       "name": "CTBC FINANCIAL HOLDING LTD",
       "ticker": "2891",
-      "weight": 0.33059,
+      "weight": 0.32097,
       "shares_held": 11466000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.7
+      "price": 1.68
     },
     {
       "name": "CUMMINS INDIA LTD",
       "ticker": "CUMMINSIND",
-      "weight": 0.09104,
+      "weight": 0.08655,
       "shares_held": 96955,
       "exchange": "National Stock Exchange Of India",
-      "price": 55.42
+      "price": 53.45
     },
     {
       "name": "CZK CASH",
@@ -1216,44 +1240,44 @@
       "weight": 0.00006,
       "shares_held": 70663,
       "exchange": "-",
-      "price": 4.81
+      "price": 4.85
     },
     {
       "name": "DABUR INDIA LTD",
       "ticker": "DABUR",
-      "weight": 0.03019,
+      "weight": 0.0288,
       "shares_held": 379158,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.7
+      "price": 4.55
     },
     {
       "name": "DAR AL ARKAN REAL ESTATE DEVELOPME",
       "ticker": "4300",
-      "weight": 0.03162,
+      "weight": 0.03086,
       "shares_held": 386499,
       "exchange": "Saudi Stock Exchange",
-      "price": 4.83
+      "price": 4.78
     },
     {
       "name": "DB INSURANCE LTD",
       "ticker": "005830",
-      "weight": 0.0619,
+      "weight": 0.06187,
       "shares_held": 31994,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 114.18
+      "price": 115.78
     },
     {
       "name": "DB ISLAMIC BANK",
       "ticker": "DIB",
-      "weight": 0.07307,
+      "weight": 0.07069,
       "shares_held": 2112307,
       "exchange": "Dubai Financial Market",
-      "price": 2.04
+      "price": 2
     },
     {
       "name": "DELTA ELECTRONICS (THAILAND) NON-V",
       "ticker": "DELTA.R",
-      "weight": 0.36271,
+      "weight": 0.35752,
       "shares_held": 2169200,
       "exchange": "Stock Exchange Of Thailand",
       "price": 9.87
@@ -1261,127 +1285,127 @@
     {
       "name": "DELTA ELECTRONICS INC",
       "ticker": "2308",
-      "weight": 1.23625,
+      "weight": 1.23117,
       "shares_held": 1334500,
       "exchange": "Taiwan Stock Exchange",
-      "price": 54.67
+      "price": 55.24
     },
     {
       "name": "DIAN SWASTATIKA SENTOSA",
       "ticker": "DSSA",
-      "weight": 0.05244,
+      "weight": 0.05477,
       "shares_held": 17007500,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.18
+      "price": 0.19
     },
     {
       "name": "DINO POLSKA SA",
       "ticker": "DNP",
-      "weight": 0.05551,
+      "weight": 0.0558,
       "shares_held": 344619,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 9.51
+      "price": 9.7
     },
     {
       "name": "DISCOVERY LTD",
       "ticker": "DSY",
-      "weight": 0.10224,
+      "weight": 0.10107,
       "shares_held": 390085,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 15.47
+      "price": 15.51
     },
     {
       "name": "DIVIS LABORATORIES LTD",
       "ticker": "DIVISLAB",
-      "weight": 0.09316,
+      "weight": 0.09049,
       "shares_held": 83352,
       "exchange": "National Stock Exchange Of India",
-      "price": 65.96
+      "price": 65
     },
     {
       "name": "DIXON TECHNOLOGIES (INDIA) LTD",
       "ticker": "DIXON",
-      "weight": 0.04998,
+      "weight": 0.04813,
       "shares_held": 25621,
       "exchange": "National Stock Exchange Of India",
-      "price": 115.13
+      "price": 112.48
     },
     {
       "name": "DLF LTD",
       "ticker": "DLF",
-      "weight": 0.05501,
+      "weight": 0.05373,
       "shares_held": 528539,
       "exchange": "National Stock Exchange Of India",
-      "price": 6.14
+      "price": 6.09
     },
     {
       "name": "DOOSAN CORP",
       "ticker": "000150",
-      "weight": 0.0758,
+      "weight": 0.07998,
       "shares_held": 5178,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 863.94
+      "price": 924.89
     },
     {
       "name": "DOOSAN ENERBILITY LTD",
       "ticker": "034020",
-      "weight": 0.35304,
+      "weight": 0.3466,
       "shares_held": 308327,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 67.58
+      "price": 67.31
     },
     {
       "name": "DR REDDYS LABORATORIES LTD",
       "ticker": "DRREDDY",
-      "weight": 0.08557,
+      "weight": 0.08401,
       "shares_held": 380070,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.29
+      "price": 13.23
     },
     {
       "name": "DR SULAIMAN AL HABIB MEDICAL GRP",
       "ticker": "4013",
-      "weight": 0.0709,
+      "weight": 0.07022,
       "shares_held": 62509,
       "exchange": "Saudi Stock Exchange",
-      "price": 66.94
+      "price": 67.27
     },
     {
       "name": "DUBAI ELECTRICITY AND WATER AUTHOR",
       "ticker": "DEWA",
-      "weight": 0.05417,
+      "weight": 0.05262,
       "shares_held": 4254909,
       "exchange": "Dubai Financial Market",
-      "price": 0.75
+      "price": 0.74
     },
     {
       "name": "DUKHAN BANK",
       "ticker": "DUBK",
-      "weight": 0.02485,
+      "weight": 0.02421,
       "shares_held": 1511377,
       "exchange": "Qatar Exchange",
-      "price": 0.97
+      "price": 0.96
     },
     {
       "name": "E INK HOLDINGS INC",
       "ticker": "8069",
-      "weight": 0.04737,
+      "weight": 0.04906,
       "shares_held": 620400,
       "exchange": "Gretai Securities Market",
-      "price": 4.51
+      "price": 4.73
     },
     {
       "name": "E.SUN FINANCIAL HOLDING LTD",
       "ticker": "2884",
-      "weight": 0.17148,
+      "weight": 0.17168,
       "shares_held": 9958806,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.02
+      "price": 1.03
     },
     {
       "name": "EASTERN CO.",
       "ticker": "EAST",
-      "weight": 0.00873,
+      "weight": 0.00865,
       "shares_held": 715750,
       "exchange": "Egyptian Exchange",
       "price": 0.72
@@ -1389,18 +1413,18 @@
     {
       "name": "ECOPRO BM LTD",
       "ticker": "247540",
-      "weight": 0.07999,
+      "weight": 0.07748,
       "shares_held": 34740,
       "exchange": "Korea Exchange (Kosdaq)",
-      "price": 135.9
+      "price": 133.54
     },
     {
       "name": "ECOPRO LTD",
       "ticker": "086520",
-      "weight": 0.11379,
+      "weight": 0.11059,
       "shares_held": 68018,
       "exchange": "Korea Exchange (Kosdaq)",
-      "price": 98.74
+      "price": 97.35
     },
     {
       "name": "EGP CASH",
@@ -1408,84 +1432,84 @@
       "weight": 0.0029,
       "shares_held": 9102102,
       "exchange": "-",
-      "price": 1.88
+      "price": 1.9
     },
     {
       "name": "EICHER MOTORS LTD",
       "ticker": "EICHERMOT",
-      "weight": 0.12618,
+      "weight": 0.11728,
       "shares_held": 93013,
       "exchange": "National Stock Exchange Of India",
-      "price": 80.06
+      "price": 75.49
     },
     {
       "name": "ELITE MATERIAL LTD",
       "ticker": "2383",
-      "weight": 0.37617,
+      "weight": 0.3915,
       "shares_held": 206000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 107.77
+      "price": 113.79
     },
     {
       "name": "EMAAR DEVELOPMENT",
       "ticker": "EMAARDEV",
-      "weight": 0.04823,
+      "weight": 0.04973,
       "shares_held": 729174,
       "exchange": "Dubai Financial Market",
-      "price": 3.9
+      "price": 4.08
     },
     {
       "name": "EMAAR PROPERTIES",
       "ticker": "EMAAR",
-      "weight": 0.25039,
+      "weight": 0.24888,
       "shares_held": 4561558,
       "exchange": "Dubai Financial Market",
-      "price": 3.24
+      "price": 3.27
     },
     {
       "name": "EMEMORY TECHNOLOGY INC",
       "ticker": "3529",
-      "weight": 0.06835,
+      "weight": 0.07617,
       "shares_held": 43323,
       "exchange": "Gretai Securities Market",
-      "price": 93.12
+      "price": 105.27
     },
     {
       "name": "EMIRATES NBD",
       "ticker": "EMIRATESNBD",
-      "weight": 0.18066,
+      "weight": 0.17413,
       "shares_held": 1276625,
       "exchange": "Dubai Financial Market",
-      "price": 8.35
+      "price": 8.17
     },
     {
       "name": "EMIRATES TELECOM",
       "ticker": "EAND",
-      "weight": 0.21528,
+      "weight": 0.20876,
       "shares_held": 2369154,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 5.36
+      "price": 5.28
     },
     {
       "name": "EMPRESAS CMPC SA",
       "ticker": "CMPC",
-      "weight": 0.01904,
+      "weight": 0.01868,
       "shares_held": 840498,
       "exchange": "Santiago Stock Exchange",
-      "price": 1.34
+      "price": 1.33
     },
     {
       "name": "EMPRESAS COPEC SA",
       "ticker": "COPEC",
-      "weight": 0.03714,
+      "weight": 0.03762,
       "shares_held": 293126,
       "exchange": "Santiago Stock Exchange",
-      "price": 7.48
+      "price": 7.68
     },
     {
       "name": "ENEL CHILE SA",
       "ticker": "ENELCHILE",
-      "weight": 0.02815,
+      "weight": 0.02802,
       "shares_held": 18732679,
       "exchange": "Santiago Stock Exchange",
       "price": 0.09
@@ -1493,7 +1517,7 @@
     {
       "name": "EREGLI DEMIR VE CELIK FABRIKALARI",
       "ticker": "EREGL.E",
-      "weight": 0.02846,
+      "weight": 0.02816,
       "shares_held": 2397157,
       "exchange": "Istanbul Stock Exchange",
       "price": 0.7
@@ -1501,71 +1525,79 @@
     {
       "name": "ETERNAL LTD",
       "ticker": "ETERNAL",
-      "weight": 0.07228,
+      "weight": 0.06957,
       "shares_held": 1646720,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.59
+      "price": 2.53
     },
     {
       "name": "ETIHAD ETISALAT",
       "ticker": "7020",
-      "weight": 0.08066,
+      "weight": 0.08011,
       "shares_held": 264669,
       "exchange": "Saudi Stock Exchange",
-      "price": 17.99
+      "price": 18.12
     },
     {
       "name": "EUR CASH",
       "ticker": "EUR",
-      "weight": 0.04532,
-      "shares_held": 2280377,
+      "weight": 0.04492,
+      "shares_held": 2277538,
       "exchange": "-",
-      "price": 117.29
+      "price": 118.09
+    },
+    {
+      "name": "EUR/USD",
+      "ticker": "EUR",
+      "weight": -0.00002,
+      "shares_held": -2000576,
+      "exchange": "-",
+      "price": 1
     },
     {
       "name": "EUROBANK SA",
       "ticker": "EUROB",
-      "weight": 0.12656,
+      "weight": 0.1351,
       "shares_held": 1706488,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 4.38
+      "price": 4.74
     },
     {
       "name": "EVA AIRWAYS CORP",
       "ticker": "2618",
-      "weight": 0.03602,
+      "weight": 0.03587,
       "shares_held": 1936000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.1
+      "price": 1.11
     },
     {
       "name": "EVERGREEN MARINE CORP (TAIWAN) LTD",
       "ticker": "2603",
-      "weight": 0.07871,
+      "weight": 0.07714,
       "shares_held": 728000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 6.38
+      "price": 6.34
     },
     {
       "name": "FALABELLA SACI SA",
       "ticker": "FALABELLA",
-      "weight": 0.05226,
+      "weight": 0.05082,
       "shares_held": 454724,
       "exchange": "Santiago Stock Exchange",
-      "price": 6.78
+      "price": 6.69
     },
     {
       "name": "FAR EASTERN NEW CENTURY CORP",
       "ticker": "1402",
-      "weight": 0.02857,
+      "weight": 0.02795,
       "shares_held": 2008000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.84
+      "price": 0.83
     },
     {
       "name": "FAR EASTONE TELECOMMUNICATIONS LTD",
       "ticker": "4904",
-      "weight": 0.06188,
+      "weight": 0.0609,
       "shares_held": 1225000,
       "exchange": "Taiwan Stock Exchange",
       "price": 2.98
@@ -1573,23 +1605,23 @@
     {
       "name": "FIBRA UNO ADMINISTRACION REIT",
       "ticker": "FUNO11",
-      "weight": 0.05691,
+      "weight": 0.05616,
       "shares_held": 1893042,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 1.77
+      "price": 1.78
     },
     {
       "name": "FIRST ABU DHABI BANK",
       "ticker": "FAB",
-      "weight": 0.26001,
+      "weight": 0.25463,
       "shares_held": 3030533,
       "exchange": "Abu Dhabi Securities Exchange",
-      "price": 5.06
+      "price": 5.03
     },
     {
       "name": "FIRST FINANCIAL HOLDING LTD",
       "ticker": "2892",
-      "weight": 0.12304,
+      "weight": 0.12149,
       "shares_held": 8057442,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.9
@@ -1597,90 +1629,90 @@
     {
       "name": "FIRSTRAND LTD",
       "ticker": "FSR",
-      "weight": 0.31802,
+      "weight": 0.31947,
       "shares_held": 3479863,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 5.39
+      "price": 5.5
     },
     {
       "name": "FOMENTO ECONOMICO MEXICANO",
       "ticker": "FEMSAUBD",
-      "weight": 0.22752,
+      "weight": 0.22163,
       "shares_held": 1151728,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 11.66
+      "price": 11.52
     },
     {
       "name": "FORD OTOMOTIV SANAYI A",
       "ticker": "FROTO.E",
-      "weight": 0.0171,
+      "weight": 0.01696,
       "shares_held": 428117,
       "exchange": "Istanbul Stock Exchange",
-      "price": 2.36
+      "price": 2.37
     },
     {
       "name": "FORMOSA CHEMICALS & FIBRE CORP",
       "ticker": "1326",
-      "weight": 0.06217,
+      "weight": 0.07374,
       "shares_held": 2562000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.43
+      "price": 1.72
     },
     {
       "name": "FORMOSA PLASTICS CORP",
       "ticker": "1301",
-      "weight": 0.06543,
+      "weight": 0.07471,
       "shares_held": 2610000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.48
+      "price": 1.71
     },
     {
       "name": "FORTIS HEALTHCARE LTD",
       "ticker": "FORTIS",
-      "weight": 0.05339,
+      "weight": 0.0524,
       "shares_held": 344627,
       "exchange": "National Stock Exchange Of India",
-      "price": 9.14
+      "price": 9.1
     },
     {
       "name": "FORTUNE ELECTRIC LTD",
       "ticker": "1519",
-      "weight": 0.04047,
+      "weight": 0.04075,
       "shares_held": 93120,
       "exchange": "Taiwan Stock Exchange",
-      "price": 25.65
+      "price": 26.2
     },
     {
       "name": "FSN E-COMMERCE VENTURES LTD",
       "ticker": "NYKAA",
-      "weight": 0.03686,
+      "weight": 0.03573,
       "shares_held": 777425,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.8
+      "price": 2.75
     },
     {
       "name": "FUBON FINANCIAL HOLDING LTD",
       "ticker": "2881",
-      "weight": 0.27191,
+      "weight": 0.26847,
       "shares_held": 5813338,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.76
+      "price": 2.77
     },
     {
       "name": "GAIL INDIA LTD",
       "ticker": "GAIL",
-      "weight": 0.04349,
+      "weight": 0.04247,
       "shares_held": 1544778,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.66
+      "price": 1.65
     },
     {
       "name": "GAMUDA",
       "ticker": "GAMUDA",
-      "weight": 0.05576,
+      "weight": 0.05584,
       "shares_held": 3245800,
       "exchange": "Bursa Malaysia",
-      "price": 1.01
+      "price": 1.03
     },
     {
       "name": "GAZPROM",
@@ -1696,47 +1728,47 @@
       "weight": 0.00081,
       "shares_held": 35539,
       "exchange": "-",
-      "price": 134.63
+      "price": 135.87
     },
     {
       "name": "GE VERNOVA T&D INDIA LTD",
       "ticker": "GVT&D",
-      "weight": 0.06634,
+      "weight": 0.06535,
       "shares_held": 89263,
       "exchange": "National Stock Exchange Of India",
-      "price": 43.86
+      "price": 43.84
     },
     {
       "name": "GEDEON RICHTER",
       "ticker": "RICHTER",
-      "weight": 0.05921,
+      "weight": 0.06143,
       "shares_held": 87351,
       "exchange": "Budapest Stock Exchange",
-      "price": 40
+      "price": 42.11
     },
     {
       "name": "GIGABYTE TECHNOLOGY LTD",
       "ticker": "2376",
-      "weight": 0.05256,
+      "weight": 0.05209,
       "shares_held": 375000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 8.27
+      "price": 8.32
     },
     {
       "name": "GLOBAL UNICHIP CORP",
       "ticker": "3443",
-      "weight": 0.07826,
+      "weight": 0.08843,
       "shares_held": 55000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 83.98
+      "price": 96.27
     },
     {
       "name": "GLOBALWAFERS LTD",
       "ticker": "6488",
-      "weight": 0.04654,
+      "weight": 0.04693,
       "shares_held": 177700,
       "exchange": "Gretai Securities Market",
-      "price": 15.46
+      "price": 15.81
     },
     {
       "name": "GMK NORILSKIY NIKEL",
@@ -1749,47 +1781,47 @@
     {
       "name": "GMR AIRPORTS LTD",
       "ticker": "GMRAIRPORT",
-      "weight": 0.0334,
+      "weight": 0.03258,
       "shares_held": 1919158,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.03
+      "price": 1.02
     },
     {
       "name": "GODREJ CONSUMER PRODUCTS LTD",
       "ticker": "GODREJCP",
-      "weight": 0.05784,
+      "weight": 0.05565,
       "shares_held": 293599,
       "exchange": "National Stock Exchange Of India",
-      "price": 11.63
+      "price": 11.35
     },
     {
       "name": "GODREJ PROPERTIES LTD",
       "ticker": "GODREJPROP",
-      "weight": 0.03471,
+      "weight": 0.03378,
       "shares_held": 110659,
       "exchange": "National Stock Exchange Of India",
-      "price": 18.51
+      "price": 18.28
     },
     {
       "name": "GOLD CIRCUIT ELECTRONICS LTD",
       "ticker": "2368",
-      "weight": 0.12513,
+      "weight": 0.13035,
       "shares_held": 215000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 34.35
+      "price": 36.3
     },
     {
       "name": "GOLD FIELDS LTD",
       "ticker": "GFI",
-      "weight": 0.51277,
+      "weight": 0.51147,
       "shares_held": 614699,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 49.23
+      "price": 49.82
     },
     {
       "name": "GOTO GOJEK TOKOPEDIA",
       "ticker": "GOTO",
-      "weight": 0.0335,
+      "weight": 0.03298,
       "shares_held": 649888400,
       "exchange": "Indonesia Stock Exchange",
       "price": 0
@@ -1797,87 +1829,87 @@
     {
       "name": "GPO FINANCE BANORTE",
       "ticker": "GFNORTEO",
-      "weight": 0.33838,
+      "weight": 0.32937,
       "shares_held": 1735302,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 11.51
+      "price": 11.36
     },
     {
       "name": "GRASIM INDUSTRIES LTD",
       "ticker": "GRASIM",
-      "weight": 0.09131,
+      "weight": 0.08841,
       "shares_held": 182213,
       "exchange": "National Stock Exchange Of India",
-      "price": 29.58
+      "price": 29.05
     },
     {
       "name": "GRUMA",
       "ticker": "GRUMAB",
-      "weight": 0.03086,
+      "weight": 0.03014,
       "shares_held": 102507,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 17.77
+      "price": 17.6
     },
     {
       "name": "GRUPO AEROPORTUARIO DEL CENTRO NOR",
       "ticker": "OMAB",
-      "weight": 0.05084,
+      "weight": 0.04857,
       "shares_held": 207025,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 14.49
+      "price": 14.05
     },
     {
       "name": "GRUPO AEROPORTUARIO DEL PACIFICO",
       "ticker": "GAPB",
-      "weight": 0.11005,
+      "weight": 0.10339,
       "shares_held": 263678,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 24.63
+      "price": 23.48
     },
     {
       "name": "GRUPO AEROPORTUARIO DEL SURESTE B",
       "ticker": "ASURB",
-      "weight": 0.07716,
+      "weight": 0.07465,
       "shares_held": 130833,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 34.81
+      "price": 34.16
     },
     {
       "name": "GRUPO BIMBO A",
       "ticker": "BIMBOA",
-      "weight": 0.0493,
+      "weight": 0.04832,
       "shares_held": 868544,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 3.35
+      "price": 3.33
     },
     {
       "name": "GRUPO CARSO SERIES A1",
       "ticker": "GCARSOA1",
-      "weight": 0.05883,
+      "weight": 0.05845,
       "shares_held": 401566,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 8.65
+      "price": 8.72
     },
     {
       "name": "GRUPO CIBEST PREF SA",
       "ticker": "PFCIBEST",
-      "weight": 0.09601,
+      "weight": 0.09957,
       "shares_held": 305165,
       "exchange": "Bolsa De Valores De Colombia",
-      "price": 18.57
+      "price": 19.54
     },
     {
       "name": "GRUPO CIBEST SA",
       "ticker": "CIBEST",
-      "weight": 0.06815,
+      "weight": 0.06969,
       "shares_held": 168009,
       "exchange": "Bolsa De Valores De Colombia",
-      "price": 23.94
+      "price": 24.84
     },
     {
       "name": "GRUPO COMERCIAL CHEDRAUI",
       "ticker": "CHDRAUIB",
-      "weight": 0.02031,
+      "weight": 0.02003,
       "shares_held": 197775,
       "exchange": "Bolsa Mexicana De Valores",
       "price": 6.06
@@ -1885,23 +1917,23 @@
     {
       "name": "GRUPO FINANCIERO INBURSA SRIES O",
       "ticker": "GFINBURO",
-      "weight": 0.04639,
+      "weight": 0.04522,
       "shares_held": 1051253,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 2.6
+      "price": 2.58
     },
     {
       "name": "GRUPO MEXICO B",
       "ticker": "GMEXICOB",
-      "weight": 0.42772,
+      "weight": 0.42258,
       "shares_held": 2111835,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 11.95
+      "price": 11.98
     },
     {
       "name": "GULF BANK",
       "ticker": "GBK",
-      "weight": 0.02193,
+      "weight": 0.02159,
       "shares_held": 1263095,
       "exchange": "Kuwait Stock Exchange",
       "price": 1.02
@@ -1909,7 +1941,7 @@
     {
       "name": "GULF DEVELOPMENT NON-VOTING DR PCL",
       "ticker": "GULF.R",
-      "weight": 0.09898,
+      "weight": 0.09756,
       "shares_held": 3153688,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.85
@@ -1917,391 +1949,391 @@
     {
       "name": "HACI OMER SABANCI HOLDING A",
       "ticker": "SAHOL.E",
-      "weight": 0.03199,
+      "weight": 0.03104,
       "shares_held": 826881,
       "exchange": "Istanbul Stock Exchange",
-      "price": 2.28
+      "price": 2.25
     },
     {
       "name": "HANA FINANCIAL GROUP INC",
       "ticker": "086790",
-      "weight": 0.26058,
+      "weight": 0.25991,
       "shares_held": 190822,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 80.59
+      "price": 81.55
     },
     {
       "name": "HANJIN KAL",
       "ticker": "180640",
-      "weight": 0.02197,
+      "weight": 0.02057,
       "shares_held": 16332,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 79.38
+      "price": 75.41
     },
     {
       "name": "HANKOOK TIRE & TECHNOLOGY LTD",
       "ticker": "161390",
-      "weight": 0.03553,
+      "weight": 0.03296,
       "shares_held": 47838,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 43.84
+      "price": 41.25
     },
     {
       "name": "HANMI SEMICONDUCTOR LTD",
       "ticker": "042700",
-      "weight": 0.09822,
+      "weight": 0.09623,
       "shares_held": 30053,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 192.88
+      "price": 191.73
     },
     {
       "name": "HANWHA AEROSPACE LTD",
       "ticker": "012450",
-      "weight": 0.3952,
+      "weight": 0.39408,
       "shares_held": 22949,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 1016.35
+      "price": 1028.19
     },
     {
       "name": "HANWHA OCEAN LTD",
       "ticker": "042660",
-      "weight": 0.1325,
+      "weight": 0.13148,
       "shares_held": 93966,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 83.22
+      "price": 83.78
     },
     {
       "name": "HANWHA SYSTEMS LTD",
       "ticker": "272210",
-      "weight": 0.07595,
+      "weight": 0.07483,
       "shares_held": 49863,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 89.9
+      "price": 89.86
     },
     {
       "name": "HARMONY GOLD MINING COMPANY LIMITE",
       "ticker": "HAR",
-      "weight": 0.11321,
+      "weight": 0.11282,
       "shares_held": 401259,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 16.65
+      "price": 16.83
     },
     {
       "name": "HAVELLS INDIA LTD",
       "ticker": "HAVELLS",
-      "weight": 0.0368,
+      "weight": 0.0358,
       "shares_held": 157117,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.82
+      "price": 13.64
     },
     {
       "name": "HCL TECHNOLOGIES LTD",
       "ticker": "HCLTECH",
-      "weight": 0.17434,
+      "weight": 0.16807,
       "shares_held": 657457,
       "exchange": "National Stock Exchange Of India",
-      "price": 15.65
+      "price": 15.31
     },
     {
       "name": "HD HYUNDAI ELECTRIC LTD",
       "ticker": "267260",
-      "weight": 0.18494,
+      "weight": 0.1938,
       "shares_held": 16200,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 673.75
+      "price": 716.29
     },
     {
       "name": "HD HYUNDAI HEAVY INDUSTRIES LTD",
       "ticker": "329180",
-      "weight": 0.13651,
+      "weight": 0.13583,
       "shares_held": 25149,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 320.35
+      "price": 323.38
     },
     {
       "name": "HD HYUNDAI LTD",
       "ticker": "267250",
-      "weight": 0.08681,
+      "weight": 0.08498,
       "shares_held": 30146,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 169.95
+      "price": 168.78
     },
     {
       "name": "HD HYUNDAI MARINE SOLUTION LTD",
       "ticker": "443060",
-      "weight": 0.02307,
+      "weight": 0.02266,
       "shares_held": 10830,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 125.71
+      "price": 125.3
     },
     {
       "name": "HD KOREA SHIPBUILDING & OFFSHORE E",
       "ticker": "009540",
-      "weight": 0.1328,
+      "weight": 0.13187,
       "shares_held": 29497,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 265.72
+      "price": 267.68
     },
     {
       "name": "HDFC ASSET MANAGEMENT COMPANY LTD",
       "ticker": "HDFCAMC",
-      "weight": 0.06241,
+      "weight": 0.05938,
       "shares_held": 130407,
       "exchange": "National Stock Exchange Of India",
-      "price": 28.25
+      "price": 27.26
     },
     {
       "name": "HDFC BANK LTD",
       "ticker": "HDFCBANK",
-      "weight": 1.15432,
+      "weight": 1.10806,
       "shares_held": 7796221,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.74
+      "price": 8.51
     },
     {
       "name": "HDFC LIFE INSURANCE COMPANY LTD",
       "ticker": "HDFCLIFE",
-      "weight": 0.07345,
+      "weight": 0.07367,
       "shares_held": 665322,
       "exchange": "National Stock Exchange Of India",
-      "price": 6.52
+      "price": 6.63
     },
     {
       "name": "HELLENIC TELECOMMUNICATIONS ORGANI",
       "ticker": "HTO",
-      "weight": 0.04119,
+      "weight": 0.04134,
       "shares_held": 115802,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 20.99
+      "price": 21.37
     },
     {
       "name": "HERO MOTOCORP LTD",
       "ticker": "HEROMOTOCO",
-      "weight": 0.08433,
+      "weight": 0.07923,
       "shares_held": 84426,
       "exchange": "National Stock Exchange Of India",
-      "price": 58.95
+      "price": 56.19
     },
     {
       "name": "HINDALCO INDUSTRIES LTD",
       "ticker": "HINDALCO",
-      "weight": 0.17078,
-      "shares_held": 942092,
+      "weight": 0.1572,
+      "shares_held": 898531,
       "exchange": "National Stock Exchange Of India",
-      "price": 10.7
+      "price": 10.48
     },
     {
       "name": "HINDUSTAN AERONAUTICS LTD",
       "ticker": "HAL",
-      "weight": 0.10511,
+      "weight": 0.10257,
       "shares_held": 139880,
       "exchange": "National Stock Exchange Of India",
-      "price": 44.35
+      "price": 43.9
     },
     {
       "name": "HINDUSTAN PETROLEUM CORP LTD",
       "ticker": "HINDPETRO",
-      "weight": 0.04434,
+      "weight": 0.04205,
       "shares_held": 672949,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.89
+      "price": 3.74
     },
     {
       "name": "HINDUSTAN UNILEVER LTD",
       "ticker": "HINDUNILVR",
-      "weight": 0.22334,
+      "weight": 0.21575,
       "shares_held": 567110,
       "exchange": "National Stock Exchange Of India",
-      "price": 23.24
+      "price": 22.78
     },
     {
       "name": "HITACHI ENERGY INDIA LTD",
       "ticker": "POWERINDIA",
-      "weight": 0.04881,
+      "weight": 0.0476,
       "shares_held": 9397,
       "exchange": "National Stock Exchange Of India",
-      "price": 306.54
+      "price": 303.31
     },
     {
       "name": "HLB INC",
       "ticker": "028300",
-      "weight": 0.05595,
+      "weight": 0.06094,
       "shares_held": 86202,
       "exchange": "Korea Exchange (Kosdaq)",
-      "price": 38.31
+      "price": 42.33
     },
     {
       "name": "HMM LTD",
       "ticker": "011200",
-      "weight": 0.04042,
+      "weight": 0.03868,
       "shares_held": 163362,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 14.6
+      "price": 14.18
     },
     {
       "name": "HON HAI PRECISION INDUSTRY LTD",
       "ticker": "2317",
-      "weight": 0.92385,
+      "weight": 0.94402,
       "shares_held": 8629800,
       "exchange": "Taiwan Stock Exchange",
-      "price": 6.32
+      "price": 6.55
     },
     {
       "name": "HONG LEONG BANK",
       "ticker": "HLBANK",
-      "weight": 0.04461,
+      "weight": 0.04357,
       "shares_held": 472800,
       "exchange": "Bursa Malaysia",
-      "price": 5.57
+      "price": 5.52
     },
     {
       "name": "HONPRECISION INC",
       "ticker": "7769",
-      "weight": 0.11437,
+      "weight": 0.11252,
       "shares_held": 51000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 132.35
+      "price": 132.1
     },
     {
       "name": "HOTAI MOTOR LTD",
       "ticker": "2207",
-      "weight": 0.05246,
+      "weight": 0.0521,
       "shares_held": 193406,
       "exchange": "Taiwan Stock Exchange",
-      "price": 16.01
+      "price": 16.13
     },
     {
       "name": "HUA NAN FINANCIAL HOLDINGS LTD",
       "ticker": "2880",
-      "weight": 0.11115,
+      "weight": 0.11264,
       "shares_held": 6104932,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.07
+      "price": 1.1
     },
     {
       "name": "HUF CASH",
       "ticker": "HUF",
-      "weight": 0.00444,
+      "weight": 0.00455,
       "shares_held": 83910047,
       "exchange": "-",
-      "price": 0.31
+      "price": 0.32
     },
     {
       "name": "HYBE LTD",
       "ticker": "352820",
-      "weight": 0.04518,
+      "weight": 0.04309,
       "shares_held": 15566,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 171.3
+      "price": 165.74
     },
     {
       "name": "HYOSUNG HEAVY INDUSTRIES CORP",
       "ticker": "298040",
-      "weight": 0.12679,
+      "weight": 0.12945,
       "shares_held": 3774,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 1982.8
+      "price": 2053.67
     },
     {
       "name": "HYUNDAI ENGINEERING & CONSTRUCTION",
       "ticker": "000720",
-      "weight": 0.10949,
+      "weight": 0.10635,
       "shares_held": 53381,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 121.06
+      "price": 119.29
     },
     {
       "name": "HYUNDAI GLOVIS LTD",
       "ticker": "086280",
-      "weight": 0.06257,
+      "weight": 0.06202,
       "shares_held": 25061,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 147.36
+      "price": 148.19
     },
     {
       "name": "HYUNDAI MOBIS LTD",
       "ticker": "012330",
-      "weight": 0.18798,
+      "weight": 0.18664,
       "shares_held": 40871,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 271.46
+      "price": 273.42
     },
     {
       "name": "HYUNDAI MOTOR",
       "ticker": "005380",
-      "weight": 0.50586,
+      "weight": 0.50117,
       "shares_held": 90435,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 330.13
+      "price": 331.81
     },
     {
       "name": "HYUNDAI MOTOR INDIA LTD",
       "ticker": "HYUNDAI",
-      "weight": 0.03899,
+      "weight": 0.03709,
       "shares_held": 118769,
       "exchange": "National Stock Exchange Of India",
-      "price": 19.37
+      "price": 18.7
     },
     {
       "name": "HYUNDAI MOTOR S1 PREF",
       "ticker": "005385",
-      "weight": 0.03847,
+      "weight": 0.03835,
       "shares_held": 14056,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 161.52
+      "price": 163.38
     },
     {
       "name": "HYUNDAI MOTOR S2 PREF",
       "ticker": "005387",
-      "weight": 0.06442,
+      "weight": 0.06343,
       "shares_held": 23488,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 161.86
+      "price": 161.69
     },
     {
       "name": "HYUNDAI-ROTEM",
       "ticker": "064350",
-      "weight": 0.12694,
+      "weight": 0.12615,
       "shares_held": 52898,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 141.63
+      "price": 142.78
     },
     {
       "name": "ICICI BANK LTD",
       "ticker": "ICICIBANK",
-      "weight": 0.85542,
-      "shares_held": 3541458,
+      "weight": 0.87488,
+      "shares_held": 3620637,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.26
+      "price": 14.47
     },
     {
       "name": "ICICI LOMBARD GENERAL INSURANCE CO",
       "ticker": "ICICIGI",
-      "weight": 0.04775,
+      "weight": 0.04664,
       "shares_held": 146318,
       "exchange": "National Stock Exchange Of India",
-      "price": 19.26
+      "price": 19.08
     },
     {
       "name": "ICICI PRUDENTIAL LIFE INSURANCE CO",
       "ticker": "ICICIPRULI",
-      "weight": 0.01701,
+      "weight": 0.01663,
       "shares_held": 170198,
       "exchange": "National Stock Exchange Of India",
-      "price": 5.9
+      "price": 5.85
     },
     {
       "name": "IDFC FIRST BANK LTD",
       "ticker": "IDFCFIRSTB",
-      "weight": 0.02992,
+      "weight": 0.02869,
       "shares_held": 2473157,
       "exchange": "National Stock Exchange Of India",
-      "price": 0.71
+      "price": 0.69
     },
     {
       "name": "IDR CASH",
       "ticker": "IDR",
-      "weight": 0.02009,
+      "weight": 0.01978,
       "shares_held": 20267687128,
       "exchange": "-",
       "price": 0.01
@@ -2309,112 +2341,144 @@
     {
       "name": "IHH HEALTHCARE",
       "ticker": "IHH",
-      "weight": 0.057,
+      "weight": 0.056,
       "shares_held": 1514100,
       "exchange": "Bursa Malaysia",
-      "price": 2.22
+      "price": 2.21
     },
     {
       "name": "IMPALA PLATINUM LTD",
       "ticker": "IMP",
-      "weight": 0.15836,
+      "weight": 0.16257,
       "shares_held": 606473,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 15.41
+      "price": 16.05
     },
     {
       "name": "INDIAN HOTELS LTD",
       "ticker": "INDHOTEL",
-      "weight": 0.07056,
+      "weight": 0.06836,
       "shares_held": 601957,
       "exchange": "National Stock Exchange Of India",
-      "price": 6.92
+      "price": 6.8
     },
     {
       "name": "INDIAN OIL CORP LTD",
       "ticker": "IOC",
-      "weight": 0.05182,
+      "weight": 0.05005,
       "shares_held": 1983734,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.54
+      "price": 1.51
     },
     {
       "name": "INDUS TOWERS LTD",
       "ticker": "INDUSTOWER",
-      "weight": 0.07139,
+      "weight": 0.06997,
       "shares_held": 892277,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.72
+      "price": 4.7
     },
     {
       "name": "INDUSIND BANK LTD",
       "ticker": "INDUSINDBK",
-      "weight": 0.05884,
+      "weight": 0.05676,
       "shares_held": 387526,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.96
+      "price": 8.77
     },
     {
       "name": "INDUST PENOLES",
       "ticker": "PE&OLES*",
-      "weight": 0.12725,
+      "weight": 0.12774,
       "shares_held": 136144,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 55.16
+      "price": 56.18
     },
     {
       "name": "INDUSTRIAL BANK OF KOREA",
       "ticker": "024110",
-      "weight": 0.05073,
+      "weight": 0.05017,
       "shares_held": 198628,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 15.07
+      "price": 15.12
     },
     {
       "name": "INDUSTRIES QATAR",
       "ticker": "IQCD",
-      "weight": 0.05798,
+      "weight": 0.05701,
       "shares_held": 1044434,
       "exchange": "Qatar Exchange",
-      "price": 3.28
+      "price": 3.27
     },
     {
       "name": "INFO EDGE INDIA LTD",
       "ticker": "NAUKRI",
-      "weight": 0.04662,
+      "weight": 0.0458,
       "shares_held": 257484,
       "exchange": "National Stock Exchange Of India",
-      "price": 10.69
+      "price": 10.65
     },
     {
       "name": "INFOSYS LTD",
       "ticker": "INFY",
-      "weight": 0.5242,
+      "weight": 0.50684,
       "shares_held": 2219578,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.94
+      "price": 13.67
     },
     {
       "name": "INNOLUX CORP",
       "ticker": "3481",
-      "weight": 0.07334,
+      "weight": 0.07589,
       "shares_held": 5282703,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.82
+      "price": 0.86
     },
     {
       "name": "INR CASH",
       "ticker": "INR",
-      "weight": -0.01776,
-      "shares_held": -97183717,
+      "weight": -0.00464,
+      "shares_held": -25920347,
       "exchange": "-",
-      "price": 1.08
+      "price": 1.07
     },
     {
       "name": "INR/USD",
       "ticker": "INR",
-      "weight": -0.00001,
-      "shares_held": 109725693,
+      "weight": -0.00013,
+      "shares_held": 107064703,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "INR/USD",
+      "ticker": "INR",
+      "weight": -0.00008,
+      "shares_held": 60951334,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "INR/USD",
+      "ticker": "INR",
+      "weight": 0.00005,
+      "shares_held": -42614227,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "INR/USD",
+      "ticker": "INR",
+      "weight": 0.00005,
+      "shares_held": -42539394,
+      "exchange": "-",
+      "price": 1
+    },
+    {
+      "name": "INR/USD",
+      "ticker": "INR",
+      "weight": 0.00006,
+      "shares_held": -44400092,
       "exchange": "-",
       "price": 1
     },
@@ -2429,183 +2493,183 @@
     {
       "name": "INTERCONEXION ELECTRICA SA",
       "ticker": "ISA",
-      "weight": 0.0362,
+      "weight": 0.03843,
       "shares_held": 270441,
       "exchange": "Bolsa De Valores De Colombia",
-      "price": 7.9
+      "price": 8.51
     },
     {
       "name": "INTERGLOBE AVIATION LTD",
       "ticker": "INDIGO",
-      "weight": 0.10535,
+      "weight": 0.10023,
       "shares_held": 126593,
       "exchange": "National Stock Exchange Of India",
-      "price": 49.11
+      "price": 47.41
     },
     {
       "name": "INTERNATIONAL CONTAINER TERMINAL S",
       "ticker": "ICT",
-      "weight": 0.14291,
+      "weight": 0.14112,
       "shares_held": 702670,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 12
+      "price": 12.03
     },
     {
       "name": "INTERNATIONAL GAMES SYSTEM LTD",
       "ticker": "3293",
-      "weight": 0.06282,
+      "weight": 0.06122,
       "shares_held": 153000,
       "exchange": "Gretai Securities Market",
-      "price": 24.23
+      "price": 23.96
     },
     {
       "name": "INVENTEC CORP",
       "ticker": "2356",
-      "weight": 0.04608,
+      "weight": 0.0458,
       "shares_held": 1948000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.4
+      "price": 1.41
     },
     {
       "name": "IOI CORPORATION",
       "ticker": "IOICORP",
-      "weight": 0.02642,
+      "weight": 0.02657,
       "shares_held": 1454800,
       "exchange": "Bursa Malaysia",
-      "price": 1.07
+      "price": 1.09
     },
     {
       "name": "ISHARES MSCI BRAZIL UCITS ET USDHA",
       "ticker": "4BRZ",
-      "weight": 6.59662,
+      "weight": 6.62452,
       "shares_held": 6775623,
       "exchange": "Xetra",
-      "price": 57.46
+      "price": 58.54
     },
     {
       "name": "ITC LTD",
       "ticker": "ITC",
-      "weight": 0.11614,
+      "weight": 0.11158,
       "shares_held": 2089128,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.28
+      "price": 3.2
     },
     {
       "name": "JABAL OMAR DEVELOPMENT",
       "ticker": "4250",
-      "weight": 0.02783,
+      "weight": 0.02713,
       "shares_held": 394564,
       "exchange": "Saudi Stock Exchange",
-      "price": 4.16
+      "price": 4.12
     },
     {
       "name": "JARIR MARKETING",
       "ticker": "4190",
-      "weight": 0.02816,
+      "weight": 0.02815,
       "shares_held": 438324,
       "exchange": "Saudi Stock Exchange",
-      "price": 3.79
+      "price": 3.85
     },
     {
       "name": "JENTECH PRECISION INDUSTRIAL LTD",
       "ticker": "3653",
-      "weight": 0.12554,
+      "weight": 0.1202,
       "shares_held": 57000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 129.99
+      "price": 126.26
     },
     {
       "name": "JINDAL STAINLESS LTD",
       "ticker": "JSL",
-      "weight": 0.03063,
+      "weight": 0.02938,
       "shares_held": 214698,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.42
+      "price": 8.19
     },
     {
       "name": "JINDAL STEEL LTD",
       "ticker": "JINDALSTEL",
-      "weight": 0.05621,
+      "weight": 0.05499,
       "shares_held": 252329,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.15
+      "price": 13.05
     },
     {
       "name": "JIO FINANCIAL SERVICES LTD",
       "ticker": "JIOFIN",
-      "weight": 0.08881,
+      "weight": 0.08496,
       "shares_held": 1998592,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.62
+      "price": 2.55
     },
     {
       "name": "JOLLIBEE FOODS CORP",
       "ticker": "JFC",
-      "weight": 0.01603,
+      "weight": 0.01489,
       "shares_held": 334720,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 2.83
+      "price": 2.66
     },
     {
       "name": "JSW ENERGY LTD",
       "ticker": "JSWENERGY",
-      "weight": 0.02722,
+      "weight": 0.02777,
       "shares_held": 304743,
       "exchange": "National Stock Exchange Of India",
-      "price": 5.27
+      "price": 5.46
     },
     {
       "name": "JSW STEEL LTD",
       "ticker": "JSWSTEEL",
-      "weight": 0.09075,
+      "weight": 0.08805,
       "shares_held": 408833,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.1
+      "price": 12.9
     },
     {
       "name": "JUBILANT FOODWORKS LTD",
       "ticker": "JUBLFOOD",
-      "weight": 0.02304,
+      "weight": 0.02219,
       "shares_held": 283294,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.8
+      "price": 4.69
     },
     {
       "name": "JUMBO SA",
       "ticker": "BELA",
-      "weight": 0.038,
+      "weight": 0.03752,
       "shares_held": 81586,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 27.49
+      "price": 27.54
     },
     {
       "name": "KAKAO CORP",
       "ticker": "035720",
-      "weight": 0.11697,
+      "weight": 0.11638,
       "shares_held": 214593,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 32.17
+      "price": 32.47
     },
     {
       "name": "KAKAOBANK CORP",
       "ticker": "323410",
-      "weight": 0.03465,
+      "weight": 0.03419,
       "shares_held": 120086,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 17.03
+      "price": 17.05
     },
     {
       "name": "KALYAN JEWELLERS INDIA LTD",
       "ticker": "KALYANKJIL",
-      "weight": 0.02501,
+      "weight": 0.02407,
       "shares_held": 304758,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.84
+      "price": 4.73
     },
     {
       "name": "KASIKORNBANK PUBLIC NON-VOTING DR",
       "ticker": "KBANK.R",
-      "weight": 0.03867,
+      "weight": 0.03811,
       "shares_held": 381800,
       "exchange": "Stock Exchange Of Thailand",
       "price": 5.98
@@ -2613,127 +2677,127 @@
     {
       "name": "KB FINANCIAL GROUP INC",
       "ticker": "105560",
-      "weight": 0.44554,
+      "weight": 0.43295,
       "shares_held": 246302,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 106.76
+      "price": 105.25
     },
     {
       "name": "KGHM POLSKA MIEDZ SA",
       "ticker": "KGH",
-      "weight": 0.14299,
+      "weight": 0.1437,
       "shares_held": 97510,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 86.55
+      "price": 88.24
     },
     {
       "name": "KGI FINANCIAL HOLDING LTD",
       "ticker": "2883",
-      "weight": 0.12285,
+      "weight": 0.11957,
       "shares_held": 10878255,
       "exchange": "Taiwan Stock Exchange",
-      "price": 0.67
+      "price": 0.66
     },
     {
       "name": "KIA CORPORATION CORP",
       "ticker": "000270",
-      "weight": 0.26987,
+      "weight": 0.26664,
       "shares_held": 158499,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 100.49
+      "price": 100.73
     },
     {
       "name": "KIMBERLY-CLARK DE MEXICO CLASS A",
       "ticker": "KIMBERA",
-      "weight": 0.04436,
+      "weight": 0.04344,
       "shares_held": 1095046,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 2.39
+      "price": 2.38
     },
     {
       "name": "KING SLIDE WORKS LTD",
       "ticker": "2059",
-      "weight": 0.06807,
+      "weight": 0.06901,
       "shares_held": 38000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 105.72
+      "price": 108.74
     },
     {
       "name": "KING YUAN ELECTRONICS LTD",
       "ticker": "2449",
-      "weight": 0.10905,
+      "weight": 0.11679,
       "shares_held": 736000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 8.74
+      "price": 9.5
     },
     {
       "name": "KOC HOLDING A",
       "ticker": "KCHOL.E",
-      "weight": 0.04111,
+      "weight": 0.04094,
       "shares_held": 531387,
       "exchange": "Istanbul Stock Exchange",
-      "price": 4.57
+      "price": 4.61
     },
     {
       "name": "KOMERCNI BANK",
       "ticker": "BAAKOMB",
-      "weight": 0.04845,
+      "weight": 0.04816,
       "shares_held": 51191,
       "exchange": "Prague Stock Exchange",
-      "price": 55.86
+      "price": 56.34
     },
     {
       "name": "KOREA AEROSPACE INDUSTRIES LTD",
       "ticker": "047810",
-      "weight": 0.11365,
+      "weight": 0.10844,
       "shares_held": 49754,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 134.82
+      "price": 130.5
     },
     {
       "name": "KOREA ELECTRIC POWER CORP",
       "ticker": "015760",
-      "weight": 0.0828,
+      "weight": 0.08349,
       "shares_held": 166957,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 29.27
+      "price": 29.94
     },
     {
       "name": "KOREA INVESTMENT HOLDINGS LTD",
       "ticker": "071050",
-      "weight": 0.08177,
+      "weight": 0.08603,
       "shares_held": 29632,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 162.87
+      "price": 173.84
     },
     {
       "name": "KOREAN AIR LINES LTD",
       "ticker": "003490",
-      "weight": 0.03525,
+      "weight": 0.03478,
       "shares_held": 124878,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 16.66
+      "price": 16.68
     },
     {
       "name": "KOTAK MAHINDRA BANK LTD",
       "ticker": "KOTAKBANK",
-      "weight": 0.25575,
+      "weight": 0.24855,
       "shares_held": 3736936,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.04
+      "price": 3.98
     },
     {
       "name": "KRAFTON INC",
       "ticker": "259960",
-      "weight": 0.05523,
+      "weight": 0.05484,
       "shares_held": 20350,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 160.18
+      "price": 161.35
     },
     {
       "name": "KRUNG THAI BANK PUBLIC NON-VOTING",
       "ticker": "KTB.R",
-      "weight": 0.0438,
+      "weight": 0.04318,
       "shares_held": 2516500,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.03
@@ -2741,71 +2805,79 @@
     {
       "name": "KRW CASH",
       "ticker": "KRW",
-      "weight": 0.11339,
-      "shares_held": 9923219356,
+      "weight": 0.1119,
+      "shares_held": 9924502995,
       "exchange": "-",
       "price": 0.07
     },
     {
       "name": "KT&G CORP",
       "ticker": "033780",
-      "weight": 0.12357,
+      "weight": 0.12475,
       "shares_held": 65817,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 110.81
+      "price": 113.49
     },
     {
       "name": "KUALA LUMPUR KEPONG",
       "ticker": "KLK",
-      "weight": 0.03193,
+      "weight": 0.0309,
       "shares_held": 340600,
       "exchange": "Bursa Malaysia",
-      "price": 5.53
+      "price": 5.43
     },
     {
       "name": "KUWAIT FINANCE HOUSE",
       "ticker": "KFH",
-      "weight": 0.34846,
+      "weight": 0.34665,
       "shares_held": 7567071,
       "exchange": "Kuwait Stock Exchange",
-      "price": 2.72
+      "price": 2.74
     },
     {
       "name": "KWD CASH",
       "ticker": "KWD",
-      "weight": 0.01308,
+      "weight": 0.01279,
       "shares_held": 236566,
       "exchange": "-",
-      "price": 326.26
+      "price": 323.83
+    },
+    {
+      "name": "KWD/USD",
+      "ticker": "KWD",
+      "weight": -0.00001,
+      "shares_held": -161590,
+      "exchange": "-",
+      "price": 1
     },
     {
       "name": "L&T FINANCE LTD",
       "ticker": "LTF",
-      "weight": 0.03083,
+      "weight": 0.0297,
       "shares_held": 606017,
       "exchange": "National Stock Exchange Of India",
-      "price": 3
+      "price": 2.93
     },
     {
       "name": "LARGAN PRECISION LTD",
       "ticker": "3008",
-      "weight": 0.07742,
+      "weight": 0.08836,
       "shares_held": 62773,
       "exchange": "Taiwan Stock Exchange",
-      "price": 72.79
+      "price": 84.28
     },
     {
       "name": "LARSEN AND TOUBRO LTD",
       "ticker": "LT",
-      "weight": 0.33513,
+      "weight": 0.32755,
       "shares_held": 463165,
       "exchange": "National Stock Exchange Of India",
-      "price": 42.7
+      "price": 42.34
     },
     {
       "name": "LATAM AIRLINES GROUP SA",
       "ticker": "LTM",
-      "weight": 0.10051,
+      "weight": 0.10032,
       "shares_held": 221439753,
       "exchange": "Santiago Stock Exchange",
       "price": 0.03
@@ -2813,26 +2885,26 @@
     {
       "name": "LG CHEM LTD",
       "ticker": "051910",
-      "weight": 0.13622,
+      "weight": 0.12893,
       "shares_held": 33485,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 240.09
+      "price": 230.55
     },
     {
       "name": "LG CORP",
       "ticker": "003550",
-      "weight": 0.06734,
+      "weight": 0.0653,
       "shares_held": 63364,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 62.72
+      "price": 61.7
     },
     {
       "name": "LG DISPLAY LTD",
       "ticker": "034220",
-      "weight": 0.02687,
+      "weight": 0.02695,
       "shares_held": 185710,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 8.54
+      "price": 8.69
     },
     {
       "name": "LG ELECTRONICS INC",
@@ -2840,92 +2912,92 @@
       "weight": 0.10228,
       "shares_held": 75593,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 79.85
+      "price": 81.01
     },
     {
       "name": "LG ENERGY SOLUTION LTD",
       "ticker": "373220",
-      "weight": 0.1532,
+      "weight": 0.14676,
       "shares_held": 32541,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 277.86
+      "price": 270.04
     },
     {
       "name": "LG UPLUS CORP",
       "ticker": "032640",
-      "weight": 0.01489,
+      "weight": 0.01474,
       "shares_held": 74835,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 11.74
+      "price": 11.79
     },
     {
-      "name": "LIG NEX1 LTD",
+      "name": "LIG DEFENSE&AEROSPACE LTD",
       "ticker": "079550",
-      "weight": 0.09219,
+      "weight": 0.09225,
       "shares_held": 8760,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 621.14
+      "price": 630.55
     },
     {
       "name": "LITE ON TECHNOLOGY CORP",
       "ticker": "2301",
-      "weight": 0.11391,
+      "weight": 0.10968,
       "shares_held": 1321000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 5.09
+      "price": 4.97
     },
     {
       "name": "LODHA DEVELOPERS LTD",
       "ticker": "LODHA",
-      "weight": 0.0312,
+      "weight": 0.03032,
       "shares_held": 206560,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.91
+      "price": 8.79
     },
     {
       "name": "LOTES LTD",
       "ticker": "3533",
-      "weight": 0.06666,
+      "weight": 0.06451,
       "shares_held": 55000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 71.53
+      "price": 70.23
     },
     {
       "name": "LPP SA",
       "ticker": "LPP",
-      "weight": 0.07847,
+      "weight": 0.07896,
       "shares_held": 715,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 6477.37
+      "price": 6612.35
     },
     {
       "name": "LS ELECTRIC LTD",
       "ticker": "010120",
-      "weight": 0.09115,
-      "shares_held": 10123,
+      "weight": 0.10592,
+      "shares_held": 50615,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 531.44
+      "price": 125.3
     },
     {
       "name": "LTIMINDTREE LTD",
       "ticker": "LTM",
-      "weight": 0.04446,
+      "weight": 0.04316,
       "shares_held": 54026,
       "exchange": "National Stock Exchange Of India",
-      "price": 48.57
+      "price": 47.83
     },
     {
       "name": "LUPIN LTD",
       "ticker": "LUPIN",
-      "weight": 0.0723,
+      "weight": 0.07019,
       "shares_held": 169533,
       "exchange": "National Stock Exchange Of India",
-      "price": 25.17
+      "price": 24.79
     },
     {
       "name": "MABANEE COMPANY",
       "ticker": "MABANEE",
-      "weight": 0.02102,
+      "weight": 0.02075,
       "shares_held": 424938,
       "exchange": "Kuwait Stock Exchange",
       "price": 2.92
@@ -2933,63 +3005,63 @@
     {
       "name": "MAHINDRA AND MAHINDRA LTD",
       "ticker": "M&M",
-      "weight": 0.3813,
+      "weight": 0.36867,
       "shares_held": 640150,
       "exchange": "National Stock Exchange Of India",
-      "price": 35.15
+      "price": 34.48
     },
     {
       "name": "MAKKAH CONSTRUCTION AND DEVELOPMEN",
       "ticker": "4100",
-      "weight": 0.01983,
+      "weight": 0.0192,
       "shares_held": 50881,
       "exchange": "Saudi Stock Exchange",
-      "price": 23
+      "price": 22.6
     },
     {
       "name": "MALAYAN BANKING",
       "ticker": "MAYBANK",
-      "weight": 0.19733,
+      "weight": 0.1931,
       "shares_held": 4137700,
       "exchange": "Bursa Malaysia",
-      "price": 2.81
+      "price": 2.79
     },
     {
       "name": "MANILA ELECTRIC",
       "ticker": "MER",
-      "weight": 0.03396,
+      "weight": 0.03401,
       "shares_held": 197590,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 10.14
+      "price": 10.3
     },
     {
       "name": "MANKIND PHARMA LTD",
       "ticker": "MANKIND",
-      "weight": 0.0347,
+      "weight": 0.03393,
       "shares_held": 91334,
       "exchange": "National Stock Exchange Of India",
-      "price": 22.42
+      "price": 22.25
     },
     {
       "name": "MARICO LTD",
       "ticker": "MARICO",
-      "weight": 0.05287,
+      "weight": 0.05106,
       "shares_held": 379098,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.23
+      "price": 8.06
     },
     {
       "name": "MARUTI SUZUKI INDIA LTD",
       "ticker": "MARUTI",
-      "weight": 0.21748,
+      "weight": 0.20304,
       "shares_held": 86821,
       "exchange": "National Stock Exchange Of India",
-      "price": 147.84
+      "price": 140.02
     },
     {
       "name": "MASRAF AL RAYAN",
       "ticker": "MARK",
-      "weight": 0.04427,
+      "weight": 0.04371,
       "shares_held": 4304104,
       "exchange": "Qatar Exchange",
       "price": 0.61
@@ -2997,71 +3069,71 @@
     {
       "name": "MAX HEALTHCARE INSTITUTE LTD",
       "ticker": "MAXHEALTH",
-      "weight": 0.09434,
+      "weight": 0.09218,
       "shares_held": 541573,
       "exchange": "National Stock Exchange Of India",
-      "price": 10.28
+      "price": 10.19
     },
     {
       "name": "MAXIS",
       "ticker": "MAXIS",
-      "weight": 0.02663,
+      "weight": 0.02649,
       "shares_held": 1770100,
       "exchange": "Bursa Malaysia",
-      "price": 0.89
+      "price": 0.9
     },
     {
       "name": "MBANK SA",
       "ticker": "MBK",
-      "weight": 0.06271,
+      "weight": 0.06186,
       "shares_held": 10459,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 353.85
+      "price": 354.15
     },
     {
       "name": "MEDIATEK INC",
       "ticker": "2454",
-      "weight": 0.88358,
+      "weight": 0.95273,
       "shares_held": 1050700,
       "exchange": "Taiwan Stock Exchange",
-      "price": 49.63
+      "price": 54.29
     },
     {
       "name": "MEGA FINANCIAL HOLDING LTD",
       "ticker": "2886",
-      "weight": 0.17705,
+      "weight": 0.17262,
       "shares_held": 8321029,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.26
+      "price": 1.24
     },
     {
       "name": "MERITZ FINANCIAL GROUP INC",
       "ticker": "138040",
-      "weight": 0.07527,
+      "weight": 0.07601,
       "shares_held": 56984,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 77.96
+      "price": 79.86
     },
     {
       "name": "MESAIEED PETROCHEMICAL HOLDING",
       "ticker": "MPHC",
-      "weight": 0.02136,
+      "weight": 0.02175,
       "shares_held": 3805971,
       "exchange": "Qatar Exchange",
-      "price": 0.33
+      "price": 0.34
     },
     {
       "name": "METROPOLITAN BANK AND TRUST CO",
       "ticker": "MBT",
-      "weight": 0.02596,
+      "weight": 0.02571,
       "shares_held": 1365660,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 1.12
+      "price": 1.13
     },
     {
       "name": "MINOR INTERNATIONAL PUBLIC NON-VOT",
       "ticker": "MINT.R",
-      "weight": 0.02965,
+      "weight": 0.02922,
       "shares_held": 2498100,
       "exchange": "Stock Exchange Of Thailand",
       "price": 0.7
@@ -3069,26 +3141,26 @@
     {
       "name": "MIRAE ASSET SECURITIES CO LTD",
       "ticker": "006800",
-      "weight": 0.10443,
+      "weight": 0.11219,
       "shares_held": 137431,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 44.85
+      "price": 48.88
     },
     {
       "name": "MISC",
       "ticker": "MISC",
-      "weight": 0.03498,
+      "weight": 0.03469,
       "shares_held": 981600,
       "exchange": "Bursa Malaysia",
-      "price": 2.1
+      "price": 2.12
     },
     {
       "name": "MOBILE TEL",
       "ticker": "ZAIN",
-      "weight": 0.04356,
+      "weight": 0.04329,
       "shares_held": 1382302,
       "exchange": "Kuwait Stock Exchange",
-      "price": 1.86
+      "price": 1.87
     },
     {
       "name": "MOBILNYE TELESISTEMY",
@@ -3101,18 +3173,18 @@
     {
       "name": "MOL HUNGARIAN OIL AND GAS",
       "ticker": "MOL",
-      "weight": 0.05733,
+      "weight": 0.06369,
       "shares_held": 266941,
       "exchange": "Budapest Stock Exchange",
-      "price": 12.68
+      "price": 14.29
     },
     {
       "name": "MONETA MONEY BNK",
       "ticker": "MONET",
-      "weight": 0.02877,
+      "weight": 0.02861,
       "shares_held": 178653,
       "exchange": "Prague Stock Exchange",
-      "price": 9.5
+      "price": 9.59
     },
     {
       "name": "MOSCOW EXCHANGE",
@@ -3125,26 +3197,26 @@
     {
       "name": "MPHASIS LTD",
       "ticker": "MPHASIS",
-      "weight": 0.02842,
+      "weight": 0.02769,
       "shares_held": 66849,
       "exchange": "National Stock Exchange Of India",
-      "price": 25.09
+      "price": 24.8
     },
     {
       "name": "MR D.I.Y. GROUP (M)",
       "ticker": "MRDIY",
-      "weight": 0.01383,
+      "weight": 0.01324,
       "shares_held": 2047700,
       "exchange": "Bursa Malaysia",
-      "price": 0.4
+      "price": 0.39
     },
     {
       "name": "MRF LTD",
       "ticker": "MRF",
-      "weight": 0.03659,
+      "weight": 0.03519,
       "shares_held": 1465,
       "exchange": "National Stock Exchange Of India",
-      "price": 1474.27
+      "price": 1438.29
     },
     {
       "name": "MSCI EMER MKT INDEX (ICE) JUN 26",
@@ -3152,132 +3224,132 @@
       "weight": 0,
       "shares_held": 282,
       "exchange": "Ice Futures U.S.",
-      "price": 1550.5
+      "price": 1593.7
     },
     {
       "name": "MTN GROUP LTD",
       "ticker": "MTN",
-      "weight": 0.25172,
+      "weight": 0.25033,
       "shares_held": 1193522,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 12.45
+      "price": 12.56
     },
     {
       "name": "MUTHOOT FINANCE LTD",
       "ticker": "MUTHOOTFIN",
-      "weight": 0.05513,
+      "weight": 0.05379,
       "shares_held": 84423,
       "exchange": "National Stock Exchange Of India",
-      "price": 38.54
+      "price": 38.15
     },
     {
       "name": "MXN CASH",
       "ticker": "MXN",
-      "weight": 0.00452,
+      "weight": 0.00447,
       "shares_held": 4608552,
       "exchange": "-",
-      "price": 5.78
+      "price": 5.8
     },
     {
       "name": "MYR CASH",
       "ticker": "MYR",
-      "weight": 0.00977,
-      "shares_held": 2287380,
+      "weight": 0.01031,
+      "shares_held": 2439070,
       "exchange": "-",
-      "price": 25.22
+      "price": 25.31
     },
     {
       "name": "NAN YA PLASTICS CORP",
       "ticker": "1303",
-      "weight": 0.14996,
+      "weight": 0.1615,
       "shares_held": 3442000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.57
+      "price": 2.81
     },
     {
       "name": "NASPERS LIMITED LTD CLASS N",
       "ticker": "NPN",
-      "weight": 0.49574,
+      "weight": 0.49674,
       "shares_held": 533716,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 54.82
+      "price": 55.73
     },
     {
       "name": "NATIONAL BANK OF GREECE SA",
       "ticker": "ETE",
-      "weight": 0.16919,
+      "weight": 0.17791,
       "shares_held": 596219,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 16.75
+      "price": 17.87
     },
     {
       "name": "NATIONAL BANK OF KUWAIT",
       "ticker": "NBK",
-      "weight": 0.28829,
+      "weight": 0.28205,
       "shares_held": 5926192,
       "exchange": "Kuwait Stock Exchange",
-      "price": 2.87
+      "price": 2.85
     },
     {
       "name": "NAVER CORP",
       "ticker": "035420",
-      "weight": 0.2253,
+      "weight": 0.22175,
       "shares_held": 97604,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 136.23
+      "price": 136.03
     },
     {
       "name": "NEBRAS ENERGY",
       "ticker": "QEWS",
-      "weight": 0.02102,
+      "weight": 0.02069,
       "shares_held": 307918,
       "exchange": "Qatar Exchange",
-      "price": 4.03
+      "price": 4.02
     },
     {
       "name": "NEDBANK GROUP LTD",
       "ticker": "NED",
-      "weight": 0.09096,
+      "weight": 0.08817,
       "shares_held": 321585,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 16.69
+      "price": 16.42
     },
     {
       "name": "NEPI ROCKCASTLE NV",
       "ticker": "NRP",
-      "weight": 0.06131,
+      "weight": 0.0611,
       "shares_held": 423541,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 8.54
+      "price": 8.64
     },
     {
       "name": "NESTLE INDIA LTD",
       "ticker": "NESTLEIND",
-      "weight": 0.107,
+      "weight": 0.10278,
       "shares_held": 468726,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.47
+      "price": 13.13
     },
     {
       "name": "NESTLE MALAYSIA",
       "ticker": "NESTLE",
-      "weight": 0.02255,
+      "weight": 0.02231,
       "shares_held": 53300,
       "exchange": "Bursa Malaysia",
-      "price": 24.97
+      "price": 25.07
     },
     {
       "name": "NH INVESTMENT & SECURITIES LTD",
       "ticker": "005940",
-      "weight": 0.03723,
+      "weight": 0.03798,
       "shares_held": 95683,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 22.96
+      "price": 23.76
     },
     {
       "name": "NHPC LTD",
       "ticker": "NHPC",
-      "weight": 0.0287,
+      "weight": 0.0283,
       "shares_held": 2037624,
       "exchange": "National Stock Exchange Of India",
       "price": 0.83
@@ -3301,7 +3373,7 @@
     {
       "name": "NMDC LTD",
       "ticker": "NMDC",
-      "weight": 0.03497,
+      "weight": 0.03453,
       "shares_held": 2249716,
       "exchange": "National Stock Exchange Of India",
       "price": 0.92
@@ -3309,10 +3381,10 @@
     {
       "name": "NORTHAM PLATINUM HLDGS LTD",
       "ticker": "NPH",
-      "weight": 0.08653,
+      "weight": 0.08717,
       "shares_held": 233778,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 21.84
+      "price": 22.33
     },
     {
       "name": "NOVATEK",
@@ -3325,10 +3397,10 @@
     {
       "name": "NOVATEK MICROELECTRONICS CORP",
       "ticker": "3034",
-      "weight": 0.09242,
+      "weight": 0.09229,
       "shares_held": 439300,
       "exchange": "Taiwan Stock Exchange",
-      "price": 12.42
+      "price": 12.58
     },
     {
       "name": "NOVOLIPETSK STEEL",
@@ -3341,82 +3413,82 @@
     {
       "name": "NTPC LTD",
       "ticker": "NTPC",
-      "weight": 0.2095,
+      "weight": 0.20835,
       "shares_held": 3016067,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.1
+      "price": 4.14
     },
     {
       "name": "OBEROI REALTY LTD",
       "ticker": "OBEROIRLTY",
-      "weight": 0.02893,
+      "weight": 0.02855,
       "shares_held": 94721,
       "exchange": "National Stock Exchange Of India",
-      "price": 18.03
+      "price": 18.05
     },
     {
       "name": "OIL AND NATURAL GAS LTD",
       "ticker": "ONGC",
-      "weight": 0.11141,
+      "weight": 0.10944,
       "shares_held": 2128051,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.09
+      "price": 3.08
     },
     {
       "name": "OIL INDIA LTD",
       "ticker": "OIL",
-      "weight": 0.03184,
+      "weight": 0.03155,
       "shares_held": 369762,
       "exchange": "National Stock Exchange Of India",
-      "price": 5.08
+      "price": 5.11
     },
     {
       "name": "ONE  COMMUNICATIONS LTD",
       "ticker": "PAYTM",
-      "weight": 0.05293,
+      "weight": 0.05101,
       "shares_held": 257739,
       "exchange": "National Stock Exchange Of India",
-      "price": 12.12
+      "price": 11.85
     },
     {
       "name": "OOREDOO",
       "ticker": "ORDS",
-      "weight": 0.03592,
+      "weight": 0.03633,
       "shares_held": 591548,
       "exchange": "Qatar Exchange",
-      "price": 3.58
+      "price": 3.68
     },
     {
       "name": "ORACLE FINANCIAL SERVICES SOFTWARE",
       "ticker": "OFSS",
-      "weight": 0.02154,
+      "weight": 0.02082,
       "shares_held": 16248,
       "exchange": "National Stock Exchange Of India",
-      "price": 78.22
+      "price": 76.72
     },
     {
       "name": "ORLEN SA",
       "ticker": "PKN",
-      "weight": 0.24243,
+      "weight": 0.2394,
       "shares_held": 402689,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 35.53
+      "price": 35.6
     },
     {
       "name": "OTP BANK",
       "ticker": "OTP",
-      "weight": 0.33736,
+      "weight": 0.36813,
       "shares_held": 154295,
       "exchange": "Budapest Stock Exchange",
-      "price": 129.04
+      "price": 142.85
     },
     {
       "name": "OUTSURANCE GROUP LTD",
       "ticker": "OUT",
-      "weight": 0.04389,
+      "weight": 0.04338,
       "shares_held": 573481,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 4.52
+      "price": 4.53
     },
     {
       "name": "OZON HOLDINGS ADR PLC",
@@ -3429,95 +3501,95 @@
     {
       "name": "P.I. INDUSTRIES LTD",
       "ticker": "PIIND",
-      "weight": 0.03131,
+      "weight": 0.03021,
       "shares_held": 58050,
       "exchange": "National Stock Exchange Of India",
-      "price": 31.84
+      "price": 31.15
     },
     {
       "name": "PAGE INDUSTRIES LTD",
       "ticker": "PAGEIND",
-      "weight": 0.02844,
+      "weight": 0.02768,
       "shares_held": 4317,
       "exchange": "National Stock Exchange Of India",
-      "price": 388.83
+      "price": 383.89
     },
     {
       "name": "PB FINTECH LTD",
       "ticker": "POLICYBZR",
-      "weight": 0.06753,
+      "weight": 0.06361,
       "shares_held": 244788,
       "exchange": "National Stock Exchange Of India",
-      "price": 16.28
+      "price": 15.56
     },
     {
       "name": "PEGATRON CORP",
       "ticker": "4938",
-      "weight": 0.0575,
+      "weight": 0.05523,
       "shares_held": 1334500,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.54
+      "price": 2.48
     },
     {
       "name": "PEPKOR HOLDINGS SHS LTD",
       "ticker": "PPH",
-      "weight": 0.05327,
+      "weight": 0.05155,
       "shares_held": 2191491,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 1.43
+      "price": 1.41
     },
     {
       "name": "PERSISTENT SYSTEMS LTD",
       "ticker": "PERSISTENT",
-      "weight": 0.07657,
+      "weight": 0.07426,
       "shares_held": 77216,
       "exchange": "National Stock Exchange Of India",
-      "price": 58.53
+      "price": 57.58
     },
     {
       "name": "PETRINDO JAYA KREASI",
       "ticker": "CUAN",
-      "weight": 0.02146,
+      "weight": 0.02379,
       "shares_held": 16090600,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.08
+      "price": 0.09
     },
     {
       "name": "PETRONAS CHEMICALS GROUP",
       "ticker": "PCHEM",
-      "weight": 0.04304,
+      "weight": 0.04316,
       "shares_held": 1730500,
       "exchange": "Bursa Malaysia",
-      "price": 1.47
+      "price": 1.49
     },
     {
       "name": "PETRONAS DAGANGAN",
       "ticker": "PETDAG",
-      "weight": 0.01778,
+      "weight": 0.01737,
       "shares_held": 200000,
       "exchange": "Bursa Malaysia",
-      "price": 5.25
+      "price": 5.2
     },
     {
       "name": "PETRONAS GAS",
       "ticker": "PETGAS",
-      "weight": 0.04366,
+      "weight": 0.04323,
       "shares_held": 560100,
       "exchange": "Bursa Malaysia",
-      "price": 4.6
+      "price": 4.62
     },
     {
       "name": "PETRONET LNG LTD",
       "ticker": "PETRONET",
-      "weight": 0.02832,
+      "weight": 0.02708,
       "shares_held": 572432,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.92
+      "price": 2.83
     },
     {
       "name": "PGE POLSKA GRUPA ENERGETYCZNA SA",
       "ticker": "PGE",
-      "weight": 0.03386,
+      "weight": 0.03332,
       "shares_held": 648006,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
       "price": 3.08
@@ -3525,18 +3597,18 @@
     {
       "name": "PHARMAESSENTIA CORP",
       "ticker": "6446",
-      "weight": 0.06736,
+      "weight": 0.06609,
       "shares_held": 195277,
       "exchange": "Taiwan Stock Exchange",
-      "price": 20.36
+      "price": 20.26
     },
     {
       "name": "PHOENIX MILLS LTD",
       "ticker": "PHOENIXLTD",
-      "weight": 0.04471,
+      "weight": 0.04342,
       "shares_held": 138734,
       "exchange": "National Stock Exchange Of India",
-      "price": 19.02
+      "price": 18.74
     },
     {
       "name": "PHOSAGRO",
@@ -3549,7 +3621,7 @@
     {
       "name": "PHP CASH",
       "ticker": "PHP",
-      "weight": 0.012,
+      "weight": 0.01185,
       "shares_held": 42475040,
       "exchange": "-",
       "price": 1.67
@@ -3557,18 +3629,18 @@
     {
       "name": "PIDILITE INDUSTRIES LTD",
       "ticker": "PIDILITIND",
-      "weight": 0.05465,
+      "weight": 0.05228,
       "shares_held": 220383,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.64
+      "price": 14.2
     },
     {
       "name": "PIRAEUS BANK SA",
       "ticker": "TPEIR",
-      "weight": 0.12611,
+      "weight": 0.13075,
       "shares_held": 783649,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 9.5
+      "price": 9.99
     },
     {
       "name": "PJSC PHOSAGRO GDR",
@@ -3581,34 +3653,34 @@
     {
       "name": "PLAZA SA",
       "ticker": "MALLPLAZA",
-      "weight": 0.04247,
+      "weight": 0.04385,
       "shares_held": 537094,
       "exchange": "Santiago Stock Exchange",
-      "price": 4.67
+      "price": 4.89
     },
     {
       "name": "PLDT INC",
       "ticker": "TEL",
-      "weight": 0.01384,
+      "weight": 0.01349,
       "shares_held": 37695,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 21.67
+      "price": 21.43
     },
     {
       "name": "PLN CASH",
       "ticker": "PLN",
-      "weight": 0.00145,
+      "weight": 0.00144,
       "shares_held": 309933,
       "exchange": "-",
-      "price": 27.63
+      "price": 27.85
     },
     {
       "name": "POLYCAB INDIA LTD",
       "ticker": "POLYCAB",
-      "weight": 0.05384,
+      "weight": 0.05147,
       "shares_held": 38128,
       "exchange": "National Stock Exchange Of India",
-      "price": 83.34
+      "price": 80.83
     },
     {
       "name": "POLYUS",
@@ -3621,95 +3693,95 @@
     {
       "name": "POSCO",
       "ticker": "005490",
-      "weight": 0.20444,
+      "weight": 0.19762,
       "shares_held": 48485,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 248.86
+      "price": 244.05
     },
     {
       "name": "POSCO FUTURE M LTD",
       "ticker": "003670",
-      "weight": 0.0603,
+      "weight": 0.05826,
       "shares_held": 24260,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 146.69
+      "price": 143.8
     },
     {
       "name": "POSCO INTERNATIONAL CORP",
       "ticker": "047050",
-      "weight": 0.03219,
+      "weight": 0.03058,
       "shares_held": 37456,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 50.72
+      "price": 48.88
     },
     {
       "name": "POWER FINANCE CORPORATION LTD",
       "ticker": "PFC",
-      "weight": 0.08309,
+      "weight": 0.08107,
       "shares_held": 1045534,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.69
+      "price": 4.64
     },
     {
       "name": "POWER GRID CORPORATION OF INDIA LT",
       "ticker": "POWERGRID",
-      "weight": 0.17864,
+      "weight": 0.17346,
       "shares_held": 3229298,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.26
+      "price": 3.22
     },
     {
       "name": "POWSZECHNA KASA OSZCZEDNOSCI BANK",
       "ticker": "PKO",
-      "weight": 0.27987,
+      "weight": 0.28358,
       "shares_held": 602251,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 27.43
+      "price": 28.19
     },
     {
       "name": "PRESIDENT CHAIN STORE CORP",
       "ticker": "2912",
-      "weight": 0.04777,
+      "weight": 0.04717,
       "shares_held": 393300,
       "exchange": "Taiwan Stock Exchange",
-      "price": 7.17
+      "price": 7.18
     },
     {
       "name": "PRESS METAL ALUMINIUM HOLDINGS",
       "ticker": "PMETAL",
-      "weight": 0.08636,
+      "weight": 0.08607,
       "shares_held": 2558000,
       "exchange": "Bursa Malaysia",
-      "price": 1.99
+      "price": 2.01
     },
     {
       "name": "PRESTIGE ESTATES PROJECTS LTD",
       "ticker": "PRESTIGE",
-      "weight": 0.03125,
+      "weight": 0.03017,
       "shares_held": 129337,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.26
+      "price": 13.97
     },
     {
       "name": "PROLOGIS PROPERTY MEXICO REIT",
       "ticker": "FIBRAPL14",
-      "weight": 0.05818,
+      "weight": 0.06026,
       "shares_held": 738801,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 4.65
+      "price": 4.88
     },
     {
       "name": "PROMOTORA Y OPERADORA DE INFRAESTR",
       "ticker": "PINFRA*",
-      "weight": 0.04003,
+      "weight": 0.03838,
       "shares_held": 139207,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 16.97
+      "price": 16.51
     },
     {
       "name": "PT SUMBER ALFARIA TRIJAYA",
       "ticker": "AMRT",
-      "weight": 0.01976,
+      "weight": 0.01997,
       "shares_held": 13378000,
       "exchange": "Indonesia Stock Exchange",
       "price": 0.09
@@ -3717,7 +3789,7 @@
     {
       "name": "PTT EXPLORATION AND PRODUCTION NON",
       "ticker": "PTTEP.R",
-      "weight": 0.0726,
+      "weight": 0.07156,
       "shares_held": 908500,
       "exchange": "Stock Exchange Of Thailand",
       "price": 4.72
@@ -3725,7 +3797,7 @@
     {
       "name": "PTT NON-VOTING DR PCL",
       "ticker": "PTT.R",
-      "weight": 0.12356,
+      "weight": 0.12179,
       "shares_held": 6740800,
       "exchange": "Stock Exchange Of Thailand",
       "price": 1.08
@@ -3733,7 +3805,7 @@
     {
       "name": "PUBLIC BANK",
       "ticker": "PBBANK",
-      "weight": 0.19497,
+      "weight": 0.19245,
       "shares_held": 9811900,
       "exchange": "Bursa Malaysia",
       "price": 1.17
@@ -3741,47 +3813,55 @@
     {
       "name": "PUBLIC POWER CORPORATION SA",
       "ticker": "PPC",
-      "weight": 0.05084,
+      "weight": 0.05122,
       "shares_held": 132632,
       "exchange": "Athens Exchange S.A. Cash Market",
-      "price": 22.62
+      "price": 23.12
     },
     {
       "name": "PUNJAB NATIONAL BANK",
       "ticker": "PNB",
-      "weight": 0.03532,
+      "weight": 0.03424,
       "shares_held": 1729170,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.21
+      "price": 1.19
     },
     {
       "name": "PZU SA",
       "ticker": "PZU",
-      "weight": 0.1309,
+      "weight": 0.13066,
       "shares_held": 410649,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 18.81
+      "price": 19.05
     },
     {
       "name": "QAR CASH",
       "ticker": "QAR",
-      "weight": 0.00831,
-      "shares_held": 1784759,
+      "weight": 0.00874,
+      "shares_held": 1905669,
       "exchange": "-",
       "price": 27.46
     },
     {
+      "name": "QAR/USD",
+      "ticker": "QAR",
+      "weight": -0.00001,
+      "shares_held": -1066255,
+      "exchange": "-",
+      "price": 1
+    },
+    {
       "name": "QATAR FUEL",
       "ticker": "QFLS",
-      "weight": 0.01838,
+      "weight": 0.0179,
       "shares_held": 265096,
       "exchange": "Qatar Exchange",
-      "price": 4.09
+      "price": 4.04
     },
     {
       "name": "QATAR GAS TRANSPORT COMPANY LTD",
       "ticker": "QGTS",
-      "weight": 0.03823,
+      "weight": 0.03752,
       "shares_held": 1858795,
       "exchange": "Qatar Exchange",
       "price": 1.21
@@ -3789,7 +3869,7 @@
     {
       "name": "QATAR INTERNATIONAL ISLAMIC BANK",
       "ticker": "QIIK",
-      "weight": 0.03501,
+      "weight": 0.03451,
       "shares_held": 677802,
       "exchange": "Qatar Exchange",
       "price": 3.05
@@ -3797,98 +3877,98 @@
     {
       "name": "QATAR ISLAMIC BANK",
       "ticker": "QIBK",
-      "weight": 0.1341,
+      "weight": 0.13286,
       "shares_held": 1229366,
       "exchange": "Qatar Exchange",
-      "price": 6.44
+      "price": 6.47
     },
     {
       "name": "QATAR NATIONAL BANK",
       "ticker": "QNBK",
-      "weight": 0.26454,
+      "weight": 0.26442,
       "shares_held": 3193634,
       "exchange": "Qatar Exchange",
-      "price": 4.89
+      "price": 4.96
     },
     {
       "name": "QL RESOURCES",
       "ticker": "QL",
-      "weight": 0.02011,
+      "weight": 0.01958,
       "shares_held": 1219100,
       "exchange": "Bursa Malaysia",
-      "price": 0.97
+      "price": 0.96
     },
     {
       "name": "QUANTA COMPUTER INC",
       "ticker": "2382",
-      "weight": 0.32573,
+      "weight": 0.32311,
       "shares_held": 1897500,
       "exchange": "Taiwan Stock Exchange",
-      "price": 10.13
+      "price": 10.2
     },
     {
       "name": "RAIL VIKAS NIGAM LTD",
       "ticker": "RVNL",
-      "weight": 0.01996,
+      "weight": 0.01931,
       "shares_held": 397270,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.97
+      "price": 2.91
     },
     {
       "name": "REALTEK SEMICONDUCTOR CORP",
       "ticker": "2379",
-      "weight": 0.09056,
+      "weight": 0.09223,
       "shares_held": 333874,
       "exchange": "Taiwan Stock Exchange",
-      "price": 16.01
+      "price": 16.54
     },
     {
       "name": "REC LTD",
       "ticker": "RECLTD",
-      "weight": 0.05418,
+      "weight": 0.0526,
       "shares_held": 847643,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.77
+      "price": 3.72
     },
     {
       "name": "REINET INVESTMENTS S.C.A.",
       "ticker": "RNI",
-      "weight": 0.05266,
+      "weight": 0.0521,
       "shares_held": 91032,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 34.14
+      "price": 34.27
     },
     {
       "name": "RELIANCE INDUSTRIES LTD",
       "ticker": "RELIANCE",
-      "weight": 1.02491,
+      "weight": 0.97707,
       "shares_held": 4154225,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.56
+      "price": 14.08
     },
     {
       "name": "REMGRO LTD",
       "ticker": "REM",
-      "weight": 0.07737,
+      "weight": 0.07555,
       "shares_held": 371070,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 12.31
+      "price": 12.19
     },
     {
       "name": "RHB BANK",
       "ticker": "RHBBANK",
-      "weight": 0.03847,
+      "weight": 0.03782,
       "shares_held": 1104700,
       "exchange": "Bursa Malaysia",
-      "price": 2.06
+      "price": 2.05
     },
     {
       "name": "RIYAD BANK",
       "ticker": "1010",
-      "weight": 0.13486,
+      "weight": 0.13589,
       "shares_held": 1382760,
       "exchange": "Saudi Stock Exchange",
-      "price": 5.76
+      "price": 5.88
     },
     {
       "name": "RUB CASH",
@@ -3896,164 +3976,164 @@
       "weight": 0,
       "shares_held": 15399,
       "exchange": "-",
-      "price": 1.3
+      "price": 1.33
     },
     {
       "name": "S-OIL CORP",
       "ticker": "010950",
-      "weight": 0.04158,
+      "weight": 0.04049,
       "shares_held": 30148,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 81.4
+      "price": 80.41
     },
     {
       "name": "SABIC AGRI-NUTRIENTS",
       "ticker": "2020",
-      "weight": 0.11234,
+      "weight": 0.11623,
       "shares_held": 164235,
       "exchange": "Saudi Stock Exchange",
-      "price": 40.37
+      "price": 42.37
     },
     {
       "name": "SAL SAUDI LOGISTICS SERVICE CO",
       "ticker": "4263",
-      "weight": 0.01647,
+      "weight": 0.01648,
       "shares_held": 21863,
       "exchange": "Saudi Stock Exchange",
-      "price": 44.45
+      "price": 45.15
     },
     {
       "name": "SALIK COMPANY P.J.S.C",
       "ticker": "SALIK",
-      "weight": 0.02805,
+      "weight": 0.0284,
       "shares_held": 1095863,
       "exchange": "Dubai Financial Market",
-      "price": 1.51
+      "price": 1.55
     },
     {
       "name": "SAM YANG FOODS INC",
       "ticker": "003230",
-      "weight": 0.03963,
+      "weight": 0.0396,
       "shares_held": 2801,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 834.94
+      "price": 846.58
     },
     {
       "name": "SAMSUNG BIOLOGICS LTD",
       "ticker": "207940",
-      "weight": 0.13403,
+      "weight": 0.1293,
       "shares_held": 7466,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 1059.52
+      "price": 1036.96
     },
     {
       "name": "SAMSUNG C&T CORP",
       "ticker": "028260",
-      "weight": 0.19771,
+      "weight": 0.19089,
       "shares_held": 57197,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 204.01
+      "price": 199.83
     },
     {
       "name": "SAMSUNG ELECTRO MECHANICS LTD",
       "ticker": "009150",
-      "weight": 0.25381,
+      "weight": 0.25885,
       "shares_held": 39311,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 381.05
+      "price": 394.26
     },
     {
       "name": "SAMSUNG ELECTRONICS LTD",
       "ticker": "005930",
-      "weight": 7.61643,
+      "weight": 7.53338,
       "shares_held": 3235532,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 138.93
+      "price": 139.41
     },
     {
       "name": "SAMSUNG ELECTRONICS NON VOTING PRE",
       "ticker": "005935",
-      "weight": 0.89237,
+      "weight": 0.88677,
       "shares_held": 556211,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 94.69
+      "price": 95.46
     },
     {
       "name": "SAMSUNG EPIS HOLDINGS LTD",
       "ticker": "0126Z0",
-      "weight": 0.03213,
+      "weight": 0.0313,
       "shares_held": 5141,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 368.91
+      "price": 364.56
     },
     {
       "name": "SAMSUNG FIRE & MARINE INSURANCE LT",
       "ticker": "000810",
-      "weight": 0.11175,
+      "weight": 0.11496,
       "shares_held": 20829,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 316.64
+      "price": 330.46
     },
     {
       "name": "SAMSUNG HEAVY INDUSTRIES LTD",
       "ticker": "010140",
-      "weight": 0.15684,
+      "weight": 0.15123,
       "shares_held": 480743,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 19.25
+      "price": 18.84
     },
     {
       "name": "SAMSUNG LIFE LTD",
       "ticker": "032830",
-      "weight": 0.14856,
+      "weight": 0.15377,
       "shares_held": 55440,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 158.15
+      "price": 166.08
     },
     {
       "name": "SAMSUNG SDI LTD",
       "ticker": "006400",
-      "weight": 0.22932,
+      "weight": 0.22133,
       "shares_held": 41722,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 324.4
+      "price": 317.64
     },
     {
       "name": "SAMSUNG SDS LTD",
       "ticker": "018260",
-      "weight": 0.04946,
+      "weight": 0.04973,
       "shares_held": 29110,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 100.29
+      "price": 102.28
     },
     {
       "name": "SAMVARDHANA MOTHERSON INTERNATIONA",
       "ticker": "MOTHERSON",
-      "weight": 0.06148,
+      "weight": 0.05867,
       "shares_held": 2754346,
       "exchange": "National Stock Exchange Of India",
-      "price": 1.32
+      "price": 1.28
     },
     {
       "name": "SANLAM LIMITED LTD",
       "ticker": "SLM",
-      "weight": 0.1151,
+      "weight": 0.11377,
       "shares_held": 1256455,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 5.41
+      "price": 5.42
     },
     {
       "name": "SANTANDER BANK POLSKA SA",
       "ticker": "SPL",
-      "weight": 0.08901,
+      "weight": 0.08841,
       "shares_held": 28866,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 182
+      "price": 183.39
     },
     {
       "name": "SAR CASH(COMMITTED)",
       "ticker": "SAR",
-      "weight": 0.00389,
+      "weight": 0.00384,
       "shares_held": 862317,
       "exchange": "-",
       "price": 26.65
@@ -4061,74 +4141,74 @@
     {
       "name": "SASOL LTD",
       "ticker": "SOL",
-      "weight": 0.08549,
+      "weight": 0.08624,
       "shares_held": 400614,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 12.59
+      "price": 12.89
     },
     {
       "name": "SAUDI ARABIAN MINING",
       "ticker": "1211",
-      "weight": 0.29121,
+      "weight": 0.29608,
       "shares_held": 920053,
       "exchange": "Saudi Stock Exchange",
-      "price": 18.68
+      "price": 19.27
     },
     {
       "name": "SAUDI ARABIAN OIL",
       "ticker": "2222",
-      "weight": 0.50592,
+      "weight": 0.50166,
       "shares_held": 4119461,
       "exchange": "Saudi Stock Exchange",
-      "price": 7.25
+      "price": 7.29
     },
     {
       "name": "SAUDI AWWAL BANK",
       "ticker": "1060",
-      "weight": 0.10995,
+      "weight": 0.10886,
       "shares_held": 658149,
       "exchange": "Saudi Stock Exchange",
-      "price": 9.86
+      "price": 9.9
     },
     {
       "name": "SAUDI BASIC INDUSTRIES",
       "ticker": "2010",
-      "weight": 0.16253,
+      "weight": 0.16276,
       "shares_held": 599454,
       "exchange": "Saudi Stock Exchange",
-      "price": 16
+      "price": 16.26
     },
     {
       "name": "SAUDI ENERGY",
       "ticker": "5110",
-      "weight": 0.04067,
+      "weight": 0.04127,
       "shares_held": 525881,
       "exchange": "Saudi Stock Exchange",
-      "price": 4.56
+      "price": 4.7
     },
     {
       "name": "SAUDI INVESTMENT BANK",
       "ticker": "1030",
-      "weight": 0.02499,
+      "weight": 0.02504,
       "shares_held": 411767,
       "exchange": "Saudi Stock Exchange",
-      "price": 3.58
+      "price": 3.64
     },
     {
       "name": "SAUDI TADAWUL GROUP CO",
       "ticker": "1111",
-      "weight": 0.02445,
+      "weight": 0.0246,
       "shares_held": 38460,
       "exchange": "Saudi Stock Exchange",
-      "price": 37.52
+      "price": 38.3
     },
     {
       "name": "SAUDI TELECOM",
       "ticker": "7010",
-      "weight": 0.26219,
+      "weight": 0.26063,
       "shares_held": 1357997,
       "exchange": "Saudi Stock Exchange",
-      "price": 11.39
+      "price": 11.49
     },
     {
       "name": "SBERBANK ROSSII",
@@ -4141,23 +4221,23 @@
     {
       "name": "SBI CARDS & PAYMENT SERVICES LTD",
       "ticker": "SBICARD",
-      "weight": 0.02053,
+      "weight": 0.0199,
       "shares_held": 165846,
       "exchange": "National Stock Exchange Of India",
-      "price": 7.31
+      "price": 7.19
     },
     {
       "name": "SBI LIFE INSURANCE COMPANY LTD",
       "ticker": "SBILIFE",
-      "weight": 0.11057,
+      "weight": 0.10773,
       "shares_held": 314642,
       "exchange": "National Stock Exchange Of India",
-      "price": 20.74
+      "price": 20.5
     },
     {
       "name": "SCB X PUBLIC COMPANY LIMITED NON-V",
       "ticker": "SCB.R",
-      "weight": 0.03949,
+      "weight": 0.03892,
       "shares_held": 514500,
       "exchange": "Stock Exchange Of Thailand",
       "price": 4.53
@@ -4165,10 +4245,10 @@
     {
       "name": "SD GUTHRIE",
       "ticker": "SDG",
-      "weight": 0.03626,
+      "weight": 0.03593,
       "shares_held": 1416500,
       "exchange": "Bursa Malaysia",
-      "price": 1.51
+      "price": 1.52
     },
     {
       "name": "SEVERSTAL",
@@ -4181,7 +4261,7 @@
     {
       "name": "SHANGHAI COMMERCIAL LTD",
       "ticker": "5876",
-      "weight": 0.05668,
+      "weight": 0.05582,
       "shares_held": 2670639,
       "exchange": "Taiwan Stock Exchange",
       "price": 1.25
@@ -4189,39 +4269,39 @@
     {
       "name": "SHINHAN FINANCIAL GROUP LTD",
       "ticker": "055550",
-      "weight": 0.33694,
+      "weight": 0.33111,
       "shares_held": 298742,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 66.57
+      "price": 66.36
     },
     {
       "name": "SHOPRITE HOLDINGS LTD",
       "ticker": "SHP",
-      "weight": 0.09624,
+      "weight": 0.09681,
       "shares_held": 335360,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 16.94
+      "price": 17.28
     },
     {
       "name": "SHREE CEMENT LTD",
       "ticker": "SHREECEM",
-      "weight": 0.02753,
+      "weight": 0.0269,
       "shares_held": 6189,
       "exchange": "National Stock Exchange Of India",
-      "price": 262.49
+      "price": 260.21
     },
     {
       "name": "SHRIRAM FINANCE LTD",
       "ticker": "SHFL",
-      "weight": 0.18419,
+      "weight": 0.17616,
       "shares_held": 980965,
       "exchange": "National Stock Exchange Of India",
-      "price": 11.08
+      "price": 10.75
     },
     {
       "name": "SIAM CEMENT NON-VOTING DR PCL",
       "ticker": "SCC.R",
-      "weight": 0.05726,
+      "weight": 0.05644,
       "shares_held": 507300,
       "exchange": "Stock Exchange Of Thailand",
       "price": 6.66
@@ -4229,178 +4309,178 @@
     {
       "name": "SIBANYE STILLWATER LTD",
       "ticker": "SSW",
-      "weight": 0.10442,
+      "weight": 0.10656,
       "shares_held": 1899514,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 3.24
+      "price": 3.36
     },
     {
       "name": "SIEMENS ENERGY INDIA LTD",
       "ticker": "ENRIN",
-      "weight": 0.03284,
+      "weight": 0.03255,
       "shares_held": 63872,
       "exchange": "National Stock Exchange Of India",
-      "price": 30.34
+      "price": 30.51
     },
     {
       "name": "SIEMENS LTD",
       "ticker": "SIEMENS",
-      "weight": 0.03425,
+      "weight": 0.03308,
       "shares_held": 55314,
       "exchange": "National Stock Exchange Of India",
-      "price": 36.54
+      "price": 35.8
     },
     {
       "name": "SINOPAC FINANCIAL HOLDINGS LTD",
       "ticker": "2890",
-      "weight": 0.1484,
+      "weight": 0.14876,
       "shares_held": 8499470,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.03
+      "price": 1.05
     },
     {
       "name": "SK BIOPHARMACEUTICALS LTD",
       "ticker": "326030",
-      "weight": 0.02673,
+      "weight": 0.02683,
       "shares_held": 23747,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 66.43
+      "price": 67.65
     },
     {
       "name": "SK HYNIX INC",
       "ticker": "000660",
-      "weight": 4.38,
+      "weight": 4.64157,
       "shares_held": 373220,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 692.63
+      "price": 744.64
     },
     {
       "name": "SK INC",
       "ticker": "034730",
-      "weight": 0.10149,
+      "weight": 0.10226,
       "shares_held": 25088,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 238.75
+      "price": 244.05
     },
     {
       "name": "SK INNOVATION LTD",
       "ticker": "096770",
-      "weight": 0.06811,
+      "weight": 0.06677,
       "shares_held": 48699,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 82.55
+      "price": 82.09
     },
     {
       "name": "SK SQUARE LTD",
       "ticker": "402340",
-      "weight": 0.41094,
+      "weight": 0.45687,
       "shares_held": 63313,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 383.07
+      "price": 432.07
     },
     {
       "name": "SK TELECOM LTD",
       "ticker": "017670",
-      "weight": 0.07812,
+      "weight": 0.07915,
       "shares_held": 73509,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 62.72
+      "price": 64.47
     },
     {
       "name": "SM INVESTMENTS CORP",
       "ticker": "SM",
-      "weight": 0.02821,
+      "weight": 0.02736,
       "shares_held": 160820,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 10.35
+      "price": 10.19
     },
     {
       "name": "SM PRIME HOLDINGS INC",
       "ticker": "SMPH",
-      "weight": 0.03801,
+      "weight": 0.0368,
       "shares_held": 6596100,
       "exchange": "Philippine Stock Exchange Inc.",
-      "price": 0.34
+      "price": 0.33
     },
     {
       "name": "SOCIEDAD QUIMICA Y MINERA DE CHILE",
       "ticker": "SQM.B",
-      "weight": 0.13505,
+      "weight": 0.14295,
       "shares_held": 96100,
       "exchange": "Santiago Stock Exchange",
-      "price": 82.94
+      "price": 89.07
     },
     {
       "name": "SOLAR INDUSTRIES INDIA LTD",
       "ticker": "SOLARINDS",
-      "weight": 0.04437,
+      "weight": 0.04483,
       "shares_held": 17256,
       "exchange": "National Stock Exchange Of India",
-      "price": 151.77
+      "price": 155.54
     },
     {
       "name": "SOUTHERN COPPER CORP",
       "ticker": "SCCO",
-      "weight": 0.20265,
+      "weight": 0.20059,
       "shares_held": 62112,
       "exchange": "New York Stock Exchange Inc.",
-      "price": 192.56
+      "price": 193.37
     },
     {
       "name": "SRF LTD",
       "ticker": "SRF",
-      "weight": 0.04408,
+      "weight": 0.04262,
       "shares_held": 97535,
       "exchange": "National Stock Exchange Of India",
-      "price": 26.67
+      "price": 26.16
     },
     {
       "name": "STANDARD BANK GROUP",
       "ticker": "SBK",
-      "weight": 0.30287,
+      "weight": 0.29801,
       "shares_held": 890728,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 20.07
+      "price": 20.03
     },
     {
       "name": "STATE BANK OF INDIA",
       "ticker": "SBIN",
-      "weight": 0.24794,
+      "weight": 0.24195,
       "shares_held": 1272032,
       "exchange": "National Stock Exchange Of India",
-      "price": 11.5
+      "price": 11.39
     },
     {
       "name": "SUN PHARMACEUTICAL INDUSTRIES LTD",
       "ticker": "SUNPHARMA",
-      "weight": 0.20075,
+      "weight": 0.19617,
       "shares_held": 663877,
       "exchange": "National Stock Exchange Of India",
-      "price": 17.85
+      "price": 17.69
     },
     {
       "name": "SUNDARAM FINANCE LTD",
       "ticker": "SUNDARMFIN",
-      "weight": 0.03861,
+      "weight": 0.0368,
       "shares_held": 42838,
       "exchange": "National Stock Exchange Of India",
-      "price": 53.19
+      "price": 51.44
     },
     {
       "name": "SUNWAY BHD",
       "ticker": "SWB",
-      "weight": 0.03738,
+      "weight": 0.03712,
       "shares_held": 1682100,
       "exchange": "Bursa Malaysia",
-      "price": 1.31
+      "price": 1.32
     },
     {
       "name": "SUPREME INDUSTRIES LTD",
       "ticker": "SUPREMEIND",
-      "weight": 0.02729,
+      "weight": 0.02668,
       "shares_held": 39273,
       "exchange": "National Stock Exchange Of India",
-      "price": 41.01
+      "price": 40.67
     },
     {
       "name": "SURGUTNEFTEGAZ",
@@ -4421,7 +4501,7 @@
     {
       "name": "SUZLON ENERGY LTD",
       "ticker": "SUZLON",
-      "weight": 0.05747,
+      "weight": 0.05692,
       "shares_held": 6939623,
       "exchange": "National Stock Exchange Of India",
       "price": 0.49
@@ -4429,15 +4509,15 @@
     {
       "name": "SWIGGY LTD",
       "ticker": "SWIGGY",
-      "weight": 0.04843,
+      "weight": 0.04554,
       "shares_held": 963839,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.97
+      "price": 2.83
     },
     {
       "name": "TAIWAN BUSINESS BANK LTD",
       "ticker": "2834",
-      "weight": 0.04108,
+      "weight": 0.04056,
       "shares_held": 5012244,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.48
@@ -4445,7 +4525,7 @@
     {
       "name": "TAIWAN CEMENT LTD",
       "ticker": "1101",
-      "weight": 0.06358,
+      "weight": 0.06253,
       "shares_held": 4688397,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.8
@@ -4453,7 +4533,7 @@
     {
       "name": "TAIWAN COOPERATIVE FINANCIAL HOLDI",
       "ticker": "5880",
-      "weight": 0.09507,
+      "weight": 0.09407,
       "shares_held": 7465775,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.75
@@ -4461,7 +4541,7 @@
     {
       "name": "TAIWAN HIGH SPEED RAIL CORP",
       "ticker": "2633",
-      "weight": 0.0192,
+      "weight": 0.01888,
       "shares_held": 1334000,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.85
@@ -4469,7 +4549,7 @@
     {
       "name": "TAIWAN MOBILE LTD",
       "ticker": "3045",
-      "weight": 0.0716,
+      "weight": 0.07069,
       "shares_held": 1219000,
       "exchange": "Taiwan Stock Exchange",
       "price": 3.47
@@ -4477,74 +4557,74 @@
     {
       "name": "TAIWAN SEMICONDUCTOR MANUFACTURING",
       "ticker": "2330",
-      "weight": 17.99341,
+      "weight": 18.25439,
       "shares_held": 16849800,
       "exchange": "Taiwan Stock Exchange",
-      "price": 63.02
+      "price": 64.87
     },
     {
       "name": "TALAAT MOUSTAFA GROUP",
       "ticker": "TMGH",
-      "weight": 0.00904,
+      "weight": 0.00906,
       "shares_held": 333216,
       "exchange": "Egyptian Exchange",
-      "price": 1.6
+      "price": 1.63
     },
     {
       "name": "TATA COMMUNICATIONS LTD",
       "ticker": "TATACOMM",
-      "weight": 0.01947,
+      "weight": 0.0191,
       "shares_held": 70616,
       "exchange": "National Stock Exchange Of India",
-      "price": 16.27
+      "price": 16.19
     },
     {
       "name": "TATA CONSULTANCY SERVICES LTD",
       "ticker": "TCS",
-      "weight": 0.28445,
+      "weight": 0.2727,
       "shares_held": 616685,
       "exchange": "National Stock Exchange Of India",
-      "price": 27.22
+      "price": 26.48
     },
     {
       "name": "TATA CONSUMER PRODUCTS LTD",
       "ticker": "TATACONSUM",
-      "weight": 0.0845,
+      "weight": 0.08245,
       "shares_held": 422816,
       "exchange": "National Stock Exchange Of India",
-      "price": 11.79
+      "price": 11.68
     },
     {
       "name": "TATA MOTORS LTD",
       "ticker": "TMCV",
-      "weight": 0.11074,
+      "weight": 0.10479,
       "shares_held": 1363245,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.79
+      "price": 4.6
     },
     {
       "name": "TATA MOTORS PASSENGER VEHICLES LTD",
       "ticker": "TMPV",
-      "weight": 0.08649,
+      "weight": 0.08537,
       "shares_held": 1381633,
       "exchange": "National Stock Exchange Of India",
-      "price": 3.69
+      "price": 3.7
     },
     {
       "name": "TATA POWER LTD",
       "ticker": "TATAPOWER",
-      "weight": 0.08258,
+      "weight": 0.08289,
       "shares_held": 1131729,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.31
+      "price": 4.39
     },
     {
       "name": "TATA STEEL LTD",
       "ticker": "TATASTEEL",
-      "weight": 0.19423,
+      "weight": 0.18991,
       "shares_held": 5144852,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.23
+      "price": 2.21
     },
     {
       "name": "TATNEFT",
@@ -4565,47 +4645,47 @@
     {
       "name": "TECH MAHINDRA LTD",
       "ticker": "TECHM",
-      "weight": 0.09882,
+      "weight": 0.09639,
       "shares_held": 375494,
       "exchange": "National Stock Exchange Of India",
-      "price": 15.53
+      "price": 15.37
     },
     {
       "name": "TECO ELECTRIC & MACHINERY LTD",
       "ticker": "1504",
-      "weight": 0.02467,
+      "weight": 0.02518,
       "shares_held": 774000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.88
+      "price": 1.95
     },
     {
       "name": "TELEKOM MALAYSIA",
       "ticker": "TM",
-      "weight": 0.02487,
+      "weight": 0.02411,
       "shares_held": 820800,
       "exchange": "Bursa Malaysia",
-      "price": 1.79
+      "price": 1.76
     },
     {
       "name": "TELEKOMUNIKASI INDONESIA",
       "ticker": "TLKM",
-      "weight": 0.10994,
+      "weight": 0.10518,
       "shares_held": 34545100,
       "exchange": "Indonesia Stock Exchange",
-      "price": 0.19
+      "price": 0.18
     },
     {
       "name": "TENAGA NASIONAL",
       "ticker": "TENAGA",
-      "weight": 0.10921,
+      "weight": 0.10987,
       "shares_held": 1815000,
       "exchange": "Bursa Malaysia",
-      "price": 3.55
+      "price": 3.62
     },
     {
       "name": "THB CASH",
       "ticker": "THB",
-      "weight": 0.02816,
+      "weight": 0.02776,
       "shares_held": 53388625,
       "exchange": "-",
       "price": 3.11
@@ -4613,31 +4693,31 @@
     {
       "name": "THE COOPERATIVE INSURANCE",
       "ticker": "8010",
-      "weight": 0.03302,
+      "weight": 0.03331,
       "shares_held": 57311,
       "exchange": "Saudi Stock Exchange",
-      "price": 34
+      "price": 34.81
     },
     {
       "name": "THE SAUDI NATIONAL BANK",
       "ticker": "1180",
-      "weight": 0.38749,
+      "weight": 0.39159,
       "shares_held": 1999499,
       "exchange": "Saudi Stock Exchange",
-      "price": 11.44
+      "price": 11.73
     },
     {
       "name": "TITAN COMPANY LTD",
       "ticker": "TITAN",
-      "weight": 0.20304,
+      "weight": 0.19583,
       "shares_held": 246655,
       "exchange": "National Stock Exchange Of India",
-      "price": 48.58
+      "price": 47.54
     },
     {
       "name": "TMBTHANACHART BANK NON-VOTING DR P",
       "ticker": "TTB.R",
-      "weight": 0.02195,
+      "weight": 0.02164,
       "shares_held": 17485601,
       "exchange": "Stock Exchange Of Thailand",
       "price": 0.07
@@ -4645,31 +4725,31 @@
     {
       "name": "TORRENT PHARMACEUTICALS LTD",
       "ticker": "TORNTPHARM",
-      "weight": 0.06474,
+      "weight": 0.06376,
       "shares_held": 85271,
       "exchange": "National Stock Exchange Of India",
-      "price": 44.81
+      "price": 44.77
     },
     {
       "name": "TORRENT POWER LTD",
       "ticker": "TORNTPOWER",
-      "weight": 0.03547,
+      "weight": 0.03476,
       "shares_held": 131903,
       "exchange": "National Stock Exchange Of India",
-      "price": 15.87
+      "price": 15.78
     },
     {
       "name": "TRENT LTD",
       "ticker": "TRENT",
-      "weight": 0.09111,
+      "weight": 0.08824,
       "shares_held": 127311,
       "exchange": "National Stock Exchange Of India",
-      "price": 42.24
+      "price": 41.5
     },
     {
       "name": "TRUE CORPORATION NON-VOTING DR PCL",
       "ticker": "TRUE.R",
-      "weight": 0.05203,
+      "weight": 0.05129,
       "shares_held": 6897949,
       "exchange": "Stock Exchange Of Thailand",
       "price": 0.45
@@ -4677,15 +4757,23 @@
     {
       "name": "TRY CASH",
       "ticker": "TRY",
-      "weight": 0.00988,
+      "weight": 0.00973,
       "shares_held": 26048804,
       "exchange": "-",
       "price": 2.24
     },
     {
+      "name": "TRY/USD",
+      "ticker": "TRY",
+      "weight": 0,
+      "shares_held": -15714799,
+      "exchange": "-",
+      "price": 1
+    },
+    {
       "name": "TS FINANCIAL HOLDING LTD",
       "ticker": "2887",
-      "weight": 0.18733,
+      "weight": 0.18421,
       "shares_held": 14291040,
       "exchange": "Taiwan Stock Exchange",
       "price": 0.77
@@ -4693,15 +4781,15 @@
     {
       "name": "TUBE INVESTMENTS OF INDIA LTD",
       "ticker": "TIINDIA",
-      "weight": 0.03672,
+      "weight": 0.03555,
       "shares_held": 73208,
       "exchange": "National Stock Exchange Of India",
-      "price": 29.6
+      "price": 29.08
     },
     {
       "name": "TURK HAVA YOLLARI AO A",
       "ticker": "THYAO.E",
-      "weight": 0.04394,
+      "weight": 0.04337,
       "shares_held": 358413,
       "exchange": "Istanbul Stock Exchange",
       "price": 7.24
@@ -4709,15 +4797,15 @@
     {
       "name": "TURKCELL ILETISIM HIZMETLERI A",
       "ticker": "TCELL.E",
-      "weight": 0.03962,
+      "weight": 0.03868,
       "shares_held": 890573,
       "exchange": "Istanbul Stock Exchange",
-      "price": 2.63
+      "price": 2.6
     },
     {
       "name": "TURKIYE IS BANKASI C",
       "ticker": "ISCTR.E",
-      "weight": 0.03505,
+      "weight": 0.03414,
       "shares_held": 6282471,
       "exchange": "Istanbul Stock Exchange",
       "price": 0.33
@@ -4725,58 +4813,66 @@
     {
       "name": "TURKIYE PETROL RAFINERILERI A",
       "ticker": "TUPRS.E",
-      "weight": 0.06091,
+      "weight": 0.06304,
       "shares_held": 630983,
       "exchange": "Istanbul Stock Exchange",
-      "price": 5.7
+      "price": 5.98
     },
     {
       "name": "TVS MOTOR COMPANY LTD",
       "ticker": "TVSMOTOR",
-      "weight": 0.11721,
+      "weight": 0.11167,
       "shares_held": 167043,
       "exchange": "National Stock Exchange Of India",
-      "price": 41.41
+      "price": 40.03
     },
     {
       "name": "TWD CASH",
       "ticker": "TWD",
-      "weight": 0.04657,
-      "shares_held": 87215421,
+      "weight": 0.04893,
+      "shares_held": 92805397,
       "exchange": "-",
-      "price": 3.15
+      "price": 3.16
+    },
+    {
+      "name": "TWD/USD",
+      "ticker": "TWD",
+      "weight": 0.00001,
+      "shares_held": -56186578,
+      "exchange": "-",
+      "price": 1
     },
     {
       "name": "ULTRATECH CEMENT LTD",
       "ticker": "ULTRACEMCO",
-      "weight": 0.1717,
+      "weight": 0.1668,
       "shares_held": 81084,
       "exchange": "National Stock Exchange Of India",
-      "price": 124.98
+      "price": 123.17
     },
     {
       "name": "UNI-PRESIDENT ENTERPRISES CORP",
       "ticker": "1216",
-      "weight": 0.12785,
+      "weight": 0.12676,
       "shares_held": 3335000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.26
+      "price": 2.28
     },
     {
       "name": "UNIMICRON TECHNOLOGY CORP",
       "ticker": "3037",
-      "weight": 0.31511,
+      "weight": 0.29113,
       "shares_held": 925036,
       "exchange": "Taiwan Stock Exchange",
-      "price": 20.1
+      "price": 18.84
     },
     {
       "name": "UNION BANK OF INDIA LTD",
       "ticker": "UNIONBANK",
-      "weight": 0.03309,
+      "weight": 0.03164,
       "shares_held": 957883,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.04
+      "price": 1.98
     },
     {
       "name": "UNITED COMPANY RUSAL",
@@ -4789,23 +4885,23 @@
     {
       "name": "UNITED MICRO ELECTRONICS CORP",
       "ticker": "2303",
-      "weight": 0.26006,
+      "weight": 0.24725,
       "shares_held": 7856000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.95
+      "price": 1.88
     },
     {
       "name": "UNITED SPIRITS LTD",
       "ticker": "UNITDSPR",
-      "weight": 0.04778,
+      "weight": 0.04542,
       "shares_held": 206201,
       "exchange": "National Stock Exchange Of India",
-      "price": 13.68
+      "price": 13.19
     },
     {
       "name": "UNITED TRACTORS",
       "ticker": "UNTR",
-      "weight": 0.03108,
+      "weight": 0.03059,
       "shares_held": 1001400,
       "exchange": "Indonesia Stock Exchange",
       "price": 1.83
@@ -4813,55 +4909,55 @@
     {
       "name": "UPL LTD",
       "ticker": "UPL",
-      "weight": 0.03781,
+      "weight": 0.03694,
       "shares_held": 320879,
       "exchange": "National Stock Exchange Of India",
-      "price": 6.95
+      "price": 6.89
     },
     {
       "name": "USD CASH",
       "ticker": "USD",
-      "weight": 0.02213,
-      "shares_held": 1306264,
+      "weight": 0.00902,
+      "shares_held": 539988,
       "exchange": "-",
       "price": 100
     },
     {
       "name": "VALTERRA PLATINUM LTD",
       "ticker": "VAL",
-      "weight": 0.28996,
+      "weight": 0.29389,
       "shares_held": 183282,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 93.37
+      "price": 96.01
     },
     {
       "name": "VANGUARD INTERNATIONAL SEMICONDUCT",
       "ticker": "5347",
-      "weight": 0.04765,
+      "weight": 0.04541,
       "shares_held": 691805,
       "exchange": "Gretai Securities Market",
-      "price": 4.07
+      "price": 3.93
     },
     {
       "name": "VARUN BEVERAGES LTD",
       "ticker": "VBL",
-      "weight": 0.07546,
+      "weight": 0.07368,
       "shares_held": 956803,
       "exchange": "National Stock Exchange Of India",
-      "price": 4.65
+      "price": 4.61
     },
     {
       "name": "VEDANTA LTD",
       "ticker": "VEDL",
-      "weight": 0.12946,
+      "weight": 0.12797,
       "shares_held": 950786,
       "exchange": "National Stock Exchange Of India",
-      "price": 8.04
+      "price": 8.06
     },
     {
       "name": "VISHAL MEGA MART LTD",
       "ticker": "VMM",
-      "weight": 0.02907,
+      "weight": 0.02846,
       "shares_held": 1389363,
       "exchange": "National Stock Exchange Of India",
       "price": 1.23
@@ -4877,15 +4973,15 @@
     {
       "name": "VODACOM GROUP LTD",
       "ticker": "VOD",
-      "weight": 0.06346,
+      "weight": 0.06203,
       "shares_held": 417046,
       "exchange": "Johannesburg Stock Exchange",
-      "price": 8.98
+      "price": 8.91
     },
     {
       "name": "VODAFONE IDEA LTD",
       "ticker": "IDEA",
-      "weight": 0.03054,
+      "weight": 0.0299,
       "shares_held": 18071096,
       "exchange": "National Stock Exchange Of India",
       "price": 0.1
@@ -4893,74 +4989,74 @@
     {
       "name": "VOLTAS LTD",
       "ticker": "VOLTAS",
-      "weight": 0.03706,
+      "weight": 0.03754,
       "shares_held": 154157,
       "exchange": "National Stock Exchange Of India",
-      "price": 14.19
+      "price": 14.58
     },
     {
       "name": "WAAREE ENERGIES LTD",
       "ticker": "WAAREEENER",
-      "weight": 0.03646,
+      "weight": 0.03627,
       "shares_held": 60814,
       "exchange": "National Stock Exchange Of India",
-      "price": 35.39
+      "price": 35.71
     },
     {
       "name": "WALMART DE MEXICO V",
       "ticker": "WALMEX*",
-      "weight": 0.19947,
+      "weight": 0.19542,
       "shares_held": 3522861,
       "exchange": "Bolsa Mexicana De Valores",
-      "price": 3.34
+      "price": 3.32
     },
     {
       "name": "WAN HAI LINES LTD",
       "ticker": "2615",
-      "weight": 0.02309,
+      "weight": 0.02253,
       "shares_held": 560945,
       "exchange": "Taiwan Stock Exchange",
-      "price": 2.43
+      "price": 2.41
     },
     {
       "name": "WARBABANK",
       "ticker": "WARBABANK",
-      "weight": 0.02199,
+      "weight": 0.02209,
       "shares_held": 1339389,
       "exchange": "Kuwait Stock Exchange",
-      "price": 0.97
+      "price": 0.99
     },
     {
       "name": "WIPRO LTD",
       "ticker": "WIPRO",
-      "weight": 0.06942,
+      "weight": 0.06731,
       "shares_held": 1854286,
       "exchange": "National Stock Exchange Of India",
-      "price": 2.21
+      "price": 2.17
     },
     {
       "name": "WISTRON CORP",
       "ticker": "3231",
-      "weight": 0.14438,
+      "weight": 0.14414,
       "shares_held": 2003000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 4.25
+      "price": 4.31
     },
     {
       "name": "WIWYNN CORPORATION CORP",
       "ticker": "6669",
-      "weight": 0.14643,
+      "weight": 0.14956,
       "shares_held": 75550,
       "exchange": "Taiwan Stock Exchange",
-      "price": 114.39
+      "price": 118.53
     },
     {
       "name": "WOORI FINANCIAL GROUP INC",
       "ticker": "316140",
-      "weight": 0.1747,
+      "weight": 0.17667,
       "shares_held": 447683,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 23.03
+      "price": 23.63
     },
     {
       "name": "X5 RETAIL GROUP GDR NV",
@@ -4973,47 +5069,47 @@
     {
       "name": "YAGEO CORP",
       "ticker": "2327",
-      "weight": 0.18038,
+      "weight": 0.19498,
       "shares_held": 1185404,
       "exchange": "Taiwan Stock Exchange",
-      "price": 8.98
+      "price": 9.85
     },
     {
       "name": "YANBU NATIONAL PETROCHEMICALS",
       "ticker": "2290",
-      "weight": 0.02476,
+      "weight": 0.02502,
       "shares_held": 161275,
       "exchange": "Saudi Stock Exchange",
-      "price": 9.06
+      "price": 9.29
     },
     {
       "name": "YANG MING MARINE TRANSPORT CORP",
       "ticker": "2609",
-      "weight": 0.03402,
+      "weight": 0.033,
       "shares_held": 1242000,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.62
+      "price": 1.59
     },
     {
       "name": "YAPI VE KREDI BANKASI A",
       "ticker": "YKBNK.E",
-      "weight": 0.03554,
+      "weight": 0.03411,
       "shares_held": 2423630,
       "exchange": "Istanbul Stock Exchange",
-      "price": 0.87
+      "price": 0.84
     },
     {
       "name": "YES BANK LTD",
       "ticker": "YESBANK",
-      "weight": 0.03536,
+      "weight": 0.03425,
       "shares_held": 10143541,
       "exchange": "National Stock Exchange Of India",
-      "price": 0.21
+      "price": 0.2
     },
     {
       "name": "YTL CORPORATION",
       "ticker": "YTL",
-      "weight": 0.0163,
+      "weight": 0.01613,
       "shares_held": 1917000,
       "exchange": "Bursa Malaysia",
       "price": 0.5
@@ -5021,79 +5117,87 @@
     {
       "name": "YTL POWER INTERNATIONAL",
       "ticker": "YTLPOWR",
-      "weight": 0.03232,
+      "weight": 0.03215,
       "shares_held": 2044380,
       "exchange": "Bursa Malaysia",
-      "price": 0.93
+      "price": 0.94
     },
     {
       "name": "YUANTA FINANCIAL HOLDING LTD",
       "ticker": "2885",
-      "weight": 0.19097,
+      "weight": 0.19586,
       "shares_held": 7498085,
       "exchange": "Taiwan Stock Exchange",
-      "price": 1.5
+      "price": 1.56
     },
     {
       "name": "YUHAN CORP",
       "ticker": "000100",
-      "weight": 0.04255,
+      "weight": 0.0423,
       "shares_held": 40077,
       "exchange": "Korea Exchange (Stock Market)",
-      "price": 62.65
+      "price": 63.19
     },
     {
       "name": "ZABKA GROUP SOCIETE ANONYME SA",
       "ticker": "ZAB",
-      "weight": 0.02419,
+      "weight": 0.02626,
       "shares_held": 230414,
       "exchange": "Warsaw Stock Exchange/Equities/Main Market",
-      "price": 6.2
+      "price": 6.82
     },
     {
       "name": "ZAR CASH",
       "ticker": "ZAR",
-      "weight": 0.03219,
+      "weight": 0.03185,
       "shares_held": 31133590,
       "exchange": "-",
-      "price": 6.1
+      "price": 6.13
+    },
+    {
+      "name": "ZAR/USD",
+      "ticker": "ZAR",
+      "weight": -0.00006,
+      "shares_held": -26108456,
+      "exchange": "-",
+      "price": 1
     },
     {
       "name": "ZHEN DING TECHNOLOGY HOLDING LTD",
       "ticker": "4958",
-      "weight": 0.07718,
+      "weight": 0.07232,
       "shares_held": 545437,
       "exchange": "Taiwan Stock Exchange",
-      "price": 8.35
+      "price": 7.94
     },
     {
       "name": "ZYDUS LIFESCIENCES LTD",
       "ticker": "ZYDUSLIFE",
-      "weight": 0.01965,
+      "weight": 0.01938,
       "shares_held": 117453,
       "exchange": "National Stock Exchange Of India",
-      "price": 9.87
+      "price": 9.88
     }
   ],
   "isa_eligibility": "Yes",
   "isin": "IE00BMG6Z448",
   "issuing_company": "iShares IV plc",
   "methodology": "Replicated",
-  "nav": "USD 8.02",
-  "nav_total_return_ytd": "16.51%",
-  "net_assets": "USD 5,002,763,175",
-  "net_assets_of_fund": "USD 5,902,842,223",
+  "nav": "USD 8.19",
+  "nav_total_return_ytd": "18.19%",
+  "net_assets": "USD 5,111,363,793",
+  "net_assets_of_fund": "USD 5,987,612,635",
   "number_of_holdings": "604",
-  "price": 8.02,
-  "price_book_ratio": "2.80",
-  "price_earnings": "18.87",
+  "price": 8.19,
+  "price_book_ratio": "2.82",
+  "price_earnings": "19.10",
   "product_structure": "Physical",
   "rebalance_frequency": "Quarterly",
   "securities_lending_return": "0.01%",
   "sfdr_classification": "Other",
   "share_class_currency": "USD",
   "share_class_launch_date": "26/Apr/2021",
-  "shares_outstanding": "624,148,697",
+  "shares_outstanding": "624,128,420",
   "sipp_available": "Yes",
   "standard_deviation_3y": "17.42%",
   "ticker": "EXCS",
