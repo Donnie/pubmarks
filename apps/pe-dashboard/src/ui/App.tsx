@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { IChartApi, LineData, CandlestickData } from "lightweight-charts";
+import type { IChartApi, LineData, CandlestickData, WhitespaceData } from "lightweight-charts";
 import {
   datasetBaseUrl,
   fetchManifest,
@@ -9,6 +9,7 @@ import {
   Manifest,
   PeriodKey,
   startDateForPeriod,
+  toWeeklyOhlcv,
   yearsForPeriod
 } from "../lib/datasets";
 import { CandlesChart, LineChart } from "./ChartPane";
@@ -19,17 +20,20 @@ type LoadState =
   | { kind: "ready" }
   | { kind: "error"; message: string };
 
+type CandleInterval = "1D" | "1W";
+
 export function App() {
   const [loadState, setLoadState] = useState<LoadState>({ kind: "idle" });
   const [ticker, setTicker] = useState<string>("aapl");
   const [period, setPeriod] = useState<PeriodKey>("5Y");
+  const [candleInterval, setCandleInterval] = useState<CandleInterval>("1W");
 
   const [tickers, setTickers] = useState<string[]>([]);
   const [manifest, setManifest] = useState<Manifest | null>(null);
   const [baseUrl, setBaseUrl] = useState<string | null>(null);
 
   const [candles, setCandles] = useState<CandlestickData<string>[]>([]);
-  const [peLine, setPeLine] = useState<LineData<string>[]>([]);
+  const [peLine, setPeLine] = useState<Array<LineData<string> | WhitespaceData<string>>>([]);
 
   const priceChartRef = useRef<IChartApi | null>(null);
   const peChartRef = useRef<IChartApi | null>(null);
@@ -97,10 +101,11 @@ export function App() {
         const startDate = startDateForPeriod({ endDate, period });
 
         const ohlcvFiltered = filterByStartDate(ohlcv, startDate);
+        const ohlcvSeries = candleInterval === "1W" ? toWeeklyOhlcv(ohlcvFiltered) : ohlcvFiltered;
         const peFiltered = filterByStartDate(pe, startDate);
 
         setCandles(
-          ohlcvFiltered.map((b) => ({
+          ohlcvSeries.map((b) => ({
             time: b.time,
             open: b.open,
             high: b.high,
@@ -108,7 +113,23 @@ export function App() {
             close: b.close
           }))
         );
-        setPeLine(peFiltered.map((p) => ({ time: p.time, value: p.pe })));
+        const peByTime = new Map<string, number>();
+        for (const p of peFiltered) peByTime.set(p.time, p.pe);
+        const candleTimes = new Set(ohlcvSeries.map((b) => b.time));
+
+        const padded: Array<LineData<string> | WhitespaceData<string>> = ohlcvSeries.map((b) => {
+          const v = peByTime.get(b.time);
+          return v === undefined ? { time: b.time } : { time: b.time, value: v };
+        });
+
+        for (const p of peFiltered) {
+          // If P/E timestamp doesn't align to weekly candle time (most won't), include it
+          // so the actual quarterly points render.
+          if (!candleTimes.has(p.time)) padded.push({ time: p.time, value: p.pe });
+        }
+
+        padded.sort((a, b) => a.time.localeCompare(b.time));
+        setPeLine(padded);
         setLoadState({ kind: "ready" });
       } catch (e) {
         if (cancelled) return;
@@ -119,7 +140,7 @@ export function App() {
     return () => {
       cancelled = true;
     };
-  }, [manifest, baseUrl, ticker, period]);
+  }, [manifest, baseUrl, ticker, period, candleInterval]);
 
   useEffect(() => {
     const price = priceChartRef.current;
@@ -182,6 +203,18 @@ export function App() {
             </select>
           </div>
 
+          <div className="control">
+            <label>Candles</label>
+            <select
+              value={candleInterval}
+              onChange={(e) => setCandleInterval(e.target.value as CandleInterval)}
+              disabled={loadState.kind === "loading"}
+            >
+              <option value="1D">Daily</option>
+              <option value="1W">Weekly</option>
+            </select>
+          </div>
+
           <div className="control" style={{ alignSelf: "end" }}>
             <button
               onClick={() => {
@@ -236,11 +269,6 @@ export function App() {
       </div>
 
       {loadState.kind === "error" ? <div className="error">{loadState.message}</div> : null}
-
-      <div className="footerNote">
-        Uses yearly CSVs from `datasets/stocks/&lt;ticker&gt;/&lt;year&gt;/ohlcv.csv` and `peratio.csv`. By default, it
-        loads from jsDelivr; set `VITE_DATASET_BASE_URL` to point somewhere else.
-      </div>
     </div>
   );
 }
