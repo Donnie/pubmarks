@@ -1,0 +1,158 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b1020;
+  --panel: #111a33;
+  --panel2: #0f1730;
+  --text: #e6e9f2;
+  --muted: #a8b0c6;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #63b3ff;
+  --danger: #ff6b6b;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 20% 0%, #162252 0%, var(--bg) 55%);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 16px 40px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.title {
+  display: grid;
+  gap: 2px;
+}
+
+.title h1 {
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.title .subtitle {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control {
+  display: grid;
+  gap: 6px;
+}
+
+.control label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+select,
+button {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+  color: var(--text);
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: rgba(17, 26, 51, 0.5);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panelHeader .left {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.panelHeader .name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.panelHeader .meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chartWrap {
+  height: 420px;
+}
+
+.chartWrap.small {
+  height: 220px;
+}
+
+.footerNote {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.error {
+  margin-top: 12px;
+  color: var(--danger);
+  font-size: 13px;
+}
+
