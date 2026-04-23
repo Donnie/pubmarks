@@ -3,10 +3,7 @@ name: Datasets jsDelivr purge and warm
 on:
   workflow_run:
     workflows:
-      - ETFs update daily
-      - Stocks history
-      - Stocks OHLCV update daily
-      - Stocks P/E update weekly
+      - Datasets manifest
     types:
       - completed
   workflow_dispatch:
@@ -25,45 +22,16 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Purge and warm jsDelivr for CSV and JSON (current UTC year paths)
+      - name: Purge and warm jsDelivr for all files under datasets/
         env:
           REPO: ${{ github.repository }}
-          EVENT_NAME: ${{ github.event_name }}
-          TRIGGER_WORKFLOW: ${{ github.event.workflow_run.name }}
           MAX_PARALLEL: 20
         run: |
           set -euo pipefail
-          tmp="$(mktemp -d)"
-          files0="${tmp}/files0"
-          : > "${files0}"
-
-          write_files0() {
-            # Writes a NUL-delimited list of file paths to stdout.
-            if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
-              echo "Manual trigger: targeting all files" >&2
-              find ./datasets -type f -print0
-              return 0
-            fi
-
-            case "${TRIGGER_WORKFLOW}" in
-              "ETFs update daily")
-                echo "Targeting datasets/etfs/**/latest.json" >&2
-                find ./datasets/etfs -type f -name 'latest.json' -print0
-                ;;
-              "Stocks OHLCV update daily"|"Stocks P/E update weekly"|"Stocks history")
-                echo "Targeting all CSV under datasets/stocks" >&2
-                find ./datasets/stocks -type f -name '*.csv' -print0
-                ;;
-              *)
-                echo "Targeting all files" >&2
-                find ./datasets -type f -print0
-                ;;
-            esac
-          }
-
-          write_files0 > "${files0}"
+          files0="$(mktemp)"
+          find ./datasets -type f -print0 > "${files0}"
           n="$(tr -cd '\0' < "${files0}" | wc -c | tr -d ' ')"
-          echo "Discovered ${n} file(s)."
+          echo "Discovered ${n} file(s) under ./datasets"
 
           export REPO
           curl_pair() {
