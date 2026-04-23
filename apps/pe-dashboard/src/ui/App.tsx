@@ -173,6 +173,8 @@ export function App() {
     };
   }, [candles.length, peLine.length]);
 
+  const hasNetworkCalls = loadState.kind === "loading";
+
   return (
     <div className="container">
       <div className="header">
@@ -216,15 +218,47 @@ export function App() {
           </div>
 
           <div className="control" style={{ alignSelf: "end" }}>
-            <button
-              onClick={() => {
-                priceChartRef.current?.timeScale().fitContent();
-                peChartRef.current?.timeScale().fitContent();
-              }}
-              disabled={loadState.kind === "loading"}
-            >
-              Fit
-            </button>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <button
+                onClick={() => {
+                  priceChartRef.current?.timeScale().fitContent();
+                  peChartRef.current?.timeScale().fitContent();
+                }}
+                disabled={loadState.kind === "loading"}
+              >
+                Fit
+              </button>
+
+              <div
+                aria-live="polite"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 6,
+                  fontSize: 12,
+                  opacity: 0.85,
+                  userSelect: "none",
+                  whiteSpace: "nowrap"
+                }}
+                title={hasNetworkCalls ? "Network calls in progress" : "No network calls in progress"}
+              >
+                {hasNetworkCalls ? (
+                  <svg width="14" height="14" viewBox="0 0 24 24" role="img" aria-label="Loading" style={{ display: "block" }}>
+                    <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
+                    <g style={{ transformOrigin: "12px 12px", animation: "spin 900ms linear infinite" }}>
+                      <circle cx="12" cy="12" r="9" fill="none" stroke="rgba(246,193,119,0.35)" strokeWidth="3" />
+                      <path d="M21 12a9 9 0 0 0-9-9" fill="none" stroke="#f6c177" strokeWidth="3" strokeLinecap="round" />
+                    </g>
+                  </svg>
+                ) : (
+                  <svg width="14" height="14" viewBox="0 0 24 24" role="img" aria-label="Loaded" style={{ display: "block" }}>
+                    <circle cx="12" cy="12" r="9" fill="rgba(45,212,191,0.15)" stroke="#2dd4bf" strokeWidth="2" />
+                    <path d="M8 12.5l2.5 2.5L16.5 9" fill="none" stroke="#2dd4bf" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                )}
+                <span>{hasNetworkCalls ? "Loading…" : "Loaded"}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
