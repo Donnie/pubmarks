@@ -45,6 +45,7 @@ jobs:
           if git status --porcelain datasets/manifest.json | grep -q .; then
             git add datasets/manifest.json
             git commit -m "chore: refresh datasets manifest"
+            git pull --rebase origin main
             git push
           else
             echo "No changes to datasets/manifest.json"
