@@ -147,6 +147,53 @@ export async function fetchPeYears(args: {
 
 export type PeriodKey = "1Y" | "5Y" | "10Y" | "MAX";
 
+function isoDateUtc(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
+function startOfIsoWeekUtc(dateStr: string): string {
+  // Monday-based week start (ISO week). Input is YYYY-MM-DD.
+  const d = new Date(`${dateStr}T00:00:00Z`);
+  const day = d.getUTCDay(); // 0=Sun ... 6=Sat
+  const daysSinceMonday = (day + 6) % 7; // Mon->0 ... Sun->6
+  d.setUTCDate(d.getUTCDate() - daysSinceMonday);
+  return isoDateUtc(d);
+}
+
+export function toWeeklyOhlcv(bars: OhlcvBar[]): OhlcvBar[] {
+  if (bars.length === 0) return [];
+  const out: OhlcvBar[] = [];
+
+  let curKey: string | null = null;
+  let cur: OhlcvBar | null = null;
+
+  for (const b of bars) {
+    const key = startOfIsoWeekUtc(b.time);
+    if (curKey !== key) {
+      if (cur) out.push(cur);
+      curKey = key;
+      cur = {
+        time: key,
+        open: b.open,
+        high: b.high,
+        low: b.low,
+        close: b.close,
+        volume: b.volume
+      };
+      continue;
+    }
+
+    // Same week: update aggregate
+    cur!.high = Math.max(cur!.high, b.high);
+    cur!.low = Math.min(cur!.low, b.low);
+    cur!.close = b.close;
+    cur!.volume += b.volume;
+  }
+
+  if (cur) out.push(cur);
+  return out;
+}
+
 export function yearsForPeriod(args: {
   maxYear: number;
   minYear: number;

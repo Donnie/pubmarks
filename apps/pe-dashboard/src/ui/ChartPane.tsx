@@ -4,9 +4,11 @@ import {
   createChart,
   IChartApi,
   LineData,
+  WhitespaceData,
   CandlestickData,
   CandlestickSeries,
-  LineSeries
+  LineSeries,
+  PriceScaleMode
 } from "lightweight-charts";
 
 type CommonProps = {
@@ -32,7 +34,8 @@ export function CandlesChart(props: CommonProps & { data: CandlestickData<string
         borderColor: "rgba(255,255,255,0.12)"
       },
       rightPriceScale: {
-        borderColor: "rgba(255,255,255,0.12)"
+        borderColor: "rgba(255,255,255,0.12)",
+        mode: PriceScaleMode.Logarithmic
       },
       crosshair: {
         vertLine: { color: "rgba(99,179,255,0.35)" },
@@ -80,7 +83,7 @@ export function CandlesChart(props: CommonProps & { data: CandlestickData<string
 }
 
 export function LineChart(
-  props: CommonProps & { data: LineData<string>[]; color?: string; priceScaleId?: string }
+  props: CommonProps & { data: Array<LineData<string> | WhitespaceData<string>>; color?: string; priceScaleId?: string }
 ) {
   const elRef = useRef<HTMLDivElement | null>(null);
 
