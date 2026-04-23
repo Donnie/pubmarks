@@ -1,0 +1,51 @@
+name: Datasets manifest
+
+on:
+  workflow_run:
+    workflows:
+      - ETFs update daily
+      - Stocks history
+      - Stocks OHLCV update daily
+      - Stocks P/E update weekly
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: datasets-manifest
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Build datasets manifest
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: uv run scripts/python/manifest/main.py
+
+      - name: Commit manifest if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain datasets/manifest.json | grep -q .; then
+            git add datasets/manifest.json
+            git commit -m "chore: refresh datasets manifest"
+            git push
+          else
+            echo "No changes to datasets/manifest.json"
+          fi
