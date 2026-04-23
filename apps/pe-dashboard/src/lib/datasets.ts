@@ -42,26 +42,24 @@ export function datasetBaseUrl(manifest: Manifest): string {
   const env = import.meta.env.VITE_DATASET_BASE_URL as string | undefined;
   if (env && env.trim().length > 0) return env.replace(/\/+$/, "");
 
-  const branch = manifest.access?.defaultBranch ?? "main";
-  const template = manifest.access?.jsdelivrCdnTemplate;
-  if (template) {
-    // Template includes "{path}" but for the dashboard we want the repo root.
-    return template
-      .replace("{branch}", branch)
-      .replace("/{path}", "")
-      .replace("{path}", "")
-      .replace(/\/+$/, "");
-  }
-  return "https://cdn.jsdelivr.net/gh/Donnie/pubmarks@main";
+  // Default to GitHub Pages (preferred over jsDelivr for this dashboard).
+  // Pages root corresponds to the repo's `datasets/` folder contents, so:
+  // - manifest: `${base}/manifest.json`
+  // - data: `${base}/stocks/...`
+  return "https://donnie.github.io/pubmarks";
 }
 
 export async function fetchManifest(base?: string): Promise<Manifest> {
   const env = (import.meta.env.VITE_DATASET_BASE_URL as string | undefined)?.trim();
   const candidates = [
-    base ? `${base.replace(/\/+$/, "")}/datasets/manifest.json` : null,
-    env ? `${env.replace(/\/+$/, "")}/datasets/manifest.json` : null,
-    "/datasets/manifest.json",
-    "https://cdn.jsdelivr.net/gh/Donnie/pubmarks@main/datasets/manifest.json"
+    base ? `${base.replace(/\/+$/, "")}/manifest.json` : null,
+    env ? `${env.replace(/\/+$/, "")}/manifest.json` : null,
+    // When the dashboard is deployed under `/datasets/pe-dashboard/` (GitHub Pages artifact),
+    // the manifest is at the Pages root: `/manifest.json`.
+    "/manifest.json",
+    // Also try relative to the dashboard path (`/pe-dashboard/` -> `../manifest.json`).
+    "../manifest.json",
+    "https://donnie.github.io/pubmarks/manifest.json"
   ].filter(Boolean) as string[];
 
   let lastErr: unknown = null;
@@ -92,7 +90,7 @@ export async function fetchOhlcvYears(args: {
   const all: OhlcvBar[] = [];
 
   for (const year of args.years) {
-    const url = `${args.baseUrl}/datasets/stocks/${args.tickerLower}/${year}/ohlcv.csv`;
+    const url = `${args.baseUrl}/stocks/${args.tickerLower}/${year}/ohlcv.csv`;
     const res = await fetch(url, { cache: "force-cache" });
     ensureOk(res, url);
     const text = await res.text();
@@ -124,7 +122,7 @@ export async function fetchPeYears(args: {
   const all: PePoint[] = [];
 
   for (const year of args.years) {
-    const url = `${args.baseUrl}/datasets/stocks/${args.tickerLower}/${year}/peratio.csv`;
+    const url = `${args.baseUrl}/stocks/${args.tickerLower}/${year}/peratio.csv`;
     const res = await fetch(url, { cache: "force-cache" });
     ensureOk(res, url);
     const text = await res.text();

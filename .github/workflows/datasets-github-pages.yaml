@@ -26,6 +26,25 @@ jobs:
           ref: main
           fetch-depth: 1
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build P/E dashboard
+        working-directory: apps/pe-dashboard
+        run: |
+          set -euo pipefail
+          npm ci
+          npm run build
+
+      - name: Copy dashboard into Pages artifact
+        run: |
+          set -euo pipefail
+          rm -rf datasets/pe-dashboard
+          mkdir -p datasets/pe-dashboard
+          cp -R apps/pe-dashboard/dist/. datasets/pe-dashboard/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
