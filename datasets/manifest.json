@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-23T02:31:19Z",
+  "generatedAt": "2026-04-23T02:47:03Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
@@ -25,10 +25,46 @@
         "layout": "One directory per ETF ticker; each holds dated snapshots and optional latest.json.",
         "files": "YYYY-MM-DD.json for daily snapshots; latest.json duplicates the most recent snapshot for stable URLs."
       },
-      "documentSchema": {
-        "date": "string (ISO date of snapshot)",
-        "holdings": "array of { name, ticker, weight, shares_held }"
+      "jsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "required": [
+          "date",
+          "holdings"
+        ],
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "holdings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "shares_held",
+                "ticker",
+                "weight"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "shares_held": {
+                  "type": "number"
+                },
+                "ticker": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
       },
+      "jsonSchemaInferredFromFileCount": 105,
       "tickers": {
         "excs": {
           "hasLatestJson": true,
