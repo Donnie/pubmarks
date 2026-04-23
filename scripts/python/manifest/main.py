@@ -26,6 +26,130 @@ OUT = DATASETS / "manifest.json"
 DATE_JSON = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json$")
 YEAR_DIR = re.compile(r"^\d{4}$")
 
+JSON_SCHEMA_DIALECT = "https://json-schema.org/draft/2020-12/schema"
+
+
+def _json_schema_type(value: object) -> str:
+    if value is None:
+        return "null"
+    if isinstance(value, bool):
+        return "boolean"
+    if isinstance(value, int) and not isinstance(value, bool):
+        return "integer"
+    if isinstance(value, float):
+        return "number"
+    if isinstance(value, str):
+        return "string"
+    if isinstance(value, list):
+        return "array"
+    if isinstance(value, dict):
+        return "object"
+    return "string"
+
+
+def _merge_type(a: str, b: str) -> str:
+    """Widen types so the schema stays valid for all observed values."""
+    if a == b:
+        return a
+    s = {a, b}
+    if s <= {"integer", "number"}:
+        return "number"
+    if s <= {"string", "null"}:
+        return "string"  # should not happen if both non-null; keep string
+    return a
+
+
+def infer_etf_json_schema(etfs_root: Path) -> tuple[dict, int]:
+    """
+    Build a JSON Schema for ETF snapshot files by scanning all *.json files.
+
+    Only **guaranteed** keys are included: top-level and holding-item property
+    names are the intersection over all files; types are widened from every
+    value seen for those keys. Optional / sporadic fields are omitted.
+
+    Nothing is hard-coded; keys and types are derived from the data on disk.
+    """
+    if not etfs_root.is_dir():
+        return (
+            {
+                "$schema": JSON_SCHEMA_DIALECT,
+                "type": "object",
+                "properties": {},
+            },
+            0,
+        )
+
+    paths = sorted(etfs_root.rglob("*.json"))
+    root_required: set[str] | None = None
+    hold_required: set[str] | None = None
+    root_type: dict[str, str] = {}
+    hold_type: dict[str, str] = {}
+    n_files = 0
+
+    for p in paths:
+        try:
+            with open(p, encoding="utf-8") as f:
+                doc = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            continue
+        n_files += 1
+        if not isinstance(doc, dict):
+            continue
+
+        rk = set(doc.keys())
+        root_required = rk if root_required is None else root_required & rk
+        for k, v in doc.items():
+            t = _json_schema_type(v)
+            root_type[k] = t if k not in root_type else _merge_type(root_type[k], t)
+
+        for h in doc.get("holdings", []) or []:
+            if not isinstance(h, dict):
+                continue
+            hk = set(h.keys())
+            hold_required = hk if hold_required is None else hold_required & hk
+            for k, v in h.items():
+                t = _json_schema_type(v)
+                hold_type[k] = t if k not in hold_type else _merge_type(hold_type[k], t)
+
+    if n_files == 0 or root_required is None:
+        return (
+            {
+                "$schema": JSON_SCHEMA_DIALECT,
+                "type": "object",
+                "properties": {},
+            },
+            0,
+        )
+
+    hold_required = hold_required or set()
+    hold_props: dict = {
+        k: {"type": hold_type[k]}
+        for k in sorted(hold_required)
+        if k in hold_type
+    }
+    holdings_item: dict = {
+        "type": "object",
+        "required": sorted(hold_required),
+        "properties": hold_props,
+    }
+
+    root_props: dict = {}
+    for k in sorted(root_required):
+        if k == "holdings":
+            root_props[k] = {"type": "array", "items": holdings_item}
+        elif k in root_type:
+            root_props[k] = {"type": root_type[k]}
+
+    return (
+        {
+            "$schema": JSON_SCHEMA_DIALECT,
+            "type": "object",
+            "required": sorted(root_required),
+            "properties": root_props,
+        },
+        n_files,
+    )
+
 
 def iso_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace(
@@ -34,9 +158,16 @@ def iso_now() -> str:
 
 
 def scan_etfs(etfs_root: Path) -> dict:
+    json_schema, json_schema_file_count = infer_etf_json_schema(etfs_root)
     tickers: dict[str, dict] = {}
     if not etfs_root.is_dir():
-        return {"root": "datasets/etfs", "tickers": tickers, "tickerCount": 0}
+        return {
+            "root": "datasets/etfs",
+            "tickers": tickers,
+            "tickerCount": 0,
+            "jsonSchema": json_schema,
+            "jsonSchemaInferredFromFileCount": json_schema_file_count,
+        }
 
     for d in sorted(etfs_root.iterdir()):
         if not d.is_dir():
@@ -71,10 +202,8 @@ def scan_etfs(etfs_root: Path) -> dict:
             "layout": "One directory per ETF ticker; each holds dated snapshots and optional latest.json.",
             "files": "YYYY-MM-DD.json for daily snapshots; latest.json duplicates the most recent snapshot for stable URLs.",
         },
-        "documentSchema": {
-            "date": "string (ISO date of snapshot)",
-            "holdings": "array of { name, ticker, weight, shares_held }",
-        },
+        "jsonSchema": json_schema,
+        "jsonSchemaInferredFromFileCount": json_schema_file_count,
         "tickers": tickers,
     }
 

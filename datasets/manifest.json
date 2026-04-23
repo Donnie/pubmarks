@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-04-23T02:31:19Z",
+  "repository": "Donnie/pubmarks",
+  "summary": {
+    "etfs": {
+      "tickers": 5,
+      "jsonFiles": 105
+    },
+    "stocks": {
+      "tickers": 12,
+      "ohlcvYearFiles": 356,
+      "peratioYearFiles": 240
+    }
+  },
+  "access": {
+    "jsdelivrCdnTemplate": "https://cdn.jsdelivr.net/gh/Donnie/pubmarks@{branch}/{path}",
+    "defaultBranch": "main"
+  },
+  "datasets": {
+    "etfs": {
+      "root": "datasets/etfs",
+      "tickerCount": 5,
+      "conventions": {
+        "layout": "One directory per ETF ticker; each holds dated snapshots and optional latest.json.",
+        "files": "YYYY-MM-DD.json for daily snapshots; latest.json duplicates the most recent snapshot for stable URLs."
+      },
+      "documentSchema": {
+        "date": "string (ISO date of snapshot)",
+        "holdings": "array of { name, ticker, weight, shares_held }"
+      },
+      "tickers": {
+        "excs": {
+          "hasLatestJson": true,
+          "datedSnapshotCount": 7,
+          "datedSnapshots": [
+            "2026-04-10",
+            "2026-04-13",
+            "2026-04-14",
+            "2026-04-15",
+            "2026-04-16",
+            "2026-04-17",
+            "2026-04-21"
+          ],
+          "snapshotDateRange": {
+            "min": "2026-04-10",
+            "max": "2026-04-21"
+          }
+        },
+        "semi": {
+          "hasLatestJson": true,
+          "datedSnapshotCount": 18,
+          "datedSnapshots": [
+            "2026-03-26",
+            "2026-03-27",
+            "2026-03-30",
+            "2026-03-31",
+            "2026-04-01",
+            "2026-04-02",
+            "2026-04-03",
+            "2026-04-06",
+            "2026-04-07",
+            "2026-04-08",
+            "2026-04-09",
+            "2026-04-10",
+            "2026-04-13",
+            "2026-04-14",
+            "2026-04-15",
+            "2026-04-16",
+            "2026-04-17",
+            "2026-04-21"
+          ],
+          "snapshotDateRange": {
+            "min": "2026-03-26",
+            "max": "2026-04-21"
+          }
+        },
+        "spy": {
+          "hasLatestJson": true,
+          "datedSnapshotCount": 28,
+          "datedSnapshots": [
+            "2026-03-12",
+            "2026-03-13",
+            "2026-03-16",
+            "2026-03-17",
+            "2026-03-18",
+            "2026-03-19",
+            "2026-03-20",
+            "2026-03-23",
+            "2026-03-24",
+            "2026-03-25",
+            "2026-03-26",
+            "2026-03-27",
+            "2026-03-30",
+            "2026-03-31",
+            "2026-04-01",
+            "2026-04-02",
+            "2026-04-06",
+            "2026-04-07",
+            "2026-04-08",
+            "2026-04-09",
+            "2026-04-10",
+            "2026-04-13",
+            "2026-04-14",
+            "2026-04-15",
+            "2026-04-16",
+            "2026-04-17",
+            "2026-04-20",
+            "2026-04-21"
+          ],
+          "snapshotDateRange": {
+            "min": "2026-03-12",
+            "max": "2026-04-21"
+          }
+        },
+        "xsd": {
+          "hasLatestJson": true,
+          "datedSnapshotCount": 28,
+          "datedSnapshots": [
+            "2026-03-12",
+            "2026-03-13",
+            "2026-03-16",
+            "2026-03-17",
+            "2026-03-18",
+            "2026-03-19",
+            "2026-03-20",
+            "2026-03-23",
+            "2026-03-24",
+            "2026-03-25",
+            "2026-03-26",
+            "2026-03-27",
+            "2026-03-30",
+            "2026-03-31",
+            "2026-04-01",
+            "2026-04-02",
+            "2026-04-06",
+            "2026-04-07",
+            "2026-04-08",
+            "2026-04-09",
+            "2026-04-10",
+            "2026-04-13",
+            "2026-04-14",
+            "2026-04-15",
+            "2026-04-16",
+            "2026-04-17",
+            "2026-04-20",
+            "2026-04-21"
+          ],
+          "snapshotDateRange": {
+            "min": "2026-03-12",
+            "max": "2026-04-21"
+          }
+        },
+        "xuse": {
+          "hasLatestJson": true,
+          "datedSnapshotCount": 19,
+          "datedSnapshots": [
+            "2026-03-26",
+            "2026-03-27",
+            "2026-03-30",
+            "2026-03-31",
+            "2026-04-01",
+            "2026-04-02",
+            "2026-04-03",
+            "2026-04-06",
+            "2026-04-07",
+            "2026-04-08",
+            "2026-04-09",
+            "2026-04-10",
+            "2026-04-13",
+            "2026-04-14",
+            "2026-04-15",
+            "2026-04-16",
+            "2026-04-17",
+            "2026-04-20",
+            "2026-04-21"
+          ],
+          "snapshotDateRange": {
+            "min": "2026-03-26",
+            "max": "2026-04-21"
+          }
+        }
+      }
+    },
+    "stocks": {
+      "root": "datasets/stocks",
+      "tickerCount": 12,
+      "conventions": {
+        "layout": "One directory per stock ticker; under each, one directory per calendar year (YYYY).",
+        "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points."
+      },
+      "series": {
+        "ohlcv": {
+          "pathPattern": "datasets/stocks/{ticker}/{year}/ohlcv.csv",
+          "format": "csv",
+          "columns": [
+            "date",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "peratio": {
+          "pathPattern": "datasets/stocks/{ticker}/{year}/peratio.csv",
+          "format": "csv",
+          "columns": [
+            "date",
+            "stock_price",
+            "ttm_net_eps",
+            "pe_ratio"
+          ]
+        }
+      },
+      "tickers": {
+        "aapl": {
+          "ticker": "aapl",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1980,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "adbe": {
+          "ticker": "adbe",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1986,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "crm": {
+          "ticker": "crm",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 2004,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "goog": {
+          "ticker": "goog",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 2004,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "intu": {
+          "ticker": "intu",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1993,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "meta": {
+          "ticker": "meta",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 2012,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2013,
+              "max": 2026
+            }
+          }
+        },
+        "msft": {
+          "ticker": "msft",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1986,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "nflx": {
+          "ticker": "nflx",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 2002,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "nvda": {
+          "ticker": "nvda",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1999,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "rmd": {
+          "ticker": "rmd",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1995,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        },
+        "tsla": {
+          "ticker": "tsla",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 2010,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2011,
+              "max": 2026
+            }
+          }
+        },
+        "tsm": {
+          "ticker": "tsm",
+          "ohlcv": {
+            "file": "ohlcv.csv",
+            "yearRange": {
+              "min": 1997,
+              "max": 2026
+            }
+          },
+          "peratio": {
+            "file": "peratio.csv",
+            "yearRange": {
+              "min": 2006,
+              "max": 2026
+            }
+          }
+        }
+      }
+    }
+  }
+}
