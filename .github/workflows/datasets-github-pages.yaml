@@ -1,6 +1,11 @@
 name: Datasets GitHub Pages
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "apps"
+      - "datasets/pe-dashboard"
   workflow_dispatch:
   workflow_run:
     workflows: [Datasets manifest]
