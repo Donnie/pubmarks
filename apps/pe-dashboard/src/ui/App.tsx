@@ -269,11 +269,6 @@ export function App() {
       </div>
 
       {loadState.kind === "error" ? <div className="error">{loadState.message}</div> : null}
-
-      <div className="footerNote">
-        Uses yearly CSVs from `datasets/stocks/&lt;ticker&gt;/&lt;year&gt;/ohlcv.csv` and `peratio.csv`. By default, it
-        loads from jsDelivr; set `VITE_DATASET_BASE_URL` to point somewhere else.
-      </div>
     </div>
   );
 }
