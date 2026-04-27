@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-26T09:01:18Z",
+  "generatedAt": "2026-04-27T00:29:12Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
       "tickers": 5,
-      "jsonFiles": 115
+      "jsonFiles": 118
     },
     "stocks": {
       "tickers": 13,
@@ -64,11 +64,11 @@
           }
         }
       },
-      "jsonSchemaInferredFromFileCount": 115,
+      "jsonSchemaInferredFromFileCount": 118,
       "tickers": {
         "excs": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 9,
+          "datedSnapshotCount": 10,
           "datedSnapshots": [
             "2026-04-10",
             "2026-04-13",
@@ -78,16 +78,17 @@
             "2026-04-17",
             "2026-04-21",
             "2026-04-22",
-            "2026-04-23"
+            "2026-04-23",
+            "2026-04-24"
           ],
           "snapshotDateRange": {
             "min": "2026-04-10",
-            "max": "2026-04-23"
+            "max": "2026-04-24"
           }
         },
         "semi": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 20,
+          "datedSnapshotCount": 21,
           "datedSnapshots": [
             "2026-03-26",
             "2026-03-27",
@@ -108,11 +109,12 @@
             "2026-04-17",
             "2026-04-21",
             "2026-04-22",
-            "2026-04-23"
+            "2026-04-23",
+            "2026-04-24"
           ],
           "snapshotDateRange": {
             "min": "2026-03-26",
-            "max": "2026-04-23"
+            "max": "2026-04-24"
           }
         },
         "spy": {
@@ -197,7 +199,7 @@
         },
         "xuse": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 21,
+          "datedSnapshotCount": 22,
           "datedSnapshots": [
             "2026-03-26",
             "2026-03-27",
@@ -219,11 +221,12 @@
             "2026-04-20",
             "2026-04-21",
             "2026-04-22",
-            "2026-04-23"
+            "2026-04-23",
+            "2026-04-24"
           ],
           "snapshotDateRange": {
             "min": "2026-03-26",
-            "max": "2026-04-23"
+            "max": "2026-04-24"
           }
         }
       }
