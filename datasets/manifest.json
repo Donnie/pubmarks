@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-04-27T00:40:24Z",
+  "generatedAt": "2026-04-28T00:32:28Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
       "tickers": 5,
-      "jsonFiles": 118
+      "jsonFiles": 120
     },
     "stocks": {
       "tickers": 13,
@@ -64,7 +64,7 @@
           }
         }
       },
-      "jsonSchemaInferredFromFileCount": 118,
+      "jsonSchemaInferredFromFileCount": 120,
       "tickers": {
         "excs": {
           "hasLatestJson": true,
@@ -119,7 +119,7 @@
         },
         "spy": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 30,
+          "datedSnapshotCount": 31,
           "datedSnapshots": [
             "2026-03-12",
             "2026-03-13",
@@ -150,16 +150,17 @@
             "2026-04-20",
             "2026-04-21",
             "2026-04-22",
-            "2026-04-23"
+            "2026-04-23",
+            "2026-04-24"
           ],
           "snapshotDateRange": {
             "min": "2026-03-12",
-            "max": "2026-04-23"
+            "max": "2026-04-24"
           }
         },
         "xsd": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 30,
+          "datedSnapshotCount": 31,
           "datedSnapshots": [
             "2026-03-12",
             "2026-03-13",
@@ -190,11 +191,12 @@
             "2026-04-20",
             "2026-04-21",
             "2026-04-22",
-            "2026-04-23"
+            "2026-04-23",
+            "2026-04-24"
           ],
           "snapshotDateRange": {
             "min": "2026-03-12",
-            "max": "2026-04-23"
+            "max": "2026-04-24"
           }
         },
         "xuse": {
