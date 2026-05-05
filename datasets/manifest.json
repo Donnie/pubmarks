@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T03:55:15Z",
+  "generatedAt": "2026-05-05T04:58:58Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
@@ -8,9 +8,7 @@
       "jsonFiles": 145
     },
     "stocks": {
-      "tickers": 13,
-      "ohlcvYearFiles": 399,
-      "peratioYearFiles": 261
+      "tickers": 13
     }
   },
   "access": {
@@ -263,7 +261,7 @@
       "tickerCount": 13,
       "conventions": {
         "layout": "One directory per stock ticker; under each, one directory per calendar year (YYYY).",
-        "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points."
+        "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points; optional combined.csv (merged OHLCV + interpolated EPS + computed P/E) beside year folders at datasets/stocks/<ticker>/combined.csv; one file per ticker when present."
       },
       "series": {
         "ohlcv": {
@@ -287,6 +285,21 @@
             "ttm_net_eps",
             "pe_ratio"
           ]
+        },
+        "combined": {
+          "pathPattern": "datasets/stocks/{ticker}/combined.csv",
+          "onePerTicker": true,
+          "format": "csv",
+          "columns": [
+            "date",
+            "open",
+            "high",
+            "low",
+            "close",
+            "volume",
+            "ttm_net_eps",
+            "pe_calc"
+          ]
         }
       },
       "tickers": {
@@ -305,6 +318,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "adbe": {
@@ -322,6 +338,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "crm": {
@@ -339,6 +358,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "goog": {
@@ -356,6 +378,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "intu": {
@@ -373,6 +398,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "lrcx": {
@@ -390,6 +418,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "meta": {
@@ -407,6 +438,9 @@
               "min": 2013,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "msft": {
@@ -424,6 +458,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "nflx": {
@@ -441,6 +478,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "nvda": {
@@ -458,6 +498,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "rmd": {
@@ -475,6 +518,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "tsla": {
@@ -492,6 +538,9 @@
               "min": 2011,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         },
         "tsm": {
@@ -509,6 +558,9 @@
               "min": 2006,
               "max": 2026
             }
+          },
+          "combined": {
+            "file": "combined.csv"
           }
         }
       }
