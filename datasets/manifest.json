@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T04:58:58Z",
+  "generatedAt": "2026-05-05T06:21:14Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
@@ -261,7 +261,7 @@
       "tickerCount": 13,
       "conventions": {
         "layout": "One directory per stock ticker; under each, one directory per calendar year (YYYY).",
-        "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points; optional combined.csv (merged OHLCV + interpolated EPS + computed P/E) beside year folders at datasets/stocks/<ticker>/combined.csv; one file per ticker when present."
+        "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points; optional combined.csv (merged OHLCV + interpolated EPS + computed P/E) beside year folders at datasets/stocks/<ticker>/combined.csv; optional pe-averages.json (5y TTM valuation summary from combined.csv) at datasets/stocks/<ticker>/pe-averages.json; one file per ticker each when present."
       },
       "series": {
         "ohlcv": {
@@ -300,6 +300,31 @@
             "ttm_net_eps",
             "pe_calc"
           ]
+        },
+        "peAverages": {
+          "pathPattern": "datasets/stocks/{ticker}/pe-averages.json",
+          "onePerTicker": true,
+          "format": "json",
+          "properties": {
+            "ticker": "string",
+            "start_date": "string",
+            "end_date": "string",
+            "p_e_min": "number",
+            "p_e_min_date": "string",
+            "p_e_max": "number",
+            "p_e_max_date": "string",
+            "p_e_mean_5yr": "number",
+            "p_e_median_5yr": "number",
+            "p_e_mode_5yr": "number",
+            "p_e_avg_5yr": "number",
+            "p_e_earningsyield_5yr": "number",
+            "p_e_last": "number",
+            "p_e_shiller_5yr": "number",
+            "p_e_profitable_5yr": "number",
+            "p_e_lossy_5yr": "number",
+            "price_last": "number",
+            "eps_last": "number"
+          }
         }
       },
       "tickers": {
@@ -321,6 +346,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "adbe": {
@@ -341,6 +369,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "crm": {
@@ -361,6 +392,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "goog": {
@@ -381,6 +415,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "intu": {
@@ -401,6 +438,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "lrcx": {
@@ -421,6 +461,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "meta": {
@@ -441,6 +484,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "msft": {
@@ -461,6 +507,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "nflx": {
@@ -481,6 +530,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "nvda": {
@@ -501,6 +553,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "rmd": {
@@ -521,6 +576,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "tsla": {
@@ -541,6 +599,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         },
         "tsm": {
@@ -561,6 +622,9 @@
           },
           "combined": {
             "file": "combined.csv"
+          },
+          "peAverages": {
+            "file": "pe-averages.json"
           }
         }
       }
