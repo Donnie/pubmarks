@@ -104,7 +104,13 @@ jobs:
               ohlcv_years: list,
               peratio_years: list,
           ) -> str:
-              base = f"https://cdn.jsdelivr.net/gh/{repo}/datasets/stocks/{t_lower}"
+              owner, _, repo_name = repo.partition("/")
+              gh_base = (
+                  f"https://{owner.lower()}.github.io/{repo_name}/stocks/{t_lower}"
+                  if owner and repo_name
+                  else ""
+              )
+              base = gh_base
               o0 = o1 = "—"
               if ohlcv_years:
                   o0 = link_cell(base, ohlcv_years[0], "ohlcv.csv")

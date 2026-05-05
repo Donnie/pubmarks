@@ -13,16 +13,16 @@ npm install
 npm run dev
 ```
 
-By default it fetches the datasets from jsDelivr (so it works even though `datasets/` is not served by Vite).
+By default it fetches datasets from [GitHub Pages](https://donnie.github.io/pubmarks/) (the published site root is the repo’s `datasets/` folder, so CSV paths are `/stocks/...`, not `/datasets/stocks/...`). That works locally even though Vite does not serve `datasets/`.
 
 ## Optional: point at a different dataset host
 
-Set `VITE_DATASET_BASE_URL` to the host root that contains `/datasets/...`.
+Set `VITE_DATASET_BASE_URL` to the **site root** that contains `manifest.json` and `stocks/`, `etfs/` (same layout as `datasets/` in the repo).
 
-Examples:
+Example:
 
 ```bash
-VITE_DATASET_BASE_URL="https://cdn.jsdelivr.net/gh/Donnie/pubmarks@main" npm run dev
+VITE_DATASET_BASE_URL="https://donnie.github.io/pubmarks" npm run dev
 ```
 
 ## Build

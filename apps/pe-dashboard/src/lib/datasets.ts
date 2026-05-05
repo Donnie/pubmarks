@@ -8,7 +8,7 @@ export type Manifest = {
   schemaVersion: number;
   generatedAt: string;
   access: {
-    jsdelivrCdnTemplate: string;
+    githubPagesBaseUrl: string;
     defaultBranch: string;
   };
   datasets: {
@@ -42,7 +42,7 @@ export function datasetBaseUrl(manifest: Manifest): string {
   const env = import.meta.env.VITE_DATASET_BASE_URL as string | undefined;
   if (env && env.trim().length > 0) return env.replace(/\/+$/, "");
 
-  // Default to GitHub Pages (preferred over jsDelivr for this dashboard).
+  // Default to GitHub Pages (datasets/ published as site root).
   // Pages root corresponds to the repo's `datasets/` folder contents, so:
   // - manifest: `${base}/manifest.json`
   // - data: `${base}/stocks/...`
