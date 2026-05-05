@@ -1,4 +1,4 @@
-name: Stocks P/E update weekly
+name: Stocks P/E update monthly
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: "Run every ticker even if its peratio was updated within the last 7 days"
+        description: "Run every ticker even if its peratio was updated within the last 28 days"
         type: boolean
         default: false
 
@@ -82,16 +82,16 @@ jobs:
               last_ts=$(echo "$last_ts" | tr -d '[:space:]')
               if [ -n "$last_ts" ]; then
                 now=$(date +%s)
-                week_ago=$((now - 7 * 24 * 3600))
-                if [ "$last_ts" -gt "$week_ago" ]; then
-                  echo "Skipping ${ticker}: peratio last committed within 7 days ($(date -u -d "@$last_ts" +%Y-%m-%dT%H:%M:%SZ))"
+                cutoff_ts=$((now - 28 * 24 * 3600))
+                if [ "$last_ts" -gt "$cutoff_ts" ]; then
+                  echo "Skipping ${ticker}: peratio last committed within 28 days ($(date -u -d "@$last_ts" +%Y-%m-%dT%H:%M:%SZ))"
                   continue
                 fi
               fi
             fi
 
             if [ "$prev_ran" = true ]; then
-              sleep 3
+              sleep 10
             fi
             prev_ran=true
 
