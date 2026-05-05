@@ -275,6 +275,17 @@ def scan_stocks(
     )
 
 
+def github_pages_base_url(repository: str) -> str:
+    """Project Pages URL for owner/repo when served from repo settings (default hostname)."""
+    if repository == "unknown/unknown":
+        return "https://example.github.io/example"
+    parts = repository.split("/", 1)
+    if len(parts) != 2:
+        return "https://example.github.io/example"
+    owner, repo_name = parts
+    return f"https://{owner.lower()}.github.io/{repo_name}"
+
+
 def resolve_repository() -> str:
     r = os.environ.get("GITHUB_REPOSITORY", "").strip()
     if r:
@@ -324,7 +335,7 @@ def build_manifest() -> dict:
             },
         },
         "access": {
-            "jsdelivrCdnTemplate": f"https://cdn.jsdelivr.net/gh/{repo}@{{branch}}/{{path}}",
+            "githubPagesBaseUrl": github_pages_base_url(repo),
             "defaultBranch": "main",
         },
         "datasets": {

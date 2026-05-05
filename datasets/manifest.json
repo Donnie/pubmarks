@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-05T00:41:32Z",
+  "generatedAt": "2026-05-05T03:55:15Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
@@ -14,7 +14,7 @@
     }
   },
   "access": {
-    "jsdelivrCdnTemplate": "https://cdn.jsdelivr.net/gh/Donnie/pubmarks@{branch}/{path}",
+    "githubPagesBaseUrl": "https://donnie.github.io/pubmarks",
     "defaultBranch": "main"
   },
   "datasets": {
