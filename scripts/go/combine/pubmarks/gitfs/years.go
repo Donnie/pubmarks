@@ -19,16 +19,29 @@ func (e TickerNotInDatasetsError) Error() string {
 	return fmt.Sprintf("gitfs: ticker %q has no datasets directory at %q", e.Ticker, e.Path)
 }
 
-// YearsWithCSV lists calendar-year subdirectory names under datasets/stocks/<ticker> where <year>/<basename>.csv exists.
-func YearsWithCSV(ticker, basename string) ([]int, error) {
+func resolveStockTickerDir(ticker string) (string, error) {
 	ds, err := ResolveDatasetsDir()
 	if err != nil {
-		return nil, err
+		return "", err
 	}
 	stockDir := filepath.Join(ds, "stocks", strings.ToLower(strings.TrimSpace(ticker)))
 	fi, err := os.Stat(stockDir)
 	if err != nil || !fi.IsDir() {
-		return nil, TickerNotInDatasetsError{Ticker: strings.ToUpper(strings.TrimSpace(ticker)), Path: stockDir}
+		return "", TickerNotInDatasetsError{Ticker: strings.ToUpper(strings.TrimSpace(ticker)), Path: stockDir}
+	}
+	return stockDir, nil
+}
+
+// TickerStockDir returns the path to datasets/stocks/<ticker> if present.
+func TickerStockDir(ticker string) (string, error) {
+	return resolveStockTickerDir(ticker)
+}
+
+// YearsWithCSV lists calendar-year subdirectory names under datasets/stocks/<ticker> where <year>/<basename>.csv exists.
+func YearsWithCSV(ticker, basename string) ([]int, error) {
+	stockDir, err := resolveStockTickerDir(ticker)
+	if err != nil {
+		return nil, err
 	}
 
 	entries, err := os.ReadDir(stockDir)

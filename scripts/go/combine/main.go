@@ -1,14 +1,18 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
+	"io"
 	"log"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 	"time"
 
 	"combine/pubmarks"
+	"combine/pubmarks/gitfs"
 	"combine/pubmarks/parse"
 )
 
@@ -44,10 +48,17 @@ func main() {
 	peratioShifted := shiftPeratioToTradingDays(peratio, ohlcv, ohlcvDates)
 	dates := unionSortedDates(ohlcvDates, peratioShifted)
 
-	fmt.Println("date,open,high,low,close,volume,ttm_net_eps,pe_calc")
-
 	epsFilled := fillEPSPiecewiseLinear(dates, peratioShifted)
-	printCombinedCSV(dates, ohlcv, peratioShifted, epsFilled)
+
+	stockDir, err := gitfs.TickerStockDir(ticker)
+	if err != nil {
+		log.Fatal(err)
+	}
+	outPath := filepath.Join(stockDir, "combined.csv")
+	if err := writeCombinedCSVFile(outPath, dates, ohlcv, peratioShifted, epsFilled); err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("wrote %s", outPath)
 }
 
 func sortedDatesFromOHLCV(ohlcv parse.OHLCV) []time.Time {
@@ -156,12 +167,34 @@ func fillEPSPiecewiseLinear(dates []time.Time, peratioShifted map[time.Time]pera
 	return epsFilled
 }
 
-func printCombinedCSV(
+func writeCombinedCSVFile(
+	path string,
 	dates []time.Time,
 	ohlcv parse.OHLCV,
 	peratioShifted map[time.Time]peratioOutRow,
 	epsFilled map[time.Time]float64,
-) {
+) error {
+	var buf bytes.Buffer
+	if err := writeCombinedCSV(&buf, dates, ohlcv, peratioShifted, epsFilled); err != nil {
+		return err
+	}
+	tmp := path + ".tmp"
+	if err := os.WriteFile(tmp, buf.Bytes(), 0644); err != nil {
+		return err
+	}
+	return os.Rename(tmp, path)
+}
+
+func writeCombinedCSV(
+	w io.Writer,
+	dates []time.Time,
+	ohlcv parse.OHLCV,
+	peratioShifted map[time.Time]peratioOutRow,
+	epsFilled map[time.Time]float64,
+) error {
+	if _, err := io.WriteString(w, "date,open,high,low,close,volume,ttm_net_eps,pe_calc\n"); err != nil {
+		return err
+	}
 	for _, d := range dates {
 		ohlcvRow, hasOHLCV := ohlcv[d]
 		_, hasPERatio := peratioShifted[d]
@@ -194,10 +227,14 @@ func printCombinedCSV(
 			peCalc = fmt.Sprintf("%.4f", closeNum/epsNum)
 		}
 
-		fmt.Printf("%s,%s,%s,%s,%s,%s,%s,%s\n",
+		_, err := fmt.Fprintf(w, "%s,%s,%s,%s,%s,%s,%s,%s\n",
 			d.Format("2006-01-02"),
 			open, high, low, close, volume,
 			ttmNetEps, peCalc,
 		)
+		if err != nil {
+			return err
+		}
 	}
+	return nil
 }
