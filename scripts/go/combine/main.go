@@ -24,8 +24,8 @@ func main() {
 	}
 	ticker := strings.TrimSpace(strings.ToLower(os.Args[1]))
 
-	// Full published span per series from manifest.json (yearRange.min..max), then fetch those CSVs.
-	ohlcvYears, peratioYears, err := pubmarks.YearsFromManifestMaxRange(ticker)
+	// Years present on disk under datasets/stocks/<ticker>, then load those CSVs.
+	ohlcvYears, peratioYears, err := pubmarks.YearsFromDatasetsTickerDir(ticker)
 	if err != nil {
 		log.Fatal(err)
 	}

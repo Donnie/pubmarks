@@ -3,12 +3,12 @@ package pubmarks
 import (
 	"fmt"
 
-	"combine/pubmarks/cdn"
+	"combine/pubmarks/gitfs"
 	"combine/pubmarks/parse"
 )
 
 func OHLCV(ticker string, years []int) (parse.OHLCV, error) {
-	ohlcvCSV, err := cdn.GetYears(ticker, years, "ohlcv")
+	ohlcvCSV, err := gitfs.GetYears(ticker, years, "ohlcv")
 	if err != nil {
 		return nil, fmt.Errorf("failed to get ohlcv: %w", err)
 	}
@@ -21,7 +21,7 @@ func OHLCV(ticker string, years []int) (parse.OHLCV, error) {
 }
 
 func Peratio(ticker string, years []int) (parse.EPSTTM, error) {
-	peratioCSV, err := cdn.GetYears(ticker, years, "peratio")
+	peratioCSV, err := gitfs.GetYears(ticker, years, "peratio")
 	if err != nil {
 		return nil, fmt.Errorf("failed to get peratio: %w", err)
 	}
