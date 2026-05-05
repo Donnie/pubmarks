@@ -6,8 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"donnie.in/sniper360/apps/pubmarks/internal/cdn"
-	"donnie.in/sniper360/apps/pubmarks/internal/csvparse"
+	"pe5yr/internal/csvparse"
 )
 
 // tradeDay is one calendar trading row from combined.csv inside the 5-year window.
@@ -17,21 +16,16 @@ type tradeDay struct {
 	epsTTM float64
 }
 
-// FiveYearAveragePe computes daily TTM P/E stats over an exact 5-calendar-year window.
+// FiveYearAveragePeFromCombinedCSV computes daily TTM P/E stats over an exact 5-calendar-year window
+// from the text of a combined.csv (local file content).
 //
-// Price series:  daily OHLCV close from combined.csv.
-// EPS series:    same-row ttm_net_eps (required on every in-window row).
-// Daily P/E:     close / ttm
-// Window:        [endDate - 5 years, endDate] where endDate is the latest trade date in the file.
-func FiveYearAveragePe(ticker string, now time.Time) (Result, error) {
-	_ = now
-	ticker = strings.ToUpper(ticker)
-	client := cdn.NewClient()
-	text, err := client.FetchCombinedCSV(ticker)
-	if err != nil {
-		return Result{}, err
-	}
-	return fiveYearAveragePeFromCombined(ticker, text)
+// Price series: daily OHLCV close from combined.csv.
+// EPS series: same-row ttm_net_eps (required on every in-window row).
+// Daily P/E: close / ttm
+// Window: [endDate - 5 years, endDate] where endDate is the latest trade date in the file.
+func FiveYearAveragePeFromCombinedCSV(ticker string, combinedCSV string) (Result, error) {
+	ticker = strings.ToUpper(strings.TrimSpace(ticker))
+	return fiveYearAveragePeFromCombined(ticker, combinedCSV)
 }
 
 func fiveYearAveragePeFromCombined(ticker string, combinedCSV string) (Result, error) {

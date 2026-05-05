@@ -1,57 +1,126 @@
-package pubmarks
+package main
 
 import (
 	"encoding/json"
-	"errors"
+	"fmt"
+	"log"
 	"math"
-	"net/http"
-	"time"
+	"os"
+	"path/filepath"
+	"sort"
+	"strings"
 
-	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
+	"combine/pubmarks/gitfs"
 
-	"donnie.in/sniper360/apps/pubmarks/internal/cdn"
-	"donnie.in/sniper360/apps/pubmarks/internal/pe"
+	"pe5yr/internal/pe"
 )
 
-func init() {
-	// Register the HTTP function for the Functions Framework (2nd gen / Cloud Run).
-	functions.HTTP("AvgPe", AvgPe)
-}
+func main() {
+	log.SetFlags(0)
 
-// AvgPe is an HTTP Cloud Function entrypoint for GCP.
-// It expects a query parameter "ticker" and returns JSON matching the previous Gin handler.
-func AvgPe(w http.ResponseWriter, r *http.Request) {
-	ticker := r.URL.Query().Get("ticker")
-	if ticker == "" {
-		writeJSON(w, http.StatusBadRequest, map[string]string{
-			"error": "missing required query param: ticker (example: /avgpe?ticker=MSFT)",
-		})
-		return
-	}
-
-	res, err := pe.FiveYearAveragePe(ticker, time.Now())
-	if err != nil {
-		status := http.StatusBadGateway
-		if errors.Is(err, cdn.ErrNotFound) {
-			status = http.StatusNotFound
+	args := os.Args[1:]
+	switch {
+	case len(args) == 0:
+		if err := regenerateAll(); err != nil {
+			log.Fatal(err)
 		}
-		writeJSON(w, status, map[string]string{
-			"error": err.Error(),
-		})
-		return
+	case len(args) == 1 && (args[0] == "-h" || args[0] == "--help"):
+		fmt.Fprintln(os.Stderr, "usage: pe5yr [TICKER]")
+		fmt.Fprintln(os.Stderr, "  With no arguments, writes pe-averages.json next to each datasets/stocks/*/combined.csv.")
+		fmt.Fprintln(os.Stderr, "  With TICKER, writes only that ticker’s pe-averages.json.")
+		os.Exit(2)
+	case len(args) == 1:
+		if err := regenerateOne(args[0]); err != nil {
+			log.Fatal(err)
+		}
+	default:
+		fmt.Fprintln(os.Stderr, "usage: pe5yr [TICKER]")
+		os.Exit(2)
 	}
-
-	writeJSON(w, http.StatusOK, ToPayload(res))
 }
 
-func writeJSON(w http.ResponseWriter, status int, v interface{}) {
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(status)
-	_ = json.NewEncoder(w).Encode(v)
+func regenerateAll() error {
+	ds, err := gitfs.ResolveDatasetsDir()
+	if err != nil {
+		return err
+	}
+	root := filepath.Join(ds, "stocks")
+	entries, err := os.ReadDir(root)
+	if err != nil {
+		return fmt.Errorf("read %q: %w", root, err)
+	}
+	var names []string
+	for _, e := range entries {
+		if e.IsDir() {
+			names = append(names, e.Name())
+		}
+	}
+	sort.Strings(names)
+	for _, name := range names {
+		dir := filepath.Join(root, name)
+		csvPath := filepath.Join(dir, "combined.csv")
+		if _, err := os.Stat(csvPath); err != nil {
+			if os.IsNotExist(err) {
+				continue
+			}
+			return fmt.Errorf("%s: %w", csvPath, err)
+		}
+		if err := writePeAverages(dir, strings.ToUpper(name)); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
-// Payload is the successful JSON body for AvgPe (and local CLI output).
-type Payload struct {
+func regenerateOne(ticker string) error {
+	ticker = strings.TrimSpace(ticker)
+	if ticker == "" {
+		return fmt.Errorf("empty ticker")
+	}
+	dir, err := gitfs.TickerStockDir(ticker)
+	if err != nil {
+		return err
+	}
+	return writePeAverages(dir, strings.ToUpper(ticker))
+}
+
+func writePeAverages(stockDir string, tickerUpper string) error {
+	csvPath := filepath.Join(stockDir, "combined.csv")
+	b, err := os.ReadFile(csvPath)
+	if err != nil {
+		return fmt.Errorf("%s: %w", csvPath, err)
+	}
+	res, err := pe.FiveYearAveragePeFromCombinedCSV(tickerUpper, string(b))
+	if err != nil {
+		return fmt.Errorf("%s: %w", tickerUpper, err)
+	}
+	outPath := filepath.Join(stockDir, "pe-averages.json")
+	tmp := outPath + ".tmp"
+	f, err := os.OpenFile(tmp, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+	if err != nil {
+		return fmt.Errorf("create %q: %w", tmp, err)
+	}
+	enc := json.NewEncoder(f)
+	enc.SetIndent("", "  ")
+	if err := enc.Encode(toPayload(res)); err != nil {
+		f.Close()
+		_ = os.Remove(tmp)
+		return fmt.Errorf("encode json: %w", err)
+	}
+	if err := f.Close(); err != nil {
+		_ = os.Remove(tmp)
+		return err
+	}
+	if err := os.Rename(tmp, outPath); err != nil {
+		_ = os.Remove(tmp)
+		return fmt.Errorf("rename to %q: %w", outPath, err)
+	}
+	log.Printf("wrote %s", outPath)
+	return nil
+}
+
+// payload is the JSON object written to pe-averages.json (same shape as the former HTTP handler).
+type payload struct {
 	Ticker          string  `json:"ticker"`
 	StartDate       string  `json:"start_date"`
 	EndDate         string  `json:"end_date"`
@@ -72,10 +141,8 @@ type Payload struct {
 	LastEps         float64 `json:"eps_last"`
 }
 
-// ToPayload converts pe.Result into the JSON output contract.
-// Dates are ISO-8601 strings; floats are rounded to match precision expectations.
-func ToPayload(r pe.Result) Payload {
-	return Payload{
+func toPayload(r pe.Result) payload {
+	return payload{
 		Ticker:          r.Ticker,
 		StartDate:       r.StartDate.Format("2006-01-02"),
 		EndDate:         r.EndDate.Format("2006-01-02"),
@@ -86,7 +153,7 @@ func ToPayload(r pe.Result) Payload {
 		Mean5yrPe:       round4(r.Mean5yrPe),
 		Median5yrPe:     round4(r.Median5yrPe),
 		Mode5yrPe:       round4(math.Round(r.ModePe)),
-		Avg5yrPe:        round4(r.Mean5yrPe), // alias of p_e_mean_5yr
+		Avg5yrPe:        round4(r.Mean5yrPe),
 		Ey5yrPe:         round4(r.Ey5yrPe),
 		LatestPe:        round4(r.LatestPe),
 		Shiller5yrPe:    round4(r.Shiller5yrPe),

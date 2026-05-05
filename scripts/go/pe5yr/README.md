@@ -1,13 +1,14 @@
-# pubmarks
+# pe5yr
 
-Compute 5-year daily TTM valuation metrics for a stock ticker and print JSON.
+Compute 5-year daily TTM valuation metrics from local `datasets/stocks/<ticker>/combined.csv` and write `pe-averages.json` beside it (`go run .` refreshes every ticker that has `combined.csv`; `go run . AAPL` only that ticker).
 
 ## Usage
 
-From this module directory (`apps/pubmarks`):
+From this module directory (`scripts/go/pe5yr`), or repo root with `go run -C scripts/go/pe5yr .`:
 
 ```bash
-go run ./cmd/pubmarks AAPL
+go run .
+go run . AAPL
 ```
 
 ## Understanding the P/E values in the JSON output
