@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows:
       - ETFs update daily
-      - Stocks combined
+      - Stocks PE averages
     types:
       - completed
   workflow_dispatch:

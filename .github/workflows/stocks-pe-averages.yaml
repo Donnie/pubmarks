@@ -1,0 +1,70 @@
+name: Stocks PE averages
+
+on:
+  workflow_run:
+    workflows:
+      - Stocks combined
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stocks-pe-averages
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          lfs: true
+
+      - name: Set up Git LFS
+        run: git lfs install
+
+      - name: Download latest pe5yr release
+        run: |
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("pe5yr-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'pe5yr' \
+            --output ./pe5yr
+          chmod +x ./pe5yr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Regenerate pe-averages.json per ticker
+        run: ./pe5yr
+
+      - name: Commit pe-averages if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          count="$(find datasets/stocks -mindepth 2 -maxdepth 2 -name pe-averages.json 2>/dev/null | wc -l)"
+          count="${count//[[:space:]]/}"
+          if [ "${count:-0}" -eq 0 ]; then
+            echo "No pe-averages.json files found under datasets/stocks/"
+            exit 0
+          fi
+          while IFS= read -r -d '' f; do
+            git add "$f"
+          done < <(find datasets/stocks -mindepth 2 -maxdepth 2 -name pe-averages.json -print0)
+          if git diff --staged --quiet; then
+            echo "No changes to pe-averages.json"
+          else
+            git commit -m "chore: refresh stocks pe-averages.json"
+            git pull --rebase origin main
+            git push
+          fi
