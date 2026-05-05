@@ -211,8 +211,9 @@ def scan_etfs(etfs_root: Path) -> dict:
 def scan_stocks(stocks_root: Path) -> dict:
     """Returns stocks section dict for datasets.stocks.
 
-    Each ticker with ohlcv and/or peratio year files is listed. If ``combined.csv`` exists beside
-    the year folders it is documented under that ticker's ``combined`` key; otherwise that key is omitted.
+    Each ticker with ohlcv and/or peratio year files is listed. If ``combined.csv`` or
+    ``pe-averages.json`` exists beside the year folders it is documented under that ticker's
+    ``combined`` / ``peAverages`` keys; otherwise those keys are omitted.
     """
     tickers: dict[str, dict] = {}
     if stocks_root.is_dir():
@@ -251,6 +252,11 @@ def scan_stocks(stocks_root: Path) -> dict:
                 entry["combined"] = {
                     "file": "combined.csv",
                 }
+            pe_avgs_path = d / "pe-averages.json"
+            if pe_avgs_path.is_file():
+                entry["peAverages"] = {
+                    "file": "pe-averages.json",
+                }
             tickers[sym] = entry
 
     return {
@@ -261,7 +267,8 @@ def scan_stocks(stocks_root: Path) -> dict:
             "files": (
                 "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points; "
                 "optional combined.csv (merged OHLCV + interpolated EPS + computed P/E) beside year folders "
-                "at datasets/stocks/<ticker>/combined.csv; one file per ticker when present."
+                "at datasets/stocks/<ticker>/combined.csv; optional pe-averages.json (5y TTM valuation summary from combined.csv) "
+                "at datasets/stocks/<ticker>/pe-averages.json; one file per ticker each when present."
             ),
         },
         "series": {
@@ -289,6 +296,32 @@ def scan_stocks(stocks_root: Path) -> dict:
                     "ttm_net_eps",
                     "pe_calc",
                 ],
+            },
+            "peAverages": {
+                "pathPattern": "datasets/stocks/{ticker}/pe-averages.json",
+                "onePerTicker": True,
+                "format": "json",
+                # Flat object; keys match scripts/go/pe5yr main.payload JSON tags.
+                "properties": {
+                    "ticker": "string",
+                    "start_date": "string",
+                    "end_date": "string",
+                    "p_e_min": "number",
+                    "p_e_min_date": "string",
+                    "p_e_max": "number",
+                    "p_e_max_date": "string",
+                    "p_e_mean_5yr": "number",
+                    "p_e_median_5yr": "number",
+                    "p_e_mode_5yr": "number",
+                    "p_e_avg_5yr": "number",
+                    "p_e_earningsyield_5yr": "number",
+                    "p_e_last": "number",
+                    "p_e_shiller_5yr": "number",
+                    "p_e_profitable_5yr": "number",
+                    "p_e_lossy_5yr": "number",
+                    "price_last": "number",
+                    "eps_last": "number",
+                },
             },
         },
         "tickers": tickers,

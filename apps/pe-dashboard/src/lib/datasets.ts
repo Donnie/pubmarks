@@ -2,6 +2,30 @@ export type StockManifestTicker = {
   ticker: string;
   ohlcv: { file: string; yearRange: { min: number; max: number } };
   peratio: { file: string; yearRange: { min: number; max: number } };
+  combined?: { file: string };
+  peAverages?: { file: string };
+};
+
+/** Body of `pe-averages.json`; aligns with `datasets.stocks.series.peAverages.properties` in manifest.json. */
+export type PeAveragesPayload = {
+  ticker: string;
+  start_date: string;
+  end_date: string;
+  p_e_min: number;
+  p_e_min_date: string;
+  p_e_max: number;
+  p_e_max_date: string;
+  p_e_mean_5yr: number;
+  p_e_median_5yr: number;
+  p_e_mode_5yr: number;
+  p_e_avg_5yr: number;
+  p_e_earningsyield_5yr: number;
+  p_e_last: number;
+  p_e_shiller_5yr: number;
+  p_e_profitable_5yr: number;
+  p_e_lossy_5yr: number;
+  price_last: number;
+  eps_last: number;
 };
 
 export type Manifest = {
