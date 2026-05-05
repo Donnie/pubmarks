@@ -4,9 +4,7 @@ on:
   workflow_run:
     workflows:
       - ETFs update daily
-      - Stocks history
-      - Stocks OHLCV update daily
-      - Stocks P/E update weekly
+      - Stocks combined
     types:
       - completed
   workflow_dispatch:

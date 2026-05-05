@@ -1,0 +1,87 @@
+name: Stocks combined
+
+on:
+  workflow_run:
+    workflows:
+      - Stocks history
+      - Stocks OHLCV update daily
+      - Stocks P/E update monthly
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stocks-combined
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          lfs: true
+
+      - name: Set up Git LFS
+        run: git lfs install
+
+      - name: Download latest combine release
+        run: |
+          gh release download \
+            $(gh release list --repo ${{ github.repository }} \
+              --json tagName \
+              --jq '[.[] | select(.tagName | startswith("combine-"))] | .[0].tagName') \
+            --repo ${{ github.repository }} \
+            --pattern 'combine' \
+            --output ./combine
+          chmod +x ./combine
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Refresh combined.csv per ticker
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          commit_if_staged() {
+            local msg="$1"
+            if git diff --staged --quiet; then
+              echo "No git changes to commit (${msg})"
+            else
+              git commit -m "$msg"
+              git pull --rebase origin main
+              git push
+            fi
+          }
+          ROOT="datasets/stocks"
+          if [ ! -d "$ROOT" ]; then
+            echo "No ${ROOT}; nothing to combine."
+            exit 0
+          fi
+          mapfile -t dirs < <(find "$ROOT" -mindepth 1 -maxdepth 1 -type d | sort)
+          if [ ${#dirs[@]} -eq 0 ]; then
+            echo "No ticker directories under ${ROOT}; nothing to combine."
+            exit 0
+          fi
+          for dir in "${dirs[@]}"; do
+            ticker_lower=$(basename "$dir")
+            target="${ROOT}/${ticker_lower}/combined.csv"
+            if [ -f "$target" ]; then
+              recent_commit="$(git log -1 --since='6 hours ago' --format='%H' -- "$target" 2>/dev/null || true)"
+              if [ -n "$recent_commit" ]; then
+                echo "Skipping ${ticker_lower}: ${target} updated in last 6 hours (${recent_commit})"
+                continue
+              fi
+            fi
+            echo "combine ${ticker_lower}"
+            ./combine "$ticker_lower"
+          done
+          git add datasets/stocks
+          commit_if_staged "chore: refresh stocks combined.csv"
