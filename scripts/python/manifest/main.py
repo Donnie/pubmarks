@@ -208,13 +208,13 @@ def scan_etfs(etfs_root: Path) -> dict:
     }
 
 
-def scan_stocks(
-    stocks_root: Path,
-) -> tuple[dict, int, int]:
-    """Returns (stocks section dict, ohlcv file count, peratio file count)."""
+def scan_stocks(stocks_root: Path) -> dict:
+    """Returns stocks section dict for datasets.stocks.
+
+    Each ticker with ohlcv and/or peratio year files is listed. If ``combined.csv`` exists beside
+    the year folders it is documented under that ticker's ``combined`` key; otherwise that key is omitted.
+    """
     tickers: dict[str, dict] = {}
-    ohlcv_file_total = 0
-    peratio_file_total = 0
     if stocks_root.is_dir():
         for d in sorted(stocks_root.iterdir()):
             if not d.is_dir():
@@ -232,47 +232,67 @@ def scan_stocks(
                     peratio_years.append(year)
             ohlcv_years.sort()
             peratio_years.sort()
+            if not ohlcv_years and not peratio_years:
+                continue
+
             entry: dict = {"ticker": sym}
             if ohlcv_years:
-                ohlcv_file_total += len(ohlcv_years)
                 entry["ohlcv"] = {
                     "file": "ohlcv.csv",
                     "yearRange": {"min": ohlcv_years[0], "max": ohlcv_years[-1]},
                 }
             if peratio_years:
-                peratio_file_total += len(peratio_years)
                 entry["peratio"] = {
                     "file": "peratio.csv",
                     "yearRange": {"min": peratio_years[0], "max": peratio_years[-1]},
                 }
-            if ohlcv_years or peratio_years:
-                tickers[sym] = entry
+            combined_path = d / "combined.csv"
+            if combined_path.is_file():
+                entry["combined"] = {
+                    "file": "combined.csv",
+                }
+            tickers[sym] = entry
 
-    return (
-        {
-            "root": "datasets/stocks",
-            "tickerCount": len(tickers),
-            "conventions": {
-                "layout": "One directory per stock ticker; under each, one directory per calendar year (YYYY).",
-                "files": "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points.",
-            },
-            "series": {
-                "ohlcv": {
-                    "pathPattern": "datasets/stocks/{ticker}/{year}/ohlcv.csv",
-                    "format": "csv",
-                    "columns": ["date", "open", "high", "low", "close", "volume"],
-                },
-                "peratio": {
-                    "pathPattern": "datasets/stocks/{ticker}/{year}/peratio.csv",
-                    "format": "csv",
-                    "columns": ["date", "stock_price", "ttm_net_eps", "pe_ratio"],
-                },
-            },
-            "tickers": tickers,
+    return {
+        "root": "datasets/stocks",
+        "tickerCount": len(tickers),
+        "conventions": {
+            "layout": "One directory per stock ticker; under each, one directory per calendar year (YYYY).",
+            "files": (
+                "ohlcv.csv for daily OHLCV; peratio.csv for quarterly TTM P/E points; "
+                "optional combined.csv (merged OHLCV + interpolated EPS + computed P/E) beside year folders "
+                "at datasets/stocks/<ticker>/combined.csv; one file per ticker when present."
+            ),
         },
-        ohlcv_file_total,
-        peratio_file_total,
-    )
+        "series": {
+            "ohlcv": {
+                "pathPattern": "datasets/stocks/{ticker}/{year}/ohlcv.csv",
+                "format": "csv",
+                "columns": ["date", "open", "high", "low", "close", "volume"],
+            },
+            "peratio": {
+                "pathPattern": "datasets/stocks/{ticker}/{year}/peratio.csv",
+                "format": "csv",
+                "columns": ["date", "stock_price", "ttm_net_eps", "pe_ratio"],
+            },
+            "combined": {
+                "pathPattern": "datasets/stocks/{ticker}/combined.csv",
+                "onePerTicker": True,
+                "format": "csv",
+                "columns": [
+                    "date",
+                    "open",
+                    "high",
+                    "low",
+                    "close",
+                    "volume",
+                    "ttm_net_eps",
+                    "pe_calc",
+                ],
+            },
+        },
+        "tickers": tickers,
+    }
 
 
 def github_pages_base_url(repository: str) -> str:
@@ -313,7 +333,7 @@ def resolve_repository() -> str:
 def build_manifest() -> dict:
     repo = resolve_repository()
     etfs = scan_etfs(DATASETS / "etfs")
-    stocks, ohlcv_n, peratio_n = scan_stocks(DATASETS / "stocks")
+    stocks = scan_stocks(DATASETS / "stocks")
 
     etf_files = 0
     for t in etfs.get("tickers", {}).values():
@@ -330,8 +350,6 @@ def build_manifest() -> dict:
             },
             "stocks": {
                 "tickers": stocks.get("tickerCount", 0),
-                "ohlcvYearFiles": ohlcv_n,
-                "peratioYearFiles": peratio_n,
             },
         },
         "access": {
