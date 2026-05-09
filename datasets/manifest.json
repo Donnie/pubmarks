@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-08T00:44:48Z",
+  "generatedAt": "2026-05-09T00:34:26Z",
   "repository": "Donnie/pubmarks",
   "summary": {
     "etfs": {
       "tickers": 5,
-      "jsonFiles": 160
+      "jsonFiles": 163
     },
     "stocks": {
       "tickers": 13
@@ -62,11 +62,11 @@
           }
         }
       },
-      "jsonSchemaInferredFromFileCount": 160,
+      "jsonSchemaInferredFromFileCount": 163,
       "tickers": {
         "excs": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 18,
+          "datedSnapshotCount": 19,
           "datedSnapshots": [
             "2026-04-10",
             "2026-04-13",
@@ -85,16 +85,17 @@
             "2026-05-01",
             "2026-05-04",
             "2026-05-05",
-            "2026-05-06"
+            "2026-05-06",
+            "2026-05-07"
           ],
           "snapshotDateRange": {
             "min": "2026-04-10",
-            "max": "2026-05-06"
+            "max": "2026-05-07"
           }
         },
         "semi": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 29,
+          "datedSnapshotCount": 30,
           "datedSnapshots": [
             "2026-03-26",
             "2026-03-27",
@@ -124,11 +125,12 @@
             "2026-05-01",
             "2026-05-04",
             "2026-05-05",
-            "2026-05-06"
+            "2026-05-06",
+            "2026-05-07"
           ],
           "snapshotDateRange": {
             "min": "2026-03-26",
-            "max": "2026-05-06"
+            "max": "2026-05-07"
           }
         },
         "spy": {
@@ -231,7 +233,7 @@
         },
         "xuse": {
           "hasLatestJson": true,
-          "datedSnapshotCount": 30,
+          "datedSnapshotCount": 31,
           "datedSnapshots": [
             "2026-03-26",
             "2026-03-27",
@@ -262,11 +264,12 @@
             "2026-05-01",
             "2026-05-04",
             "2026-05-05",
-            "2026-05-06"
+            "2026-05-06",
+            "2026-05-07"
           ],
           "snapshotDateRange": {
             "min": "2026-03-26",
-            "max": "2026-05-06"
+            "max": "2026-05-07"
           }
         }
       }
